@@ -2,30 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LabComputacion2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tiposDeDatos/declaracionDeVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/PrimerosPasos/HolaMundo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/PrimerosPasos/HolaMundo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleDoWhile1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleDoWhile1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleFor1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleFor1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleFor2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleFor2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleForAnidado.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleForAnidado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleWhile1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleWhile1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/CondicionalSwitch1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/CondicionalSwitch1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/OperadorTernario.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/OperadorTernario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/condicionalIF.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/condicionalIF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/condicionalIFandElse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/condicionalIFandElse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/ifAnidado.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/ifAnidado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/ifElse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/ifElse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaSalidaConJOptionPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaSalidaConJOptionPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaSalidaNumeros.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaSalidaNumeros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaScanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaTextoYNumero.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaTextoYNumero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaTextoYNumeroVariante2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaTextoYNumeroVariante2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controlDeFlujo/CondicionalSwitch1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controlDeFlujo/CondicionalSwitch1.java" afterDir="false" />
+    </list>
+    <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,11 +29,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="4" end1="28" start2="4" end2="10" changelist="fc98d44b-67da-433b-9cdc-ff5811b9f459" />
+        <range start1="48" end1="48" start2="30" end2="40" changelist="fc98d44b-67da-433b-9cdc-ff5811b9f459" />
+        <range start1="140" end1="140" start2="132" end2="140" changelist="368949f2-555d-4ebb-b3a4-dd816b96666c" />
+        <range start1="154" end1="154" start2="154" end2="158" changelist="368949f2-555d-4ebb-b3a4-dd816b96666c" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectId" id="1PAJSENnMZ0ZNiBl7ny4iUvGxJt" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
