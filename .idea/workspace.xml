@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LabComputacion2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tiposDeDatos/declaracionDeVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/PrimerosPasos/HolaMundo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/PrimerosPasos/HolaMundo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleDoWhile1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleDoWhile1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleFor1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleFor1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleFor2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleFor2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleForAnidado.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleForAnidado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/BucleWhile1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/BucleWhile1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/CondicionalSwitch1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/CondicionalSwitch1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/OperadorTernario.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/OperadorTernario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/condicionalIF.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/condicionalIF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/condicionalIFandElse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/condicionalIFandElse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/ifAnidado.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/ifAnidado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/ifElse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/ifElse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaSalidaConJOptionPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaSalidaConJOptionPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaSalidaNumeros.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaSalidaNumeros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaTextoYNumero.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaTextoYNumero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/entradSalida/EntradaTextoYNumeroVariante2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entradSalida/EntradaTextoYNumeroVariante2.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="190" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1PAJSENnMZ0ZNiBl7ny4iUvGxJt" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.declaracionDeVariables">
+    <configuration name="EntradaSalidaConJOptionPane" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="entradSalida.EntradaSalidaConJOptionPane" />
+      <module name="LabComputacion2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entradSalida.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntradaSalidaNumeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="entradSalida.EntradaSalidaNumeros" />
+      <module name="LabComputacion2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entradSalida.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntradaScanner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="entradSalida.EntradaScanner" />
+      <module name="LabComputacion2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="entradSalida.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="declaracionDeVariables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tiposDeDatos.declaracionDeVariables" />
+      <module name="LabComputacion2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tiposDeDatos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.declaracionDeVariables" />
+        <item itemvalue="Application.EntradaSalidaNumeros" />
+        <item itemvalue="Application.EntradaSalidaConJOptionPane" />
+        <item itemvalue="Application.EntradaScanner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="" />
+      <created>1565310965257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565310965257</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LabComputacion2$EntradaScanner.ic" NAME="EntradaScanner Coverage Results" MODIFIED="1565313762011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>entradSalida.*</FILTER>
+    </SUITE>
+  </component>
+</project>
