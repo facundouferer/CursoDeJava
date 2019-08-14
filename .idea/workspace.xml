@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controlDeFlujo/CondicionalSwitch1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controlDeFlujo/CondicionalSwitch1.java" afterDir="false" />
-    </list>
+    <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="" />
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -21,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -28,16 +25,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="4" end1="28" start2="4" end2="10" changelist="fc98d44b-67da-433b-9cdc-ff5811b9f459" />
-        <range start1="48" end1="48" start2="30" end2="40" changelist="fc98d44b-67da-433b-9cdc-ff5811b9f459" />
-        <range start1="140" end1="140" start2="132" end2="140" changelist="368949f2-555d-4ebb-b3a4-dd816b96666c" />
-        <range start1="154" end1="154" start2="154" end2="158" changelist="368949f2-555d-4ebb-b3a4-dd816b96666c" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1PAJSENnMZ0ZNiBl7ny4iUvGxJt" />
   <component name="PropertiesComponent">
@@ -130,6 +117,21 @@
       <option name="presentableId" value="Default" />
       <updated>1565310965257</updated>
     </task>
+    <task id="LOCAL-00001" summary="tipos de datos">
+      <created>1565324111521</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565324111521</updated>
+    </task>
+    <task id="LOCAL-00002" summary="tipos de datos">
+      <created>1565359273509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565359273510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +146,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tipos de datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="tipos de datos" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabComputacion2$EntradaScanner.ic" NAME="EntradaScanner Coverage Results" MODIFIED="1565313762011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
