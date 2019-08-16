@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="" />
-    <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="">
+    <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arreglos/ArraysesInicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arreglos/ArraysesInicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arreglos/tp2Ejercicio01.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arreglos/tp2Ejercicio01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arreglos/tp2Ejercicio02.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Arreglos/tp2Ejercicio02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/ArregloBidimensional.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/ArregloBidimensional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/recorrerConForEach.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/recorrerConForEach.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/rellenarAregloBisConMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/rellenarAregloBisConMath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/rellenarArregloConMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/rellenarArregloConMath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosOrdenamiento/burbuja.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ArreglosOrdenamiento/burbuja.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosOrdenamiento/conSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ArreglosOrdenamiento/conSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/controlDeFlujo/CondicionalSwitch1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/controlDeFlujo/CondicionalSwitch1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArreglosMultidimensionales/recorrerConForEach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArreglosMultidimensionales/recorrerConForEach.java" afterDir="false" />
     </list>
+    <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.declaracionDeVariables">
+  <component name="RunManager" selected="Application.tienda">
     <configuration name="EntradaSalidaConJOptionPane" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="entradSalida.EntradaSalidaConJOptionPane" />
       <module name="LabComputacion2" />
@@ -97,8 +109,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tienda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="POO.tienda" />
+      <module name="LabComputacion2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="POO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.tienda" />
         <item itemvalue="Application.declaracionDeVariables" />
         <item itemvalue="Application.EntradaSalidaNumeros" />
         <item itemvalue="Application.EntradaSalidaConJOptionPane" />
