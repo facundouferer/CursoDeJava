@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cuentaCorriente/Banco.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cuentaCorriente/Banco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/cuentaCorriente/CuentaCorriente.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/cuentaCorriente/CuentaCorriente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cuentaCorriente/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cuentaCorriente/Banco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cuentaCorriente/CuentaCorriente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cuentaCorriente/CuentaCorriente.java" afterDir="false" />
     </list>
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
