@@ -1,6 +1,6 @@
 package empresaEmpleados;
 
-public class Jefe extends Empleado{
+public class Jefes extends Empleados{
 	
 	/*
 	 * Clase hija de Empleados que hereda si constructor 
@@ -8,7 +8,7 @@ public class Jefe extends Empleado{
 
 	private double incentivo;
 	
-	public Jefe(String nombre, double sueldo) {
+	public Jefes(String nombre, double sueldo) {
 		super(nombre, sueldo); //Hereda del constructor.
 	}
 	

@@ -1,13 +1,13 @@
 package empresaEmpleados;
 
-public class Empleado {
+public class Empleados {
 	
 	private String nombre; 
 	private double sueldo;
 	private int id; 
 	private static int idSiguiente = 1;
 	
-	public Empleado(String nombre, double sueldo) {
+	public Empleados(String nombre, double sueldo) {
 		this.nombre=nombre;
 		this.sueldo=sueldo;
 		this.id=idSiguiente;
