@@ -1,6 +1,6 @@
 package empresaEmpleados;
 
-public class Empleados {
+public class Empleados extends Persona{
 	
 	private String nombre; 
 	private double sueldo;
@@ -27,6 +27,14 @@ public class Empleados {
 	
 	public void setSubeSueldo(double monto) {
 		this.sueldo=monto;
+	}
+
+	@Override
+	public String getNombre() {
+		
+		return this.nombre;
+		// TODO Auto-generated method stub
+		
 	}
 
 }
