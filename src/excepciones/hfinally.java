@@ -3,7 +3,7 @@ package excepciones;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class gVariasExcepciones {
+public class hfinally {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -29,9 +29,10 @@ public class gVariasExcepciones {
 			
 			System.out.println("no se puede dividir por 0");
 			
+		}finally {
+			esc.close();
 		}
-		
-		
+
 	}
 
 }
