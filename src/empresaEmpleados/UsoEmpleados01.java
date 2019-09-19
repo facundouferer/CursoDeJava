@@ -1,6 +1,6 @@
 package empresaEmpleados;
 
-public class UsoEmpleados {
+public class UsoEmpleados01 {
 
 	public static void main(String[] args) {
 		/*

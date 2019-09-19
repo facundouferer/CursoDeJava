@@ -1,6 +1,6 @@
 package empresaEmpleados;
 
-public class Empleados extends Persona{
+public class Empleados extends Persona implements Comparable{
 	
 	private String nombre; 
 	private double sueldo;
@@ -35,6 +35,15 @@ public class Empleados extends Persona{
 		return this.nombre;
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		Empleados otroEmpleado = (Empleados)o;
+		if(this.sueldo < otroEmpleado.sueldo) return -1;
+		if(this.sueldo > otroEmpleado.sueldo) return 1;
+		return 0;
 	}
 
 }
