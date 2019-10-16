@@ -1,4 +1,4 @@
-package coleccionesDos;
+package colecciones2EqualsYhashCode;
 
 public class Clientes {
 

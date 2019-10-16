@@ -1,4 +1,4 @@
-package coleccionesUno;
+package colecciones1Colections;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,6 +13,11 @@ public class Banco {
 		Clientes clietne03 = new Clientes("Fulanita de Tal", "00003", 40000);
 		Clientes clietne04 = new Clientes("Xuxa", "00004", 908123);
 		
+		clietne01 = clietne02;
+		System.out.println(clietne01.hashCode());
+		System.out.println(clietne02.hashCode());
+		System.out.println("-------------------");
+
 		/*
 		 * Preguntarse que es lo que queremos que haga nuestra colección al futuro
 		 * para poder elegir la clase de colecciones que debemos elegir.
@@ -42,6 +47,7 @@ public class Banco {
 		for (Clientes cliente : clientesBanco) {
 			//mostrar el elemento
 			System.out.println(cliente.getNombre()+" "+cliente.getNroCuenta()+" $ "+cliente.getSaldo());
+			System.out.println(cliente.hashCode());
 		}
 		
 	}
