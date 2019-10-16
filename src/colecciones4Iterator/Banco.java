@@ -16,7 +16,7 @@ public class Banco {
 		Clientes cliente01 = new Clientes("Gerardo García", 1, 60000);
 		Clientes cliente02 = new Clientes("Ricardo Molinari", 3, 41234123);
 		Clientes cliente03 = new Clientes("Alicia Dublerdor", 1, 124343);
-		Clientes cliente04 = new Clientes("Rita Sabarese", 5, 5634564);
+		Clientes cliente04 = new Clientes("Rita Sabarese", 5, 12314412);
 
 		Set<Clientes> clientesBanco = new HashSet<Clientes>(); // creación de la colección
 
