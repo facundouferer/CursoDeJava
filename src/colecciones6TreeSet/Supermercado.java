@@ -39,9 +39,9 @@ class Productos implements Comparable<Productos>{
 	}
 	
 	public String getDescripcion() {
-		return this.descripcion;
+		return this.nroProducto + " - " + this.descripcion;
 	}
-
+	
 	@Override
 	public int compareTo(Productos pr) {
 		// ESTO PERMITIRÁ ORDENAR POR NRO DE PRODUCTOS
