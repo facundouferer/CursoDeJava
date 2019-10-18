@@ -1,4 +1,4 @@
-package tfiNro01;
+package trabajoFinalIntegradorNro01;
 
 public class Acomodadores extends Empleados implements ParaAcomodadores{
 	
