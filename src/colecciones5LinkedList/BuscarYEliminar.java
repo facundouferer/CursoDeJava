@@ -20,8 +20,7 @@ public class BuscarYEliminar {
 		ListIterator<String> itProvincias = provincias.listIterator();
 
 		while (itProvincias.hasNext()) {
-			itProvincias.next();
-			if(itProvincias.next().equals("Corrientes")) {
+			if(itProvincias.next().equals("Chaco")) {
 				itProvincias.remove();
 			}
 		}
