@@ -5,24 +5,24 @@ import java.util.Random;
 public class Passwords {
 	
 	private char[] caracteres={'0','1','2','3','4','5','6','7','8','9',
-	           'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ',
+	           'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ï¿½',
 	           'o','p','q','r','s','t','u','v','w','x','y','z',
-	           'A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ',
+	           'A','B','C','D','E','F','G','H','I','J','K','L','M','N','ï¿½',
 	           'O','P','Q','R','S','T','U','V','W','X','Y','Z'}; 
 
 	   private Random random = new Random();
 	   
 	   private String[] passwordsArray;
 
-	   public Passwords(int cantidadDeContraseñas, int longitudContraseñas) { 
+	   public Passwords(int cantidadDeContrasenias, int longitudContrasenias) { 
 
-	       this.passwordsArray = new String[cantidadDeContraseñas];
+	       this.passwordsArray = new String[cantidadDeContrasenias];
 
 	       for (int i = 0; i < this.passwordsArray.length; i++) {
 
 	           this.passwordsArray[i] = "";
 
-	           for (int j = 0; j < longitudContraseñas; j++) {
+	           for (int j = 0; j < longitudContrasenias; j++) {
 	               this.passwordsArray[i] += String.valueOf(caracteres[random.nextInt(64)]);
 	           }
 	       }

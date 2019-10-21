@@ -7,20 +7,19 @@ public class Principal {
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		scan = new Scanner (System.in);
         int  cantidad, longitud;
 		
-		System.out.println("cantidad de contraseñas:");
+		System.out.println("cantidad de contraseÃ±as:");
 		cantidad = scan.nextInt();
         
-        System.out.println("longitud de la/las contraseña/as:");
+        System.out.println("longitud de la/las contraseÃ±a/as:");
         longitud = scan.nextInt();
         
         Passwords passwords = new Passwords(cantidad, longitud);
 
-        System.out.println("CONTRASEÑAS");
+        System.out.println("CONTRASEÃ‘AS");
 
         for (int i = 0; i < passwords.getPasswords().length; i++) {
         	
