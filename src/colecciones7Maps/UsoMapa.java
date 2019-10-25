@@ -16,6 +16,7 @@ public class UsoMapa {
 		directorio.put("100", new Personas("Carlos", "Villaruel"));
 		directorio.put("12", new Personas("Maria", "Riachuelo"));
 		directorio.put("142", new Personas("Lucia", "Masín"));
+		directorio.put("142", new Personas("NUEVO", "Masín"));
 		directorio.put("16", new Personas("Victoria", "Peronista"));
 		
 		System.out.println(directorio);
@@ -29,7 +30,7 @@ public class UsoMapa {
 		for(Map.Entry<String, Personas>persona:directorio.entrySet()) {
 			String clave = persona.getKey();
 			Personas valor = persona.getValue();
-			System.out.println("Clave: "+clave+" Valor: "+valor);
+			System.out.println("Clave: "+persona.getKey()+" Valor: "+valor);
 		}
 		
 	}
