@@ -1,4 +1,4 @@
-package colecciones6TreeSet;
+package colecciones6TreeSet1;
 
 import java.util.TreeSet;
 
@@ -13,11 +13,13 @@ public class Supermercado {
 		Productos pr2 = new Productos(3,"Cafe");
 		Productos pr3 = new Productos(15,"Yerba");
 		Productos pr4 = new Productos(1,"Agua");
+		Productos pr5 = new Productos(2,"Mate");
 
 		ordenaProductos.add(pr1);
 		ordenaProductos.add(pr2);
 		ordenaProductos.add(pr3);
 		ordenaProductos.add(pr4);
+		ordenaProductos.add(pr5);
 		
 		for (Productos producto : ordenaProductos) {
 			System.out.println(producto.getDescripcion());
@@ -27,6 +29,11 @@ public class Supermercado {
 
 }
 
+/*
+ * Implementando la interfaz Comparable podemos hacer
+ * que mis objetos al agregarse en la colección
+ * se ordene según un parámetro que le indiquemos
+ */
 class Productos implements Comparable<Productos>{
 	
 	private int nroProducto;
@@ -41,6 +48,13 @@ class Productos implements Comparable<Productos>{
 	public String getDescripcion() {
 		return this.nroProducto + " - " + this.descripcion;
 	}
+	
+	/*
+	 * La implementación de Comparable no pide que 
+	 * implementemos el método compareTo
+	 * donde indicaremos el valor que deseamos
+	 * que sea comparado para el ordenamiento
+	 */
 	
 	@Override
 	public int compareTo(Productos pr) {

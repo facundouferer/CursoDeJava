@@ -1,6 +1,5 @@
-package colecciones6TreeSet;
+package colecciones6TreeSet1;
 
-import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
 import java.util.TreeSet;
