@@ -1,4 +1,4 @@
-package colecciones6TreeSet;
+package colecciones6TreeSet1;
 import java.util.*;
 
 public class ColeccionesTreeSet {
@@ -7,6 +7,7 @@ public class ColeccionesTreeSet {
 		// TODO Auto-generated method stub
 		
 		TreeSet<String> ordenaGente = new TreeSet<String>();
+		
 		ordenaGente.add("Lucas");
 		ordenaGente.add("Zilva");
 		ordenaGente.add("Javier");
