@@ -1,6 +1,7 @@
 /Arreglos/
 /ArreglosMultidimensionales/
 /ArreglosOrdenamiento/
+/LosHilosOThreads/
 /PrimerosPasos/
 /TiendaCelulares/
 /clasesAbstractas/
@@ -9,13 +10,15 @@
 /colecciones3EqualsYhashCode/
 /colecciones4Iterator/
 /colecciones5LinkedList/
-/colecciones6TreeSet/
+/colecciones6TreeSet1/
+/colecciones7Maps/
 /controlDeFlujo/
 /cuentaCorriente/
 /debugger/
 /empresaEmpleados/
 /entradSalida/
 /excepciones/
+/quienSeLlevaLaTablet/
 /serializacion/
 /tiposDeDatos/
 /trabajoFinalIntegradorNro01/
@@ -27,9 +30,3 @@
 /trabajoPracticoNro07/
 /trabajoPracticoNro08/
 /trabajoPracticoNro09/
-/colecciones6TreeSet2/
-/colecciones6TreeSet1/
-/colecciones7Maps/
-/LosHilosOThreads/
-/coleccionesClase18/
-/quienSeLlevaLaTablet/
