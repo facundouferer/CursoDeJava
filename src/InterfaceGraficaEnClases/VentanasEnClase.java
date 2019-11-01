@@ -5,9 +5,9 @@ import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 
-public class Ventanas extends JFrame{
+class VentanasEnClase extends JFrame{
 	
-	public Ventanas() {
+	public VentanasEnClase() {
 		
 		setSize(300, 400);
 		
@@ -21,6 +21,8 @@ public class Ventanas extends JFrame{
 		
 		setTitle("Mi primer ventanita con un gatito");
 		
+		PanelEnClase panelcito = new PanelEnClase();		
+		add(panelcito); 		
 		setVisible(true);		
 		
 	}

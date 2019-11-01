@@ -1,11 +1,11 @@
 package InterfaceGraficaEnClases;
 
-public class PrimerVentana {
+public class PrimerVentanaEnClase {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Ventanas ventana = new Ventanas();
+		VentanasEnClase ventana = new VentanasEnClase();
 	}
 
 }
