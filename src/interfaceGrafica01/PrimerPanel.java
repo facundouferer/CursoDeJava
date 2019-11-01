@@ -1,4 +1,4 @@
-package InterfaceGrafica01;
+package interfaceGrafica01;
 
 import java.awt.Color;
 import java.awt.Font;
