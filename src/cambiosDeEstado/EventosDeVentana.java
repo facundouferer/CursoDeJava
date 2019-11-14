@@ -1,5 +1,6 @@
 package cambiosDeEstado;
 
+import java.awt.Frame;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -13,6 +14,9 @@ class EventosDeVentana implements WindowStateListener{
 		System.out.println("La ventana ha cambiado de estado.");
 		//para ver que estado tenía
 		System.out.println(e.getNewState());
+		if(e.getNewState() == Frame.MAXIMIZED_BOTH) {
+			System.out.println("MAXIMIZADA");
+		}
 	}
 	
 	
