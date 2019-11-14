@@ -1,4 +1,4 @@
-package interfaceGrafica10Eventos;
+package interfaceGrafica10EventosVentana;
 
 import javax.swing.JFrame;
 

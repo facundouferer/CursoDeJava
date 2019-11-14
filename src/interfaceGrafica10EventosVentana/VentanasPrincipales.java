@@ -1,4 +1,4 @@
-package interfaceGrafica10Eventos;
+package interfaceGrafica10EventosVentana;
 
 import java.awt.Color;
 
