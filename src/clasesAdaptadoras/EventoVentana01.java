@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 
 class EventoVentana01 {
 
-	public static void main(String[] args) {
+	static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MarcoEventoVentana miMarco = new MarcoEventoVentana();
 		

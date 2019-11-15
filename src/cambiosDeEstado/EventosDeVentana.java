@@ -14,9 +14,10 @@ class EventosDeVentana implements WindowStateListener{
 		System.out.println("La ventana ha cambiado de estado.");
 		//para ver que estado tenía
 		System.out.println(e.getNewState());
-		if(e.getNewState() == Frame.MAXIMIZED_BOTH) {
-			System.out.println("MAXIMIZADA");
+		if(e.getNewState() == 6) {
+			System.out.println("MAXIM");
 		}
+		
 	}
 	
 	
