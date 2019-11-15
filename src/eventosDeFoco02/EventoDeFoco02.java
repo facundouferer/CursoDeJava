@@ -8,6 +8,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -38,7 +39,7 @@ class MarcoVentana extends JFrame{
 	
 }
 
-class Panel_Marco_Foco extends JPanel{
+class Panel_Marco_Foco extends JPanel {
 	
 	//con esto vamos a poder ver los focos
 	class EventosDeFoco implements FocusListener{
@@ -85,6 +86,18 @@ class Panel_Marco_Foco extends JPanel{
 		add(campoTexto01);
 		add(campoTexto02);
 		
+		//creamos las etiquetas para los cuadros de texto
+		etiqueta01 = new JLabel("CUADRO 1");
+		etiqueta02 = new JLabel("CUADRO 2");		
+		
+		etiqueta01.setBounds(70, 10, 150, 20);
+		etiqueta02.setBounds(70, 50, 150, 20);
+		
+		//agrego las etiquetas
+		add(etiqueta01);
+		add(etiqueta02);
+		
+		
 		//colocamos los componentes a la escucha
 		EventosDeFoco foco = new EventosDeFoco();
 		
@@ -95,6 +108,7 @@ class Panel_Marco_Foco extends JPanel{
 	}
 	
 	private JTextField campoTexto01, campoTexto02; 
+	private JLabel etiqueta01, etiqueta02; 
 	
 }
 
