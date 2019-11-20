@@ -1,3 +1,22 @@
+/multiplesOyentesDeEventos/
+/InterfaceGraficaEnClases/
+/LosHilosOThreads/
+/PrimerosPasos/
+/TiendaCelulares/
+/cambiosDeEstado/
+/clasesAbstractas/
+/clasesAdaptadoras/
+/colecciones1Colections/
+/colecciones2EqualsYhashCode/
+/colecciones3EqualsYhashCode/
+/colecciones4Iterator/
+/colecciones5LinkedList/
+/colecciones6TreeSet1/
+/colecciones7Maps/
+/controlDeFlujo/
+/cuentaCorriente/
+/debugger/
+/empresaEmpleados/
 /entradSalida/
 /eventosDeFoco01/
 /eventosDeFoco02/
@@ -20,7 +39,7 @@
 /interfaceGrafica08Eventos/
 /interfaceGrafica09Eventos/
 /interfaceGrafica10EventosVentana/
-/multiplesFuentesDeEventos01/
+/multiplesFuentesDeEventos/
 /quienSeLlevaLaTablet/
 /serializacion/
 /tiposDeDatos/
@@ -33,5 +52,3 @@
 /trabajoPracticoNro07/
 /trabajoPracticoNro08/
 /trabajoPracticoNro09/
-/multiplesFuentesDeEventos02/
-/multiplesFuentesDeEventos/
