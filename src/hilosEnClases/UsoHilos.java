@@ -1,4 +1,4 @@
-package HIlosEnClases;
+package hilosEnClases;
 
 import java.util.Scanner;
 

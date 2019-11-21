@@ -1,4 +1,6 @@
-/multiplesOyentesDeEventos/
+/Arreglos/
+/ArreglosMultidimensionales/
+/ArreglosOrdenamiento/
 /InterfaceGraficaEnClases/
 /LosHilosOThreads/
 /PrimerosPasos/
@@ -28,6 +30,7 @@
 /eventosDeVentana01/
 /eventosDeVentanaEnClases/
 /excepciones/
+/hilosEnClases/
 /interfaceGrafica01/
 /interfaceGrafica02/
 /interfaceGrafica03/
@@ -40,6 +43,7 @@
 /interfaceGrafica09Eventos/
 /interfaceGrafica10EventosVentana/
 /multiplesFuentesDeEventos/
+/multiplesOyentesDeEventos/
 /quienSeLlevaLaTablet/
 /serializacion/
 /tiposDeDatos/
@@ -52,3 +56,5 @@
 /trabajoPracticoNro07/
 /trabajoPracticoNro08/
 /trabajoPracticoNro09/
+/eventoDeFocoParaVideo/
+/eventosDeFoco/

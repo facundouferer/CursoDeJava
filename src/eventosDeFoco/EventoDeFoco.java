@@ -1,4 +1,4 @@
-package eventosDeFoco02;
+package eventosDeFoco;
 
 import java.awt.Event;
 import java.awt.Graphics;
@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-class EventoDeFoco02 {
+class EventoDeFoco {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -90,8 +90,8 @@ class Panel_Marco_Foco extends JPanel {
 		etiqueta01 = new JLabel("CUADRO 1");
 		etiqueta02 = new JLabel("CUADRO 2");		
 		
-		etiqueta01.setBounds(70, 10, 150, 20);
-		etiqueta02.setBounds(70, 50, 150, 20);
+		etiqueta01.setBounds(40, 10, 150, 20);
+		etiqueta02.setBounds(40, 50, 150, 20);
 		
 		//agrego las etiquetas
 		add(etiqueta01);

@@ -30,7 +30,6 @@ class FrameNuevo extends JFrame{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			// TODO Auto-generated method stub
 			
 			/*el método dispose(); se encarga de cerrar
 			 * la ventana, sus hijos y libera todos

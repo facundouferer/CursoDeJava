@@ -30,7 +30,7 @@ class PanelPrincipal extends JPanel{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
-			/*
+			/* 
 			 * Esto permitirá crear una ventana nueva cada vez
 			 * que se pulse el botón Nuevo
 			 */

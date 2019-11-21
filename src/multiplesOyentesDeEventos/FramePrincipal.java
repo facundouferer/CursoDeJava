@@ -7,7 +7,7 @@ class FramePrincipal extends JFrame{
 	public FramePrincipal() {
 		
 		setTitle("Multiples Oyentes de Eventos");
-		setBounds(700, 5, 300, 400);
+		setBounds(700, 5, 300, 300);
 		
 		PanelPrincipal panel = new PanelPrincipal();
 		

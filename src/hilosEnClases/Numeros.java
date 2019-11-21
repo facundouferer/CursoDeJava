@@ -1,4 +1,4 @@
-package HIlosEnClases;
+package hilosEnClases;
 
 public class Numeros implements Runnable{
 
