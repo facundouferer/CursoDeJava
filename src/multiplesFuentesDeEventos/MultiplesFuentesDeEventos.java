@@ -10,7 +10,9 @@ import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
 class MultiplesFuentesDeEventos {
@@ -36,6 +38,8 @@ class VentanaPrincipal extends JFrame{
 
 class Paneles extends JPanel{
 	
+	private JLabel texto= new JLabel("");
+	
 	public Paneles() {
 		
 		EventoModificarColor colorRojo = new EventoModificarColor("rojo", Color.RED);
@@ -45,6 +49,7 @@ class Paneles extends JPanel{
 		add(new JButton(colorRojo));
 		add(new JButton(colorAmarillo));
 		add(new JButton(colorVerde));
+		add(texto);
 		
 		//PASO UNO: Crear mapa de entrada 
 		
@@ -86,6 +91,7 @@ class Paneles extends JPanel{
 			// TODO Auto-generated method stub
 			Color c =(Color)getValue("color");
 			setBackground(c);
+			texto.setText((String) getValue(Action.NAME));
 			System.out.println(getValue(Action.NAME)+" -> "+getValue(Action.SHORT_DESCRIPTION));
 			
 		}
