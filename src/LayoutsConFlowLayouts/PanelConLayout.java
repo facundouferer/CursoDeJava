@@ -10,6 +10,10 @@ class PanelConLayout extends JPanel{
 	
 	public PanelConLayout() {
 		//AQUÍ ESPECIFICAMOS EL TIPO DE LAYOUTS
+		/*
+		 * Practicar con todos los constructores
+		 * que se declaran en la API
+		 */
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		add(new JButton("amarillo"));
 		add(new JButton("verde"));
