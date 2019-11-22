@@ -1,13 +1,8 @@
-package multiplesOyentesDeEventos;
+package multiplesOyentesDeEventosEnClase;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
-class MultiplesOyentesDeEventos {
+class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,7 +11,6 @@ class MultiplesOyentesDeEventos {
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		ventana.setVisible(true);
-
 	}
 
 }
