@@ -2,21 +2,21 @@ package Arreglos;
 
 import java.util.Scanner;
 
-public class tp2Ejercicio02 {
+class tp2Ejercicio02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
 		 * Ejercicio 2: Media en posiciones pares del Array
-           En este ejercicio, se pide al usuario que introduzca 10 números enteros por consola. 
-           Los números se almacenarán en un array y el programa calculará la media de los números 
-           introducidos en las posiciones pares del array. (Debes utilizar el operador módulo “%”).
+           En este ejercicio, se pide al usuario que introduzca 10 nï¿½meros enteros por consola. 
+           Los nï¿½meros se almacenarï¿½n en un array y el programa calcularï¿½ la media de los nï¿½meros 
+           introducidos en las posiciones pares del array. (Debes utilizar el operador mï¿½dulo ï¿½%ï¿½).
 		 */
 		
 				//se muestra en pantalla el mensaje
-				System.out.println("Ingrese los números");
+				System.out.println("Ingrese los nï¿½meros");
 				
-				//Se crea la variable que tomará los ingresos de teclado
+				//Se crea la variable que tomarï¿½ los ingresos de teclado
 				Scanner entrada = new Scanner(System.in);
 				
 				//array donde se guardaran los ingresos del usuario
@@ -24,7 +24,7 @@ public class tp2Ejercicio02 {
 				
 				for(int i=0; i<10; i++) {
 					// bucle va tomando los ingresos de teclado del usuario y los colocar en el arreglo
-					System.out.println(i+") Ingrese el número"+i);
+					System.out.println(i+") Ingrese el nï¿½mero"+i);
 					numeros[i]=entrada.nextInt();
 				}
 				int pares=0;

@@ -2,23 +2,23 @@ package Arreglos;
 
 import java.util.Scanner;
 
-public class tp2Ejercicio01 {
+class tp2Ejercicio01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/* Ejercicio 1: Almacenar en Array
-		 Desarrollar un programa que pida al usuario que introduzca 10 números enteros por consola.
-		Los números introducidos se almacenarán en un array. 
-		El programa imprime en consola cuántos números negativos, positivos y valores 0 hay en el array.
+		 Desarrollar un programa que pida al usuario que introduzca 10 nï¿½meros enteros por consola.
+		Los nï¿½meros introducidos se almacenarï¿½n en un array. 
+		El programa imprime en consola cuï¿½ntos nï¿½meros negativos, positivos y valores 0 hay en el array.
 		 */
 		int positivos=0; 
 		int negativos=0;
 		int ceros=0;
 		
 		//se muestra en pantalla el mensaje
-		System.out.println("Ingrese los números");
+		System.out.println("Ingrese los nï¿½meros");
 		
-		//Se crea la variable que tomará los ingresos de teclado
+		//Se crea la variable que tomarï¿½ los ingresos de teclado
 		Scanner entrada = new Scanner(System.in);
 		
 		//array donde se guardaran los ingresos del usuario
@@ -26,7 +26,7 @@ public class tp2Ejercicio01 {
 		
 		for(int i=0; i<10; i++) {
 			// bucle va tomando los ingresos de teclado del usuario y los colocar en el arreglo
-			System.out.println("Ingrese el número para la posición:"+i);
+			System.out.println("Ingrese el nï¿½mero para la posiciï¿½n:"+i);
 			numeros[i]=entrada.nextInt();
 		}
 		
@@ -44,7 +44,7 @@ public class tp2Ejercicio01 {
 		}
 		
 		//emite un mensaje al usuario con los resultados
-		System.out.print("hay "+ceros+ "ceros, "+ positivos+" números positivos y "+negativos+" números negativos");
+		System.out.print("hay "+ceros+ "ceros, "+ positivos+" nï¿½meros positivos y "+negativos+" nï¿½meros negativos");
 		
 		
 
