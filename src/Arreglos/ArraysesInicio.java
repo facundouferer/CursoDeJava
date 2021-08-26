@@ -1,6 +1,7 @@
 package Arreglos;
 
 import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 class ArraysesInicio {
 
@@ -8,16 +9,18 @@ class ArraysesInicio {
 		// TODO Auto-generated method stub
 		
 		String [] nombres = new String[4];
-		
+
+		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("ingrese los nombres");
+
 		for (int i = 0; i < nombres.length; i++) {
-			nombres[i]=JOptionPane.showInputDialog("ingrese nombre");
+			nombres[i]=entrada.nextLine();
 		}
-		
 		
 		for (String nombre:nombres) {
 			System.out.println(nombre);
 		}
-		
 
 	}
 
