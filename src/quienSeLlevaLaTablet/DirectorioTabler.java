@@ -15,7 +15,7 @@ public class DirectorioTabler {
 		
 		//AGREGAR ELEMENTOS
 		directorio.put("31119278", new Personas("12312-123123", "Facundo", "carlos"));
-		directorio.put("101231231230", new Personas("12312-123123", "Julio", "Csar"));
+		directorio.put("101231231230", new Personas("12312-123123", "Julio", "Cesar"));
 		
 		System.out.println(directorio);
 		

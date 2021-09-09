@@ -20,20 +20,943 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="tipos de datos">
-      <change afterPath="$PROJECT_DIR$/src/parte09ClaseAbstracta02/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parte09ClaseAbstracta02/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parte09ClaseAbstracta02/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parte09ClaseAbstracta02/Profesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA01Introduccion/Ej02HolaMundo2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA01Introduccion/Ej03DeclaracionDeVariables.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA01Introduccion/Ej04DeclaracionDeVariables.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA01Introduccion/Ej05TratamientoDeStrings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA01Introduccion/Ej06ConcatenacionDeStrings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA01Introduccion/Ej07OperacionesMatematicas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA01Introduccion/ej01HolaMundo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA02EntradaSalida/Ej01EntradaScanner.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA02EntradaSalida/Ej02EntradaTextoYNumero.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA02EntradaSalida/Ej03EntradaSalidaNumeros.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA02EntradaSalida/Ej04EntradaSalidaConJOptionPane.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA02EntradaSalida/Ej05EntradaTextoYNumeroVariante2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA03EstructurasDeDecision/ej01OperadorTernario.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA03EstructurasDeDecision/ej02CondicionalIF.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA03EstructurasDeDecision/ej03IfElse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA03EstructurasDeDecision/ej04ifAnidado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA03EstructurasDeDecision/ej05CondicionalSwitch1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA04EstructurasIterativas/ej01BucleFor1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA04EstructurasIterativas/ej02BucleFor2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA04EstructurasIterativas/ej03BucleWhile1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA04EstructurasIterativas/ej04BucleForAnidado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA04EstructurasIterativas/ej05BucleDoWhile1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA04EstructurasIterativas/ej06ForEach.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteA05Arreglos/arraysSimples.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB01POO/Concesionaria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB01POO/Moto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB01POO/Vehiculo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB01POO/ej01Vehiculo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB02ClaseAbstracta01/Circulos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB02ClaseAbstracta01/FGeometricas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB02ClaseAbstracta01/Rectangulos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB02ClaseAbstracta01/principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB02ClaseAbstracta02/Estudiante.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB02ClaseAbstracta02/Persona.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB02ClaseAbstracta02/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB02ClaseAbstracta02/Profesor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB03Polimorfismo/Empleado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB03Polimorfismo/Jefe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB03Polimorfismo/Polimorfismo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB04PrincipioDeSustitucion/Empleado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB04PrincipioDeSustitucion/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB04PrincipioDeSustitucion/Profesor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB05CastingDeObjetos/Empleado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB05CastingDeObjetos/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteB05CastingDeObjetos/Profesor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteC01Interfaces/Estudiante.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteC01Interfaces/ParaProfesores.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteC01Interfaces/Personas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteC01Interfaces/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteC01Interfaces/Profesores.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglos/ArraysesInicio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglos/tp2Ejercicio01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglos/tp2Ejercicio02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglosMultidimensionales/ArregloBidimensional.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglosMultidimensionales/recorrerConForEach.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglosMultidimensionales/rellenarAregloBisConMath.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglosMultidimensionales/rellenarArregloConMath.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglosOrdenamiento/burbuja.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXArreglosOrdenamiento/conSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXColeccionesConIteradores/ColeccionesConIteradores.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXColeccionesConIteradores/Personas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXColeccionesConIteradores/operacionesConPersonas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXInterfaceGraficaEnClases/PanelEnClase$ColorDeFondo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXInterfaceGraficaEnClases/PanelEnClase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXInterfaceGraficaEnClases/PrimerVentanaEnClase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXInterfaceGraficaEnClases/VentanasEnClase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConBorderLayout/MarcoConLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConBorderLayout/PanelConLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConBorderLayout/UsoLayouts.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConFlowLayouts/MarcoConLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConFlowLayouts/PanelConLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConFlowLayouts/UsoLayouts.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConGridLayout/MarcoConLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConGridLayout/PanelConLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLayoutsConGridLayout/UsoLayouts.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLosHilosOThreads/Contador.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXLosHilosOThreads/UsoThreads.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXSerializacion/Escritura.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXSerializacion/Lectura.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXSerializacion/Personas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcalculadora/PanelBotones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcalculadora/PanelDisplay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcalculadora/PanelPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcalculadora/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcalculadora/VentanaPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcambiosDeEstado/EventoVentana01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcambiosDeEstado/EventosDeVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcambiosDeEstado/MarcoEventoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXclasesAdaptadoras/EventoVentana01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXclasesAdaptadoras/EventosDeVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXclasesAdaptadoras/MarcoEventoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones1Colections/Banco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones1Colections/Clientes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones2EqualsYhashCode/Banco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones2EqualsYhashCode/Clientes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones3EqualsYhashCode/Banco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones3EqualsYhashCode/Cliente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones4Iterator/Banco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones4Iterator/Clientes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones5LinkedList/BuscarYEliminar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones5LinkedList/BuscarYEliminar2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones5LinkedList/Ejemplo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones5LinkedList/ListasEnlazadas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/ColeccionesTreeSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Contactos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Directorio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Directorio2NoNatural.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Personas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Productos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Provincias.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Supermercado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones7Maps/Personas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcolecciones7Maps/UsoMapa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcuentaCorriente/Banco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXcuentaCorriente/CuentaCorriente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXdebugger/ParaDepurar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXdesafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXempresaEmpleados/Alumnos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXempresaEmpleados/Empleados.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXempresaEmpleados/Jefes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXempresaEmpleados/ParaJefes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXempresaEmpleados/Persona.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXempresaEmpleados/UsoEmpleados01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXempresaEmpleados/UsoEmpleados02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXempresaEmpleados/UsoEmpleados03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeFoco/EventoDeFoco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeFoco/MarcoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeFoco/Panel_Marco_Foco$EventosDeFoco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeFoco/Panel_Marco_Foco.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeRaton01/EventoVentana01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeRaton01/EventosDeRaton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeRaton01/MarcoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeRaton02/EventoVentana01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeRaton02/EventosDeRaton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeRaton02/MarcoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTeclado01/EventoVentana01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTeclado01/EventosDeTeclado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTeclado01/MarcoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTeclado02/EventoVentana01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTeclado02/EventosDeTeclado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTeclado02/MarcoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTecladoEnClases/MarcoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTecladoEnClases/Paneles$EventosDeMouse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTecladoEnClases/Paneles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeTecladoEnClases/Princiap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeVentana01/EventoVentana01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeVentana01/EventosDeVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeVentana01/MarcoEventoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeVentanaEnClases/EventoVentana01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeVentanaEnClases/EventosDeVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXeventosDeVentanaEnClases/MarcoEventoVentana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXhilosEnClases/Numeros.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXhilosEnClases/UsoHilos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica01/PrimerPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica01/PrimeraJFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica01/Ventanas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica02/SegundoJFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica02/Ventanas$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica02/Ventanas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica03/JFramePrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica03/Paneles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica03/VentanaPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica04DibujarFormas/AplicacionPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica04DibujarFormas/Paneles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica04DibujarFormas/VentanasPrincipales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica05Color/AplicacionPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica05Color/Paneles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica05Color/VentanasPrincipales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica05Fuente/AplicacionPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica05Fuente/Paneles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica05Fuente/VentanasPrincipales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica06Imagenes/AplicacionPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica06Imagenes/PanelImagen.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica06Imagenes/VentanasPrincipales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica07Imagenes/AplicacionPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica07Imagenes/Panel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica07Imagenes/VentanasPrincipales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica08Eventos/AplicacionPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica08Eventos/PanelesConBotones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica08Eventos/VentanasPrincipales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica09Eventos/AplicacionPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica09Eventos/PanelesConBotones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica09Eventos/VentanasPrincipales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica10EventosVentana/AplicacionPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica10EventosVentana/PanelesCambioOyente$ColorDeFondo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica10EventosVentana/PanelesCambioOyente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica10EventosVentana/VentanasPrincipales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesFuentesDeEventos/MultiplesFuentesDeEventos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesFuentesDeEventos/Paneles$EventoModificarColor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesFuentesDeEventos/Paneles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesFuentesDeEventos/VentanaPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventos/FrameNuevo$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventos/FrameNuevo$CerrarVentanas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventos/FrameNuevo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventos/FramePrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventos/MultiplesOyentesDeEventos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventos/PanelPrincipal$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventos/PanelPrincipal$CreadorDeVentanas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventos/PanelPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventosEnClase/FrameNuevo$CerradorDeVentanas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventosEnClase/FrameNuevo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventosEnClase/FramePrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventosEnClase/PanelPrincipal$CreadorDeVentnas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventosEnClase/PanelPrincipal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteXXmultiplesOyentesDeEventosEnClase/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYPracticoNro01/Ejercicio01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro02/ejercicio01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro02/ejercicio02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro03/ejercicio01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro03/ejercicio01Bonus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro03/ejercicio02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro03/ejercicio03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro03/ejercicio03Bonus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro03/ejercicio04.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro03/ejercicio05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro04/CuentaCorriente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro04/UsoCuenta.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro06/Passwords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro06/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro07/Ejercicio01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro07/Ejercicio02.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro07/Ejercicio03.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro07/FueraDeRango.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro08/Coche.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro08/Moto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro08/Principal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro08/Vehiculo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro09/ejercicio01/Complejos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro09/ejercicio01/Naturales.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro09/ejercicio01/Numeros.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro09/ejercicio01/ParaNumeros.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteYtrabajoPracticoNro09/ejercicio02/Princiapal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ01ExamenFinalConcesionarias/Auto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ01ExamenFinalConcesionarias/Concesionario.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ01ExamenFinalConcesionarias/Edificio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ01ExamenFinalConcesionarias/ParaPersona.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ01ExamenFinalConcesionarias/Vendedor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ01ExamenFinalConcesionarias/inicio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ02ExamenFinalCine/Acomodadores.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ02ExamenFinalCine/Cine.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ02ExamenFinalCine/Empleados.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ02ExamenFinalCine/Espectadores.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ02ExamenFinalCine/ParaAcomodadores.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ02ExamenFinalCine/Personas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/parteZ02ExamenFinalCine/Salas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA01Introduccion/Ej02HolaMundo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA01Introduccion/Ej03DeclaracionDeVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA01Introduccion/Ej04DeclaracionDeVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA01Introduccion/Ej05TratamientoDeStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA01Introduccion/Ej06ConcatenacionDeStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA01Introduccion/Ej07OperacionesMatematicas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA01Introduccion/ej01HolaMundo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA02EntradaSalida/Ej01EntradaScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA02EntradaSalida/Ej02EntradaTextoYNumero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA02EntradaSalida/Ej03EntradaSalidaNumeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA02EntradaSalida/Ej04EntradaSalidaConJOptionPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA02EntradaSalida/Ej05EntradaTextoYNumeroVariante2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA03EstructurasDeDecision/ej01OperadorTernario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA03EstructurasDeDecision/ej02CondicionalIF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA03EstructurasDeDecision/ej03IfElse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA03EstructurasDeDecision/ej04ifAnidado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA03EstructurasDeDecision/ej05CondicionalSwitch1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA04EstructurasIterativas/ej01BucleFor1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA04EstructurasIterativas/ej02BucleFor2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA04EstructurasIterativas/ej03BucleWhile1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA04EstructurasIterativas/ej04BucleForAnidado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA04EstructurasIterativas/ej05BucleDoWhile1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA04EstructurasIterativas/ej06ForEach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteA05Arreglos/arraysSimples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB01POO/ej01Vehiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB02ClaseAbstracta01/Circulos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB02ClaseAbstracta01/FGeometricas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB02ClaseAbstracta01/Rectangulos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB02ClaseAbstracta01/principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB02ClaseAbstracta02/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB02ClaseAbstracta02/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB02ClaseAbstracta02/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB02ClaseAbstracta02/Profesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB03Polimorfismo/Polimorfismo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB04PrincipioDeSustitucion/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteB05CastingDeObjetos/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteC01Interfaces/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteC02InterfaceConActionListener/Ptincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones01RuntimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones02RuntimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones03RuntimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones04IOExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones05Throw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones06ThrowObligatorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones07Throws.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones08ExcepcionesPropias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones09CapturarVariasExcepciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones10Finally.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteD01Excepciones/imagen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglos/ArraysesInicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglos/tp2Ejercicio01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglos/tp2Ejercicio02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglosMultidimensionales/ArregloBidimensional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglosMultidimensionales/recorrerConForEach.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglosMultidimensionales/rellenarAregloBisConMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglosMultidimensionales/rellenarArregloConMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglosOrdenamiento/burbuja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXArreglosOrdenamiento/conSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXColeccionesConIteradores/ColeccionesConIteradores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXColeccionesConIteradores/Personas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXColeccionesConIteradores/operacionesConPersonas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXInterfaceGraficaEnClases/PanelEnClase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXInterfaceGraficaEnClases/PrimerVentanaEnClase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXInterfaceGraficaEnClases/VentanasEnClase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConBorderLayout/MarcoConLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConBorderLayout/PanelConLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConBorderLayout/UsoLayouts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConFlowLayouts/MarcoConLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConFlowLayouts/PanelConLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConFlowLayouts/UsoLayouts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConGridLayout/MarcoConLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConGridLayout/PanelConLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLayoutsConGridLayout/UsoLayouts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLosHilosOThreads/Contador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXLosHilosOThreads/UsoThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXSerializacion/Escritura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXSerializacion/Lectura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXSerializacion/Personas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcalculadora/PanelBotones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcalculadora/PanelDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcalculadora/PanelPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcalculadora/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcalculadora/VentanaPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcambiosDeEstado/EventoVentana01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcambiosDeEstado/EventosDeVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcambiosDeEstado/MarcoEventoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXclasesAdaptadoras/EventoVentana01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXclasesAdaptadoras/EventosDeVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXclasesAdaptadoras/MarcoEventoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones1Colections/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones1Colections/Clientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones2EqualsYhashCode/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones2EqualsYhashCode/Clientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones3EqualsYhashCode/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones3EqualsYhashCode/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones4Iterator/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones4Iterator/Clientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones5LinkedList/BuscarYEliminar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones5LinkedList/BuscarYEliminar2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones5LinkedList/Ejemplo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones5LinkedList/ListasEnlazadas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones6TreeSet1/ColeccionesTreeSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones6TreeSet1/Directorio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones6TreeSet1/Directorio2NoNatural.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones6TreeSet1/Provincias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones6TreeSet1/Supermercado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcolecciones7Maps/UsoMapa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcuentaCorriente/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXcuentaCorriente/CuentaCorriente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXdebugger/ParaDepurar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXdesafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXempresaEmpleados/Alumnos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXempresaEmpleados/Empleados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXempresaEmpleados/Jefes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXempresaEmpleados/ParaJefes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXempresaEmpleados/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXempresaEmpleados/UsoEmpleados01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXempresaEmpleados/UsoEmpleados02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXempresaEmpleados/UsoEmpleados03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeFoco/EventoDeFoco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeFoco/MarcoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeFoco/Panel_Marco_Foco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeRaton01/EventoVentana01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeRaton01/EventosDeRaton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeRaton01/MarcoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeRaton02/EventoVentana01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeRaton02/EventosDeRaton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeRaton02/MarcoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeTeclado01/EventoVentana01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeTeclado01/EventosDeTeclado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeTeclado01/MarcoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeTeclado02/EventoVentana01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeTeclado02/EventosDeTeclado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeTeclado02/MarcoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeTecladoEnClases/Princiap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeVentana01/EventoVentana01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeVentana01/EventosDeVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeVentana01/MarcoEventoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeVentanaEnClases/EventoVentana01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeVentanaEnClases/EventosDeVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXeventosDeVentanaEnClases/MarcoEventoVentana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXhilosEnClases/Numeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXhilosEnClases/UsoHilos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica01/PrimerPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica01/PrimeraJFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica01/Ventanas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica02/SegundoJFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica02/Ventanas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica03/JFramePrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica03/Paneles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica03/VentanaPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica04DibujarFormas/AplicacionPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica04DibujarFormas/Paneles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica04DibujarFormas/VentanasPrincipales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica05Color/AplicacionPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica05Color/Paneles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica05Color/VentanasPrincipales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica05Fuente/AplicacionPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica05Fuente/Paneles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica05Fuente/VentanasPrincipales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica06Imagenes/AplicacionPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica06Imagenes/PanelImagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica06Imagenes/VentanasPrincipales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica07Imagenes/AplicacionPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica07Imagenes/Panel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica07Imagenes/VentanasPrincipales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica08Eventos/AplicacionPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica08Eventos/PanelesConBotones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica08Eventos/VentanasPrincipales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica09Eventos/AplicacionPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica09Eventos/PanelesConBotones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica09Eventos/VentanasPrincipales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica10EventosVentana/AplicacionPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica10EventosVentana/PanelesCambioOyente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica10EventosVentana/VentanasPrincipales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesFuentesDeEventos/MultiplesFuentesDeEventos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesOyentesDeEventos/FrameNuevo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesOyentesDeEventos/FramePrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesOyentesDeEventos/MultiplesOyentesDeEventos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesOyentesDeEventos/PanelPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesOyentesDeEventosEnClase/FrameNuevo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesOyentesDeEventosEnClase/FramePrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesOyentesDeEventosEnClase/PanelPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteXXmultiplesOyentesDeEventosEnClase/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYPracticoNro01/Ejercicio01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro02/ejercicio01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro02/ejercicio02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro03/ejercicio01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro03/ejercicio01Bonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro03/ejercicio02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro03/ejercicio03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro03/ejercicio03Bonus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro03/ejercicio04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro03/ejercicio05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro04/CuentaCorriente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro04/UsoCuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro06/Passwords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro06/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro07/Ejercicio01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro07/Ejercicio02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro07/Ejercicio03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro08/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro08/Moto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro08/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro08/Vehiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro09/ejercicio01/Complejos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro09/ejercicio01/Naturales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro09/ejercicio01/Numeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro09/ejercicio01/ParaNumeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteYtrabajoPracticoNro09/ejercicio02/Princiapal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01ExamenFinalConcesionarias/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01ExamenFinalConcesionarias/Concesionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01ExamenFinalConcesionarias/Edificio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01ExamenFinalConcesionarias/ParaPersona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01ExamenFinalConcesionarias/Vendedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01ExamenFinalConcesionarias/inicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ02ExamenFinalCine/Acomodadores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ02ExamenFinalCine/Cine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ02ExamenFinalCine/Empleados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ02ExamenFinalCine/Espectadores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ02ExamenFinalCine/ParaAcomodadores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ02ExamenFinalCine/Personas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ02ExamenFinalCine/Salas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/clasesAbstractas/Circulos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/clasesAbstractas/FGeometricas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/clasesAbstractas/Rectangulos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/clasesAbstractas/principal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/desafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/desafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clasesAbstractas/Circulos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parte09ClaseAbstracta01/Circulos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clasesAbstractas/FGeometricas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parte09ClaseAbstracta01/FGeometricas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clasesAbstractas/Rectangulos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parte09ClaseAbstracta01/Rectangulos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clasesAbstractas/principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parte09ClaseAbstracta01/principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arreglos/ArraysesInicio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arreglos/tp2Ejercicio01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Arreglos/tp2Ejercicio02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/ArregloBidimensional.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/recorrerConForEach.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/rellenarAregloBisConMath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosMultidimensionales/rellenarArregloConMath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosOrdenamiento/burbuja.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ArreglosOrdenamiento/conSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ColeccionesConIteradores/ColeccionesConIteradores.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ColeccionesConIteradores/Personas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/ColeccionesConIteradores/operacionesConPersonas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/InterfaceGraficaEnClases/PanelEnClase$ColorDeFondo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/InterfaceGraficaEnClases/PanelEnClase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/InterfaceGraficaEnClases/PrimerVentanaEnClase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/InterfaceGraficaEnClases/VentanasEnClase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/InterfaceGraficaEnClases/hulk.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteXXInterfaceGraficaEnClases/hulk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConBorderLayout/MarcoConLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConBorderLayout/PanelConLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConBorderLayout/UsoLayouts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConFlowLayouts/MarcoConLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConFlowLayouts/PanelConLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConFlowLayouts/UsoLayouts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConGridLayout/MarcoConLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConGridLayout/PanelConLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LayoutsConGridLayout/UsoLayouts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LosHilosOThreads/Contador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/LosHilosOThreads/UsoThreads.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/calculadora/PanelBotones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/calculadora/PanelDisplay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/calculadora/PanelPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/calculadora/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/calculadora/VentanaPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cambiosDeEstado/EventoVentana01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cambiosDeEstado/EventosDeVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cambiosDeEstado/MarcoEventoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/clasesAdaptadoras/EventoVentana01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/clasesAdaptadoras/EventosDeVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/clasesAdaptadoras/MarcoEventoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones1Colections/Banco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones1Colections/Clientes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones2EqualsYhashCode/Banco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones2EqualsYhashCode/Clientes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones3EqualsYhashCode/Banco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones3EqualsYhashCode/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones4Iterator/Banco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones4Iterator/Clientes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones5LinkedList/BuscarYEliminar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones5LinkedList/BuscarYEliminar2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones5LinkedList/Ejemplo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones5LinkedList/ListasEnlazadas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones6TreeSet1/ColeccionesTreeSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones6TreeSet1/Contactos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones6TreeSet1/Directorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones6TreeSet1/Directorio2NoNatural.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones6TreeSet1/Personas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones6TreeSet1/Productos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones6TreeSet1/Provincias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones6TreeSet1/Supermercado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones7Maps/Personas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/colecciones7Maps/UsoMapa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cuentaCorriente/Banco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/cuentaCorriente/CuentaCorriente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/debugger/ParaDepurar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/desafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/empresaEmpleados/Alumnos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/empresaEmpleados/Empleados.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/empresaEmpleados/Jefes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/empresaEmpleados/ParaJefes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/empresaEmpleados/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/empresaEmpleados/UsoEmpleados01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/empresaEmpleados/UsoEmpleados02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/empresaEmpleados/UsoEmpleados03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeFoco/EventoDeFoco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeFoco/MarcoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeFoco/Panel_Marco_Foco$EventosDeFoco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeFoco/Panel_Marco_Foco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeRaton01/EventoVentana01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeRaton01/EventosDeRaton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeRaton01/MarcoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeRaton02/EventoVentana01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeRaton02/EventosDeRaton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeRaton02/MarcoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTeclado01/EventoVentana01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTeclado01/EventosDeTeclado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTeclado01/MarcoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTeclado02/EventoVentana01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTeclado02/EventosDeTeclado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTeclado02/MarcoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTecladoEnClases/MarcoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTecladoEnClases/Paneles$EventosDeMouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTecladoEnClases/Paneles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeTecladoEnClases/Princiap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeVentana01/EventoVentana01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeVentana01/EventosDeVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeVentana01/MarcoEventoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeVentanaEnClases/EventoVentana01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeVentanaEnClases/EventosDeVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eventosDeVentanaEnClases/MarcoEventoVentana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/EdadNegativa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/aRuneTimeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/bIOException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/cRuneTimeAndIOExcepion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/dThrows.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/dThrowsCorregido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/eThrow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/fExcepcionesPropias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/gVariasExcepciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/hfinally.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/excepciones/imagen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/final2019Concesionarias/Auto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/final2019Concesionarias/Concesionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/final2019Concesionarias/Edificio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/final2019Concesionarias/ParaPersona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/final2019Concesionarias/Vendedor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/final2019Concesionarias/inicio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/hilosEnClases/Numeros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/hilosEnClases/UsoHilos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica01/PrimerPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica01/PrimeraJFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica01/Ventanas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica02/SegundoJFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica02/Ventanas$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica02/Ventanas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica03/JFramePrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica03/Paneles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica03/VentanaPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica04DibujarFormas/AplicacionPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica04DibujarFormas/Paneles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica04DibujarFormas/VentanasPrincipales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica05Color/AplicacionPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica05Color/Paneles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica05Color/VentanasPrincipales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica05Fuente/AplicacionPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica05Fuente/Paneles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica05Fuente/VentanasPrincipales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica06Imagenes/AplicacionPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica06Imagenes/PanelImagen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica06Imagenes/VentanasPrincipales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica06Imagenes/capitan.png" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica06Imagenes/capitan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica07Imagenes/AplicacionPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica07Imagenes/Panel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica07Imagenes/VentanasPrincipales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica07Imagenes/deadpool.gif" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteXXinterfaceGrafica07Imagenes/deadpool.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica08Eventos/AplicacionPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica08Eventos/PanelesConBotones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica08Eventos/VentanasPrincipales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica09Eventos/AplicacionPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica09Eventos/PanelesConBotones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica09Eventos/VentanasPrincipales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica10EventosVentana/AplicacionPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica10EventosVentana/PanelesCambioOyente$ColorDeFondo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica10EventosVentana/PanelesCambioOyente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/interfaceGrafica10EventosVentana/VentanasPrincipales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesFuentesDeEventos/MultiplesFuentesDeEventos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesFuentesDeEventos/Paneles$EventoModificarColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesFuentesDeEventos/Paneles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesFuentesDeEventos/VentanaPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventos/FrameNuevo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventos/FrameNuevo$CerrarVentanas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventos/FrameNuevo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventos/FramePrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventos/MultiplesOyentesDeEventos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventos/PanelPrincipal$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventos/PanelPrincipal$CreadorDeVentanas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventos/PanelPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventosEnClase/FrameNuevo$CerradorDeVentanas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventosEnClase/FrameNuevo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventosEnClase/FramePrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventosEnClase/PanelPrincipal$CreadorDeVentnas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventosEnClase/PanelPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/multiplesOyentesDeEventosEnClase/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte01Introduccion/Ej02HolaMundo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte01Introduccion/Ej03DeclaracionDeVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte01Introduccion/Ej04DeclaracionDeVariables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte01Introduccion/Ej05TratamientoDeStrings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte01Introduccion/Ej06ConcatenacionDeStrings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte01Introduccion/Ej07OperacionesMatematicas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte01Introduccion/ej01HolaMundo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte02EntradaSalida/Ej01EntradaScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte02EntradaSalida/Ej02EntradaTextoYNumero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte02EntradaSalida/Ej03EntradaSalidaNumeros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte02EntradaSalida/Ej04EntradaSalidaConJOptionPane.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte02EntradaSalida/Ej05EntradaTextoYNumeroVariante2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte03EstructurasDeDecision/ej01OperadorTernario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte03EstructurasDeDecision/ej02CondicionalIF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte03EstructurasDeDecision/ej03IfElse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte03EstructurasDeDecision/ej04ifAnidado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte03EstructurasDeDecision/ej05CondicionalSwitch1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte04EstructurasIterativas/ej01BucleFor1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte04EstructurasIterativas/ej02BucleFor2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte04EstructurasIterativas/ej03BucleWhile1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte04EstructurasIterativas/ej04BucleForAnidado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte04EstructurasIterativas/ej05BucleDoWhile1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte04EstructurasIterativas/ej06ForEach.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte05Arreglos/arraysSimples.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte08POO/Concesionaria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte08POO/Moto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte08POO/Vehiculo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte08POO/ej01Vehiculo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte09ClaseAbstracta01/Circulos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte09ClaseAbstracta01/FGeometricas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte09ClaseAbstracta01/Rectangulos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte09ClaseAbstracta01/principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte09ClaseAbstracta02/Estudiante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte09ClaseAbstracta02/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte09ClaseAbstracta02/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parte09ClaseAbstracta02/Profesor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/quienSeLlevaLaTablet/DirectorioTabler.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/quienSeLlevaLaTablet/DirectorioTabler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/serializacion/Escritura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/serializacion/Lectura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/serializacion/Personas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoFinalIntegradorNro01/Acomodadores.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoFinalIntegradorNro01/Cine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoFinalIntegradorNro01/Empleados.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoFinalIntegradorNro01/Espectadores.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoFinalIntegradorNro01/ParaAcomodadores.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoFinalIntegradorNro01/Personas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoFinalIntegradorNro01/Salas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro01/Ejercicio01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro02/ejercicio01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro02/ejercicio02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro03/ejercicio01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro03/ejercicio01Bonus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro03/ejercicio02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro03/ejercicio03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro03/ejercicio03Bonus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro03/ejercicio04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro03/ejercicio05.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro04/CuentaCorriente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro04/UsoCuenta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro06/Passwords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro06/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro07/Ejercicio01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro07/Ejercicio02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro07/Ejercicio03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro07/FueraDeRango.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro08/Coche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro08/Moto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro08/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro08/Vehiculo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro09/ejercicio01/Complejos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro09/ejercicio01/Naturales.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro09/ejercicio01/Numeros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro09/ejercicio01/ParaNumeros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/trabajoPracticoNro09/ejercicio02/Princiapal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Arreglos/ArraysesInicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Arreglos/tp2Ejercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Arreglos/tp2Ejercicio02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArreglosMultidimensionales/ArregloBidimensional.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArreglosMultidimensionales/recorrerConForEach.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArreglosMultidimensionales/rellenarAregloBisConMath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArreglosMultidimensionales/rellenarArregloConMath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArreglosOrdenamiento/burbuja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArreglosOrdenamiento/conSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ColeccionesConIteradores/ColeccionesConIteradores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ColeccionesConIteradores/Personas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ColeccionesConIteradores/operacionesConPersonas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InterfaceGraficaEnClases/PanelEnClase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InterfaceGraficaEnClases/PrimerVentanaEnClase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InterfaceGraficaEnClases/VentanasEnClase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InterfaceGraficaEnClases/hulk.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteXXInterfaceGraficaEnClases/hulk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConBorderLayout/MarcoConLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConBorderLayout/PanelConLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConBorderLayout/UsoLayouts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConFlowLayouts/MarcoConLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConFlowLayouts/PanelConLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConFlowLayouts/UsoLayouts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConGridLayout/MarcoConLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConGridLayout/PanelConLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutsConGridLayout/UsoLayouts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LosHilosOThreads/Contador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LosHilosOThreads/UsoThreads.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/PanelBotones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/PanelDisplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/PanelPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculadora/VentanaPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cambiosDeEstado/EventoVentana01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cambiosDeEstado/EventosDeVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cambiosDeEstado/MarcoEventoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clasesAdaptadoras/EventoVentana01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clasesAdaptadoras/EventosDeVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clasesAdaptadoras/MarcoEventoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones1Colections/Banco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones1Colections/Clientes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones2EqualsYhashCode/Banco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones2EqualsYhashCode/Clientes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones3EqualsYhashCode/Banco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones3EqualsYhashCode/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones4Iterator/Banco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones4Iterator/Clientes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones5LinkedList/BuscarYEliminar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones5LinkedList/BuscarYEliminar2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones5LinkedList/Ejemplo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones5LinkedList/ListasEnlazadas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones6TreeSet1/ColeccionesTreeSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones6TreeSet1/Directorio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones6TreeSet1/Directorio2NoNatural.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones6TreeSet1/Provincias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones6TreeSet1/Supermercado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/colecciones7Maps/UsoMapa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cuentaCorriente/Banco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cuentaCorriente/CuentaCorriente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/debugger/ParaDepurar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/desafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresaEmpleados/Alumnos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresaEmpleados/Empleados.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresaEmpleados/Jefes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresaEmpleados/ParaJefes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresaEmpleados/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresaEmpleados/UsoEmpleados01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresaEmpleados/UsoEmpleados02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresaEmpleados/UsoEmpleados03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeFoco/EventoDeFoco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeFoco/MarcoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeFoco/Panel_Marco_Foco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeRaton01/EventoVentana01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeRaton01/EventosDeRaton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeRaton01/MarcoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeRaton02/EventoVentana01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeRaton02/EventosDeRaton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeRaton02/MarcoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeTeclado01/EventoVentana01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeTeclado01/EventosDeTeclado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeTeclado01/MarcoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeTeclado02/EventoVentana01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeTeclado02/EventosDeTeclado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeTeclado02/MarcoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeTecladoEnClases/Princiap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeVentana01/EventoVentana01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeVentana01/EventosDeVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeVentana01/MarcoEventoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeVentanaEnClases/EventoVentana01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeVentanaEnClases/EventosDeVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eventosDeVentanaEnClases/MarcoEventoVentana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/aRuneTimeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/bIOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/cRuneTimeAndIOExcepion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/dThrows.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/dThrowsCorregido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/eThrow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/fExcepcionesPropias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/gVariasExcepciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/hfinally.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excepciones/imagen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final2019Concesionarias/Auto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final2019Concesionarias/Concesionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final2019Concesionarias/Edificio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final2019Concesionarias/ParaPersona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final2019Concesionarias/Vendedor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/final2019Concesionarias/inicio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hilosEnClases/Numeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hilosEnClases/UsoHilos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica01/PrimerPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica01/PrimeraJFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica01/Ventanas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica02/SegundoJFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica02/Ventanas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica03/JFramePrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica03/Paneles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica03/VentanaPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica04DibujarFormas/AplicacionPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica04DibujarFormas/Paneles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica04DibujarFormas/VentanasPrincipales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica05Color/AplicacionPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica05Color/Paneles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica05Color/VentanasPrincipales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica05Fuente/AplicacionPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica05Fuente/Paneles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica05Fuente/VentanasPrincipales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica06Imagenes/AplicacionPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica06Imagenes/PanelImagen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica06Imagenes/VentanasPrincipales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica06Imagenes/capitan.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica06Imagenes/capitan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica07Imagenes/AplicacionPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica07Imagenes/Panel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica07Imagenes/VentanasPrincipales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica07Imagenes/deadpool.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteXXinterfaceGrafica07Imagenes/deadpool.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica08Eventos/AplicacionPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica08Eventos/PanelesConBotones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica08Eventos/VentanasPrincipales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica09Eventos/AplicacionPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica09Eventos/PanelesConBotones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica09Eventos/VentanasPrincipales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica10EventosVentana/AplicacionPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica10EventosVentana/PanelesCambioOyente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaceGrafica10EventosVentana/VentanasPrincipales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesFuentesDeEventos/MultiplesFuentesDeEventos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesOyentesDeEventos/FrameNuevo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesOyentesDeEventos/FramePrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesOyentesDeEventos/MultiplesOyentesDeEventos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesOyentesDeEventos/PanelPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesOyentesDeEventosEnClase/FrameNuevo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesOyentesDeEventosEnClase/FramePrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesOyentesDeEventosEnClase/PanelPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multiplesOyentesDeEventosEnClase/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte01Introduccion/Ej02HolaMundo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte01Introduccion/Ej03DeclaracionDeVariables.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte01Introduccion/Ej04DeclaracionDeVariables.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte01Introduccion/Ej05TratamientoDeStrings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte01Introduccion/Ej06ConcatenacionDeStrings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte01Introduccion/Ej07OperacionesMatematicas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte01Introduccion/ej01HolaMundo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte02EntradaSalida/Ej01EntradaScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte02EntradaSalida/Ej02EntradaTextoYNumero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte02EntradaSalida/Ej03EntradaSalidaNumeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte02EntradaSalida/Ej04EntradaSalidaConJOptionPane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte02EntradaSalida/Ej05EntradaTextoYNumeroVariante2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte03EstructurasDeDecision/ej01OperadorTernario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte03EstructurasDeDecision/ej02CondicionalIF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte03EstructurasDeDecision/ej03IfElse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte03EstructurasDeDecision/ej04ifAnidado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte03EstructurasDeDecision/ej05CondicionalSwitch1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte04EstructurasIterativas/ej01BucleFor1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte04EstructurasIterativas/ej02BucleFor2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte04EstructurasIterativas/ej03BucleWhile1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte04EstructurasIterativas/ej04BucleForAnidado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte04EstructurasIterativas/ej05BucleDoWhile1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte04EstructurasIterativas/ej06ForEach.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte05Arreglos/arraysSimples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte08POO/ej01Vehiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte09ClaseAbstracta01/Circulos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte09ClaseAbstracta01/FGeometricas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte09ClaseAbstracta01/Rectangulos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte09ClaseAbstracta01/principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte09ClaseAbstracta02/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte09ClaseAbstracta02/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte09ClaseAbstracta02/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parte09ClaseAbstracta02/Profesor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quienSeLlevaLaTablet/DirectorioTabler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quienSeLlevaLaTablet/DirectorioTabler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serializacion/Escritura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serializacion/Lectura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serializacion/Personas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoFinalIntegradorNro01/Acomodadores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoFinalIntegradorNro01/Cine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoFinalIntegradorNro01/Empleados.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoFinalIntegradorNro01/Espectadores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoFinalIntegradorNro01/ParaAcomodadores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoFinalIntegradorNro01/Personas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoFinalIntegradorNro01/Salas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro01/Ejercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro02/ejercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro02/ejercicio02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro03/ejercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro03/ejercicio01Bonus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro03/ejercicio02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro03/ejercicio03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro03/ejercicio03Bonus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro03/ejercicio04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro03/ejercicio05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro04/CuentaCorriente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro04/UsoCuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro06/Passwords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro06/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro07/Ejercicio01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro07/Ejercicio02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro07/Ejercicio03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro08/Coche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro08/Moto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro08/Principal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro08/Vehiculo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro09/ejercicio01/Complejos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro09/ejercicio01/Naturales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro09/ejercicio01/Numeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro09/ejercicio01/ParaNumeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trabajoPracticoNro09/ejercicio02/Princiapal.java" beforeDir="false" />
     </list>
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,19 +991,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tutorialDeJavaEE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.Principal">
-    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parte09ClaseAbstracta02.Principal" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desarrollo\CursoDeJava\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.excepciones04IOExceptions">
+    <configuration name="excepciones01RuntimeException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteD01Excepciones.excepciones01RuntimeException" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parte09ClaseAbstracta02.*" />
+          <option name="PATTERN" value="parteD01Excepciones.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +1016,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="arraysSimples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parte05Arreglos.arraysSimples" />
+    <configuration name="excepciones03RuntimeException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteD01Excepciones.excepciones03RuntimeException" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parte05Arreglos.*" />
+          <option name="PATTERN" value="parteD01Excepciones.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +1029,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="desafíioUnEjercicioCombinado" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="desafioUnEjercicioCombinado.desafíioUnEjercicioCombinado" />
+    <configuration name="excepciones04IOExceptions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteD01Excepciones.excepciones04IOExceptions" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="desafioUnEjercicioCombinado.*" />
+          <option name="PATTERN" value="parteD01Excepciones.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +1042,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ej01Vehiculo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parte08POO.ej01Vehiculo" />
+    <configuration name="excepciones05Throw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteD01Excepciones.excepciones05Throw" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parte08POO.*" />
+          <option name="PATTERN" value="parteD01Excepciones.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +1055,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ej06ForEach" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parte04EstructurasIterativas.ej06ForEach" />
+    <configuration name="excepciones06ThrowObligatorio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteD01Excepciones.excepciones06ThrowObligatorio" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parte04EstructurasIterativas.*" />
+          <option name="PATTERN" value="parteD01Excepciones.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,11 +1083,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Principal" />
-        <item itemvalue="Application.desafíioUnEjercicioCombinado" />
-        <item itemvalue="Application.ej01Vehiculo" />
-        <item itemvalue="Application.ej06ForEach" />
-        <item itemvalue="Application.arraysSimples" />
+        <item itemvalue="Application.excepciones04IOExceptions" />
+        <item itemvalue="Application.excepciones01RuntimeException" />
+        <item itemvalue="Application.excepciones06ThrowObligatorio" />
+        <item itemvalue="Application.excepciones05Throw" />
+        <item itemvalue="Application.excepciones03RuntimeException" />
       </list>
     </recent_temporary>
   </component>
