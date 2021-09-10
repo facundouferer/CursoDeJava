@@ -18,8 +18,10 @@ class excepciones04IOExceptions {
 			 * Es obligatorio tratar la excepción, ya sea en la cabeza del método con "throws IOException"
 			 * o con un bloque try/catch.
 			 */
+
 			BufferedImage imagen = ImageIO.read(new File("src/parteD01Excepciones/imagen.png"));
 			System.out.println("TODO OK: SI se encuentra el archivo");
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

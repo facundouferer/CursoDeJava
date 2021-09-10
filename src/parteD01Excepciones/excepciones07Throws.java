@@ -13,16 +13,17 @@ class excepciones07Throws {
 
 		try {
 			evaluarNumero(leer.nextInt());
+			System.out.println("TODO OK");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			System.out.println("TODO MAL VIEJA!");
 			e.printStackTrace();
 		}
-		System.out.println("Fin del programa");
+
 	}
 
-	/*
-	 * NO es bueno hacer Exceptions tan genéricas
-	 * si ninguna excepción se adapta a nuestro programa
+	/**
+	 * NO es bueno hacer Exceptions tan genéricas si ninguna excepción se adapta a nuestro programa
 	 * debemos diseñar nuestra propia excepción.
 	 */
 	static void evaluarNumero(int nroEvaluar) throws Exception {

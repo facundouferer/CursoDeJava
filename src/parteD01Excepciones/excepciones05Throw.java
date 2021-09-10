@@ -8,13 +8,8 @@ class excepciones05Throw {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("¿Qué desea hacer?");
-		System.out.println("1  Dividir.");
-		System.out.println("2. Finalizar");
-
 		Scanner leer = new Scanner(System.in);
 
-		if (leer.nextInt() == 1) {
 			try {
 				realizarDivision();
 			} catch (InputMismatchException e) {
@@ -23,9 +18,10 @@ class excepciones05Throw {
 				/**
 				 * e.printStackTrace sirve para que veamos el error
 				 */
+				System.out.println("ERROR!");
 				e.printStackTrace();
 			}
-		}
+
 		System.out.println("Fin del programa");
 	}
 

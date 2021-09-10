@@ -40,6 +40,7 @@ class excepciones08ExcepcionesPropias {
  * lo ideal es utilizar IOException para obligar a cubrir el método de la posible excepción
  * con try-catch
  */
+
 class LongitudDelNumero extends IOException {
 	/**
 	 * las clases con las que se construyen las excepciones deben tener 2

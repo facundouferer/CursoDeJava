@@ -4,29 +4,28 @@ import java.util.Scanner;
 
 class excepciones03RuntimeException {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-		try {
+        try {
 
-			System.out.println("ingresa un número");
-			Scanner leer = new Scanner(System.in);
-			int nroUno = leer.nextInt();
+            System.out.println("ingresa un número");
+            Scanner leer = new Scanner(System.in);
+            int nroUno = leer.nextInt();
 
-			System.out.println("ingresa otro número");
+            System.out.println("ingresa otro número");
 
-			int nroDos = leer.nextInt();
+            int nroDos = leer.nextInt();
 
-			int resultado = nroUno / nroDos;
-			System.out.println(resultado);
-			
-		} catch (Exception ArithmeticException) {
-			// TODO: handle exception
-			System.out.println("algo salió mal");
-		}
-		
-		System.out.println("Fin del programa");
+            System.out.println(nroUno/nroDos);
 
-	}
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("algo salió mal: "+ e.getMessage());
+        }
+
+        System.out.println("Fin del programa");
+
+    }
 
 }
