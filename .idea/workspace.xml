@@ -20,18 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="tipos de datos">
+      <change afterPath="$PROJECT_DIR$/src/parteE01Colecciones/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE01Colecciones/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE02ColeccionesEquals/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE02ColeccionesEquals/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE03ColeccionesHashCode/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE03ColeccionesHashCode/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE04ColeccionesIteradores/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE04ColeccionesIteradores/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE05ColeccionesLinkeList/parte01Personas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE05ColeccionesLinkeList/parte02Provincias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE06ColeccionesConElBancoEvolucionado/Banco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteE06ColeccionesConElBancoEvolucionado/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones03RuntimeException.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones03RuntimeException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones04IOExceptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones04IOExceptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones05Throw.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones05Throw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones06ThrowObligatorio.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones06ThrowObligatorio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones07Throws.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones07Throws.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones03RuntimeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones03RuntimeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones04IOExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones04IOExceptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones05Throw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones05Throw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones06ThrowObligatorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones06ThrowObligatorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones07Throws.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones07Throws.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones08ExcepcionesPropias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones08ExcepcionesPropias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteD01Excepciones/LongitudDelNumero.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteD01Excepciones/LongitudDelNumero.class" afterDir="false" />
     </list>
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,20 +72,33 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desarrollo\CursoDeJava\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.excepciones07Throws">
-    <configuration name="excepciones01RuntimeException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteD01Excepciones.excepciones01RuntimeException" />
+  <component name="RunManager" selected="Application.Banco (1)">
+    <configuration name="Banco (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteE02ColeccionesEquals.Banco" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parteD01Excepciones.excepciones08ExcepcionesPropias" />
+          <option name="PATTERN" value="parteE02ColeccionesEquals.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Banco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteE01Colecciones.Banco" />
+      <module name="CursoDeJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parteE01Colecciones.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,19 +108,6 @@
     </configuration>
     <configuration name="excepciones03RuntimeException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="parteD01Excepciones.excepciones03RuntimeException" />
-      <module name="CursoDeJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parteD01Excepciones.excepciones08ExcepcionesPropias" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="excepciones04IOExceptions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteD01Excepciones.excepciones04IOExceptions" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Banco (1)" />
+        <item itemvalue="Application.Banco" />
         <item itemvalue="Application.excepciones07Throws" />
         <item itemvalue="Application.excepciones05Throw" />
         <item itemvalue="Application.excepciones03RuntimeException" />
-        <item itemvalue="Application.excepciones04IOExceptions" />
-        <item itemvalue="Application.excepciones01RuntimeException" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +212,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tipos de datos" />
     <option name="LAST_COMMIT_MESSAGE" value="tipos de datos" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LabComputacion2$EntradaScanner.ic" NAME="EntradaScanner Coverage Results" MODIFIED="1565313762011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
