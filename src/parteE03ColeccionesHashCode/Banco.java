@@ -10,7 +10,7 @@ class Banco {
 		
 		Cliente cliente1= new Cliente("Ana Juana", "357159", 1000000, 1111111111);
 		Cliente cliente2= new Cliente("Ricardo Ricardo", "987456", 3000, 36987456);
-		/*
+		/**
 		 * el hashCode de cliente3 y cliente1 deberían ser los mismos
 		 * significan que los dos son los mismos objetos
 		 * que apuntan al mismo espacio de memoria
@@ -19,16 +19,15 @@ class Banco {
 		
 		Cliente cliente4= new Cliente("Ricardo García", "987456", 3000, 36987456);
 		
-		/*
-		 * Tirará error porque hay que importar el paquete Set
-		 * y porque no se puede instanciar una interface
+		/**
+		 * Tirará error porque hay que importar el paquete Set y porque no se puede instanciar una interface
 		 * por lo que hay que instanciar la clase que implementa la clase Set:
 		 * HashSet sería la ideal porque permite el acceso aleatorio
 		 */
 		
 		Set<Cliente> clientesDelBanco = new HashSet<Cliente>();//LA COLECCIÓN
 		
-		/*
+		/**
 		 * Con esta estructura agregamos a la colección
 		 * los clientes
 		 */

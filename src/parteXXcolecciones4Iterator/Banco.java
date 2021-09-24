@@ -4,13 +4,9 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import parteXXcolecciones2EqualsYhashCode.Clientes;
-
 public class Banco {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		// TODO Auto-generated method stub
 
 		Clientes cliente01 = new Clientes("Gerardo García", 1, 60000);

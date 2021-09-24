@@ -52,11 +52,8 @@ class Cliente {
 	}
 
 	/*
-	 * método creado con el generador de código
-	 * El hashCode nos permitirá determinar si 
-	 * el objeto agregado a la colección es igual o repetido
-	 * por ello en este tipo de colección HashSet 
-	 * no se permitirá elementos duplicados. 
+	 * método creado con el generador de código el hashCode nos permitirá determinar si el objeto agregado
+	 * a la colección es igual o repetido por ello en este tipo de colección HashSet no se permitirá elementos duplicados.
 	 */
 	@Override
 	public int hashCode() {
@@ -69,20 +66,12 @@ class Cliente {
 	/*
 	 * método creado con el generador de código
 	 */
+
 	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Cliente other = (Cliente) obj;
-		if (dni != other.dni)
-			return false;
-		return true;
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Cliente cliente = (Cliente) o;
+		return dni == cliente.dni;
 	}
-
-	
-
 }
