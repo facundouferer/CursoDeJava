@@ -1,21 +1,35 @@
 package parteYpracticaNro10Facultad;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 class Facultad {
     private String nombre;
-    private LinkedList<Carrera>coleccionCarrera;
+    private LinkedList<Carrera> coleccionCarrera;
 
-    public void agregarCarrera(Carrera carreraNueva){
+    public Facultad(String nombre) {
+        this.nombre = nombre;
+        this.coleccionCarrera = new LinkedList<Carrera>();
+    }
+
+    public void agregarCarrera(Carrera carreraNueva) {
         coleccionCarrera.add(carreraNueva);
     }
 
-    public boolean eliminarCarrera(String nombreCarrera){
+    public void mostrarCarreras() {
+        System.out.println("CARRERAS DE "+this.nombre);
+        for (Carrera carrera : coleccionCarrera) {
+            System.out.println("-" + carrera.toString());
+        }
+    }
+
+    public boolean eliminarCarrera(String nombreCarrera) {
         boolean encontro = false;
-        for(Carrera carrera: coleccionCarrera){
-            if(carrera.getNombre().equals(nombreCarrera)){
+        for (Carrera carrera : coleccionCarrera) {
+            if (carrera.getNombre().equals(nombreCarrera)) {
                 coleccionCarrera.remove(carrera);
                 encontro = true;
+                break;
             }
         }
         return encontro;

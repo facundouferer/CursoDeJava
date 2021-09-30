@@ -1,13 +1,19 @@
 package parteYpracticaNro10Facultad;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 class Carrera {
     private String nombre;
     private LinkedList<Materia> coleccionMaterias;
 
-    public void agregarMateria(Materia materia){
+    public Carrera(String nombre) {
+        this.nombre = nombre;
+        this.coleccionMaterias = new LinkedList<Materia>();
+    }
 
+    public void agregarMateria(Materia materia){
+        coleccionMaterias.add(materia);
     }
 
     public String getNombre() {
@@ -22,4 +28,8 @@ class Carrera {
         return false;
     }
 
+    @Override
+    public String toString() {
+        return nombre;
+    }
 }
