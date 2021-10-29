@@ -1,4 +1,4 @@
-package parteXXSerializacion;
+package parteF02Serializacion;
 
 import java.io.Serializable;
 

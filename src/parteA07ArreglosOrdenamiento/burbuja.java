@@ -1,4 +1,4 @@
-package parteXXArreglosOrdenamiento;
+package parteD03ArreglosOrdenamiento;
 
 public class burbuja {
 

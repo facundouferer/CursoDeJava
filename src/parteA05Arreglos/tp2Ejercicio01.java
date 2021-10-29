@@ -1,4 +1,4 @@
-package parteXXArreglos;
+package parteD02Arreglos;
 
 import java.util.Scanner;
 

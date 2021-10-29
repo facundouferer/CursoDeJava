@@ -1,4 +1,4 @@
-package parteXXArreglosMultidimensionales;
+package parteD02ArreglosMultidimensionales;
 
 public class recorrerConForEach {
 

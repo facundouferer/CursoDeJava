@@ -1,10 +1,9 @@
-package parteXXcolecciones5LinkedList;
+package parteE08colecciones5LinkedList;
 
 import java.util.LinkedList;
 import java.util.ListIterator;
-import java.util.Scanner;
 
-public class BuscarYEliminar {
+public class BuscarYEliminar2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,13 +18,9 @@ public class BuscarYEliminar {
 		System.out.println(provincias);
 
 		ListIterator<String> itProvincias = provincias.listIterator();
-		
-		System.out.println("¿Qué provincia quiere eliminar?");
-		Scanner lectura = new Scanner(System.in);
-		String provinciaEliminar = lectura.nextLine();
 
 		while (itProvincias.hasNext()) {
-			if(itProvincias.next().equals(provinciaEliminar)) {
+			if(itProvincias.next().equals("Chaco")) {
 				itProvincias.remove();
 			}
 		}

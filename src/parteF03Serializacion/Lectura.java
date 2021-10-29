@@ -1,4 +1,4 @@
-package parteXXSerializacion;
+package parteF02Serializacion;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -11,7 +11,7 @@ public class Lectura {
 		
 		try {
 			
-			ObjectInputStream flujoEntrada = new ObjectInputStream(new FileInputStream("/datos/workspace/ObjetosSerializados/miObjetoSerializado.txt"));
+			ObjectInputStream flujoEntrada = new ObjectInputStream(new FileInputStream("miObjetoSerializado.txt"));
 			
 			//debemos crear una variable del mismo objeto que queremos deserializar
 			
