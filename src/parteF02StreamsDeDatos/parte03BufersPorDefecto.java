@@ -1,18 +1,18 @@
-package parteF01Buffers;
+package parteF02StreamsDeDatos;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class parte01BufersPorDefecto {
+class parte01BufersPorDefecto {
     public static void main(String[]args){
 
-        LeerFichero lectura = new LeerFichero();
+        LeerFicheroConBuffer lectura = new LeerFicheroConBuffer();
         lectura.leeDatos();
 
     }
 }
 
-class LeerFichero{
+class LeerFicheroConBuffer{
 
     public void leeDatos() {
 

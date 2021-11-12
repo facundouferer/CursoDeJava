@@ -1,8 +1,8 @@
-package parteF01StreamsDeDatos;
+package parteF02StreamsDeDatos;
 
 import java.io.FileReader;
 
-public class parte01LecturaFichero {
+class parte01LecturaFichero {
 
    public static void main(String[]args) {
 
@@ -12,7 +12,7 @@ public class parte01LecturaFichero {
 
 }
 
-class LeerFichero{
+class LeerFichero {
 
    public void leeDatos() {
       try {

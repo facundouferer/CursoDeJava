@@ -1,4 +1,4 @@
-package parteD02ArreglosMultidimensionales;
+package parteA06ArreglosMultidimensionales;
 
 public class ArregloBidimensional {
 

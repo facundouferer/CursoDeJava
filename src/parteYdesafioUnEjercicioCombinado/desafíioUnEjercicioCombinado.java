@@ -1,4 +1,4 @@
-package parteXXdesafioUnEjercicioCombinado;
+package parteYdesafioUnEjercicioCombinado;
 
 public class desafíioUnEjercicioCombinado {
     public static void main(String[] args) {

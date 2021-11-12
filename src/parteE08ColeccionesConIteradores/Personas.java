@@ -1,4 +1,4 @@
-package parteXXColeccionesConIteradores;
+package parteE08ColeccionesConIteradores;
 
 class Personas {
 	

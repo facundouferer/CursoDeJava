@@ -3,13 +3,13 @@ package parteF02StreamsDeDatos;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-class parte00LeerArchivos {
+class parte04LeerArchivos {
 
     public static void main (String[]args){
 
         try {
 
-            /*Debe estar roreado de un try-catch porque puede dar errores por no encontrarse el archivo.*/
+            /*Debe estar rodeado de un try-catch porque puede dar errores por no encontrarse el archivo.*/
 
             FileInputStream lecturaDeArchivos = new FileInputStream("gato.jpg");
 
@@ -21,7 +21,7 @@ class parte00LeerArchivos {
 
                 if(byteImagenEntrada == -1) final_archivo = true; //El -1 me indica que se llegó al final
 
-                System.out.println(byteImagenEntrada);
+                System.out.println(byteImagenEntrada); /*Me mostrará todos los bits en la consola*/
 
             }
 

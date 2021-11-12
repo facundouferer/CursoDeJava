@@ -3,33 +3,26 @@ package parteF04ArchivosYDirectorios;
 import java.io.File;
 import java.io.IOException;
 
-public class parte03crearUnNuevoDirectorio {
-    public static void main(String[]args){
+class parte04crearUnNuevoDirectorio {
+    public static void main(String[] args) {
 
-        /*
-        al colocar en el final el nombre del directorio
-        que queremos crear y luego mkdir creamos el directorio
+        /*CREAR UNA CARPETA*/
 
-         */
-        File carpeta = new File("C:"+File.separator+
-                "Users"+File.separator+"facundo"+File.separator+"eclipse-workspace"+File.separator+
-                "tutorialDeJavaEE"+File.separator+"carpetaConCosas"+File.separator+"carpetaNueuva");
+        /* al colocar en el final el nombre del directorio que queremos crear y luego mkdir creamos el directorio */
+        File carpeta = new File("D:" + File.separator + "Desarrollo" + File.separator + "CursoDeJava" + File.separator + "Carpeta_Nueva");
 
-        carpeta.mkdir();
+        carpeta.mkdir(); /*crea la carpeta*/
 
-        /*
-        Crear un archivo vacío
-         */
+        /*CREAR UN ARCHIVO VACÍO*/
 
-        File carpeta2 = new File("C:"+File.separator+
-                "Users"+File.separator+"facundo"+File.separator+"eclipse-workspace"+File.separator+
-                "tutorialDeJavaEE"+File.separator+"carpetaConCosas"+File.separator+"carpetaNueuva"+File.separator+"arhivoVacio.txt");
+        File archivo = new File("D:" + File.separator + "Desarrollo" + File.separator + "CursoDeJava" + File.separator + "arhivoVacio.txt");
 
         try {
-            carpeta2.createNewFile();
+            archivo.createNewFile(); /*Crea el archivo nuevo*/
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
+
 }
+

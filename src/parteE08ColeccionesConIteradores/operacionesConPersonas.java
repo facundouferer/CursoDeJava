@@ -1,4 +1,4 @@
-package parteXXColeccionesConIteradores;
+package parteE08ColeccionesConIteradores;
 
 import java.util.Iterator;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package parteE08colecciones5LinkedList;
+package parteE09coleccionesLinkedList;
 
 import java.util.LinkedList;
 import java.util.ListIterator;

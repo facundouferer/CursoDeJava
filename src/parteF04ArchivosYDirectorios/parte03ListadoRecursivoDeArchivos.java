@@ -2,29 +2,24 @@ package parteF04ArchivosYDirectorios;
 
 import java.io.File;
 
-public class parte02mejorandoLaLectura {
+class parte03ListadoRecursivoDeArchivos {
 
-    public static void main(String[]args){
+    public static void main(String[] args) {
 
-        /*
-        Usamos File.separator para colocar el separador compatible con mi sistema operativo
-        y así hacer compatible nuestro programa con otros sistema operativos.
-         */
+        File carpeta = new File("D:" + File.separator + "Desarrollo" + File.separator + "CursoDeJava");
 
-        File carpeta = new File("C:"+File.separator+"Users"+File.separator+"facundo"+File.separator+"eclipse-workspace"+File.separator+"tutorialDeJavaEE"+File.separator+"carpetaConCosas");
-        String [] nombres = carpeta.list();
+        String[] nombres = carpeta.list();
 
-        /*
-        Listar el contenido de la carpeta instanciada
-         */
+        for (int i = 0; i < nombres.length; i++) {
 
-        for(int i = 0; i<nombres.length;i++){
-            System.out.println(nombres[i]);
-            File f = new File(carpeta.getAbsolutePath(),nombres[i]);
-            if(f.isDirectory()){
-                String [] nombresEnSubCarpeta = f.list();
-                for(int j = 0; j<nombresEnSubCarpeta.length;j++){
-                    System.out.println(" -> "+nombres[j]);
+            System.out.println(nombres[i]); /*Escribe el nombre del archivo o directorio*/
+
+            File f = new File(carpeta.getAbsolutePath(), nombres[i]); /*Crea un nuevo objeto para analizar luego*/
+
+            if (f.isDirectory()) { /*si es un directorio ingresa al IF*/
+                String[] nombresEnSubCarpeta = f.list(); /*Toma la lista de archivos del directorio*/
+                for (int j = 0; j < nombresEnSubCarpeta.length; j++) {
+                    System.out.println("\t |__ " + nombresEnSubCarpeta[j]); /*imprime el contenido del directorio. el símbolo \t tabula el texto*/
                 }
             }
 

@@ -1,4 +1,4 @@
-package parteXXcolecciones7Maps;
+package parteE11coleccionesMaps;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -5,7 +5,6 @@ import java.util.Scanner;
 class excepciones03RuntimeException {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         try {
 
@@ -14,13 +13,11 @@ class excepciones03RuntimeException {
             int nroUno = leer.nextInt();
 
             System.out.println("ingresa otro número");
-
             int nroDos = leer.nextInt();
 
             System.out.println(nroUno/nroDos);
 
         } catch (Exception e) {
-            // TODO: handle exception
             System.out.println("algo salió mal: "+ e.getMessage());
         }
 
@@ -29,3 +26,4 @@ class excepciones03RuntimeException {
     }
 
 }
+

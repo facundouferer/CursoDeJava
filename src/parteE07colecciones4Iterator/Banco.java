@@ -1,4 +1,4 @@
-package parteXXcolecciones4Iterator;
+package parteE07colecciones4Iterator;
 
 import java.util.HashSet;
 import java.util.Iterator;

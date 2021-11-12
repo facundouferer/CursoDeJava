@@ -1,4 +1,4 @@
-package parteG01InterfaceGrafica;
+package parteG02InterfaceGraficaCopiarYPegar;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

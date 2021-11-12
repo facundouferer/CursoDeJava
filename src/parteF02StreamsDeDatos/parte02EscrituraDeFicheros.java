@@ -1,8 +1,8 @@
-package parteF01StreamsDeDatos;
+package parteF02StreamsDeDatos;
 
 import java.io.FileWriter;
 
-public class parte02EscrituraDeFicheros {
+class parte02EscrituraDeFicheros {
 
     public static void main(String[]args){
 

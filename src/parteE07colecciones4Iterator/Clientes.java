@@ -1,4 +1,4 @@
-package parteXXcolecciones4Iterator;
+package parteE07colecciones4Iterator;
 
 public class Clientes {
 	

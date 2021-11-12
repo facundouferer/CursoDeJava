@@ -1,41 +1,23 @@
-package parteF03ArchivosYDirectorios;
+package parteF04ArchivosYDirectorios;
 
 import java.io.File;
 
-public class parte01AccesoRutas {
-    public static void main(String[]args){
+class parte01AccesoRutas {
+    public static void main(String[] args) {
 
-        //Usamos el constructor que nos pide el patch
-        File archivo = new File("gatito.png");
 
-        System.out.println("Ruta: "+archivo.getAbsoluteFile()); //nos muestra la rura absoluta del archivo pero según el proyecto
+        File archivo = new File("gatito.png"); /*Usamos el constructor que nos pide el patch*/
 
-        System.out.println("Ruta: "+archivo.exists());// ver si un archivo existe y si no existe devuelve false.
+        System.out.println("Ruta: " + archivo.getAbsoluteFile()); /*nos muestra la ruta absoluta del archivo pero según el proyecto*/
 
-        //Examinar todo lo que hay dentro de un directorio
+        System.out.println("Ruta: " + archivo.exists()); /*ver si un archivo existe y si no existe devuelve false.*/
 
-        File carpeta = new File("D:\\Desarrollo\\CursoDeJava\\src\\parteF02ArchivosYDirectorios\\carpetaConCosas");
-        String [] nombres = carpeta.list();
-
-        // lista todos lo elementos que se enceuntran en la carpeta
-
-        System.out.println("Listado de archivos:");
-
-        for(int i = 0; i<nombres.length;i++){
-
-            System.out.println(nombres[i]);
-
-            //Si queremos ver también los archivos dentro del directorio hijo
-            File f = new File(carpeta.getAbsolutePath(),nombres[i]);
-
-            if(f.isDirectory()){ //analizamos si es un directorio y si lo es lo recorremos
-                String [] nombresEnSubCarpeta = f.list();
-                for(int j = 0; j<nombresEnSubCarpeta.length;j++){
-                    System.out.println(" -> "+nombres[j]);
-                }
-            }
-
+        if(archivo.exists()){
+            System.out.println("Existe");
+        }else{
+            System.out.println("No existe");
         }
+
 
     }
 }

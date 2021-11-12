@@ -1,4 +1,4 @@
-package parteXXcolecciones6TreeSet1;
+package parteE10coleccionesTreeSet1;
 
 import java.util.Comparator;
 import java.util.Scanner;

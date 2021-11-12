@@ -5,13 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class parte04CrearDirectoriosPorUsuario {
+class parte05CrearDirectoriosPorUsuario {
 
-    public static void main(String[]args){
+    public static void main(String[] args) {
 
-        /*
-        Crear un directorios por parte de los usuarios.
-         */
+        /*CREAR UN DIRECTORIO POR PARTE DEL ARCHIVO*/
 
         Scanner lectura = new Scanner(System.in); //crea para leer
 
@@ -19,33 +17,28 @@ public class parte04CrearDirectoriosPorUsuario {
 
         String nombreCarpeta = lectura.nextLine(); //guarda el texto que será el nombre de la carpeta
 
-        File carpeta = new File("C:"+File.separator+
-                "Users"+File.separator+"facundo"+File.separator+"eclipse-workspace"+File.separator+
-                "tutorialDeJavaEE"+File.separator+"carpetaConCosas"+File.separator+nombreCarpeta);
-        carpeta.mkdir();
+        File carpeta = new File("D:" + File.separator + "Desarrollo" + File.separator + "CursoDeJava" + File.separator + nombreCarpeta);
 
-        /*
-        Crear un archivo
-         */
+        carpeta.mkdir(); /*Crea la carpeta*/
+
+        /*CREAR UN ARCHIVO*/
 
         System.out.print("Nombre de la Archivo: "); //informa al usuario que debe hacer
+
         String nombreArchivo = lectura.nextLine(); //guarda el texto que será el nombre de la carpeta
 
-        /*
-        Escribir dentro del archivo
-         */
+        /* Escribir dentro del archivo */
 
         System.out.print("Contenido: "); //informa al usuario que debe hacer
         String frase = lectura.nextLine();
 
         try {
-            FileWriter contenidoDelArchivo = new FileWriter("C:"+File.separator+
-                    "Users"+File.separator+"facundo"+File.separator+"eclipse-workspace"+File.separator+
-                    "tutorialDeJavaEE"+File.separator+"carpetaConCosas"+File.separator+nombreCarpeta+File.separator+nombreArchivo+".txt", true);
+            FileWriter contenidoDelArchivo = new FileWriter("D:" + File.separator + "Desarrollo" + File.separator + "CursoDeJava" + File.separator + nombreCarpeta + File.separator +nombreArchivo + ".txt", true);
 
-            contenidoDelArchivo.write(frase.toString());
+            contenidoDelArchivo.write(frase.toString()); /*Escribe en el archivo el contenido escrito por el usuario*/
 
-            contenidoDelArchivo.close();
+            contenidoDelArchivo.close(); /*cierra el objeto*/
+
         } catch (IOException e) {
             e.printStackTrace();
         }

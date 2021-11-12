@@ -1,4 +1,4 @@
-package parteXXColeccionesConIteradores;
+package parteE08ColeccionesConIteradores;
 
 import java.util.HashSet;
 import java.util.Scanner;

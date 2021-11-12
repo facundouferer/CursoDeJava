@@ -1,4 +1,4 @@
-package parteF02Serializacion;
+package parteF03Serializacion;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
