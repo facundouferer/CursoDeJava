@@ -1,10 +1,8 @@
-package parteYpracticaNro10Facultad;
+package parteZ01Final_2022_02_16;
 
-import java.io.IOException;
+class Profesor extends Persona {
 
-class Profesor extends Persona{
-
-    public Profesor(String nombre, String Apellido, String legajo) {
+    public Profesor(String nombre, String Apellido, int legajo) {
         super.setNombre(nombre);
         super.setApellido(Apellido);
         super.setLegajo(legajo);
@@ -20,9 +18,13 @@ class Profesor extends Persona{
         super.setNombre(nombre);
         super.setApellido(Apellido);
         try{
-            super.setLegajo(legajo);
+            super.setLegajo(Integer.parseInt(legajo));
         }catch (Exception e){
-            System.out.println("ESO NO PARECE SER UN NÚMERO DE LEGAJO");
+            System.out.println("ERROR: Eso no parece ser un número de legajo.");
         }
+
     }
+
+
 }
+

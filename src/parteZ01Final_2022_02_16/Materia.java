@@ -1,4 +1,4 @@
-package parteYpracticaNro10Facultad;
+package parteZ01Final_2022_02_16;
 
 import java.util.LinkedList;
 

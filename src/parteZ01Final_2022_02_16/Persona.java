@@ -1,4 +1,4 @@
-package parteYpracticaNro10Facultad;
+package parteZ01Final_2022_02_16;
 
 abstract class Persona {
     private String nombre;
@@ -13,8 +13,8 @@ abstract class Persona {
         this.apellido = apellido;
     }
 
-    public void setLegajo(String legajo) {
-        this.legajo = Integer.parseInt(legajo);
+    public void setLegajo(int legajo) {
+        this.legajo = legajo    ;
     }
 
     public int getLegajo() {

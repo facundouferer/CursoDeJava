@@ -1,8 +1,8 @@
-package parteYpracticaNro10Facultad;
+package parteZ01Final_2022_02_16;
 
-class Estudiante extends Persona{
+class Estudiante extends Persona {
 
-    public Estudiante(String nombre, String Apellido, String legajo) {
+    public Estudiante(String nombre, String Apellido, int legajo) {
         super.setNombre(nombre);
         super.setApellido(Apellido);
         super.setLegajo(legajo);
@@ -16,6 +16,8 @@ class Estudiante extends Persona{
 
     @Override
     public void modificarDatos(String nombre, String Apellido, String legajo) {
-
+        super.setNombre(nombre);
+        super.setApellido(Apellido);
+        super.setLegajo(Integer.parseInt(legajo));
     }
 }

@@ -20,94 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="tipos de datos">
-      <change afterPath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte02ListarArchivos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteG01InterfaceGrafica/PrimerVentana.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteG01InterfaceGrafica/PrimerVentana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteG01InterfaceGrafica/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteG02InterfaceGraficaCopiarYPegar/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteG02InterfaceGraficaCopiarYPegar/Ventana.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteG02InterfaceGraficaCopiarYPegar/Ventana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Carrera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Facultad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Materia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Profesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/inicio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteA05Arreglos/arraysSimples.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteA05Arreglos/arraysSimples.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones03RuntimeException.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteD01Excepciones/excepciones03RuntimeException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglos/ArraysesInicio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglos/tp2Ejercicio01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglos/tp2Ejercicio02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglosMultidimensionales/ArregloBidimensional.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglosMultidimensionales/recorrerConForEach.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglosMultidimensionales/rellenarAregloBisConMath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglosMultidimensionales/rellenarArregloConMath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglosOrdenamiento/burbuja.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXArreglosOrdenamiento/conSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXColeccionesConIteradores/ColeccionesConIteradores.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXColeccionesConIteradores/Personas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXColeccionesConIteradores/operacionesConPersonas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXSerializacion/Escritura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXSerializacion/Lectura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXSerializacion/Personas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones4Iterator/Banco.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones4Iterator/Clientes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones5LinkedList/BuscarYEliminar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones5LinkedList/BuscarYEliminar2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones5LinkedList/Ejemplo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones5LinkedList/ListasEnlazadas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/ColeccionesTreeSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Contactos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Directorio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Directorio2NoNatural.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Personas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Productos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Provincias.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones6TreeSet1/Supermercado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones7Maps/Personas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXcolecciones7Maps/UsoMapa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteXXdesafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteG01InterfaceGrafica/PrimerVentana.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteG01InterfaceGrafica/PrimerVentana.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Estudiante.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Estudiante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Materia.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Materia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Profesor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Profesor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/inicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/inicio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatito.png" beforeDir="false" afterPath="$PROJECT_DIR$/gatito.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA05Arreglos/ArraysesInicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA05Arreglos/ArraysesInicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA05Arreglos/arraysSimples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA05Arreglos/arraysSimples.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA05Arreglos/tp2Ejercicio01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA05Arreglos/tp2Ejercicio01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA05Arreglos/tp2Ejercicio02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA05Arreglos/tp2Ejercicio02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA06ArreglosMultidimensionales/ArregloBidimensional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA06ArreglosMultidimensionales/ArregloBidimensional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA06ArreglosMultidimensionales/recorrerConForEach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA06ArreglosMultidimensionales/recorrerConForEach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA06ArreglosMultidimensionales/rellenarAregloBisConMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA06ArreglosMultidimensionales/rellenarAregloBisConMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA06ArreglosMultidimensionales/rellenarArregloConMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA06ArreglosMultidimensionales/rellenarArregloConMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA07ArreglosOrdenamiento/burbuja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA07ArreglosOrdenamiento/burbuja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteA07ArreglosOrdenamiento/conSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA07ArreglosOrdenamiento/conSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones03RuntimeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteD01Excepciones/excepciones03RuntimeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE02ColeccionesEquals/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE02ColeccionesEquals/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE07colecciones4Iterator/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE07colecciones4Iterator/Banco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE07colecciones4Iterator/Clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE07colecciones4Iterator/Clientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE08ColeccionesConIteradores/ColeccionesConIteradores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE08ColeccionesConIteradores/ColeccionesConIteradores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE08ColeccionesConIteradores/Personas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE08ColeccionesConIteradores/Personas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE08ColeccionesConIteradores/operacionesConPersonas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE08ColeccionesConIteradores/operacionesConPersonas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE09coleccionesLinkedList/BuscarYEliminar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE09coleccionesLinkedList/BuscarYEliminar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE09coleccionesLinkedList/BuscarYEliminar2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE09coleccionesLinkedList/BuscarYEliminar2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE09coleccionesLinkedList/Ejemplo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE09coleccionesLinkedList/Ejemplo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE09coleccionesLinkedList/ListasEnlazadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE09coleccionesLinkedList/ListasEnlazadas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/ColeccionesTreeSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/ColeccionesTreeSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/Directorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/Directorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/Directorio2NoNatural.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/Directorio2NoNatural.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/Provincias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/Provincias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/Supermercado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE10coleccionesTreeSet1/Supermercado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteE11coleccionesMaps/UsoMapa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteE11coleccionesMaps/UsoMapa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF01StreamsDeDatos/archivo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF01StreamsDeDatos/archivo2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF02Buffers/gato.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte01LecturaFichero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte01LecturaFichero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte02EscrituraDeFicheros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte02EscrituraDeFicheros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte03BufersPorDefecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte03BufersPorDefecto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte04LeerArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte04LeerArchivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte05EscrituraDeArchivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte05EscrituraDeArchivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF03Serializacion/Escritura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF03Serializacion/Escritura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF03Serializacion/Lectura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF03Serializacion/Lectura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF03Serializacion/Personas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF03Serializacion/Personas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte01AccesoRutas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte01AccesoRutas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte02mejorandoLaLectura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte03ListadoRecursivoDeArchivos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte03crearUnNuevoDirectorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte04crearUnNuevoDirectorio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte04CrearDirectoriosPorUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF04ArchivosYDirectorios/parte05CrearDirectoriosPorUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteYdesafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYdesafioUnEjercicioCombinado/desafíioUnEjercicioCombinado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Materia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Materia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Profesor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/inicio.java" afterDir="false" />
     </list>
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +74,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/parteZ01Final_2022_02_16" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -150,10 +82,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\juanf\Devs\CursoDeJava\src\parteZ01Final_2022_02_16" />
+      <recent name="C:\Users\juanf\Devs\CursoDeJava\src" />
       <recent name="D:\Desarrollo\CursoDeJava\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Principal (1)">
+  <component name="RunManager" selected="Application.inicio (1)">
     <configuration name="PrimeraJFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="parteXXinterfaceGrafica01.PrimeraJFrame" />
       <module name="CursoDeJava" />
@@ -193,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="parte01AccesoRutas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteF04ArchivosYDirectorios.parte01AccesoRutas" />
+    <configuration name="inicio (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteZ01Final_2022_02_16.inicio" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parteF04ArchivosYDirectorios.*" />
+          <option name="PATTERN" value="parteZ01Final_2022_02_16.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,12 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="parte05CrearDirectoriosPorUsuario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteF04ArchivosYDirectorios.parte05CrearDirectoriosPorUsuario" />
+    <configuration name="inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteYpracticaNro10Facultad.inicio" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parteF04ArchivosYDirectorios.*" />
+          <option name="PATTERN" value="parteYpracticaNro10Facultad.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -234,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.inicio (1)" />
+        <item itemvalue="Application.inicio" />
         <item itemvalue="Application.Principal (1)" />
         <item itemvalue="Application.Principal" />
         <item itemvalue="Application.PrimeraJFrame" />
-        <item itemvalue="Application.parte01AccesoRutas" />
-        <item itemvalue="Application.parte05CrearDirectoriosPorUsuario" />
       </list>
     </recent_temporary>
   </component>
