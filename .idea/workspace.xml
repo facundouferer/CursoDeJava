@@ -20,26 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="tipos de datos">
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Carrera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Facultad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Materia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/Profesor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_16/inicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/Jefe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/Personal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/interaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteG01InterfaceGrafica/PrimerVentana.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteG01InterfaceGrafica/PrimerVentana.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Estudiante.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Estudiante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Materia.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Materia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Persona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Profesor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/Profesor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/inicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteYpracticaNro10Facultad/inicio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Estudiante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Materia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Materia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/Profesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteYpracticaNro10Facultad/inicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteZ01Final_2022_02_16/Estudiante.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteZ01Final_2022_02_16/Estudiante.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteZ01Final_2022_02_16/Profesor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteZ01Final_2022_02_16/Profesor.class" afterDir="false" />
     </list>
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +52,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1PAJSENnMZ0ZNiBl7ny4iUvGxJt" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -78,7 +79,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -87,20 +88,7 @@
       <recent name="D:\Desarrollo\CursoDeJava\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.inicio (1)">
-    <configuration name="PrimeraJFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteXXinterfaceGrafica01.PrimeraJFrame" />
-      <module name="CursoDeJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parteXXinterfaceGrafica01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.interaccion">
     <configuration name="Principal (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="parteG01InterfaceGrafica.Principal" />
       <module name="CursoDeJava" />
@@ -153,6 +141,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="interaccion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteZ01Final_2022_02_23.interaccion" />
+      <module name="CursoDeJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="parteZ01Final_2022_02_23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tienda" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="POO.tienda" />
       <module name="CursoDeJava" />
@@ -168,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.interaccion" />
         <item itemvalue="Application.inicio (1)" />
         <item itemvalue="Application.inicio" />
         <item itemvalue="Application.Principal (1)" />
         <item itemvalue="Application.Principal" />
-        <item itemvalue="Application.PrimeraJFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +216,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tipos de datos" />
