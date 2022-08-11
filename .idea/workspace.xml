@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="tipos de datos">
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/Jefe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/Personal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_02_23/interaccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteZ01Final_2022_02_16/Estudiante.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteZ01Final_2022_02_16/Estudiante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteZ01Final_2022_02_16/Profesor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteZ01Final_2022_02_16/Profesor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parteA01Introduccion/ej01HolaMundo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteA01Introduccion/ej01HolaMundo.java" afterDir="false" />
     </list>
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="SHOW_DIALOG" value="false" />

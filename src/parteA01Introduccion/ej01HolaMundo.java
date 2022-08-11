@@ -6,7 +6,7 @@ public class ej01HolaMundo {
 
         // método para escribir HOLA MUNDO por consola
 
-        System.out.println("Hola Mundo");
+        System.out.println("Hola Mundo TODO OK");
 
         /*
          * Este es un comentario de varias líneas.
