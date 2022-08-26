@@ -14,9 +14,9 @@ class tp2Ejercicio02 {
 		 */
 		
 				//se muestra en pantalla el mensaje
-				System.out.println("Ingrese los n�meros");
+				System.out.println("Ingrese los numeros");
 				
-				//Se crea la variable que tomar� los ingresos de teclado
+				//Se crea la variable que tomar los ingresos de teclado
 				Scanner entrada = new Scanner(System.in);
 				
 				//array donde se guardaran los ingresos del usuario
@@ -24,7 +24,7 @@ class tp2Ejercicio02 {
 				
 				for(int i=0; i<10; i++) {
 					// bucle va tomando los ingresos de teclado del usuario y los colocar en el arreglo
-					System.out.println(i+") Ingrese el n�mero"+i);
+					System.out.println(i+") Ingrese el numero"+i);
 					numeros[i]=entrada.nextInt();
 				}
 				int pares=0;
