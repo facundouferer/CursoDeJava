@@ -11,11 +11,11 @@ public class Ej01EntradaScanner {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("introduce tu nombre por favor");
+        System.out.println("introduce un entero");
 
-        String nombre = entrada.nextLine(); //captura el siguiente string ingresado por consola
+        Integer numero = entrada.nextInt(); //captura el entero ingresado
 
-        System.out.println("hola " + nombre);
+        System.out.println("numero " + numero);
 
     }
 

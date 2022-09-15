@@ -32,7 +32,7 @@ public class Principal {
          *
          * si una clase ES UN de otra clase, entonces la primra puede ser almacenada
          * en la segunda.
-         * como un profesor es un epleado, entonces un profesor puede ser almacenado
+         * como un profesor ES UN epleado, entonces un profesor puede ser almacenado
          * en empleados.
          */
 
