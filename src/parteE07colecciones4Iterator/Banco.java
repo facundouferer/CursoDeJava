@@ -31,9 +31,7 @@ public class Banco {
 
 		// ELIMINAR UN ELEMENTO DE LA COLECCIÓN
 		while (iterador.hasNext()) {
-			
 			String elementoEliminar = iterador.next().getNombre();
-			
 			if (elementoEliminar.equals("Gerardo García"))
 				iterador.remove();
 		}

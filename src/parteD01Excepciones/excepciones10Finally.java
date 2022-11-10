@@ -25,9 +25,7 @@ class excepciones10Finally {
 	}
 
 	static void evaluarNumero(int nroEvaluar) throws NumeroPequenio {
-
 		if (nroEvaluar < 100) {
-
 			NumeroPequenio miPropiaExcepcion = new NumeroPequenio("numero chico");
 			throw miPropiaExcepcion;
 		}

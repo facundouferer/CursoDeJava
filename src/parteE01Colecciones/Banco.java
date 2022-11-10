@@ -12,7 +12,7 @@ class Banco {
 		Cliente cliente2= new Cliente("Ricardo Ricardo", "987456", 3000);
 		Cliente cliente3= new Cliente("Rita Pelopincho", "252536", 1000000);
 		Cliente cliente4= new Cliente("Juan Perez", "147357", 15000);
-		
+
 		/*
 		 * Tirar error porque hay que importar el paquete Set y porque no se puede instanciar una interface
 		 * por lo que hay que instanciar la clase que implementa la clase Set:

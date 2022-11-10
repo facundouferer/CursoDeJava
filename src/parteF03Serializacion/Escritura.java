@@ -15,21 +15,16 @@ public class Escritura {
 		personas[1]= new Personas("Carlitos Tevez", 12987987);
 		personas[2]= new Personas("Rita Sosa", 31123654);
 		personas[3]= new Personas("Juan De Arco", 78123123);
-		
 		//Creamos el canal para guardar el objeto
 		//utilizamos un try-catch por si no puede escribirse el objeto
 		try {
-			
 			ObjectOutputStream flujoSalida = new ObjectOutputStream(new FileOutputStream("miObjetoSerializado.txt"));
-			
 			// Escribe el objeto en un archivo
 			flujoSalida.writeObject(personas);
-			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		};
-		
 
 	}
 

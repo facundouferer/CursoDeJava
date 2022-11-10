@@ -5,19 +5,15 @@ import java.io.FileWriter;
 class parte02EscrituraDeFicheros {
 
     public static void main(String[]args){
-
         Escritura escribeElArchivo = new Escritura();
         escribeElArchivo.escribir();
-
     }
 
 }
 
 class Escritura{
-
     public void escribir(){
-
-        String texto = "Esto se escribió en el archivo desde el programa. "; /*lo que queremos que se escriba en el archivo.*/
+        String texto = "ESTO FUE ESCRITO Esto se escribió en el archivo desde el programa. "; /*lo que queremos que se escriba en el archivo.*/
 
         try {
             /*FileWrite sólo con el parametro nombre de archivo re-escribe el archivo por completo

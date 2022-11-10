@@ -58,10 +58,7 @@ class Cliente {
 
     @Override
     public boolean equals(Object obj) {
-
-        /*
-         * esto es un castin del objeto obj para que se nos permita la comparación del segund if anidado
-         */
+        //esto es un castin del objeto obj para que se nos permita la comparación del segund if anidado
 
         Cliente other = (Cliente) obj; // casting de objeto
 

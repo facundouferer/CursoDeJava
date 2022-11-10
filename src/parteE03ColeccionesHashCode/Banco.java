@@ -42,7 +42,7 @@ class Banco {
 			System.out.println("NO son iguales");
 			
 		}
-		
+		System.out.println("IMPRESION DEL HASHCODE");
 		System.out.println(cliente3.hashCode());
 		System.out.println(cliente1.hashCode());
 		

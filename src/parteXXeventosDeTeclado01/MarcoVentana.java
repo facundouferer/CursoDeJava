@@ -3,11 +3,13 @@ package parteXXeventosDeTeclado01;
 import javax.swing.JFrame;
 
 class MarcoVentana extends JFrame{
+
 	
 	public MarcoVentana() {
 		
-		setBounds(30, 30, 600, 500);
-		
+		setBounds(60, 60, 600, 500);
+		//put a text title in the JFrame
+		setTitle("Ventana");
 		setVisible(true);
 		
 	}

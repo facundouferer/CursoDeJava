@@ -1,10 +1,8 @@
 package parteG01InterfaceGrafica;
 
 import javax.swing.*;
-
 public class PrimerVentana extends JFrame{
     private JPanel PanelPrincipal;
-
     public PrimerVentana(){
         setSize(200, 200); /** Definie el tamanio de la ventana**/
         setVisible(true); /** Hace visible la ventana **/

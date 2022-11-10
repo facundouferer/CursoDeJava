@@ -1,4 +1,4 @@
-package parteXXeventosDeVentana01;
+package parteG03eventosDeVentana01;
 
 import javax.swing.JFrame;
 
