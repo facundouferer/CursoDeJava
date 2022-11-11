@@ -39,6 +39,7 @@ public class AdminClientes {
         for (Cliente cliente1 : clientes) {
             if (cliente1.getNombre().equals(nombreCliente)) {
                 System.out.println(cliente1.imprimirInformacion());
+                break;
             }
         }
     }

@@ -24,7 +24,7 @@ public class main {
                 System.out.println("5) Salir");
                 System.out.print("Ingrese una opcion: ");
                 opcion = leer.nextInt();
-                leer.nextLine();
+                //leer.nextLine();
                 switch (opcion) {
                     case 1:
                         //add Client

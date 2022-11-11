@@ -4,7 +4,6 @@ public class Activo {
 
     private String nombre;
     private double monto;
-    private int tipo;
 
     public Object getNombre() {
         return nombre;
