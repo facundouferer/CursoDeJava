@@ -20,13 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="tipos de datos">
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Parcial_2_2022_11_17/Administrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Parcial_2_2022_11_17/Archivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Parcial_2_2022_11_17/Contacto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Parcial_2_2022_11_17/Impresion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Parcial_2_2022_11_17/Inicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Parcial_2_2022_11_17/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/parteZ01Parcial_2_2022_12_01/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivo2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arhivoVacio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteF02StreamsDeDatos/Escritura.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteF02StreamsDeDatos/Escritura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteF03Serializacion/Escritura.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteF03Serializacion/Escritura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parteZ01Final_2022_11_09/Activo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteZ01Final_2022_11_09/Activo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/parteZ01Final_2022_11_09/AdminClientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteZ01Final_2022_11_09/AdminClientes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteZ01Final_2022_11_09/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteZ01Final_2022_11_09/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parteZ01Final_2022_11_09/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parteZ01Final_2022_11_09/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteZ01Final_2022_11_09/Activo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_11_09/Activo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteZ01Final_2022_11_09/AdminClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_11_09/AdminClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parteZ01Final_2022_11_09/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteZ01Final_2022_11_09/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miObjetoSerializado.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte02EscrituraDeFicheros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF02StreamsDeDatos/parte02EscrituraDeFicheros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parteF03Serializacion/Escritura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parteF03Serializacion/Escritura.java" afterDir="false" />
     </list>
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +84,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/juanf/dev/CursoDeJava/src/parteYdeParcial01",
+    "last_opened_file_path": "C:/Users/juanf/dev/CursoDeJava",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -91,13 +102,13 @@
       <recent name="parteYdeParcial01" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
-    <configuration name="EventoDeTecladoVentana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteXXeventosDeTeclado03.EventoDeTecladoVentana" />
+  <component name="RunManager" selected="Application.Principal (5)">
+    <configuration name="Principal (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteZ01Parcial_2_2022_12_01.Principal" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parteXXeventosDeTeclado03.*" />
+          <option name="PATTERN" value="parteZ01Parcial_2_2022_12_01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EventoVentana01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteXXeventosDeTeclado02.EventoVentana01" />
+    <configuration name="Principal (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteZ01Parcial_2_2022_12_01.Principal" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parteXXeventosDeTeclado02.*" />
+          <option name="PATTERN" value="parteZ01Parcial_2_2022_12_01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiplesOyentesDeEventos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteXXmultiplesOyentesDeEventos.MultiplesOyentesDeEventos" />
+    <configuration name="Principal (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteZ01Parcial_2_2022_12_01.Principal" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parteXXmultiplesOyentesDeEventos.*" />
+          <option name="PATTERN" value="parteZ01Parcial_2_2022_12_01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsoLayouts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteXXLayoutsConBorderLayout.UsoLayouts" />
+    <configuration name="Principal (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteZ01Parcial_2_2022_12_01.Principal" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parteXXLayoutsConBorderLayout.*" />
+          <option name="PATTERN" value="parteZ01Parcial_2_2022_12_01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="parteZ01Final_2022_11_09.main" />
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="parteZ01Parcial_2_2022_12_01.Principal" />
       <module name="CursoDeJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="parteZ01Final_2022_11_09.*" />
+          <option name="PATTERN" value="parteZ01Parcial_2_2022_12_01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.UsoLayouts" />
-        <item itemvalue="Application.MultiplesOyentesDeEventos" />
-        <item itemvalue="Application.EventoVentana01" />
-        <item itemvalue="Application.EventoDeTecladoVentana" />
+        <item itemvalue="Application.Principal (5)" />
+        <item itemvalue="Application.Principal (4)" />
+        <item itemvalue="Application.Principal" />
+        <item itemvalue="Application.Principal (3)" />
+        <item itemvalue="Application.Principal (2)" />
       </list>
     </recent_temporary>
   </component>

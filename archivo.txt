@@ -1,2 +1,0 @@
-Este es el archivo de texto con texto
-Y ESTO ES EL TEXTO QUE ESTÁ DENTRO DEL ARCHIVO
