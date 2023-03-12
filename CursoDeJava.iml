@@ -6,8 +6,12 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
+<<<<<<< HEAD
     <content url="file://$MODULE_DIR$/bin" />
     <orderEntry type="jdk" jdkName="18" jdkType="JavaSDK" />
+=======
+    <orderEntry type="inheritedJdk" />
+>>>>>>> d2320434e66d8e7e03a51907c0e897644fc089f8
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
