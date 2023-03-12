@@ -22,17 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="tipos de datos">
-      <change afterPath="$PROJECT_DIR$/src/a04archivos/CrearArchivoTexto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a04archivos/crearCarpeta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a06POO/Concecionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/a06POO/Perrera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clases/Archivos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clases/Clase04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clases/Operador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CursoDeJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CursoDeJava.iml" afterDir="false" />
-    </list>
+    <list default="true" id="fc98d44b-67da-433b-9cdc-ff5811b9f459" name="Default Changelist" comment="tipos de datos" />
     <list id="368949f2-555d-4ebb-b3a4-dd816b96666c" name="tipos de datos" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
