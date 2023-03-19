@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IntelliJ
 .idea/
 *.iml
@@ -11,3 +12,7 @@ lib/
 # Logs
 /log/
 *.log
+=======
+.idea/
+.idea/workspace.xml
+>>>>>>> 795907a911461464d4ed4630a102f9c39198a47d
