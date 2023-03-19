@@ -1,0 +1,13 @@
+# IntelliJ
+.idea/
+*.iml
+
+# External dependencies
+lib/
+
+# Compiled classes
+/target/
+
+# Logs
+/log/
+*.log
