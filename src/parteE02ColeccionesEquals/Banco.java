@@ -36,7 +36,6 @@ class Banco {
 		}else {
 			System.out.print("NO son iguales");
 		}
-		
 
 	}
 

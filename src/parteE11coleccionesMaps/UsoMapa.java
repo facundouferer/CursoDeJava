@@ -9,7 +9,8 @@ public class UsoMapa {
 		// TODO Auto-generated method stub
 		
 		HashMap<String, Personas> directorio = new HashMap<String, Personas>();
-		
+
+		System.out.println("Ingrese Nombre");
 		//AGREGAR ELEMENTOS
 		directorio.put("100", new Personas("Carlos", "Villaruel"));
 		directorio.put("12", new Personas("Maria", "Riachuelo"));
@@ -30,13 +31,12 @@ public class UsoMapa {
 			Personas valor = persona.getValue();
 			System.out.println("Clave: "+persona.getKey()+" Valor: "+valor);
 		}
-		
+
 	}
 
 }
  
 class Personas{
- 
 	private String nombre; 
 	private String apellido; 
 	
@@ -47,7 +47,7 @@ class Personas{
 
 	@Override
 	public String toString() {
-		return "Personas [nombre: " + nombre + ", apellido: " + apellido + "]";
+		return "Personas [nombre: " + nombre + ", apellido: " + apellido + "] \n";
 	}
 	
 }
