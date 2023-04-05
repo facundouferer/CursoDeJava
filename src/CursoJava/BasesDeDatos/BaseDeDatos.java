@@ -14,7 +14,7 @@ public class BaseDeDatos {
         try {
             Connection conn = DriverManager.getConnection(url, user, password);
             Statement stmt = conn.createStatement();
-            String sql = "select * from equipos;";
+            String sql = "select * from equipos where gol1 >1 and gol2 = 0;";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 int id = rs.getInt("id");
