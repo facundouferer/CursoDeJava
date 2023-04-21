@@ -5,76 +5,77 @@ import java.util.List;
 import java.util.Scanner;
 public class Arreglos02 {
     /**Ejercicio 2:
-     Escribir un programa que dada una lista de números enteros, escribir una función que:
+     Escribir un programa que dada una lista de nï¿½meros enteros, escribir una funciï¿½n que:
      a) Devuelva una lista con todos los que sean primos.
      b) Devuelva la sumatoria de los valores
      c) Devuelva el promedio de los valores.*/
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int n;
 
-        // Solicitar al usuario el tamaño de la lista
-        System.out.println("Por favor, ingrese el tamaño de la lista:");
-        int n = scanner.nextInt();
+        // Solicitar al usuario la cantidad de nÃºmeros a ingresar
+        System.out.println("Ingrese la cantidad de nÃºmeros enteros:");
+        n = scanner.nextInt();
 
-        // Crear la lista y solicitar los valores al usuario
-        List<Integer> lista = new ArrayList<>();
-        System.out.println("Ingrese los valores de la lista:");
+        // Crear un arreglo para almacenar los nÃºmeros enteros
+        int[] numeros = new int[n];
+
+        // Solicitar al usuario los nÃºmeros enteros
+        System.out.println("Ingrese los nÃºmeros enteros:");
         for (int i = 0; i < n; i++) {
-            lista.add(scanner.nextInt());
+            numeros[i] = scanner.nextInt();
         }
 
-        // a) Obtener la lista de números primos
-        List<Integer> primos = obtenerNumerosPrimos(lista);
-        System.out.println("La lista de números primos es: " + primos);
+        // a) Devolver una lista con todos los nÃºmeros primos
+        int[] primos = numerosPrimos(numeros);
+        System.out.print("NÃºmeros primos: ");
+        for (int primo : primos) {
+            if (primo != 0) {
+                System.out.print(primo + " ");
+            }
+        }
+        System.out.println();
 
-        // b) Calcular la sumatoria de los valores
-        int sumatoria = calcularSumatoria(lista);
-        System.out.println("La sumatoria de los valores es: " + sumatoria);
+        // b) Devolver la sumatoria de los valores
+        int sumatoria = sumatoria(numeros);
+        System.out.println("Sumatoria: " + sumatoria);
 
-        // c) Calcular el promedio de los valores
-        double promedio = calcularPromedio(lista);
-        System.out.println("El promedio de los valores es: " + promedio);
+        // c) Devolver el promedio de los valores
+        double promedio = (double) sumatoria / n;
+        System.out.println("Promedio: " + promedio);
     }
 
-    // Función para verificar si un número es primo
-    public static boolean esPrimo(int num) {
-        if (num <= 1) {
+    // FunciÃ³n para determinar si un nÃºmero es primo
+    public static boolean esPrimo(int numero) {
+        if (numero <= 1) {
             return false;
         }
-        for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
                 return false;
             }
         }
         return true;
     }
 
-    // Función para obtener la lista de números primos
-    public static List<Integer> obtenerNumerosPrimos(List<Integer> lista) {
-        List<Integer> primos = new ArrayList<>();
-        for (int num : lista) {
-            if (esPrimo(num)) {
-                primos.add(num);
+    // FunciÃ³n para obtener un arreglo con los nÃºmeros primos
+    public static int[] numerosPrimos(int[] numeros) {
+        int[] primos = new int[numeros.length];
+        int index = 0;
+        for (int numero : numeros) {
+            if (esPrimo(numero)) {
+                primos[index++] = numero;
             }
         }
         return primos;
     }
 
-    // Función para calcular la sumatoria de los valores
-    public static int calcularSumatoria(List<Integer> lista) {
+    // FunciÃ³n para calcular la sumatoria de los valores de un arreglo
+    public static int sumatoria(int[] numeros) {
         int sumatoria = 0;
-        for (int num : lista) {
-            sumatoria += num;
+        for (int numero : numeros) {
+            sumatoria += numero;
         }
         return sumatoria;
-    }
-
-    // Función para calcular el promedio de los valores
-    public static double calcularPromedio(List<Integer> lista) {
-        if (lista.isEmpty()) {
-            return 0;
-        }
-        int sumatoria = calcularSumatoria(lista);
-        return (double) sumatoria / lista.size();
     }
 }
