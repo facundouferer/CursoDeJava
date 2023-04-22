@@ -1,4 +1,4 @@
-package CursoJava.arreglos;
+package CursoJava.Arreglos;
 
 import java.util.Scanner;
 
@@ -10,27 +10,26 @@ public class Arreglos10 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n;
 
-        // Solicitar al usuario la cantidad de números a ingresar
-        System.out.println("Ingrese la cantidad de números enteros:");
-        n = scanner.nextInt();
+        // Solicitar al usuario el número de elementos en el arreglo
+        System.out.println("Ingrese el número de elementos en el arreglo:");
+        int n = scanner.nextInt();
 
-        // Crear un arreglo para almacenar los números enteros
+        // Crear un arreglo de enteros para almacenar los números
         int[] numeros = new int[n];
 
-        // Solicitar al usuario los números enteros
+        // Leer los números enteros ingresados por el usuario
         System.out.println("Ingrese los números enteros:");
         for (int i = 0; i < n; i++) {
             numeros[i] = scanner.nextInt();
         }
 
-        // Solicitar al usuario el número x
-        System.out.println("Ingrese el número x:");
+        // Solicitar al usuario el número x a buscar en el arreglo
+        System.out.println("Ingrese el número x a buscar:");
         int x = scanner.nextInt();
 
-        // Encontrar y mostrar los índices de las posiciones del arreglo donde está x
-        System.out.println("Índices de las posiciones donde está x:");
+        // Buscar el número x en el arreglo e imprimir sus índices
+        System.out.println("Índices donde se encuentra el número x:");
         for (int i = 0; i < n; i++) {
             if (numeros[i] == x) {
                 System.out.print(i + " ");

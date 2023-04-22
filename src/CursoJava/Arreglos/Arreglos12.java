@@ -1,4 +1,4 @@
-package CursoJava.arreglos;
+package CursoJava.Arreglos;
 
 import java.util.Scanner;
 
@@ -32,38 +32,38 @@ public class Arreglos12 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int totalPreguntas;
 
         // Solicitar al usuario el número de preguntas del examen
         System.out.println("Ingrese el número de preguntas del examen:");
-        totalPreguntas = scanner.nextInt();
-        scanner.nextLine();
+        int totalPreguntas = scanner.nextInt();
+        scanner.nextLine(); // Consumir el salto de línea restante
 
         // Crear arreglos para almacenar las respuestas del estudiante y las respuestas correctas
         String[] respuestasEstudiante = new String[totalPreguntas];
         String[] respuestasCorrectas = new String[totalPreguntas];
 
-        // Solicitar al usuario las respuestas dadas por el estudiante
-        System.out.println("Ingrese las respuestas dadas por el estudiante:");
+        // Leer las respuestas dadas por el estudiante
+        System.out.println("Ingrese las respuestas del estudiante (A, B, C, D, E):");
         for (int i = 0; i < totalPreguntas; i++) {
             respuestasEstudiante[i] = scanner.nextLine().toUpperCase();
         }
 
-        // Solicitar al usuario las respuestas correctas
-        System.out.println("Ingrese las respuestas correctas:");
+        // Leer las respuestas correctas
+        System.out.println("Ingrese las respuestas correctas (A, B, C, D, E):");
         for (int i = 0; i < totalPreguntas; i++) {
             respuestasCorrectas[i] = scanner.nextLine().toUpperCase();
         }
 
-        // Calcular la nota del estudiante
-        int nota = 0;
+        // Calcular la nota
+        int aciertos = 0;
         for (int i = 0; i < totalPreguntas; i++) {
             if (respuestasEstudiante[i].equals(respuestasCorrectas[i])) {
-                nota++;
+                aciertos++;
             }
         }
+        double nota = aciertos; // Nota basada en un punto por pregunta correcta
 
-        // Imprimir la nota obtenida
+        // Imprimir la nota
         System.out.println("La nota obtenida es: " + nota);
     }
 }

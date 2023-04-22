@@ -1,4 +1,4 @@
-package CursoJava.arreglos;
+package CursoJava.Arreglos;
 
 import java.util.Scanner;
 
@@ -11,22 +11,21 @@ public class Arreglos09 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n;
 
-        // Solicitar al usuario la cantidad de números a ingresar
-        System.out.println("Ingrese la cantidad de números reales:");
-        n = scanner.nextInt();
+        // Solicitar al usuario el número de elementos en la colección
+        System.out.println("Ingrese el número de elementos en la colección:");
+        int n = scanner.nextInt();
 
-        // Crear un arreglo para almacenar los números reales
+        // Crear un arreglo de tipo float para almacenar los números reales
         float[] numeros = new float[n];
 
-        // Solicitar al usuario los números reales
+        // Leer los números reales ingresados por el usuario
         System.out.println("Ingrese los números reales:");
         for (int i = 0; i < n; i++) {
             numeros[i] = scanner.nextFloat();
         }
 
-        // Encontrar el número mayor en la colección de números
+        // Encontrar el número mayor en la colección
         float maximo = numeros[0];
         for (int i = 1; i < n; i++) {
             if (numeros[i] > maximo) {
@@ -34,16 +33,15 @@ public class Arreglos09 {
             }
         }
 
-        // Normalizar los números reales dividiendo cada uno por el valor máximo
+        // Normalizar la colección de números reales dividiendo cada número por el valor máximo
         for (int i = 0; i < n; i++) {
-            numeros[i] /= maximo;
+            numeros[i] = numeros[i] / maximo;
         }
 
         // Imprimir los números normalizados
         System.out.println("Números normalizados:");
         for (int i = 0; i < n; i++) {
-            System.out.printf("%.2f", numeros[i]);
-            System.out.print(" ");
+            System.out.printf("%.2f ", numeros[i]); // Imprimir con 2 decimales
         }
     }
 }

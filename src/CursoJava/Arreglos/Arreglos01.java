@@ -1,5 +1,4 @@
-package CursoJava.arreglos;
-
+package CursoJava.Arreglos;
 import java.util.Scanner;
 
 public class Arreglos01 {

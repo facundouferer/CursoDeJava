@@ -1,4 +1,4 @@
-package CursoJava.arreglos;
+package CursoJava.Arreglos;
 import java.util.Scanner;
 public class Arreglos07 {
     /**Ejercicio 7:
@@ -8,9 +8,7 @@ public class Arreglos07 {
      el primer elemento de B. Almancer el resultado de las multiplicaciones en un arreglo C.*/
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = 20;
-
-        // Crear arreglos A, B y C
+        int n = 20; // Cantidad de elementos en cada arreglo
         int[] arregloA = new int[n];
         int[] arregloB = new int[n];
         int[] arregloC = new int[n];
@@ -27,16 +25,15 @@ public class Arreglos07 {
             arregloB[i] = scanner.nextInt();
         }
 
-        // Multiplicar el primer elemento de A con el último elemento de B y así sucesivamente,
-        // almacenar el resultado en el arreglo C
+        // Multiplicar los elementos de los arreglos A y B de manera inversa y almacenar el resultado en el arreglo C
         for (int i = 0; i < n; i++) {
-            arregloC[i] = arregloA[i] * arregloB[n - i - 1];
+            arregloC[i] = arregloA[i] * arregloB[n - 1 - i];
         }
 
-        // Imprimir el resultado final
-        System.out.println("El resultado de las multiplicaciones es:");
-        for (int i = 0; i < n; i++) {
-            System.out.println("arregloA[" + i + "] * arregloB[" + (n - i - 1) + "] = " + arregloC[i]);
+        // Imprimir el resultado de las multiplicaciones
+        System.out.println("Resultado de las multiplicaciones de los elementos de A y B:");
+        for (int valor : arregloC) {
+            System.out.println(valor);
         }
     }
 }
