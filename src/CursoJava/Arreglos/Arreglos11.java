@@ -1,4 +1,4 @@
-package CursoJava.arreglos;
+package CursoJava.Arreglos;
 
 import java.util.Scanner;
 
@@ -12,16 +12,15 @@ public class Arreglos11 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n;
 
-        // Solicitar al usuario la cantidad de números a ingresar
-        System.out.println("Ingrese la cantidad de números enteros:");
-        n = scanner.nextInt();
+        // Solicitar al usuario el número de elementos en el arreglo
+        System.out.println("Ingrese el número de elementos en el arreglo:");
+        int n = scanner.nextInt();
 
-        // Crear un arreglo para almacenar los números enteros
+        // Crear un arreglo de enteros para almacenar los números
         int[] numeros = new int[n];
 
-        // Solicitar al usuario los números enteros
+        // Leer los números enteros ingresados por el usuario
         System.out.println("Ingrese los números enteros:");
         for (int i = 0; i < n; i++) {
             numeros[i] = scanner.nextInt();
@@ -30,22 +29,17 @@ public class Arreglos11 {
         // Verificar si el arreglo es partidario
         boolean esPartidario = true;
         for (int i = 0; i < n - 1; i += 2) {
-            for (int j = 1; j < n; j += 2) {
-                if (numeros[i] <= numeros[j]) {
-                    esPartidario = false;
-                    break;
-                }
-            }
-            if (!esPartidario) {
+            if (numeros[i] <= numeros[i + 1]) {
+                esPartidario = false;
                 break;
             }
         }
 
-        // Imprimir si el arreglo es partidario o no
+        // Imprimir el resultado
         if (esPartidario) {
-            System.out.println("Es partidario");
+            System.out.println("El arreglo es partidario.");
         } else {
-            System.out.println("No es partidario");
+            System.out.println("El arreglo no es partidario.");
         }
     }
 }

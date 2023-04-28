@@ -1,4 +1,4 @@
-package programacion1;
+package CursoJava.Inicio;
 
 import java.util.Scanner; // Importamos la clase Scanner para poder leer la entrada del usuario
 

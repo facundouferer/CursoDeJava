@@ -1,7 +1,4 @@
-package CursoJava.arreglos;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package CursoJava.Arreglos;
 import java.util.Scanner;
 public class Arreglos02 {
     /**Ejercicio 2:
