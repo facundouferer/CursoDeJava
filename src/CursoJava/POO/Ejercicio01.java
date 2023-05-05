@@ -1,11 +1,11 @@
 package CursoJava.POO;
 /**Ejercicio 1:
- Crea una clase llamada Cuenta que tendrá los siguientes atributos:
- 1. titular y cantidad (puede tener decimales). Crear sus métodos get, set.
+ Crea una clase llamada Cuenta que tendrï¿½ los siguientes atributos:
+ 1. titular y cantidad (puede tener decimales). Crear sus mï¿½todos get, set.
  2. Crear dos constructores que permitan crear una cuenta para un titular y la cantidad.
- Tendrá dos métodos especiales:
+ Tendrï¿½ dos mï¿½todos especiales:
  1. ingresar(double cantidad): se ingresa una cantidad a la cuenta, si la cantidad introducida
- es negativa, no se hará nada.
+ es negativa, no se harï¿½ nada.
  2. retirar(double cantidad): se retira una cantidad a la cuenta, si restando la cantidad actual
  a la que nos pasan es negativa, la cantidad de la cuenta pasa a ser 0.
  */
@@ -14,10 +14,10 @@ public class Ejercicio01 {
     public static void main(String[] args) {
 
         // Creamos una cuenta con titular y cantidad
-        Cuenta cuenta1 = new Cuenta("Juan Pérez", 1500);
+        Cuenta cuenta1 = new Cuenta("Juan Pï¿½rez", 1500);
 
         // Creamos una cuenta con solo titular (cantidad por defecto es 0)
-        Cuenta cuenta2 = new Cuenta("María González");
+        Cuenta cuenta2 = new Cuenta("Marï¿½a Gonzï¿½lez");
 
         // Realizamos algunas operaciones con las cuentas
         cuenta1.ingresar(500);
@@ -45,7 +45,11 @@ class Cuenta {
         this(titular, 0);
     }
 
-    // Métodos Get y Set
+    public Cuenta() {
+        this("", 0);
+    }
+
+    // Mï¿½todos Get y Set
     public String getTitular() {
         return titular;
     }
@@ -62,7 +66,7 @@ class Cuenta {
         this.cantidad = cantidad;
     }
 
-    // Métodos especiales
+    // Mï¿½todos especiales
     public void ingresar(double cantidad) {
         if (cantidad > 0) {
             this.cantidad += cantidad;
