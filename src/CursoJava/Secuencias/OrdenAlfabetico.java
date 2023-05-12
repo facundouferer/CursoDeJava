@@ -35,14 +35,12 @@ public class OrdenAlfabetico {
         // Recorrer el arreglo
         for (int i = 0; i < n - 1; i++) {
             int indiceMinimo = i;
-
             // Encontrar el índice del elemento más pequeño en el subarreglo restante
             for (int j = i + 1; j < n; j++) {
                 if (arreglo[j].compareTo(arreglo[indiceMinimo]) < 0) {
                     indiceMinimo = j;
                 }
             }
-
             // Intercambiar el elemento más pequeño con el primer elemento no ordenado
             String temp = arreglo[indiceMinimo];
             arreglo[indiceMinimo] = arreglo[i];
