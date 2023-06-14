@@ -6,9 +6,7 @@ public class BubbleSort {
 
         System.out.println("Array sin ordenar:");
         printArray(array);
-
         bubbleSort(array);
-
         System.out.println("Array ordenado:");
         printArray(array);
     }
@@ -17,8 +15,8 @@ public class BubbleSort {
         int n = array.length;
 
         for (int i = 0; i < n - 1; i++) {
-            // Iteración actual
-            System.out.println("Iteración " + (i + 1) + ":");
+            // IteraciÃ³n actual
+            System.out.println("IteraciÃ³n " + (i + 1) + ":");
 
             for (int j = 0; j < n - i - 1; j++) {
                 if (array[j] > array[j + 1]) {
@@ -27,8 +25,7 @@ public class BubbleSort {
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                 }
-
-                // Estado actual del array en esta iteración
+                // Estado actual del array en esta iteraciï¿½n
                 printArray(array);
             }
 
