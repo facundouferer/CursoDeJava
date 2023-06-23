@@ -1,43 +1,36 @@
 package CursoJava.Arrays;
-import java.util.Arrays;
+import java.util.ArrayList;
 
 class ManejoEstudiantes {
+    private ArrayList<Estudiante> estudiantes;
 
-    private Estudiante[] estudiantes;
-    private int contador;
-
-    public ManejoEstudiantes(int tamaño) {
-        estudiantes = new Estudiante[tamaño];
-        contador = 0;
+    public ManejoEstudiantes() {
+        estudiantes = new ArrayList<>();
     }
 
     public void agregarEstudiante(Estudiante estudiante) {
-        estudiantes[contador] = estudiante;
-        contador++;
+        estudiantes.add(estudiante);
     }
 
     public void modificarEstudiante(int index, Estudiante estudiante) {
-        if (index >= 0 && index < contador) {
-            estudiantes[index] = estudiante;
+        if (index >= 0 && index < estudiantes.size()) {
+            estudiantes.set(index, estudiante);
         } else {
             System.out.println("Índice no válido.");
         }
     }
 
     public void eliminarEstudiante(int index) {
-        if (index >= 0 && index < contador) {
-            for (int i = index; i < contador - 1; i++) {
-                estudiantes[i] = estudiantes[i + 1];
-            }
-            contador--;
+        if (index >= 0 && index < estudiantes.size()) {
+            estudiantes.remove(index);
         } else {
             System.out.println("Índice no válido.");
         }
     }
 
     public void imprimirEstudiantes() {
-        for (int i = 0; i < contador; i++) {
-            System.out.println(estudiantes[i]);
+        for (Estudiante estudiante : estudiantes) {
+            System.out.println(estudiante);
         }
     }
 }
@@ -51,18 +44,22 @@ class Estudiante {
         this.edad = edad;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     @Override
     public String toString() {
         return "Estudiante{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
+                "nombre='" + this.nombre + '\'' +
+                ", edad=" + this.edad +
                 '}';
     }
 }
 
 class Main {
     public static void main(String[] args) {
-        ManejoEstudiantes manejoEstudiantes = new ManejoEstudiantes(10);
+        ManejoEstudiantes manejoEstudiantes = new ManejoEstudiantes();
 
         manejoEstudiantes.agregarEstudiante(new Estudiante("Juan", 20));
         manejoEstudiantes.agregarEstudiante(new Estudiante("Ana", 22));
@@ -82,5 +79,3 @@ class Main {
         manejoEstudiantes.imprimirEstudiantes();
     }
 }
-
-
