@@ -1,53 +1,61 @@
-import java.util.Arrays;
-
+package Examenes;
+import java.util.Scanner;
 public class RopaShop {
-    private static String[] inventario = {"Camisa", "Pantalón", "Vestido", "Blusa", "Chaqueta"};
+    public static void main(String[] Args) {
+        Scanner sc = new Scanner(System.in);
+        String prenda, prendabuscar, borrarprenda;
+        String[] inventario = new String[]{"Camisa", "zapatos", "polera", "sandalia", "blusa", "loquesea"};
+        System.out.printf("escriba la prenda que desea agregar al arreglo ");
+        prenda = sc.nextLine();
+        agregarprenda(inventario, prenda);
 
-    public static void main(String[] args) {
-        agregarPrenda("Zapatos");
-        buscarPrenda("Vestido");
-        venderPrenda("Blusa");
-        mostrarInventario();
+        System.out.printf("escriba la prenda que desea buscar en el arreglo ");
+        prendabuscar = sc.nextLine();
+        buscarprenda(inventario, prendabuscar);
+        System.out.printf("escriba la prenda que desea vender ");
+        borrarprenda = sc.nextLine();
+        venderprenda(inventario, borrarprenda);
+        mostrarinventario(inventario);
     }
 
-    public static void agregarPrenda(String nombrePrenda) {
-        String[] nuevoInventario = Arrays.copyOf(inventario, inventario.length + 1);
-        nuevoInventario[nuevoInventario.length - 1] = nombrePrenda;
-        inventario = nuevoInventario;
-        System.out.println("Prenda agregada: " + nombrePrenda);
-        mostrarInventario();
+    public static void mostrarinventario(String[] a) {
+        int i;
+        for (i = 0; i < a.length; i++) {
+            System.out.println((i + 1) + " : " + a[i]);
+        }
     }
 
-    public static void buscarPrenda(String nombrePrenda) {
-        for (String prenda : inventario) {
-            if (prenda.equals(nombrePrenda)) {
+    public static void agregarprenda(String a[], String b) {
+        a[5] = b;
+        int i;
+        for (i = 0; i < a.length; i++) {
+            System.out.println((i + 1) + " : " + a[i]);
+        }
+    }
+
+    public static void buscarprenda(String a[], String b) {
+        int aux=0;
+        for (int i = 0; i < 6; i++) {
+
+            if (a[i].equals(b)){
                 System.out.println("Prenda existente");
-                return;
+                aux++;
             }
         }
-        System.out.println("No existe");
+        if (aux==0)
+        {
+            System.out.println("no existe");
+        }
     }
+    public static void venderprenda(String a[], String b){
+        String[] inventario = new String[6];
+        int i;
+        for (i = 0; i < 6; i++) {
+            if (a[i].equals(b)){
 
-    public static void venderPrenda(String nombrePrenda) {
-        for (int i = 0; i < inventario.length; i++) {
-            if (inventario[i].equals(nombrePrenda)) {
-                String[] nuevoInventario = new String[inventario.length - 1];
-                System.arraycopy(inventario, 0, nuevoInventario, 0, i);
-                System.arraycopy(inventario, i + 1, nuevoInventario, i, inventario.length - i - 1);
-                inventario = nuevoInventario;
-                System.out.println("Prenda vendida: " + nombrePrenda);
-                mostrarInventario();
-                return;
             }
         }
-        System.out.println("No existe la prenda");
     }
 
-    public static void mostrarInventario() {
-        System.out.println("Inventario:");
-        for (String prenda : inventario) {
-            System.out.println(prenda);
-        }
-        System.out.println("Cantidad de prendas: " + inventario.length);
-    }
 }
+
