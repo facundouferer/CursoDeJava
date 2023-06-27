@@ -2,6 +2,14 @@ package CursoJava.ArrayList03;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**Para el desarrollo del programa del examen
+ Herencia
+ Sobreescritura de métodos
+ ArrayLIst de objetos.
+ Editar, agregar y eliminar un elemento del array
+ getters y setter
+ toString
+ */
 // Clase Persona, que actúa como superclase para las clases Estudiante y Profesor
 class Persona {
     private String nombre;
