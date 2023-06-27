@@ -3,9 +3,9 @@ import java.util.ArrayList;
 
 // Clase Persona, que actúa como superclase para las clases Estudiante y Profesor
 class Persona {
-    String nombre;
-    String apellido;
-    String dni;
+    private String nombre;
+    private String apellido;
+    private String dni;
 
     // Constructor para inicializar los campos de la clase Persona
     public Persona(String nombre, String apellido, String dni) {
@@ -22,7 +22,7 @@ class Persona {
 
 // Clase Estudiante, que hereda de la clase Persona e introduce un nuevo campo legajo
 class Estudiante extends Persona {
-    String legajo;
+    private String legajo;
 
     // Constructor para inicializar los campos de la clase Estudiante
     public Estudiante(String nombre, String apellido, String dni, String legajo) {
@@ -39,7 +39,7 @@ class Estudiante extends Persona {
 
 // Clase Profesor, que hereda de la clase Persona e introduce un nuevo campo montoSueldo
 class Profesor extends Persona {
-    double montoSueldo;
+    private double montoSueldo;
 
     // Constructor para inicializar los campos de la clase Profesor
     public Profesor(String nombre, String apellido, String dni, double montoSueldo) {
