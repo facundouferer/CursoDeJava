@@ -1,4 +1,4 @@
-package CursoJava.Arrays;
+package CursoJava.ArraysList01;
 import java.util.ArrayList;
 
 class ManejoEstudiantes {
