@@ -1,5 +1,6 @@
 package CursoJava.ArrayList03;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 // Clase Persona, que actúa como superclase para las clases Estudiante y Profesor
 class Persona {
@@ -11,6 +12,30 @@ class Persona {
     public Persona(String nombre, String apellido, String dni) {
         this.nombre = nombre;
         this.apellido = apellido;
+        this.dni = dni;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
@@ -27,6 +52,14 @@ class Estudiante extends Persona {
     // Constructor para inicializar los campos de la clase Estudiante
     public Estudiante(String nombre, String apellido, String dni, String legajo) {
         super(nombre, apellido, dni);
+        this.legajo = legajo;
+    }
+
+    public String getLegajo() {
+        return legajo;
+    }
+
+    public void setLegajo(String legajo) {
         this.legajo = legajo;
     }
 
@@ -77,7 +110,7 @@ class Curso {
     // Método para eliminar un estudiante del curso
     public void eliminarEstudiante(String dni) {
         for (int i = 0; i < estudiantes.size(); i++) {
-            if (estudiantes.get(i).dni.equals(dni)) {
+            if (estudiantes.get(i).getDni().equals(dni)) {
                 estudiantes.remove(i);
                 break;
             }
@@ -87,39 +120,89 @@ class Curso {
     // Método para editar los detalles de un estudiante
     public void editarEstudiante(String dni, String nuevoNombre, String nuevoApellido, String nuevoLegajo) {
         for (Estudiante estudiante : estudiantes) {
-            if (estudiante.dni.equals(dni)) {
-                estudiante.nombre = nuevoNombre;
-                estudiante.apellido = nuevoApellido;
-                estudiante.legajo = nuevoLegajo;
+            if (estudiante.getDni().equals(dni)) {
+                estudiante.setNombre(nuevoNombre);
+                estudiante.setApellido(nuevoApellido);
+                estudiante.setLegajo(nuevoLegajo);
             }
         }
     }
+
+    public String toString() {
+        String detalles = "Profesor: " + profesor + "\nEstudiantes:\n";
+        for (Estudiante estudiante : estudiantes) {
+            detalles += estudiante + "\n";
+        }
+        return detalles;
+    }
 }
+
+// Clases Persona, Estudiante, Profesor, y Curso son las mismas
 
 class Main {
     public static void main(String[] args) {
-        // Crear una instancia de Curso
+        Scanner scanner = new Scanner(System.in);
         Curso curso = new Curso();
 
-        // Crear un profesor y asignarlo al curso
-        Profesor profesor = new Profesor("Juan", "Pérez", "12345678", 30000.0);
-        curso.setProfesor(profesor);
+        while (true) {
+            System.out.println("1. Asignar profesor al curso\n2. Agregar estudiante al curso\n3. Editar estudiante\n4. Eliminar estudiante\n5. Mostrar detalles del curso\n6. Salir");
+            System.out.print("Seleccione una opción: ");
+            int opcion = scanner.nextInt();
 
-        // Crear un estudiante y agregarlo al curso
-        Estudiante estudiante = new Estudiante("Ana", "Garcia", "87654321", "1");
-        curso.agregarEstudiante(estudiante);
+            switch (opcion) {
+                case 1:
+                    System.out.print("Ingrese nombre del profesor: ");
+                    String nombreProfesor = scanner.next();
+                    System.out.print("Ingrese apellido del profesor: ");
+                    String apellidoProfesor = scanner.next();
+                    System.out.print("Ingrese DNI del profesor: ");
+                    String dniProfesor = scanner.next();
+                    System.out.print("Ingrese sueldo del profesor: ");
+                    double montoSueldo = scanner.nextDouble();
 
-        // Imprimir los detalles del profesor y el estudiante
-        System.out.println(profesor);
-        System.out.println(estudiante);
+                    Profesor profesor = new Profesor(nombreProfesor, apellidoProfesor, dniProfesor, montoSueldo);
+                    curso.setProfesor(profesor);
+                    break;
+                case 2:
+                    System.out.print("Ingrese nombre del estudiante: ");
+                    String nombreEstudiante = scanner.next();
+                    System.out.print("Ingrese apellido del estudiante: ");
+                    String apellidoEstudiante = scanner.next();
+                    System.out.print("Ingrese DNI del estudiante: ");
+                    String dniEstudiante = scanner.next();
+                    System.out.print("Ingrese legajo del estudiante: ");
+                    String legajo = scanner.next();
 
-        // Editar los detalles del estudiante
-        curso.editarEstudiante("87654321", "Ana Maria", "Garcia Lopez", "1");
+                    Estudiante estudiante = new Estudiante(nombreEstudiante, apellidoEstudiante, dniEstudiante, legajo);
+                    curso.agregarEstudiante(estudiante);
+                    break;
+                case 3:
+                    System.out.print("Ingrese DNI del estudiante a editar: ");
+                    String dniEditar = scanner.next();
+                    System.out.print("Ingrese nuevo nombre del estudiante: ");
+                    String nuevoNombre = scanner.next();
+                    scanner.nextLine();
+                    System.out.print("Ingrese nuevo apellido del estudiante: ");
+                    String nuevoApellido = scanner.next();
+                    System.out.print("Ingrese nuevo legajo del estudiante: ");
+                    String nuevoLegajo = scanner.next();
 
-        // Imprimir los detalles del estudiante después de la edición
-        System.out.println(estudiante);
-
-        // Eliminar el estudiante del curso
-        curso.eliminarEstudiante("87654321");
+                    curso.editarEstudiante(dniEditar, nuevoNombre, nuevoApellido, nuevoLegajo);
+                    break;
+                case 4:
+                    System.out.print("Ingrese DNI del estudiante a eliminar: ");
+                    String dniEliminar = scanner.next();
+                    curso.eliminarEstudiante(dniEliminar);
+                    break;
+                case 5:
+                    System.out.println(curso);
+                    break;
+                case 6:
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Opción inválida. Por favor, intente de nuevo.");
+            }
+        }
     }
 }
