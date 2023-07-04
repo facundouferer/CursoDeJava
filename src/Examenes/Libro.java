@@ -1,5 +1,6 @@
 package Examenes;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class Libro {
     private String titulo;
@@ -84,6 +85,41 @@ class Biblioteca {
         }
         System.out.println("Libro no encontrado.");
     }
+
+    public void nuevoLibroFisico(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el titulo del libro");
+        String titulo = sc.nextLine();
+        System.out.println("Ingrese el autor del libro");
+        String autor = sc.nextLine();
+        System.out.println("Ingrese el año de publicación del libro");
+        int publicacion = sc.nextInt();
+        System.out.println("Ingrese el numero de paginas del libro");
+        int paginas = sc.nextInt();
+        System.out.println("Ingrese la ubicacion del libro");
+        String ubicacion = sc.nextLine();
+        System.out.println("Ingrese el numero de copias del libro");
+        int copias = sc.nextInt();
+        LibroFisico libroFisico = new LibroFisico(titulo, autor, publicacion, paginas, ubicacion, copias);
+        agregarLibro(libroFisico);
+        sc.close();
+    }
+    public void nuevoLibroDigital(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el titulo del libro");
+        String titulo = sc.nextLine();
+        System.out.println("Ingrese el autor del libro");
+        String autor = sc.nextLine();
+        System.out.println("Ingrese el año de publicación del libro");
+        int publicacion = sc.nextInt();
+        System.out.println("Ingrese el formato del libro");
+        String formato = sc.nextLine();
+        System.out.println("Ingrese el tamaño del archivo del libro");
+        int tamanoArchivo = sc.nextInt();
+        LibroDigital libroDigital = new LibroDigital(titulo, autor, publicacion, formato, tamanoArchivo);
+        agregarLibro(libroDigital);
+        sc.close();
+    }
 }
 
 class Main {
@@ -100,5 +136,6 @@ class Main {
         biblioteca.mostrarLibros();
 
         biblioteca.buscarLibroPorTitulo("1984");
+
     }
 }
