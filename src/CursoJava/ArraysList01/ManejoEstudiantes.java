@@ -16,7 +16,7 @@ class ManejoEstudiantes {
         if (index >= 0 && index < estudiantes.size()) {
             estudiantes.set(index, estudiante);
         } else {
-            System.out.println("Índice no válido.");
+            System.out.println("Ã­ndice no vÃ¡lido.");
         }
     }
 
@@ -24,7 +24,7 @@ class ManejoEstudiantes {
         if (index >= 0 && index < estudiantes.size()) {
             estudiantes.remove(index);
         } else {
-            System.out.println("Índice no válido.");
+            System.out.println("ï¿½ndice no vï¿½lido.");
         }
     }
 
@@ -65,17 +65,17 @@ class Main {
         manejoEstudiantes.agregarEstudiante(new Estudiante("Ana", 22));
         manejoEstudiantes.agregarEstudiante(new Estudiante("Luis", 21));
 
-        System.out.println("Estudiantes después de agregar:");
+        System.out.println("Estudiantes despuï¿½s de agregar:");
         manejoEstudiantes.imprimirEstudiantes();
 
         manejoEstudiantes.modificarEstudiante(1, new Estudiante("Maria", 22));
 
-        System.out.println("Estudiantes después de modificar:");
+        System.out.println("Estudiantes despuï¿½s de modificar:");
         manejoEstudiantes.imprimirEstudiantes();
 
         manejoEstudiantes.eliminarEstudiante(0);
 
-        System.out.println("Estudiantes después de eliminar:");
+        System.out.println("Estudiantes despuï¿½s de eliminar:");
         manejoEstudiantes.imprimirEstudiantes();
     }
 }

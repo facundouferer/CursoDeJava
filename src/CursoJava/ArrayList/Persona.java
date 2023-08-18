@@ -1,4 +1,4 @@
-package CursoJava.ArrayList02;
+package CursoJava.ArrayList;
 import java.util.ArrayList;
 
 // Clase Persona, que actúa como superclase para las clases Estudiante y Profesor
