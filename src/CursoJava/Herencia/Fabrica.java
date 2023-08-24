@@ -1,7 +1,6 @@
 package CursoJava.Herencia;
 
 public class Fabrica {
-
     public static void main(String[] args) {
        Empleado empleada = new Empleado("Ana", "Lopez");
        Jefe jefa = new Jefe("Maria", "Lopez", "Sistemas");
