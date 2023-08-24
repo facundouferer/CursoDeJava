@@ -3,9 +3,8 @@ package CursoJava.ClasesAbstractas;
 public class Veterinaria {
     //declare hola mundo
     public static void main(String[] args) {
-        //declare perro
-
-        //declare
+        Gato gato = new Gato();
+        gato.tipoDeAnimal();
     }
 }
 
@@ -23,8 +22,12 @@ abstract class Mascota {
 
 class Gato extends Mascota{
 
+    public Gato() {
+        super("Gato");
+    }
+
     @Override
     public void tipoDeAnimal() {
-
+        System.out.println("Soy un gato");
     }
 }
