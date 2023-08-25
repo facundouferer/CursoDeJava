@@ -3,9 +3,9 @@ import java.util.ArrayList;
 
 // Clase Persona, que actúa como superclase para las clases Estudiante y Profesor
 class Persona {
-    String nombre;
-    String apellido;
-    String dni;
+    private String nombre;
+    private String apellido;
+    private String dni;
 
     // Constructor para inicializar los campos de la clase Persona
     public Persona(String nombre, String apellido, String dni) {
@@ -13,27 +13,86 @@ class Persona {
         this.apellido = apellido;
         this.dni = dni;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
 }
 
 // Clase Estudiante, que hereda de la clase Persona e introduce un nuevo campo legajo
 class Estudiante extends Persona {
-    String legajo;
+    private String legajo;
 
     // Constructor para inicializar los campos de la clase Estudiante
     public Estudiante(String nombre, String apellido, String dni, String legajo) {
         super(nombre, apellido, dni);
         this.legajo = legajo;
     }
+
+    public String getLegajo() {
+        return legajo;
+    }
+
+    public void setLegajo(String legajo) {
+        this.legajo = legajo;
+    }
+
+    public String toString() {
+        return "Estudiante{" +
+                "legajo='" + this.legajo + '\'' +
+                ", nombre='" + super.getNombre() + '\'' +
+                ", apellido='" + super.getApellido() + '\'' +
+                ", dni='" + super.getDni() + '\'' +
+                '}';
+    }
 }
 
 // Clase Profesor, que hereda de la clase Persona e introduce un nuevo campo montoSueldo
 class Profesor extends Persona {
-    double montoSueldo;
+    private double montoSueldo;
 
     // Constructor para inicializar los campos de la clase Profesor
     public Profesor(String nombre, String apellido, String dni, double montoSueldo) {
         super(nombre, apellido, dni);
         this.montoSueldo = montoSueldo;
+    }
+
+    public double getMontoSueldo() {
+        return montoSueldo;
+    }
+
+    public void setMontoSueldo(double montoSueldo) {
+        this.montoSueldo = montoSueldo;
+    }
+
+    @Override
+    public String toString() {
+        return "Profesor{" +
+                "montoSueldo=" + this.montoSueldo +
+                ", nombre='" + super.getNombre() + '\'' +
+                ", apellido='" + super.getApellido() + '\'' +
+                ", dni='" + super.getDni() + '\'' +
+                '}';
     }
 }
 
@@ -60,7 +119,7 @@ class Curso {
     // Método modificado para eliminar un estudiante del curso
     public void eliminarEstudiante(String dni) {
         for (int i = 0; i < estudiantes.size(); i++) {
-            if (estudiantes.get(i).dni.equals(dni)) {
+            if (estudiantes.get(i).getDni().equals(dni)) {
                 estudiantes.remove(i);
                 break;
             }
@@ -70,13 +129,20 @@ class Curso {
     // Método para editar los detalles de un estudiante
     public void editarEstudiante(String dni, String nuevoNombre, String nuevoApellido, String nuevoLegajo) {
         for (Estudiante estudiante : estudiantes) {
-            if (estudiante.dni.equals(dni)) {
-                estudiante.nombre = nuevoNombre;
-                estudiante.apellido = nuevoApellido;
-                estudiante.legajo = nuevoLegajo;
+            if (estudiante.getDni().equals(dni)) {
+                estudiante.setNombre(nuevoNombre);
+                estudiante.setApellido(nuevoApellido);
+                estudiante.setLegajo(nuevoLegajo);
             }
         }
     }
+
+    public String toString() {
+        return "Curso: \n" + "Profesor: " + profesor.toString() + "\n";
+    }
+
+
+
 }
 
 class Main {
@@ -97,5 +163,7 @@ class Main {
 
         // Eliminar el estudiante del curso
         curso.eliminarEstudiante("87654321");
+
+        System.out.println(curso.toString());
     }
 }

@@ -133,6 +133,8 @@ class ClassRoom {
         }
         return detalles;
     }
+
+
 }
 
 // Clases Persona, Estudiante, Profesor, y Curso son las mismas
@@ -140,7 +142,7 @@ class ClassRoom {
 class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Curso curso = new Curso();
+        ClassRoom curso = new ClassRoom();
 
         while (true) {
             System.out.println("1. Asignar profesor al curso\n2. Agregar estudiante al curso\n3. Editar estudiante\n4. Eliminar estudiante\n5. Mostrar detalles del curso\n6. Salir");
@@ -158,7 +160,7 @@ class Principal {
                     System.out.print("Ingrese sueldo del profesor: ");
                     double montoSueldo = scanner.nextDouble();
 
-                    Profesor profesor = new Profesor(nombreProfesor, apellidoProfesor, dniProfesor, montoSueldo);
+                    Teacher profesor = new Teacher(nombreProfesor, apellidoProfesor, dniProfesor, montoSueldo);
                     curso.setProfesor(profesor);
                     break;
                 case 2:
@@ -171,7 +173,7 @@ class Principal {
                     System.out.print("Ingrese legajo del estudiante: ");
                     String legajo = scanner.next();
 
-                    Estudiante estudiante = new Estudiante(nombreEstudiante, apellidoEstudiante, dniEstudiante, legajo);
+                    Studient estudiante = new Studient(nombreEstudiante, apellidoEstudiante, dniEstudiante, legajo);
                     curso.agregarEstudiante(estudiante);
                     break;
                 case 3:
