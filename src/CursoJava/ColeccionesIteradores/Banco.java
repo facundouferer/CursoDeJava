@@ -61,9 +61,7 @@ class Banco {
 		 */
 		
 		while (iterador.hasNext()) {
-
 			String elementoEliminar = iterador.next().getNombre();
-
 			if (elementoEliminar.equals("Ricardo Ricardo")) {
 				iterador.remove();
 			}
