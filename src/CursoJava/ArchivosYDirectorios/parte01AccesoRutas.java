@@ -5,7 +5,6 @@ import java.io.File;
 class parte01AccesoRutas {
     public static void main(String[] args) {
 
-
         File archivo = new File("gatito.png"); /*Usamos el constructor que nos pide el patch*/
 
         System.out.println("Ruta: " + archivo.getAbsoluteFile()); /*nos muestra la ruta absoluta del archivo pero seg�n el proyecto*/

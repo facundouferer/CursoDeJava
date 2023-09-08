@@ -1,0 +1,4 @@
+ESTO FUE ESCRITO Esto se escribió en el archivo desde el programa.
+Esta es la segunda línea del archivo 
+Esta es la tercera
+etc.
