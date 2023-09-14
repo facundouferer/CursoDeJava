@@ -1,10 +1,12 @@
 package CursoJava.Serializacion;
 
+
 import java.io.*;
 import java.util.LinkedList;
 
 public class Universidad {
     public static void main (String[] args){
+
         Curso curso = new Curso("Programacion 1");
         curso.agregarEstudiante(new Estudiante("Juan", 123));
         curso.agregarEstudiante(new Estudiante("Pedro", 456));
