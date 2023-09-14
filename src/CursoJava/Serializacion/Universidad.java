@@ -37,7 +37,6 @@ class Serializador{
         }
     }
 
-
     public Curso deserializar() {
         Curso curso = null;
         try {
@@ -89,7 +88,6 @@ class Curso implements Serializable {
         }
     }
 
-
     // Agregar métodos para serializar y deserializar estudiantes
     private void writeObject(ObjectOutputStream out) throws IOException {
         /**Se utiliza `throws IOException` para manejar posibles errores
@@ -98,7 +96,6 @@ class Curso implements Serializable {
         out.defaultWriteObject(); // Llama al método predeterminado de serialización de la superclase
         out.writeObject(estudiantes); // Escribe la lista de estudiantes en el flujo de salida
     }
-
 
     private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
         in.defaultReadObject(); // Llama al método predeterminado de deserialización de la superclase

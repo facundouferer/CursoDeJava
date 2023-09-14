@@ -7,7 +7,7 @@ public class BaseDeDatos2 {
 
         String url = "jdbc:mysql://localhost:3306/partidos";
         String user = "root";
-        String password = "753951";
+        String password = "";
 
         Connection connection = null;
         try {
