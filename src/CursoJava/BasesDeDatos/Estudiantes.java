@@ -19,22 +19,21 @@ public class Estudiantes {
             String consulta = "SELECT * FROM estudiantes";
             ResultSet resultado = statement.executeQuery(consulta);
 
-            // Iterar a través de los resultados y mostrarlos por consola
+            // Iterar a través de los resultados y mostrarlos con tabulaciones
+            System.out.println("ID\tNombre\tApellido\tLegajo\tDNI\tFecha de nacimiento\tDirección\tTeléfono\tEmail");
             while (resultado.next()) {
                 int id = resultado.getInt("id");
                 String nombre = resultado.getString("nombre");
                 String apellido = resultado.getString("apellido");
                 String legajo = resultado.getString("legajo");
                 String dni = resultado.getString("dni");
+                String fehcaNacimiento = resultado.getString("fecha_nacimiento");
+                String direccion = resultado.getString("direccion");
+                String telefono = resultado.getString("telefono");
+                String email = resultado.getString("email");
 
-                System.out.println("ID: " + id);
-                System.out.println("Nombre: " + nombre);
-                System.out.println("Apellido: " + apellido);
-                System.out.println("Legajo: " + legajo);
-                System.out.println("DNI: " + dni);
-                System.out.println("-----------------------");
+                System.out.println(id + "\t" + nombre + "\t" + apellido + "\t" + legajo + "\t" + dni + "\t" + fehcaNacimiento + "\t" + direccion + "\t" + telefono + "\t" + email);
             }
-
             // Cerrar la conexión y recursos
             resultado.close();
             statement.close();
