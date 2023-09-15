@@ -22,7 +22,8 @@ public class Estudiantes2 {
                 System.out.println("2. Agregar estudiante");
                 System.out.println("3. Editar estudiante");
                 System.out.println("4. Eliminar estudiante");
-                System.out.println("5. Salir");
+                System.out.println("5. Mostrar estudiantes mayores de...");
+                System.out.println("6. Salir");
                 System.out.print("Selecciona una opción: ");
 
                 int opcion = scanner.nextInt();
@@ -42,6 +43,12 @@ public class Estudiantes2 {
                         eliminarEstudiante(conexion, scanner);
                         break;
                     case 5:
+                        System.out.print("Edad: ");
+                        int edad = scanner.nextInt();
+                        scanner.nextLine(); // Consumir la nueva línea
+                        mostrarMayoresDe(conexion, edad);
+                        break;
+                    case 6:
                         // Cerrar la conexión y salir del programa
                         conexion.close();
                         scanner.close();
@@ -254,6 +261,40 @@ public class Estudiantes2 {
 
         // Cierra el PreparedStatement para liberar recursos.
         preparedStatement.close();
+    }
+    private static void mostrarMayoresDe(Connection conexion, int edad) throws SQLException {
+        // Crea una declaración SQL para ejecutar una consulta de selección.
+        Statement statement = conexion.createStatement();
+
+        // Define la consulta SQL para obtener estudiantes mayores que la edad especificada.
+        String consulta = "SELECT * FROM estudiantes WHERE YEAR(CURRENT_DATE()) - YEAR(fecha_nacimiento) > " + edad;
+
+        // Ejecuta la consulta SQL y almacena los resultados en un ResultSet.
+        ResultSet resultado = statement.executeQuery(consulta);
+
+        // Imprime una cabecera de columnas para los datos de los estudiantes.
+        System.out.println("ID\tNombre\tApellido\tLegajo\tDNI\tFecha de nacimiento\tDirección\tTeléfono\tEmail");
+
+        // Itera a través de los resultados y muestra los datos de cada estudiante en forma de tabla.
+        while (resultado.next()) {
+            int id = resultado.getInt("id");
+            String nombre = resultado.getString("nombre");
+            String apellido = resultado.getString("apellido");
+            String legajo = resultado.getString("legajo");
+            String dni = resultado.getString("dni");
+            String fechaNacimiento = resultado.getString("fecha_nacimiento");
+            String direccion = resultado.getString("direccion");
+            String telefono = resultado.getString("telefono");
+            String email = resultado.getString("email");
+
+            // Imprime los datos del estudiante con tabulaciones para formatear como una tabla.
+            System.out.println(id + "\t" + nombre + "\t" + apellido + "\t" + legajo + "\t" + dni + "\t" +
+                    fechaNacimiento + "\t" + direccion + "\t" + telefono + "\t" + email);
+        }
+
+        // Cierra el ResultSet y la declaración para liberar recursos.
+        resultado.close();
+        statement.close();
     }
 
 }
