@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class ConsultaAgregarEstudiante {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/Universidad";
+        String url = "jdbc:mysql://localhost:3306/universidad";
         String user = "root";
         String pass = "";
 
