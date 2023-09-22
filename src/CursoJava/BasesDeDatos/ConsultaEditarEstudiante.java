@@ -4,19 +4,19 @@ import java.sql.*;
 
 public class ConsultaEditarEstudiante {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/mi_base_de_datos";
+        String url = "jdbc:mysql://localhost:3306/universidad";
         String user = "root";
         String pass = "";
 
 
         try {
             Connection conexion = DriverManager.getConnection(url, user, pass);
-            int idEstudiante = 1; // Cambia el ID del estudiante que deseas editar
+            int idEstudiante = 16; // Cambia el ID del estudiante que deseas editar
             String nuevoNombre = "NuevoNombre";
             String nuevoApellido = "NuevoApellido";
             String nuevoLegajo = "NuevoLegajo";
             String nuevoDNI = "NuevoDNI";
-            String nuevaFechaNacimiento = "YYYY-MM-DD"; // Cambia la fecha
+            String nuevaFechaNacimiento = "20-MM-DD"; // Cambia la fecha
             String nuevaDireccion = "NuevaDireccion";
             String nuevoTelefono = "NuevoTelefono";
             String nuevoEmail = "NuevoEmail";
