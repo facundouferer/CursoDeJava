@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class ConsultaSeleccionarMayoresDeEdad {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/mi_base_de_datos";
+        String url = "jdbc:mysql://localhost:3306/universidad";
         String user = "root";
         String pass = "";
         int edadMinima = 18; // Cambia la edad mínima según tus necesidades

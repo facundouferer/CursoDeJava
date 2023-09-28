@@ -4,13 +4,13 @@ import java.sql.*;
 
 public class ConsultaEliminarEstudiante {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/mi_base_de_datos";
+        String url = "jdbc:mysql://localhost:3306/universidad";
         String user = "root";
         String pass = "";
 
         try {
             Connection conexion = DriverManager.getConnection(url, user, pass);
-            int idEstudiante = 1; // Cambia el ID del estudiante que deseas eliminar
+            int idEstudiante = 15; // Cambia el ID del estudiante que deseas eliminar
 
             String consulta = "DELETE FROM estudiantes WHERE id = " + idEstudiante;
             Statement statement = conexion.createStatement();
