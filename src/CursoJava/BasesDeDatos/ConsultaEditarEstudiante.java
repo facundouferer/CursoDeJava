@@ -8,7 +8,6 @@ public class ConsultaEditarEstudiante {
         String user = "root";
         String pass = "";
 
-
         try {
             Connection conexion = DriverManager.getConnection(url, user, pass);
             int idEstudiante = 16; // Cambia el ID del estudiante que deseas editar

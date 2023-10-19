@@ -20,7 +20,6 @@ public class ConsultaSeleccionarTodos {
                 // ... otros campos
                 System.out.println("ID: " + id + ", Nombre: " + nombre + ", Apellido: " + apellido);
             }
-
             resultado.close();
             statement.close();
             conexion.close();
