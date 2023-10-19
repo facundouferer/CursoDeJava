@@ -127,7 +127,7 @@ abstract class Persona implements Serializable {
 }
 
 // Clase Huéspedes que extiende de Persona e implementa MostrarInformación
-class Huesped extends Persona implements MostrarInformacion, Serializable {
+class Huesped extends Examenes2023.Persona implements MostrarInformacion, Serializable {
     private String nacionalidad;
 
     public Huesped(String nombre, String nacionalidad) {
