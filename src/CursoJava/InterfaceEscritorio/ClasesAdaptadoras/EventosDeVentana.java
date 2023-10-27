@@ -1,4 +1,4 @@
-package pre2023.parteXXclasesAdaptadoras;
+package CursoJava.InterfaceEscritorio.ClasesAdaptadoras;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -11,7 +11,4 @@ class EventosDeVentana extends WindowAdapter{
 		System.out.println("VENTANA ACTIVA");
 		
 	}
-
-		
-	
 }

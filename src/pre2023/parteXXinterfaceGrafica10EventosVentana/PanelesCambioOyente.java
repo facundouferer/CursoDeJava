@@ -32,22 +32,19 @@ class PanelesCambioOyente extends JPanel { //Es el ollente
 	
 	//CLASE INTERNA
 	private class ColorDeFondo  implements ActionListener{
-		
 		private Color colorDeFondo;
-		
 		public ColorDeFondo(Color c) {
 			// TODO Auto-generated constructor stub
 			this.colorDeFondo = c;
 			
 		}
-
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			// TODO Auto-generated method stub
 			//ESTE EVENTO ES QUIEN EJECUTA LAS ACCIONES
 			setBackground(colorDeFondo);
+			System.out.println("cambio de color");
 		}
-
 	}
 
 }

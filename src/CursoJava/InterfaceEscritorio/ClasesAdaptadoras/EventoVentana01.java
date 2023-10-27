@@ -1,4 +1,4 @@
-package pre2023.parteXXclasesAdaptadoras;
+package CursoJava.InterfaceEscritorio.ClasesAdaptadoras;
 
 import javax.swing.JFrame;
 
