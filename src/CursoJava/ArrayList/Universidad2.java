@@ -2,7 +2,7 @@ package CursoJava.ArrayList;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class People {
+abstract class People {
     private String nombre;
     private String apellido;
     private String dni;
