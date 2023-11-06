@@ -11,7 +11,9 @@ class MapNumeros {
         numeros.add( 1);
         numeros.add( 2);
         numeros.add( 3);
+
         List<Integer> numerosDuplicados = numeros.stream().map(numero -> numero * 2).collect(Collectors.toList());
+
         System.out.println(numerosDuplicados);
 
     }

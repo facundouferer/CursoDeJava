@@ -8,11 +8,14 @@ class MapPersonas {
     public static void main(String[] args){
 
         List<Persona> personas = new ArrayList<>();
+
         personas.add(new Persona("Jose", "Perez"));
         personas.add(new Persona("Maria", "Gonzalez"));
         personas.add(new Persona("Carlos", "Sanchez"));
+
         List<String> personasString = personas.stream().map((persona) ->
                 persona.getNombre()).collect(Collectors.toList());
+
         personasString.forEach((persona) -> System.out.println(persona));
     }
 }

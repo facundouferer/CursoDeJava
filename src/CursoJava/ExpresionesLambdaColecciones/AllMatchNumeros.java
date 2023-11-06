@@ -10,6 +10,7 @@ class AllMatchNumeros {
         numeros.add( 1);
         numeros.add( 2);
         numeros.add( 3);
+
         boolean coincide = numeros.stream().allMatch((numero) -> numero > 1);
 
         if(coincide){

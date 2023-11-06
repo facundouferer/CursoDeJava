@@ -8,6 +8,7 @@ class ForEachNumeros {
     public static void main(String[] args) {
 
         List<Integer> numeros = new ArrayList<>();
+
         numeros.add( 1);
         numeros.add( 2);
         numeros.add( 3);
@@ -16,6 +17,7 @@ class ForEachNumeros {
         numeros.stream().forEach((numero) -> System.out.println(numero));
 
         System.out.println("listado de numeros con expresion lambda");
+
         numeros.stream().forEach((numero)->{
             numero += 1;
             System.out.println(numero+" + "+numero+" = "+(numero+numero));
