@@ -14,7 +14,6 @@ abstract class Persona {
     }
 }
 
-
 // 2. Implementa la clase Paciente que hereda de Persona con atributos adicionales como historial médico.
 class Paciente extends Persona {
     private String historialMedico;
@@ -76,41 +75,23 @@ class Hospital {
 
     //método para asignar un doctor de cabecera a un paciente indicando el nombre del doctor y el nombre del paciente
     public void asignarDoctorCabecera(String nombreDoctor, String nombrePaciente) {
-        System.out.println(nombreDoctor);
         String consulta = "UPDATE pacientes SET doctor = (SELECT id FROM doctores WHERE nombre = '"+nombreDoctor+"') WHERE nombre = '"+nombrePaciente+"'";
         DBHelper.ejecutarConsulta(consulta);
-
     }
 
     public void listarPacientes() {
         String consulta = "SELECT * FROM pacientes";
         ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
-
-        if (resultado != null) {
-            try {
-                System.out.println("Lista de Pacientes:");
-                System.out.printf("%-10s %-15s %-5s %-20s %-12s %-10s\n", "ID", "Nombre", "Edad", "Historial Médico", "Fecha Ingreso", "Doctor");
-
-                while (resultado.next()) {
-                    int id = resultado.getInt("id");
-                    String nombre = resultado.getString("nombre");
-                    int edad = resultado.getInt("edad");
-                    String historialMedico = resultado.getString("historial_medico");
-                    Date fechaIngreso = resultado.getDate("fecha_ingreso");
-                    int idDoctor = resultado.getInt("doctor");
-
-                    System.out.printf("%-10d %-15s %-5d %-20s %-12s %-10d\n", id, nombre, edad, historialMedico, fechaIngreso, idDoctor);
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
+        listarPacientes(resultado);
     }
 
     public void listarPacientesEntreDosFechas(Date fechaDesde, Date fechaHasta) {
-        String consulta = "SELECT * FROM pacientes WHERE fecha_ingreso BETWEEN '"+fechaDesde+"' AND '"+fechaHasta+"';\n";
+        String consulta = "SELECT * FROM pacientes WHERE fecha_ingreso BETWEEN '"+fechaDesde+"' AND '"+fechaHasta+"';";
         ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
-
+        listarPacientes(resultado);
+    }
+//mostrar listado de pacientes
+    public void listarPacientes(ResultSet resultado){
         if (resultado != null) {
             try {
                 System.out.println("Lista de Pacientes:");
@@ -131,7 +112,6 @@ class Hospital {
             }
         }
     }
-
 }
 
 
@@ -177,8 +157,6 @@ class DBHelper {
         }
     }
 
-    //Desarrolla un método en la clase Hospital que elimine un paciente indicando su nombre
-
 }
 
 class HospitalBasesDeDatos {
@@ -187,17 +165,15 @@ class HospitalBasesDeDatos {
         //creamos un objeto de la clase Hospital
         Hospital hospital = new Hospital();
         //agregar un paciente de ejemplo
-        //Date fechaActual = new Date(2023 - 1900, 1 - 1, 15);
-        //Paciente paciente = new Paciente("Perez", 25, "Ninguno", 1, fechaActual);
-        //Paciente paciente2 = new Paciente("Carlitos", 25, "Ninguno", 1, fechaActual);
+        //Date fechaActual = new Date(2023 - 1900, 1 - 1, 10);
+        //Paciente paciente = new Paciente("Juan Bonete", 45, "Ninguno", 1, fechaActual);
         //hospital.agregarPaciente(paciente);
-        //hospital.agregarPaciente(paciente2);
 
         //eliminar un paciente de ejemplo
-        //hospital.eliminarPaciente("Perez");
+        //hospital.eliminarPaciente("Paciente1");
 
         //asignar un doctor de cabecera a un paciente de ejemplo
-        //hospital.asignarDoctorCabecera("Carlos", "Carlitos");
+        //hospital.asignarDoctorCabecera("Dario", "Pepito");
 
         //listar todos los pacientes
         //hospital.listarPacientes();
