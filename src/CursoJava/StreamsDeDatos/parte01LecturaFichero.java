@@ -1,5 +1,4 @@
 package CursoJava.StreamsDeDatos;
-
 import java.io.FileReader;
 
 class parte01LecturaFichero {
@@ -24,7 +23,7 @@ class LeerFichero {
          while(caracter != -1){ /* Preguntamos por -1 para saber cuando termina. caracter tiene el nro equivalente al codigo UNICODE de cada letra. */
             char letra = (char) caracter;
             contenido.append(letra); // Agregar el caracter al contenido
-            caracter = entrada.read();
+            caracter = entrada.read(); //avanza al siguiente caracter
          }
          entrada.close(); /*Siempre hay que cerrar los bufers o accesos a ficheros externos.*/
 

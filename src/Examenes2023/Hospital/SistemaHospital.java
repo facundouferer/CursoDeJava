@@ -1,4 +1,4 @@
-package Examenes2023;
+package Examenes2023.Hospital;
 
 import java.io.*;
 import java.util.ArrayList;

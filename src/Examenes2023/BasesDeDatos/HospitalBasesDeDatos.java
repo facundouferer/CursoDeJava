@@ -1,6 +1,9 @@
 package Examenes2023.BasesDeDatos;
 import java.sql.*;
 
+//script de la Base de Datos del programa
+// https://drive.google.com/file/d/1Ykhpy8r2i27wP7b7fiKPKbb1GOntUo39/view?usp=drive_link
+
 // 1. Define la clase abstracta Persona con atributos comunes para pacientes y doctores.
 abstract class Persona {
     protected String nombre;
