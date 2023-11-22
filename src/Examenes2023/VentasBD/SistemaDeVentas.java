@@ -6,22 +6,22 @@ import java.util.ArrayList;
 class DBHelper {
     private static final String URL = "jdbc:mysql://localhost:3306/ventas";
     private static final String USER = "root";
-    private static final String PASSWORD = "";
-    public static void ejecutarConsulta(String consulta) { // Método para ejecutar una consulta sin devolver resultados
+    private static final String PASSWORD = "qsczse753951";
+    public static void ejecutarConsulta(String consulta) { // Mï¿½todo para ejecutar una consulta sin devolver resultados
         try {
-            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexión con la base de datos
-            try (PreparedStatement statement = connection.prepareStatement(consulta)) {// Crear la declaración
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexiï¿½n con la base de datos
+            try (PreparedStatement statement = connection.prepareStatement(consulta)) {// Crear la declaraciï¿½n
                 statement.executeUpdate(); // Ejecutar la consulta
             }
-            connection.close(); // Cerrar la conexión
+            connection.close(); // Cerrar la conexiï¿½n
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-    public static ResultSet ejecutarConsultaConResultado(String consulta) { // Método para ejecutar una consulta y devolver un conjunto de resultados
+    public static ResultSet ejecutarConsultaConResultado(String consulta) { // Mï¿½todo para ejecutar una consulta y devolver un conjunto de resultados
         try {
-            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexión con la base de datos
-            PreparedStatement statement = connection.prepareStatement(consulta); // Crear la declaración
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexiï¿½n con la base de datos
+            PreparedStatement statement = connection.prepareStatement(consulta); // Crear la declaraciï¿½n
             return statement.executeQuery();// Ejecutar la consulta y devolver el conjunto de resultados
         } catch (SQLException e) {
             e.printStackTrace();
@@ -35,7 +35,7 @@ class DBHelper {
 
 class Productos {
 
-    /* 5. Generación de Informe de Productos en Stock (2 p.) */
+    /* 5. Generaciï¿½n de Informe de Productos en Stock (2 p.) */
     public static void generarInforme() {
 
         String consulta = "SELECT * FROM productos";
@@ -84,7 +84,7 @@ class Productos {
 
     }
 
-    /* 7. Obtener el Producto Más Vendido (2 p.) */
+    /* 7. Obtener el Producto Mï¿½s Vendido (2 p.) */
     public static Producto obtenerProductoMasVendido() {
         String consultaVentas = "SELECT producto_id, SUM(cantidad_vendida) as total_vendido \n" +
                 "FROM ventas\n" +
@@ -108,7 +108,7 @@ class Productos {
 
 
 
-/* 2. Creación de las Clases Producto y Vendedor con Atributos Equivalentes de la Base de Datos (0,7 p.) */
+/* 2. Creaciï¿½n de las Clases Producto y Vendedor con Atributos Equivalentes de la Base de Datos (0,7 p.) */
 class Producto {
     private int producto_id;
     private String nombre;
@@ -136,7 +136,7 @@ class Producto {
 
 
 
-/* 2. Creación de las Clases Producto y Vendedor con Atributos Equivalentes de la Base de Datos (0,7 p.) */
+/* 2. Creaciï¿½n de las Clases Producto y Vendedor con Atributos Equivalentes de la Base de Datos (0,7 p.) */
 class Vendedor {
     private int vendedor_id;
     private String nombre;
@@ -155,7 +155,7 @@ class Vendedor {
         this.fecha_contratacion = fecha_contratacion;
     }
 
-    /* 3. Creación de un Constructor Adicional en la clase Vendedor (0,5 p.)  */
+    /* 3. Creaciï¿½n de un Constructor Adicional en la clase Vendedor (0,5 p.)  */
     public Vendedor(String consultaBusqueda) {
         try (ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consultaBusqueda)) { // Realizar la consulta para obtener los datos del vendedor por ID
             if (resultado != null && resultado.next()) {
@@ -260,13 +260,13 @@ class Comerciales{
 class SistemaDeVentas {
     public static void main (String[] args){
 
-        System.out.println("\n2. Creación de las Clases Producto y Vendedor");
+        System.out.println("\n2. Creaciï¿½n de las Clases Producto y Vendedor");
         Producto producto1 = new Producto(1, "Producto 1", 10, 100);
         System.out.println(producto1);
         Vendedor vendedor1 = new Vendedor(1, "Vendedor 1", "Apellido 1", "12345678A", Date.valueOf("1990-01-01"), Date.valueOf("2010-01-01"));
         System.out.println(vendedor1);
 
-        System.out.println("\n3. Creación de un Constructor Adicional en la clase Vendedor");
+        System.out.println("\n3. Creaciï¿½n de un Constructor Adicional en la clase Vendedor");
         Vendedor vendedor2 = new Vendedor("SELECT * FROM vendedores WHERE vendedor_id = 2");
         System.out.println(vendedor2);
 
@@ -281,7 +281,7 @@ class SistemaDeVentas {
         Producto producto = Productos.obtenerProducto(1);
         System.out.println(producto);
 
-        System.out.println("\n7. Obtener el producto más vendido:");
+        System.out.println("\n7. Obtener el producto mï¿½s vendido:");
         Producto productoObjeto = Productos.obtenerProductoMasVendido();
         System.out.println(productoObjeto);
 
