@@ -6,7 +6,7 @@ import java.util.ArrayList;
 class DBHelper {
     private static final String URL = "jdbc:mysql://localhost:3306/ventas";
     private static final String USER = "root";
-    private static final String PASSWORD = "qsczse753951";
+    private static final String PASSWORD = "";
     public static void ejecutarConsulta(String consulta) { // M�todo para ejecutar una consulta sin devolver resultados
         try {
             Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexi�n con la base de datos
