@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class ej05CondicionalSwitch1 {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese cantidad de hijos");
@@ -16,7 +15,7 @@ public class ej05CondicionalSwitch1 {
                 System.out.println("No tiene hijos");
                 break;
             case 1:
-                System.out.println("Creo que est� bien tener un hijo");
+                System.out.println("Creo que esta bien tener un hijo");
                 break;
             case 2:
                 System.out.println("y bueno, 2 no son nada");
