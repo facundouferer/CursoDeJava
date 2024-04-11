@@ -6,7 +6,7 @@ public class ej01BucleFor1 {
         // TODO Auto-generated method stub
 
         for (int i = 0; i <= 10; i++) {
-            System.out.println("contando" + i);
+            System.out.println("contador: " + i);
         }
 
     }

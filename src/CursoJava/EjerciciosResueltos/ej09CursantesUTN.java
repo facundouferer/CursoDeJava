@@ -1,14 +1,12 @@
+/**
+ * 9) Se desea conocer el promedio y porcentaje de hombres y mujeres cursando 
+ * el Programación I en UTN FRRe, teniendo como dato la cantidad de hombres y mujeres de 3 comisiones.
+ */
 package CursoJava.EjerciciosResueltos;
 
 import java.util.Scanner;
 
 public class ej09CursantesUTN {
-    /**
-     * Se desea conocer el promedio y porcentaje de hombres y mujeres cursando el
-     * Programación I en UTN FRRe, teniendo como dato la cantidad de hombres y
-     * mujeres de 3
-     * comisiones.
-     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese la cantidad de hombres de la comisión 1: ");

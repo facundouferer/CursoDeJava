@@ -1,14 +1,12 @@
+/**
+ * 5) Leer dos números y encontrar: a. La suma del doble del primero más el cuadrado del segundo. b. El promedio de sus cubos. 
+ */
 package CursoJava.EjerciciosResueltos;
 
 import java.util.Scanner;
 
 public class ej05LosDosNumeros {
     public static void main(String[] args) {
-        /**
-         * Leer dos números y encontrar:
-         * a. La suma del doble del primero más el cuadrado del segundo.
-         * b. El promedio de sus cubos.
-         */
 
         Scanner input = new Scanner(System.in);
         // Pedir los dos números al usuario

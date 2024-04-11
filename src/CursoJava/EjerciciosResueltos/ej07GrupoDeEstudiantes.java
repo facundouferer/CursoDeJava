@@ -1,13 +1,12 @@
+/**
+ * 7) Un profesor desea saber qué porcentaje de hombres y qué porcentaje de mujeres hay en un grupo de estudiantes. 
+ */
 package CursoJava.EjerciciosResueltos;
 
 import java.util.Scanner;
 
 public class ej07GrupoDeEstudiantes {
     public static void main(String[] args) {
-        /**
-         * Un profesor desea saber qué porcentaje de hombres y qué porcentaje de mujeres
-         * hay en un grupo de estudiantes.
-         **/
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese el número de hombres: ");
         int hombres = input.nextInt();

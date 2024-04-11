@@ -1,15 +1,17 @@
+/**
+ * 5) Dados los lados de un triángulo donde los lados son ingresados por el
+ * usuario,
+ * informar qué tipo es: isósceles, escaleno o equilátero.
+ */
+
 package CursoJava.EjerciciosResueltos;
 
 import java.util.Scanner;
 
-public class ej105Triangulos {
-  /**
-   * 5) Dados los lados de un triángulo donde los lados son ingresados por el
-   * usuario,
-   * informar qué tipo es: isósceles, escaleno o equilátero.
-   */
+public class ej14Triangulos {
+
   public static void main(String[] args) {
-    // pedido al usuario de los lados del triángulo
+
     Scanner scanner = new Scanner(System.in);
     System.out.println("Ingrese el primer lado del triángulo: ");
     int lado1 = scanner.nextInt();
@@ -17,7 +19,7 @@ public class ej105Triangulos {
     int lado2 = scanner.nextInt();
     System.out.println("Ingrese el tercer lado del triángulo: ");
     int lado3 = scanner.nextInt();
-    // comparación de lados y determinación del tipo de triángulo
+
     if (lado1 == lado2 && lado2 == lado3) {
       System.out.println("El triángulo es equilátero.");
     } else if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3) {

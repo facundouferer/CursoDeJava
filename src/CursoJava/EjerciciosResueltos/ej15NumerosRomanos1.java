@@ -1,16 +1,17 @@
+/**
+ * 6) Elaborar una solución que permita al usuario ingresar un número entero del
+ * 1 al 10 y muestre su
+ * equivalente en números romanos.
+ */
+
 package CursoJava.EjerciciosResueltos;
 
-public class ej106NumerosRomanos1 {
-  /**
-   * 6) Elaborar una solución que permita al usuario ingresar un número entero del
-   * 1 al 10 y muestre su
-   * equivalente en números romanos.
-   */
+public class ej15NumerosRomanos1 {
   public static void main(String[] args) {
-    // pedido al usuario por consola del número entero
+
     System.out.println("Ingrese un número entero del 1 al 10: ");
     int numero = Integer.parseInt(System.console().readLine());
-    // conversión de número entero a número romano
+
     String numeroRomano = "";
     switch (numero) {
       case 1:

@@ -3,10 +3,10 @@ package CursoJava.EstructurasIterativas;
 public class ej06ForEach {
     public static void main(String[] args) {
 
-        String nombres[] = { "Rita", "Facundo", "Carlos" };
+        String listaDePersonas[] = { "Rita", "Facundo", "Carlos", "Belén", "Analía" };
 
-        for (String nombre : nombres) {
-            System.out.println(nombre);
+        for (String persona : listaDePersonas) {
+            System.out.println(persona);
         }
     }
 }

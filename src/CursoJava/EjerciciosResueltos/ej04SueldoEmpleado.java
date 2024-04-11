@@ -1,16 +1,14 @@
+/**
+ * 4) Escriba un algoritmo que dado el número de horas trabajadas por un empleado 
+ * y el sueldo por hora, calcule el sueldo total de ese empleado. 
+ * Tenga en cuenta que las horas extras se pagan el doble. 
+ */
 package CursoJava.EjerciciosResueltos;
 
 import java.util.Scanner;
 
 public class ej04SueldoEmpleado {
     public static void main(String[] args) {
-        /**
-         * Escriba un algoritmo que dado el número de horas trabajadas por un empleado y
-         * el sueldo
-         * por hora, calcule el sueldo total de ese empleado. Tenga en cuenta que las
-         * horas extras se
-         * pagan el doble.
-         */
 
         // crear un objeto Scanner para leer la entrada del usuario
         Scanner sc = new Scanner(System.in);

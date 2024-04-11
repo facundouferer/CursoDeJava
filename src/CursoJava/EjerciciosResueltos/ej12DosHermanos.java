@@ -1,13 +1,15 @@
+/**
+ * 3) Solicitar la edad de dos hermanos, mostrando un mensaje que informe la
+ * edad del mayor
+ * y cuántos años de diferencia tiene con el menor.
+ */
+
 package CursoJava.EjerciciosResueltos;
 
 import java.util.Scanner;
 
-public class ej103DosHermanos {
-  /**
-   * 3) Solicitar la edad de dos hermanos, mostrando un mensaje que informe la
-   * edad del mayor
-   * y cuántos años de diferencia tiene con el menor.
-   */
+public class ej12DosHermanos {
+
   public static void main(String[] args) {
     // pedido al usuario de las edades de los hermanos
     Scanner scanner = new Scanner(System.in);

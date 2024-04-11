@@ -1,12 +1,11 @@
+/**
+ * 10) Determinar si un alumno aprueba o desaprueba un curso, 
+ * sabiendo que aprueba si su promedio de tres calificaciones 
+ * es mayor o igual a 60; desaprueba en caso contrario.
+ */
 package CursoJava.EjerciciosResueltos;
 
-public class ej101Aprobacion {
-    /**
-     * Determinar si un alumno aprueba o desaprueba un curso, sabiendo que aprueba
-     * si su
-     * promedio de tres calificaciones es mayor o igual a 60; desaprueba en caso
-     * contrario.
-     */
+public class ej10Aprobacion {
     public static void main(String[] args) {
         int calificacion1 = 50;
         int calificacion2 = 50;
