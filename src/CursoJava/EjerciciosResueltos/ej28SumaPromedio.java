@@ -17,17 +17,14 @@ public class ej28SumaPromedio {
     int suma = 0;
     int cantidad = 0;
     double promedio = 0.0;
-
     while (numero >= 0 && numero <= 100) {
       System.out.print("Ingrese un número: ");
       numero = scanner.nextInt();
-
       if (numero >= 0 && numero <= 100) {
         suma += numero;
         cantidad++;
       }
     }
-
     if (cantidad > 0) {
       promedio = (double) suma / cantidad;
       System.out.println("Suma: " + suma);

@@ -6,8 +6,10 @@ package CursoJava.EjerciciosResueltos;
 public class ej33NumerosPares {
 
   public static void main(String[] args) {
-    for (int i = 0; i <= 18; i += 2) {
-      System.out.println(i);
+    int i = 1;
+    while (i <= 18) {
+      System.out.print(i + ", ");
+      i++;
     }
   }
 

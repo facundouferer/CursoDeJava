@@ -9,31 +9,21 @@ import java.util.Scanner;
 
 public class ej04SueldoEmpleado {
     public static void main(String[] args) {
-
         // crear un objeto Scanner para leer la entrada del usuario
         Scanner sc = new Scanner(System.in);
-
         // solicitar al usuario el número de horas trabajadas
         System.out.print("Ingrese el número de horas trabajadas: ");
         int horasTrabajadas = sc.nextInt();
-
         // solicitar al usuario el sueldo por hora
         System.out.print("Ingrese el sueldo por hora: ");
         double sueldoPorHora = sc.nextDouble();
-
         // calcular el sueldo total del empleado
         double sueldoTotal;
 
-        if (horasTrabajadas <= 40) { // si las horas trabajadas son menores o iguales a 40
-
-            sueldoTotal = horasTrabajadas * sueldoPorHora; // calcular el sueldo sin horas extras
-
-        } else { // si las horas trabajadas son mayores a 40
-
-            // calcular el sueldo con horas extras (las primeras 40 horas se pagan a tarifa
-            // normal y las demás al doble)
-            sueldoTotal = 40 * sueldoPorHora + (horasTrabajadas - 40) * (sueldoPorHora * 2);
-
+        if (horasTrabajadas <= 40) {
+            sueldoTotal = horasTrabajadas * sueldoPorHora;
+        } else {
+            sueldoTotal = sueldoPorHora * horasTrabajadas * 2;
         }
 
         // mostrar el sueldo total del empleado

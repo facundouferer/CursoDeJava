@@ -11,7 +11,7 @@ public class ej17numerosMultiplicados {
     int resultado;
 
     System.out.println("Introduce el primer número:");
-    num1 = Integer.parseInt(System.console().readLine());
+    num1 = Integer.parseInt(System.console().readLine());// es igual a un Scanner
     System.out.println("Introduce el segundo número:");
     num2 = Integer.parseInt(System.console().readLine());
 

@@ -3,42 +3,57 @@ package CursoJava.Arreglos;
 import java.util.Scanner;
 
 public class Arreglos12 {
-    /**Ejercicio 12:
-     Suponga que se quiere construir un algoritmo que califique un examen de selección múltiple
-     presentado por un estudiante de Programación de Computadores.
-     En cada una de las preguntas del examen, el estudiante debió elegir una de cinco opciones,
-     identificadas con las letras A,B,C,D y E?.
-     Las entradas (datos conocidos) para el algoritmo son:
-     a) El número de preguntas que tenía el examen.
-     b) Cada una de las respuestas dadas por el estudiante.
-     c) Las respuestas correctas.
-     d) La salida esperada (dato desconocido) es: la nota obtenida. Esta nota corresponde al
-     número de aciertos que tuvo el estudiante basado en un sistema de puntuación
-     diseñado para el examen. Por ejemplo, que cada pregunta salga un punto o medio
-     punto y se sume por el total de preguntas.
-     Aclaraciones:
-     En este problema, los arreglos son útiles para guardar las respuestas correctas y las opciones
-     elegidas por el estudiante. El número de preguntas del examen se puede guardar en una
-     variable entera, al igual que la nota. Enseguida se muestra la especificación de este problema:
-     Diseñe un programa para implementar este algoritmo de examen basado en las siguientes
-     especificaciones:
-     a) El número de preguntas del examen debe ser mayor que cero. (totalPreguntas > 0?).
-     b) Cada una de las respuestas del estudiante debe ser una letra mayúscula que está entre
-     A ?y E?.
-     c) Cada una de las respuestas correctas debe ser una letra mayúscula que está entre A ?y
-     E?.
-     d) La nota dada por el algoritmo corresponde al total de respuestas acertadas del
-     estudiante*/
+    /**
+     * Ejercicio 12:
+     * Suponga que se quiere construir un algoritmo que califique un examen de
+     * selecciï¿½n mï¿½ltiple
+     * presentado por un estudiante de Programaciï¿½n de Computadores.
+     * En cada una de las preguntas del examen, el estudiante debiÃ³ elegir una de
+     * cinco opciones,
+     * identificadas con las letras A,B,C,D y E?.
+     * Las entradas (datos conocidos) para el algoritmo son:
+     * a) El nÃºmero de preguntas que tendrÃ¡ el examen.
+     * b) Cada una de las respuestas dadas por el estudiante.
+     * c) Las respuestas correctas.
+     * d) La salida esperada (dato desconocido) es: la nota obtenida. Esta nota
+     * corresponde al
+     * nÃºmero de aciertos que tuvo el estudiante basado en un sistema de puntuaciï¿½n
+     * diseÃ±ado para el examen. Por ejemplo, que cada pregunta salga un punto o
+     * medio
+     * punto y se sume por el total de preguntas.
+     * Aclaraciones:
+     * En este problema, los arreglos son Ãºtiles para guardar las respuestas
+     * correctas y las opciones
+     * elegidas por el estudiante. El nÃºmero de preguntas del examen se puede
+     * guardar en una
+     * variable entera, al igual que la nota. Enseguida se muestra la especificaciï¿½n
+     * de este problema:
+     * DiseÃ±e un programa para implementar este algoritmo de examen basado en las
+     * siguientes
+     * especificaciones:
+     * a) El nÃºmero de preguntas del examen debe ser mayor que cero. (totalPreguntas
+     * > 0?).
+     * b) Cada una de las respuestas del estudiante debe ser una letra mayÃºscula que
+     * estÃ© entre
+     * A ?y E?.
+     * c) Cada una de las respuestas correctas debe ser una letra mayÃºscula que estï¿½
+     * entre A ?y
+     * E?.
+     * d) La nota dada por el algoritmo corresponde al total de respuestas acertadas
+     * del
+     * estudiante
+     */
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar al usuario el número de preguntas del examen
-        System.out.println("Ingrese el número de preguntas del examen:");
+        // Solicitar al usuario el nï¿½mero de preguntas del examen
+        System.out.println("Ingrese el nÃºmero de preguntas del examen:");
         int totalPreguntas = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea restante
+        scanner.nextLine(); // Consumir el salto de lï¿½nea restante
 
-        // Crear arreglos para almacenar las respuestas del estudiante y las respuestas correctas
+        // Crear arreglos para almacenar las respuestas del estudiante y las respuestas
+        // correctas
         String[] respuestasEstudiante = new String[totalPreguntas];
         String[] respuestasCorrectas = new String[totalPreguntas];
 

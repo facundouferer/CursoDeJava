@@ -6,7 +6,7 @@ public class operadoresTernarios {
     int dos = 2;
     int tres = 3;
     int cuatro = 4;
-    String mensaje = ((uno != dos) && (tres == cuatro)) ? "VERDADERO" : "FALSO";
+    String mensaje = ((uno != dos) || (tres == cuatro)) ? "VERDADERO" : "FALSO";
     System.out.println(mensaje);
   }
 }
