@@ -1,24 +1,30 @@
 package CursoJava.Arreglos;
+
 import java.util.Scanner;
 
 public class Arreglos01 {
     /**
      * Ejercicio 1:
-     * Escriba un programa que solicite al usuario un valor entero para establecer el tamaño de un
-     * arreglo de números enteros. Luego utilice ese valor para crear el arreglo y posteriormente
-     * solicitar al usuario que ingrese cada uno de los valores para completar el arreglo.
-     * Finalmente, imprima por pantalla la lista de valores ingresados por el usuario en:
-     * a) El mismo orden en que fueron leídos por el teclado.
-     * b) En orden inverso al que fueron cargados.
-     * c) Una lista de todos los números pares.
-     * d) Un lista de todos los valores que se encuentran ubicados en posiciones impares en el
+     * Escriba un programa que solicite al usuario un valor entero para establecer
+     * el tamaï¿½o de un
+     * arreglo de nï¿½meros enteros. Luego utilice ese valor para crear el arreglo y
+     * posteriormente
+     * solicitar al usuario que ingrese cada uno de los valores para completar el
      * arreglo.
-     * **/
+     * Finalmente, imprima por pantalla la lista de valores ingresados por el
+     * usuario en:
+     * a) El mismo orden en que fueron leÃ­dos por el teclado.
+     * b) En orden inverso al que fueron cargados.
+     * c) Una lista de todos los nÃºmeros pares.
+     * d) Un lista de todos los valores que se encuentran ubicados en posiciones
+     * impares en el
+     * arreglo.
+     **/
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar al usuario el tamaño del arreglo
-        System.out.println("Por favor, ingrese el tamaño del arreglo:");
+        // Solicitar al usuario el tamaï¿½o del arreglo
+        System.out.println("Por favor, ingrese el tamaï¿½o del arreglo:");
         int n = scanner.nextInt();
 
         // Crear el arreglo y solicitar los valores al usuario
@@ -42,8 +48,8 @@ public class Arreglos01 {
         }
         System.out.println();
 
-        // c) Imprimir todos los números pares
-        System.out.println("Los números pares son:");
+        // c) Imprimir todos los nï¿½meros pares
+        System.out.println("Los nï¿½meros pares son:");
         for (int valor : arreglo) {
             if (valor % 2 == 0) {
                 System.out.print(valor + " ");

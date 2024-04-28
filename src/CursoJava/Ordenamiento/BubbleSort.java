@@ -1,41 +1,41 @@
 package CursoJava.Ordenamiento;
 
 public class BubbleSort {
-    public static void main(String[] args) {
-        int[] array = {5, 2, 8, 1, 9, 3};
-
-        System.out.println("Array sin ordenar:");
-        printArray(array);
-        bubbleSort(array);
-        System.out.println("Array ordenado:");
-        printArray(array);
-    }
-
-    public static void bubbleSort(int[] array) {
-        int n = array.length;
-
+    public static void sort(int[] arreglo) {
+        int n = arreglo.length;
+        // Iterar sobre todo el arreglo
         for (int i = 0; i < n - 1; i++) {
-            // Iteración actual
-            System.out.println("Iteración " + (i + 1) + ":");
-
+            // Últimos i elementos ya están en su posición correcta, por lo que no necesitan
+            // ser verificados
             for (int j = 0; j < n - i - 1; j++) {
-                if (array[j] > array[j + 1]) {
-                    // Intercambiar los elementos
-                    int temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
+                // Comparar elemento actual con el siguiente
+                if (arreglo[j] > arreglo[j + 1]) {
+                    // Intercambiar si el elemento actual es mayor que el siguiente
+                    int temp = arreglo[j];
+                    arreglo[j] = arreglo[j + 1];
+                    arreglo[j + 1] = temp;
+                    System.out.println("Intercambiando " + arreglo[j] + " con " + arreglo[j + 1]);
                 }
-                // Estado actual del array en esta iteraci�n
-                printArray(array);
             }
-
-            System.out.println();
         }
     }
 
-    public static void printArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+    public static void main(String[] args) {
+        int[] arreglo = { 64, 34, 25, 12, 22, 11, 90 };
+        System.out.println("Arreglo original:");
+        imprimirArreglo(arreglo);
+
+        // Ordenar el arreglo usando BubbleSort
+        sort(arreglo);
+
+        System.out.println("Arreglo ordenado:");
+        imprimirArreglo(arreglo);
+    }
+
+    // Método para imprimir el contenido del arreglo
+    public static void imprimirArreglo(int[] arreglo) {
+        for (int elemento : arreglo) {
+            System.out.print(elemento + " ");
         }
         System.out.println();
     }
