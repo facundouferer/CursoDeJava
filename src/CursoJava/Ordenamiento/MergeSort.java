@@ -9,6 +9,7 @@ public class MergeSort {
         }
         int[] arregloTemporal = new int[arreglo.length]; // Arreglo temporal para almacenar los elementos durante la
                                                          // mezcla
+        System.out.println("Iniciando ordenamiento MergeSort:");
         mergeSort(arreglo, arregloTemporal, 0, arreglo.length - 1); // Llamada al método auxiliar mergeSort
     }
 
@@ -19,35 +20,41 @@ public class MergeSort {
             // Dividir el arreglo en dos partes y ordenar cada parte recursivamente
             mergeSort(arreglo, arregloTemporal, inicio, medio); // Parte izquierda
             mergeSort(arreglo, arregloTemporal, medio + 1, fin); // Parte derecha
-            // Mezclar las partes ordenadas para fusionarlas en un solo arreglo ordenado
+            // Mezclar las partes ordenadas
             merge(arreglo, arregloTemporal, inicio, medio, fin);
+            System.out.println("Después de mezclar desde " + inicio + " a " + fin + ":");
+            imprimirArreglo(arreglo);
         }
     }
 
     // Método auxiliar para mezclar dos sub-arreglos ordenados en uno solo
     private static void merge(int[] arreglo, int[] arregloTemporal, int inicio, int medio, int fin) {
-        // Copiar los elementos a los arreglos temporales
+        // Copiar los elementos al arreglo temporal
         for (int i = inicio; i <= fin; i++) {
             arregloTemporal[i] = arreglo[i];
         }
-        // Índices para recorrer los arreglos temporal y original, y el índice para el
-        // arreglo resultante
+
         int i = inicio, j = medio + 1, k = inicio;
-        // Mezclar los dos sub-arreglos ordenados en uno solo
+        // Mezclar los dos sub-arreglos de vuelta al arreglo original
         while (i <= medio && j <= fin) {
             if (arregloTemporal[i] <= arregloTemporal[j]) {
-                arreglo[k++] = arregloTemporal[i++];
+                arreglo[k] = arregloTemporal[i];
+                i++;
             } else {
-                arreglo[k++] = arregloTemporal[j++];
+                arreglo[k] = arregloTemporal[j];
+                j++;
             }
+            k++;
         }
+
         // Copiar los elementos restantes de la parte izquierda, si los hay
         while (i <= medio) {
-            arreglo[k++] = arregloTemporal[i++];
+            arreglo[k] = arregloTemporal[i];
+            i++;
+            k++;
         }
-        // No es necesario copiar los elementos restantes de la parte derecha, ya que ya
-        // están en su lugar
-        imprimirArreglo(arreglo);
+
+        // Los elementos del lado derecho ya están en el lugar correcto
     }
 
     // Método para imprimir el contenido del arreglo
@@ -71,17 +78,3 @@ public class MergeSort {
         imprimirArreglo(arreglo);
     }
 }
-
-/**
- * El método sort() es el punto de entrada para iniciar el proceso de
- * ordenamiento MergeSort. Se crea un arreglo temporal para almacenar los
- * elementos durante la mezcla y se llama al método auxiliar mergeSort() con los
- * parámetros necesarios.
- * El método mergeSort() implementa el algoritmo MergeSort de manera recursiva.
- * Divide el arreglo en dos partes y ordena cada parte recursivamente. Luego,
- * mezcla las partes ordenadas usando el método auxiliar merge().
- * El método merge() se encarga de mezclar dos sub-arreglos ordenados en uno
- * solo.
- * La clase Main contiene un ejemplo de uso del algoritmo MergeSort para ordenar
- * un arreglo de ejemplo e imprime tanto el arreglo original como el ordenado.
- */

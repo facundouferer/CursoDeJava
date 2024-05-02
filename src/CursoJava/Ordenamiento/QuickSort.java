@@ -6,12 +6,12 @@ public class QuickSort {
         if (arreglo == null || arreglo.length == 0) {
             return;
         }
+        System.out.println("Iniciando QuickSort:");
         quickSort(arreglo, 0, arreglo.length - 1); // Llamada al método auxiliar quickSort
     }
 
     // Método auxiliar que implementa el algoritmo QuickSort de manera recursiva
     private static void quickSort(int[] arreglo, int inicio, int fin) {
-        // Si hay uno o menos elementos en el arreglo, ya está ordenado
         if (inicio >= fin) {
             return;
         }
@@ -19,6 +19,12 @@ public class QuickSort {
         int pivote = arreglo[(inicio + fin) / 2];
         // Particionar el arreglo alrededor del pivote y obtener el índice de partición
         int indiceParticion = particion(arreglo, inicio, fin, pivote);
+        // Mostrar el resultado de la partición
+        System.out.println("Partición: ");
+        imprimirArreglo(arreglo);
+        // Mostrar los subarreglos resultantes
+        System.out.println("Subarreglos resultantes: ");
+        imprimirSubarreglos(arreglo, inicio, fin, indiceParticion);
         // Aplicar QuickSort recursivamente a las sub-particiones izquierda y derecha
         // del pivote
         quickSort(arreglo, inicio, indiceParticion - 1);
@@ -27,8 +33,6 @@ public class QuickSort {
 
     // Método auxiliar para particionar el arreglo y devolver el índice de partición
     private static int particion(int[] arreglo, int inicio, int fin, int pivote) {
-        // Mover los elementos más pequeños que el pivote a la izquierda y los más
-        // grandes a la derecha
         while (inicio <= fin) {
             while (arreglo[inicio] < pivote) {
                 inicio++;
@@ -58,6 +62,24 @@ public class QuickSort {
         System.out.println();
     }
 
+    // Método para imprimir los subarreglos resultantes
+    public static void imprimirSubarreglos(int[] arreglo, int inicio, int fin, int indiceParticion) {
+        // Imprimir subarreglo izquierdo
+        System.out.print("[");
+        for (int i = inicio; i < indiceParticion; i++) {
+            System.out.print(arreglo[i] + (i == indiceParticion - 1 ? "" : ", "));
+        }
+        System.out.print("] ");
+        // Imprimir pivote
+        System.out.print("[" + arreglo[indiceParticion - 1] + "] ");
+        // Imprimir subarreglo derecho
+        System.out.print("[");
+        for (int i = indiceParticion; i <= fin; i++) {
+            System.out.print(arreglo[i] + (i == fin ? "" : ", "));
+        }
+        System.out.println("]");
+    }
+
     // Método main para probar el algoritmo QuickSort
     public static void main(String[] args) {
         int[] arreglo = { 64, 34, 25, 12, 22, 11, 90 };
@@ -71,16 +93,3 @@ public class QuickSort {
         imprimirArreglo(arreglo);
     }
 }
-
-/**
- * El método sort() es el punto de entrada para iniciar el proceso de
- * ordenamiento QuickSort. Se llama al método auxiliar quickSort() con los
- * parámetros necesarios.
- * El método quickSort() implementa el algoritmo QuickSort de manera recursiva.
- * Se elige un pivote, se particiona el arreglo y se aplica QuickSort
- * recursivamente a las sub-particiones izquierda y derecha del pivote.
- * El método particion() se encarga de particionar el arreglo alrededor del
- * pivote y devuelve el índice de partición.
- * La clase Main contiene un ejemplo de uso del algoritmo QuickSort para ordenar
- * un arreglo de ejemplo e imprime tanto el arreglo original como el ordenado.
- */
