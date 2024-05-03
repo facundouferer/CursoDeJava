@@ -1,4 +1,5 @@
-package CursoJava.ArrayList;
+package CursoJava.EstructurasDinamicas.Listas;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -43,7 +44,8 @@ abstract class People {
     }
 }
 
-// Clase Estudiante, que hereda de la clase Persona e introduce un nuevo campo legajo
+// Clase Estudiante, que hereda de la clase Persona e introduce un nuevo campo
+// legajo
 class Studient extends People {
     private String legajo;
 
@@ -68,7 +70,8 @@ class Studient extends People {
     }
 }
 
-// Clase Profesor, que hereda de la clase Persona e introduce un nuevo campo montoSueldo
+// Clase Profesor, que hereda de la clase Persona e introduce un nuevo campo
+// montoSueldo
 class Teacher extends People {
     private double montoSueldo;
 
@@ -85,7 +88,8 @@ class Teacher extends People {
     }
 }
 
-// Clase Curso, que contiene un ArrayList de estudiantes y un objeto de la clase Profesor
+// Clase Curso, que contiene un ArrayList de estudiantes y un objeto de la clase
+// Profesor
 class ClassRoom {
     ArrayList<Studient> estudiantes;
     Teacher profesor;
@@ -134,7 +138,6 @@ class ClassRoom {
         return detalles;
     }
 
-
 }
 
 // Clases Persona, Estudiante, Profesor, y Curso son las mismas
@@ -145,7 +148,8 @@ class Principal {
         ClassRoom curso = new ClassRoom();
 
         while (true) {
-            System.out.println("1. Asignar profesor al curso\n2. Agregar estudiante al curso\n3. Editar estudiante\n4. Eliminar estudiante\n5. Mostrar detalles del curso\n6. Salir");
+            System.out.println(
+                    "1. Asignar profesor al curso\n2. Agregar estudiante al curso\n3. Editar estudiante\n4. Eliminar estudiante\n5. Mostrar detalles del curso\n6. Salir");
             System.out.print("Seleccione una opción: ");
             int opcion = scanner.nextInt();
 

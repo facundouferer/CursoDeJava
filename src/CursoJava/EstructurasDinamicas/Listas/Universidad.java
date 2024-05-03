@@ -1,4 +1,5 @@
-package CursoJava.ArrayList;
+package CursoJava.EstructurasDinamicas.Listas;
+
 import java.util.ArrayList;
 
 // Clase Persona, que actúa como superclase para las clases Estudiante y Profesor
@@ -39,7 +40,8 @@ class Persona {
     }
 }
 
-// Clase Estudiante, que hereda de la clase Persona e introduce un nuevo campo legajo
+// Clase Estudiante, que hereda de la clase Persona e introduce un nuevo campo
+// legajo
 class Estudiante extends Persona {
     private String legajo;
 
@@ -67,7 +69,8 @@ class Estudiante extends Persona {
     }
 }
 
-// Clase Profesor, que hereda de la clase Persona e introduce un nuevo campo montoSueldo
+// Clase Profesor, que hereda de la clase Persona e introduce un nuevo campo
+// montoSueldo
 class Profesor extends Persona {
     private double montoSueldo;
 
@@ -96,7 +99,8 @@ class Profesor extends Persona {
     }
 }
 
-// Clase Curso, que contiene un ArrayList de estudiantes y un objeto de la clase Profesor
+// Clase Curso, que contiene un ArrayList de estudiantes y un objeto de la clase
+// Profesor
 class Curso {
     ArrayList<Estudiante> estudiantes;
     Profesor profesor;
@@ -140,8 +144,6 @@ class Curso {
     public String toString() {
         return "Curso: \n" + "Profesor: " + profesor.toString() + "\n";
     }
-
-
 
 }
 

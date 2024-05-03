@@ -1,4 +1,4 @@
-package CursoJava.ArrayList;
+package CursoJava.EstructurasDinamicas.Listas;
 
 import java.util.ArrayList;
 import java.util.Scanner;
