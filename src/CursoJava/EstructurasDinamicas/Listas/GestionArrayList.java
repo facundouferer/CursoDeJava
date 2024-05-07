@@ -55,7 +55,7 @@ public class GestionArrayList {
           if (lista.remove(borrar)) {
             System.out.println("Elemento borrado correctamente.");
           } else {
-            System.out.println("El elemento no está en la lista.");
+            System.out.println("El elemento no está en la lista. (cambios)");
           }
           break;
         case 5:
