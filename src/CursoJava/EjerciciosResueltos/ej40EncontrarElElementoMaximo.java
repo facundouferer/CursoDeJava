@@ -4,29 +4,26 @@ import java.util.ArrayList;
 
 public class ej40EncontrarElElementoMaximo {
 
-  public static ArrayList<Integer> concatenarArrays(ArrayList<Integer> array1, ArrayList<Integer> array2) {
-    ArrayList<Integer> arrayConcatenado = new ArrayList<>(); // Creamos un nuevo ArrayList para almacenar la
-                                                             // concatenación
-    arrayConcatenado.addAll(array1); // Agregamos todos los elementos del primer array al array concatenado
-    arrayConcatenado.addAll(array2); // Agregamos todos los elementos del segundo array al array concatenado
-    return arrayConcatenado; // Retornamos el array concatenado
+  public static int buscarMaximo(ArrayList<Integer> array) {
+    int maximo = array.get(0);
+    for (int i = 1; i < array.size(); i++) {
+      if (array.get(i) > maximo) {
+        maximo = array.get(i);
+      }
+    }
+    return maximo;
   }
 
   public static void main(String[] args) {
-    ArrayList<Integer> array1 = new ArrayList<>(); // Creamos un ArrayList para el primer array
-    array1.add(1); // Agregamos elementos al primer array
-    array1.add(2);
-    array1.add(3);
-
-    ArrayList<Integer> array2 = new ArrayList<>(); // Creamos un ArrayList para el segundo array
-    array2.add(4); // Agregamos elementos al segundo array
-    array2.add(5);
-    array2.add(6);
-
-    ArrayList<Integer> arrayConcatenado = concatenarArrays(array1, array2); // Concatenamos los dos arrays llamando al
-                                                                            // método concatenarArrays
-
-    System.out.println("Array concatenado: " + arrayConcatenado); // Imprimimos el array concatenado
+    ArrayList<Integer> array = new ArrayList<>();
+    array.add(6);
+    array.add(2);
+    array.add(12);
+    array.add(1);
+    array.add(12);
+    array.add(3);
+    int maximo = buscarMaximo(array);
+    System.out.println("El elemento máximo del array es: " + maximo);
   }
 
 }

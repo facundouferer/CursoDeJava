@@ -18,6 +18,8 @@ public class ej42RotacionDeArrays {
     array.add(3);
     array.add(4);
     array.add(5);
+    array.add(6);
+    array.add(7);
 
     System.out.println("Array original: " + array); // Imprimimos el array original
 
