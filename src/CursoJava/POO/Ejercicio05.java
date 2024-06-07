@@ -1,12 +1,18 @@
-package CursoJava.POO;
-/**Ejercicio 5:
- Escribir una clase Papel que contenga un atributo texto, un método escribir, que reciba una
- cadena de caracteres para agregar al texto, y el método toString() que imprima el contenido del
- texto.
- Escribir una clase Birome que contenga un atributo cantidad de tinta, y un método escribir, que
- reciba un texto y un papel (objeto de la clase Papel) sobre el cual escribir. Cada letra escrita
- debe reducir la cantidad de tinta contenida. Cuando la tinta se acabe, debe imprimir un mensaje
- de error indicando que la tinta se ha acabado.*/
+/**
+ * Ejercicio 5:
+ * Escribir una clase Papel que contenga un atributo texto, un mï¿½todo escribir,
+ * que reciba una
+ * cadena de caracteres para agregar al texto, y el mï¿½todo toString() que
+ * imprima el contenido del
+ * texto.
+ * Escribir una clase Birome que contenga un atributo cantidad de tinta, y un
+ * mï¿½todo escribir, que
+ * reciba un texto y un papel (objeto de la clase Papel) sobre el cual escribir.
+ * Cada letra escrita
+ * debe reducir la cantidad de tinta contenida. Cuando la tinta se acabe, debe
+ * imprimir un mensaje
+ * de error indicando que la tinta se ha acabado.
+ */
 public class Ejercicio05 {
 
     public static void main(String[] args) {
@@ -18,7 +24,7 @@ public class Ejercicio05 {
         Birome birome = new Birome(10);
 
         // Escribimos en el papel con la birome
-        birome.escribir("Hola, ¿cómo estás?", papel);
+        birome.escribir("Hola, ï¿½cï¿½mo estï¿½s?", papel);
         birome.escribir(" Espero que bien.", papel);
         birome.escribir(" Saludos.", papel);
 
@@ -27,7 +33,7 @@ public class Ejercicio05 {
 
         // Intentamos escribir con la birome que no tiene tinta
         Birome biromeSinTinta = new Birome(0);
-        biromeSinTinta.escribir("No debería aparecer este texto en el papel.", papel);
+        biromeSinTinta.escribir("No deberï¿½a aparecer este texto en el papel.", papel);
     }
 }
 
@@ -41,12 +47,12 @@ class Papel {
         this.texto = "";
     }
 
-    // Método escribir
+    // Mï¿½todo escribir
     public void escribir(String texto) {
         this.texto += texto;
     }
 
-    // Método toString
+    // Mï¿½todo toString
     public String toString() {
         return texto;
     }
@@ -62,7 +68,7 @@ class Birome {
         this.cantidadTinta = cantidadTinta;
     }
 
-    // Método escribir
+    // Mï¿½todo escribir
     public void escribir(String texto, Papel papel) {
         for (int i = 0; i < texto.length(); i++) {
             char letra = texto.charAt(i);
@@ -76,4 +82,3 @@ class Birome {
         }
     }
 }
-

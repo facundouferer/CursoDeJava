@@ -1,13 +1,13 @@
-package CursoJava.POO;
+
 /**Ejercicio 4:
- Crear una clase Vector, que en su constructor reciba una lista de elementos que serán sus
- coordenadas. En el método toString() se imprime su contenido con el formato [x,y,z].
- 1. Crear un método que reciba un número y devuelva un nuevo vector (objeto de la clase
- Vector), con los elementos multiplicados por ese número.
- 2. Crear un método sumar que recibe otro vector, verifica si tienen la misma cantidad de
+ Crear una clase Vector, que en su constructor reciba una lista de elementos que serï¿½n sus
+ coordenadas. En el mï¿½todo toString() se imprime su contenido con el formato [x,y,z].
+ 1. Crear un mï¿½todo que reciba un nï¿½mero y devuelva un nuevo vector (objeto de la clase
+ Vector), con los elementos multiplicados por ese nï¿½mero.
+ 2. Crear un mï¿½todo sumar que recibe otro vector, verifica si tienen la misma cantidad de
  elementos y devuelve un nuevo vector con la suma de ambos. Si no tienen la misma
- cantidad de elementos entonces imprimir un mensaje de error y la función debe retornar
- el vector que se pasó como parámetro.*/
+ cantidad de elementos entonces imprimir un mensaje de error y la funciï¿½n debe retornar
+ el vector que se pasï¿½ como parï¿½metro.*/
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,9 +32,9 @@ public class Ejercicio04 {
         System.out.println("Vector 1: " + vector1.toString());
         System.out.println("Vector 2: " + vector2.toString());
 
-        // Multiplicamos el vector 1 por un número
+        // Multiplicamos el vector 1 por un nï¿½mero
         Vector resultadoMultiplicacion = vector1.multiplicar(2.0);
-        System.out.println("Resultado de la multiplicación: " + resultadoMultiplicacion.toString());
+        System.out.println("Resultado de la multiplicaciï¿½n: " + resultadoMultiplicacion.toString());
 
         // Sumamos los vectores
         Vector resultadoSuma = vector1.sumar(vector2);
@@ -56,12 +56,12 @@ class Vector {
         this.coordenadas = coordenadas;
     }
 
-    // Método toString
+    // Mï¿½todo toString
     public String toString() {
         return coordenadas.toString();
     }
 
-    // Método para multiplicar el vector por un número
+    // Mï¿½todo para multiplicar el vector por un nï¿½mero
     public Vector multiplicar(double numero) {
         List<Double> nuevasCoordenadas = new ArrayList<Double>();
         for (double coordenada : coordenadas) {
@@ -70,7 +70,7 @@ class Vector {
         return new Vector(nuevasCoordenadas);
     }
 
-    // Método para sumar dos vectores
+    // Mï¿½todo para sumar dos vectores
     public Vector sumar(Vector otroVector) {
         List<Double> otrasCoordenadas = otroVector.coordenadas;
         if (coordenadas.size() != otrasCoordenadas.size()) {
@@ -85,4 +85,3 @@ class Vector {
         }
     }
 }
-

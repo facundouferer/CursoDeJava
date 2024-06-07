@@ -1,10 +1,9 @@
-package CursoJava.POO;
 
 public class Universidad {
     public static void main(String[] args) {
         Materia materia = new Materia("Matematica", 1);
         Profesor profesor = new Profesor("Pedro", "Gomez", "87654321", materia, 2015);
-        //Array de Estudiantes
+        // Array de Estudiantes
         Estudiante[] estudiantes = new Estudiante[3];
         estudiantes[0] = new Estudiante("Juan", "Perez", "12345678", "Ingenieria", 2019);
         estudiantes[1] = new Estudiante("Pedro", "Gomez", "87654321", "Ingenieria", 2019);
@@ -18,7 +17,7 @@ public class Universidad {
     }
 }
 
-class Curso{
+class Curso {
     Materia materia;
     Profesor profesor;
     Estudiante[] estudiantes;
@@ -47,6 +46,7 @@ class Curso{
         this.estudiantes = estudiantes;
     }
 }
+
 class Persona {
     private String nombre;
     private String apellido;
@@ -57,6 +57,7 @@ class Persona {
         this.apellido = apellido;
         this.dni = dni;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -88,7 +89,7 @@ class Profesor extends Persona {
     }
 }
 
-class Materia{
+class Materia {
     String nombre;
     int anio;
 

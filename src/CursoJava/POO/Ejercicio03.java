@@ -1,11 +1,15 @@
-package CursoJava.POO;
-/**Ejercicio 3:
- Crear una clase Fracción, que cuente con dos atributos: dividendo y divisor, que se asignan en
- el constructor, y se imprimen como X/Y en el método toString().
- 1. Crear un método sumar que recibe otra fracción y devuelve una nueva fracción con la
- suma de ambas.
- 2. Crear un método multiplicar que recibe otra fracción y devuelve una nueva fracción con
- el producto de ambas*/
+/**
+ * Ejercicio 3:
+ * Crear una clase Fracciï¿½n, que cuente con dos atributos: dividendo y divisor,
+ * que se asignan en
+ * el constructor, y se imprimen como X/Y en el mï¿½todo toString().
+ * 1. Crear un mï¿½todo sumar que recibe otra fracciï¿½n y devuelve una nueva
+ * fracciï¿½n con la
+ * suma de ambas.
+ * 2. Crear un mï¿½todo multiplicar que recibe otra fracciï¿½n y devuelve una nueva
+ * fracciï¿½n con
+ * el producto de ambas
+ */
 public class Ejercicio03 {
 
     public static void main(String[] args) {
@@ -15,8 +19,8 @@ public class Ejercicio03 {
         Fraccion fraccion2 = new Fraccion(2, 5);
 
         // Imprimimos las fracciones
-        System.out.println("Fracción 1: " + fraccion1.toString());
-        System.out.println("Fracción 2: " + fraccion2.toString());
+        System.out.println("Fracciï¿½n 1: " + fraccion1.toString());
+        System.out.println("Fracciï¿½n 2: " + fraccion2.toString());
 
         // Sumamos las fracciones
         Fraccion resultadoSuma = fraccion1.sumar(fraccion2);
@@ -24,7 +28,7 @@ public class Ejercicio03 {
 
         // Multiplicamos las fracciones
         Fraccion resultadoMultiplicacion = fraccion1.multiplicar(fraccion2);
-        System.out.println("Resultado de la multiplicación: " + resultadoMultiplicacion.toString());
+        System.out.println("Resultado de la multiplicaciï¿½n: " + resultadoMultiplicacion.toString());
     }
 }
 
@@ -40,7 +44,7 @@ class Fraccion {
         this.divisor = divisor;
     }
 
-    // Métodos Get y Set
+    // Mï¿½todos Get y Set
     public int getDividendo() {
         return dividendo;
     }
@@ -57,23 +61,23 @@ class Fraccion {
         this.divisor = divisor;
     }
 
-    // Método toString
+    // Mï¿½todo toString
     public String toString() {
         return dividendo + "/" + divisor;
     }
 
-    // Método para sumar dos fracciones
+    // Mï¿½todo para sumar dos fracciones
     public Fraccion sumar(Fraccion otraFraccion) {
-        int nuevoDividendo = (this.dividendo * otraFraccion.getDivisor()) + (otraFraccion.getDividendo() * this.divisor);
+        int nuevoDividendo = (this.dividendo * otraFraccion.getDivisor())
+                + (otraFraccion.getDividendo() * this.divisor);
         int nuevoDivisor = this.divisor * otraFraccion.getDivisor();
         return new Fraccion(nuevoDividendo, nuevoDivisor);
     }
 
-    // Método para multiplicar dos fracciones
+    // Mï¿½todo para multiplicar dos fracciones
     public Fraccion multiplicar(Fraccion otraFraccion) {
         int nuevoDividendo = this.dividendo * otraFraccion.getDividendo();
         int nuevoDivisor = this.divisor * otraFraccion.getDivisor();
         return new Fraccion(nuevoDividendo, nuevoDivisor);
     }
 }
-

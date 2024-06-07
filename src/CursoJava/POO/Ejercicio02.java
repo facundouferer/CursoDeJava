@@ -1,12 +1,16 @@
-package CursoJava.POO;
-/**Ejercicio 2:
- Crear una clase Libro que contenga los siguientes atributos:
- 1. ISBN, Título, Autor, Número de páginas
- Crear sus respectivos métodos get y set correspondientes para cada atributo. Crear el método
- toString() para mostrar la información relativa al libro con el siguiente formato:
- “El libro con ISBN creado por el autor tiene páginas”
- Crear una aplicación que permita crear 2 objetos Libro (los valores que se quieran) y mostrarlos
- por pantalla. Por último, indicar cuál de los 2 tiene más páginas.*/
+/**
+ * Ejercicio 2:
+ * Crear una clase Libro que contenga los siguientes atributos:
+ * 1. ISBN, Tï¿½tulo, Autor, Nï¿½mero de pï¿½ginas
+ * Crear sus respectivos mï¿½todos get y set correspondientes para cada atributo.
+ * Crear el mï¿½todo
+ * toString() para mostrar la informaciï¿½n relativa al libro con el siguiente
+ * formato:
+ * ï¿½El libro con ISBN creado por el autor tiene pï¿½ginasï¿½
+ * Crear una aplicaciï¿½n que permita crear 2 objetos Libro (los valores que se
+ * quieran) y mostrarlos
+ * por pantalla. Por ï¿½ltimo, indicar cuï¿½l de los 2 tiene mï¿½s pï¿½ginas.
+ */
 public class Ejercicio02 {
 
     public static void main(String[] args) {
@@ -15,17 +19,17 @@ public class Ejercicio02 {
         Libro libro1 = new Libro("978-842-330-375-8", "El Quijote", "Miguel de Cervantes", 864);
         Libro libro2 = new Libro("978-080-214-830-6", "1984", "George Orwell", 336);
 
-        // Imprimimos la información de los libros
+        // Imprimimos la informaciï¿½n de los libros
         System.out.println(libro1.toString());
         System.out.println(libro2.toString());
 
-        // Comparamos los libros por número de páginas
+        // Comparamos los libros por nï¿½mero de pï¿½ginas
         if (libro1.getNumPaginas() > libro2.getNumPaginas()) {
-            System.out.println("El libro " + libro1.getTitulo() + " tiene más páginas.");
+            System.out.println("El libro " + libro1.getTitulo() + " tiene mï¿½s pï¿½ginas.");
         } else if (libro1.getNumPaginas() < libro2.getNumPaginas()) {
-            System.out.println("El libro " + libro2.getTitulo() + " tiene más páginas.");
+            System.out.println("El libro " + libro2.getTitulo() + " tiene mï¿½s pï¿½ginas.");
         } else {
-            System.out.println("Ambos libros tienen el mismo número de páginas.");
+            System.out.println("Ambos libros tienen el mismo nï¿½mero de pï¿½ginas.");
         }
     }
 }
@@ -46,7 +50,7 @@ class Libro {
         this.numPaginas = numPaginas;
     }
 
-    // Métodos Get y Set
+    // Mï¿½todos Get y Set
     public String getIsbn() {
         return isbn;
     }
@@ -79,9 +83,8 @@ class Libro {
         this.numPaginas = numPaginas;
     }
 
-    // Método toString
+    // Mï¿½todo toString
     public String toString() {
-        return "El libro con ISBN " + isbn + " creado por " + autor + " tiene " + numPaginas + " páginas.";
+        return "El libro con ISBN " + isbn + " creado por " + autor + " tiene " + numPaginas + " pï¿½ginas.";
     }
 }
-
