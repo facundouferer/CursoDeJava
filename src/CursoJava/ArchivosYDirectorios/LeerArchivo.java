@@ -1,22 +1,36 @@
 package CursoJava.ArchivosYDirectorios;
 
-import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.BufferedReader;
 import java.io.IOException;
 
 public class LeerArchivo {
   public static void main(String[] args) {
-    // Ruta del archivo que queremos leer
-    String archivoPath = "nuevo_directorio/nuevo_archivo.txt";
+    String rutaArchivo = "operaciones_con_archivos/archivo.txt"; // Ruta del archivo a leer
+    BufferedReader bufferDelArchivo = null;
 
-    try (BufferedReader reader = new BufferedReader(new FileReader(archivoPath))) {
+    try {
+      // Crear un FileReader para leer el archivo
+      FileReader lectorDeArchivo = new FileReader(rutaArchivo);
+
+      // Envolver FileReader con BufferedReader para una lectura más eficiente
+      bufferDelArchivo = new BufferedReader(lectorDeArchivo);
+
+      // Leer el archivo línea por línea
       String linea;
-      while ((linea = reader.readLine()) != null) {
-        System.out.println(linea);
+      while ((linea = bufferDelArchivo.readLine()) != null) {
+        System.out.println(linea); // Imprimir cada línea leída
       }
     } catch (IOException e) {
-      System.out.println("Ocurrió un error al leer el archivo.");
-      e.printStackTrace();
+      e.printStackTrace(); // Manejar posibles excepciones de E/S
+    } finally {
+      try {
+        if (bufferDelArchivo != null) {
+          bufferDelArchivo.close(); // Cerrar el BufferedReader
+        }
+      } catch (IOException e) {
+        e.printStackTrace(); // Manejar posibles excepciones al cerrar
+      }
     }
   }
 }
