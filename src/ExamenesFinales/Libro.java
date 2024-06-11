@@ -1,4 +1,5 @@
-package Examenes;
+package ExamenesFinales;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -86,7 +87,7 @@ class Biblioteca {
         System.out.println("Libro no encontrado.");
     }
 
-    public void nuevoLibroFisico(){
+    public void nuevoLibroFisico() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el titulo del libro");
         String titulo = sc.nextLine();
@@ -104,7 +105,8 @@ class Biblioteca {
         agregarLibro(libroFisico);
         sc.close();
     }
-    public void nuevoLibroDigital(){
+
+    public void nuevoLibroDigital() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el titulo del libro");
         String titulo = sc.nextLine();
@@ -125,7 +127,8 @@ class Biblioteca {
 class Main {
     public static void main(String[] args) {
         Biblioteca biblioteca = new Biblioteca();
-        LibroFisico libroFisico = new LibroFisico("El principito", "Antoine de Saint-Exupéry", 1943, 96, "Estantería 1", 5);
+        LibroFisico libroFisico = new LibroFisico("El principito", "Antoine de Saint-Exupéry", 1943, 96, "Estantería 1",
+                5);
         LibroDigital libroDigital = new LibroDigital("1984", "George Orwell", 1949, "PDF", 5000);
 
         biblioteca.agregarLibro(libroFisico);

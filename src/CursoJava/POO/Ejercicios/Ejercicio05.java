@@ -1,3 +1,5 @@
+package Ejercicios;
+
 /**
  * Ejercicio 5:
  * Escribir una clase Papel que contenga un atributo texto, un m�todo escribir,

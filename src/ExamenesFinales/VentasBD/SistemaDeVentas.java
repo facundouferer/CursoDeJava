@@ -1,4 +1,5 @@
-package Examenes2023.VentasBD;
+package ExamenesFinales.VentasBD;
+
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -7,9 +8,11 @@ class DBHelper {
     private static final String URL = "jdbc:mysql://localhost:3306/ventas";
     private static final String USER = "root";
     private static final String PASSWORD = "";
+
     public static void ejecutarConsulta(String consulta) { // M�todo para ejecutar una consulta sin devolver resultados
         try {
-            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexi�n con la base de datos
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexi�n con la
+                                                                                      // base de datos
             try (PreparedStatement statement = connection.prepareStatement(consulta)) {// Crear la declaraci�n
                 statement.executeUpdate(); // Ejecutar la consulta
             }
@@ -18,9 +21,12 @@ class DBHelper {
             e.printStackTrace();
         }
     }
-    public static ResultSet ejecutarConsultaConResultado(String consulta) { // M�todo para ejecutar una consulta y devolver un conjunto de resultados
+
+    public static ResultSet ejecutarConsultaConResultado(String consulta) { // M�todo para ejecutar una consulta y
+                                                                            // devolver un conjunto de resultados
         try {
-            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexi�n con la base de datos
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD); // Establecer la conexi�n con la
+                                                                                      // base de datos
             PreparedStatement statement = connection.prepareStatement(consulta); // Crear la declaraci�n
             return statement.executeQuery();// Ejecutar la consulta y devolver el conjunto de resultados
         } catch (SQLException e) {
@@ -30,8 +36,6 @@ class DBHelper {
     }
 
 }
-
-
 
 class Productos {
 
@@ -103,12 +107,12 @@ class Productos {
         return null;
     }
 
-
 }
 
-
-
-/* 2. Creaci�n de las Clases Producto y Vendedor con Atributos Equivalentes de la Base de Datos (0,7 p.) */
+/*
+ * 2. Creaci�n de las Clases Producto y Vendedor con Atributos Equivalentes de
+ * la Base de Datos (0,7 p.)
+ */
 class Producto {
     private int producto_id;
     private String nombre;
@@ -134,9 +138,10 @@ class Producto {
     }
 }
 
-
-
-/* 2. Creaci�n de las Clases Producto y Vendedor con Atributos Equivalentes de la Base de Datos (0,7 p.) */
+/*
+ * 2. Creaci�n de las Clases Producto y Vendedor con Atributos Equivalentes de
+ * la Base de Datos (0,7 p.)
+ */
 class Vendedor {
     private int vendedor_id;
     private String nombre;
@@ -146,7 +151,8 @@ class Vendedor {
     private Date fecha_contratacion;
 
     // Constructor
-    public Vendedor(int vendedor_id, String nombre, String apellido, String dni, Date fecha_nacimiento, Date fecha_contratacion) {
+    public Vendedor(int vendedor_id, String nombre, String apellido, String dni, Date fecha_nacimiento,
+            Date fecha_contratacion) {
         this.vendedor_id = vendedor_id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -155,9 +161,11 @@ class Vendedor {
         this.fecha_contratacion = fecha_contratacion;
     }
 
-    /* 3. Creaci�n de un Constructor Adicional en la clase Vendedor (0,5 p.)  */
+    /* 3. Creaci�n de un Constructor Adicional en la clase Vendedor (0,5 p.) */
     public Vendedor(String consultaBusqueda) {
-        try (ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consultaBusqueda)) { // Realizar la consulta para obtener los datos del vendedor por ID
+        try (ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consultaBusqueda)) { // Realizar la consulta
+                                                                                              // para obtener los datos
+                                                                                              // del vendedor por ID
             if (resultado != null && resultado.next()) {
                 this.vendedor_id = resultado.getInt("vendedor_id");
                 this.nombre = resultado.getString("nombre");
@@ -184,9 +192,6 @@ class Vendedor {
     }
 }
 
-
-
-
 class Venta {
     private int venta_id;
     private int vendedor_id;
@@ -205,8 +210,7 @@ class Venta {
 
 }
 
-
-class Comerciales{
+class Comerciales {
 
     /* 4. Obtener los datos de un Vendedor (1,5 p.) */
     public static Vendedor obtenerVendedorPorID(int vendedorID) {
@@ -244,7 +248,8 @@ class Comerciales{
                 Date fecha_nacimiento = resultado.getDate("fecha_nacimiento");
                 Date fecha_contratacion = resultado.getDate("fecha_contratacion");
 
-                Vendedor vendedor = new Vendedor(vendedor_id, nombre, apellido, dni, fecha_nacimiento, fecha_contratacion);
+                Vendedor vendedor = new Vendedor(vendedor_id, nombre, apellido, dni, fecha_nacimiento,
+                        fecha_contratacion);
                 vendedores.add(vendedor);
             }
         } catch (SQLException e) {
@@ -254,16 +259,16 @@ class Comerciales{
         return vendedores;
     }
 
-
 }
 
 class SistemaDeVentas {
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
         System.out.println("\n2. Creaci�n de las Clases Producto y Vendedor");
         Producto producto1 = new Producto(1, "Producto 1", 10, 100);
         System.out.println(producto1);
-        Vendedor vendedor1 = new Vendedor(1, "Vendedor 1", "Apellido 1", "12345678A", Date.valueOf("1990-01-01"), Date.valueOf("2010-01-01"));
+        Vendedor vendedor1 = new Vendedor(1, "Vendedor 1", "Apellido 1", "12345678A", Date.valueOf("1990-01-01"),
+                Date.valueOf("2010-01-01"));
         System.out.println(vendedor1);
 
         System.out.println("\n3. Creaci�n de un Constructor Adicional en la clase Vendedor");

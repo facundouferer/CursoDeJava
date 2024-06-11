@@ -1,3 +1,4 @@
+package Ejercicios;
 
 /**Ejercicio 4:
  Crear una clase Vector, que en su constructor reciba una lista de elementos que ser�n sus
@@ -8,6 +9,7 @@
  elementos y devuelve un nuevo vector con la suma de ambos. Si no tienen la misma
  cantidad de elementos entonces imprimir un mensaje de error y la funci�n debe retornar
  el vector que se pas� como par�metro.*/
+
 import java.util.ArrayList;
 import java.util.List;
 

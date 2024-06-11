@@ -1,3 +1,5 @@
+package Ejercicios;
+
 /**
  * Ejercicio 7:
  * Crear una clase Mate que describa el funcionamiento de la conocida bebida

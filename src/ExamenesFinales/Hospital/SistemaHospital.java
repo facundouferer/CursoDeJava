@@ -1,4 +1,4 @@
-package Examenes2023.Hospital;
+package ExamenesFinales.Hospital;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -17,16 +17,16 @@ public class SistemaHospital {
     }
 
     private void cargarDoctores() {
-        // Cargar los doctores desde un archivo o definirlos directamente en el código.
+        // Cargar los doctores desde un archivo o definirlos directamente en el cï¿½digo.
         // Ejemplo:
-        Doctor doctor1 = new Doctor("Dr. Juan", "12345678", "01/01/1970", "Cardiología");
-        Doctor doctor2 = new Doctor("Dra. María", "87654321", "02/02/1980", "Pediatría");
+        Doctor doctor1 = new Doctor("Dr. Juan", "12345678", "01/01/1970", "Cardiologï¿½a");
+        Doctor doctor2 = new Doctor("Dra. Marï¿½a", "87654321", "02/02/1980", "Pediatrï¿½a");
         doctores.add(doctor1);
         doctores.add(doctor2);
     }
 
     private void cargarPacientes() {
-        // Cargar los pacientes desde un archivo o definirlos directamente en el código.
+        // Cargar los pacientes desde un archivo o definirlos directamente en el cï¿½digo.
         // Ejemplo:
         Paciente paciente1 = new Paciente("Paciente 1", "31159753", "01/01/1990", 123456789, 1);
         pacientes.add(paciente1);
@@ -36,11 +36,11 @@ public class SistemaHospital {
         while (true) {
             LeerFichero accesoExternos = new LeerFichero();
             System.out.println(accesoExternos.leeDatos());
-            System.out.println("Menú:");
+            System.out.println("Menï¿½:");
             System.out.println("1. Listar Doctores");
             System.out.println("2. Registrar un nuevo paciente");
-            System.out.println("3. Actualizar información personal de un paciente");
-            System.out.println("4. Consultar el historial médico de un paciente");
+            System.out.println("3. Actualizar informaciï¿½n personal de un paciente");
+            System.out.println("4. Consultar el historial mï¿½dico de un paciente");
             System.out.println("5. Nuevo historial para un paciente");
             System.out.println("6. Guardar Historial de pacientes en archivo");
             System.out.println("7. Cargar Historial de pacientes desde archivo");
@@ -76,7 +76,7 @@ public class SistemaHospital {
                     System.out.println("Saliendo del programa.");
                     return;
                 default:
-                    System.out.println("Opción no válida. Por favor, elija una opción válida.");
+                    System.out.println("Opciï¿½n no vï¿½lida. Por favor, elija una opciï¿½n vï¿½lida.");
             }
         }
     }
@@ -92,19 +92,19 @@ public class SistemaHospital {
     }
 
     private void registrarNuevoPaciente() {
-        // Implementar la lógica para registrar un nuevo paciente.
+        // Implementar la lï¿½gica para registrar un nuevo paciente.
     }
 
     private void actualizarInformacionPaciente() {
-        // Implementar la lógica para actualizar la información de un paciente.
+        // Implementar la lï¿½gica para actualizar la informaciï¿½n de un paciente.
     }
 
     private void consultarHistorialMedico() {
-        // Implementar la lógica para consultar el historial médico de un paciente.
+        // Implementar la lï¿½gica para consultar el historial mï¿½dico de un paciente.
     }
 
     private void cargarNuevoHistorial() {
-        // Implementar la lógica para cargar un nuevo historial médico para un paciente.
+        // Implementar la lï¿½gica para cargar un nuevo historial mï¿½dico para un paciente.
     }
 
     private void guardarPacientesEnArchivo() {
@@ -133,7 +133,6 @@ public class SistemaHospital {
         }
     }
 }
-
 
 class Persona {
     String nombre;
@@ -182,17 +181,23 @@ class LeerFichero {
     public String leeDatos() {
         StringBuilder contenido = new StringBuilder();
         try {
-            /*Entrada es el flujo de datos. El tunel por donde ir?n los datos.*/
+            /* Entrada es el flujo de datos. El tunel por donde ir?n los datos. */
             FileReader entrada = new FileReader("archivo.txt");
 
-            int caracter = entrada.read(); /*nos devuelve el n?mero correspondeinte al caracter UNICODE o -1 si est? en el final*/
+            int caracter = entrada.read(); /*
+                                            * nos devuelve el n?mero correspondeinte al caracter UNICODE o -1 si est? en
+                                            * el final
+                                            */
 
-            while(caracter != -1){ /* Preguntamos por -1 para saber cuando termina. caracter tiene el nro equivalente al codigo UNICODE de cada letra. */
+            while (caracter != -1) { /*
+                                      * Preguntamos por -1 para saber cuando termina. caracter tiene el nro
+                                      * equivalente al codigo UNICODE de cada letra.
+                                      */
                 char letra = (char) caracter;
                 contenido.append(letra); // Agregar el caracter al contenido
                 caracter = entrada.read();
             }
-            entrada.close(); /*Siempre hay que cerrar los bufers o accesos a ficheros externos.*/
+            entrada.close(); /* Siempre hay que cerrar los bufers o accesos a ficheros externos. */
 
         } catch (Exception e) {
             e.printStackTrace();

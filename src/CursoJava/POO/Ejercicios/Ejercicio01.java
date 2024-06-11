@@ -1,3 +1,5 @@
+package Ejercicios;
+
 /**
  * Ejercicio 1:
  * Crea una clase llamada Cuenta que tendr� los siguientes atributos:

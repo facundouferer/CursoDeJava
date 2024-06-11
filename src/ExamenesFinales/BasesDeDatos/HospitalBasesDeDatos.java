@@ -1,4 +1,5 @@
-package Examenes2023.BasesDeDatos;
+package ExamenesFinales.BasesDeDatos;
+
 import java.sql.*;
 
 //script de la Base de Datos del programa
@@ -9,7 +10,7 @@ abstract class Persona {
     protected String nombre;
     protected int edad;
 
-    // Constructor y métodos necesarios
+    // Constructor y mï¿½todos necesarios
 
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
@@ -17,14 +18,15 @@ abstract class Persona {
     }
 }
 
-// 2. Implementa la clase Paciente que hereda de Persona con atributos adicionales como historial médico.
+// 2. Implementa la clase Paciente que hereda de Persona con atributos
+// adicionales como historial mï¿½dico.
 class Paciente extends Persona {
     private String historialMedico;
     private int doctorCabecera;
     private Date fechaIngreso;
 
     public Paciente(String nombre, int edad, String historialMedico, int doctorCabecera, Date fechaIngreso) {
-        super( nombre, edad);
+        super(nombre, edad);
         this.historialMedico = historialMedico;
         this.doctorCabecera = doctorCabecera;
         this.fechaIngreso = fechaIngreso;
@@ -51,8 +53,8 @@ class Paciente extends Persona {
     }
 }
 
-
-// 3. Implementa la clase Doctor que hereda de Persona con atributos como especialidad.
+// 3. Implementa la clase Doctor que hereda de Persona con atributos como
+// especialidad.
 class Doctor extends Persona {
     private String especialidad;
 
@@ -66,9 +68,12 @@ class Doctor extends Persona {
 class Hospital {
     public void agregarPaciente(Paciente paciente) {
         // Agregar el paciente a la base de datos
-        String consulta = "INSERT INTO pacientes (nombre, edad, historial_medico, doctor, fecha_ingreso) VALUES ('" + paciente.getNombre() + "', " + paciente.getEdad() + ", '" + paciente.getHistorialMedico() + "', " + paciente.getDoctorCabecera() + ", '" + paciente.getFechaIngreso() + "')";
+        String consulta = "INSERT INTO pacientes (nombre, edad, historial_medico, doctor, fecha_ingreso) VALUES ('"
+                + paciente.getNombre() + "', " + paciente.getEdad() + ", '" + paciente.getHistorialMedico() + "', "
+                + paciente.getDoctorCabecera() + ", '" + paciente.getFechaIngreso() + "')";
         DBHelper.ejecutarConsulta(consulta);
     }
+
     // elimine un paciente indicando su nombre
     public void eliminarPaciente(String nombre) {
         // Eliminar el paciente de la base de datos
@@ -76,9 +81,11 @@ class Hospital {
         DBHelper.ejecutarConsulta(consulta);
     }
 
-    //método para asignar un doctor de cabecera a un paciente indicando el nombre del doctor y el nombre del paciente
+    // mï¿½todo para asignar un doctor de cabecera a un paciente indicando el nombre
+    // del doctor y el nombre del paciente
     public void asignarDoctorCabecera(String nombreDoctor, String nombrePaciente) {
-        String consulta = "UPDATE pacientes SET doctor = (SELECT id FROM doctores WHERE nombre = '"+nombreDoctor+"') WHERE nombre = '"+nombrePaciente+"'";
+        String consulta = "UPDATE pacientes SET doctor = (SELECT id FROM doctores WHERE nombre = '" + nombreDoctor
+                + "') WHERE nombre = '" + nombrePaciente + "'";
         DBHelper.ejecutarConsulta(consulta);
     }
 
@@ -89,16 +96,19 @@ class Hospital {
     }
 
     public void listarPacientesEntreDosFechas(Date fechaDesde, Date fechaHasta) {
-        String consulta = "SELECT * FROM pacientes WHERE fecha_ingreso BETWEEN '"+fechaDesde+"' AND '"+fechaHasta+"';";
+        String consulta = "SELECT * FROM pacientes WHERE fecha_ingreso BETWEEN '" + fechaDesde + "' AND '" + fechaHasta
+                + "';";
         ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
         listarPacientes(resultado);
     }
-//mostrar listado de pacientes
-    public void listarPacientes(ResultSet resultado){
+
+    // mostrar listado de pacientes
+    public void listarPacientes(ResultSet resultado) {
         if (resultado != null) {
             try {
                 System.out.println("Lista de Pacientes:");
-                System.out.printf("%-10s %-15s %-5s %-20s %-12s %-10s\n", "ID", "Nombre", "Edad", "Historial Médico", "Fecha Ingreso", "Doctor");
+                System.out.printf("%-10s %-15s %-5s %-20s %-12s %-10s\n", "ID", "Nombre", "Edad", "Historial Mï¿½dico",
+                        "Fecha Ingreso", "Doctor");
 
                 while (resultado.next()) {
                     int id = resultado.getInt("id");
@@ -108,7 +118,8 @@ class Hospital {
                     Date fechaIngreso = resultado.getDate("fecha_ingreso");
                     int idDoctor = resultado.getInt("doctor");
 
-                    System.out.printf("%-10d %-15s %-5d %-20s %-12s %-10d\n", id, nombre, edad, historialMedico, fechaIngreso, idDoctor);
+                    System.out.printf("%-10d %-15s %-5d %-20s %-12s %-10d\n", id, nombre, edad, historialMedico,
+                            fechaIngreso, idDoctor);
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -117,39 +128,37 @@ class Hospital {
     }
 }
 
-
-
 class DBHelper {
     private static final String URL = "jdbc:mysql://localhost:3306/hospital_db";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
-    // Método para ejecutar una consulta sin devolver resultados
+    // Mï¿½todo para ejecutar una consulta sin devolver resultados
     public static void ejecutarConsulta(String consulta) {
         try {
-            // Establecer la conexión con la base de datos
+            // Establecer la conexiï¿½n con la base de datos
             Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
-            // Crear la declaración
+            // Crear la declaraciï¿½n
             try (PreparedStatement statement = connection.prepareStatement(consulta)) {
                 // Ejecutar la consulta
                 statement.executeUpdate();
             }
 
-            // Cerrar la conexión
+            // Cerrar la conexiï¿½n
             connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    // Método para ejecutar una consulta y devolver un conjunto de resultados
+    // Mï¿½todo para ejecutar una consulta y devolver un conjunto de resultados
     public static ResultSet ejecutarConsultaConResultado(String consulta) {
         try {
-            // Establecer la conexión con la base de datos
+            // Establecer la conexiï¿½n con la base de datos
             Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
-            // Crear la declaración
+            // Crear la declaraciï¿½n
             PreparedStatement statement = connection.prepareStatement(consulta);
 
             // Ejecutar la consulta y devolver el conjunto de resultados
@@ -163,29 +172,28 @@ class DBHelper {
 }
 
 class HospitalBasesDeDatos {
-    //main del programa
+    // main del programa
     public static void main(String[] args) {
-        //creamos un objeto de la clase Hospital
+        // creamos un objeto de la clase Hospital
         Hospital hospital = new Hospital();
-        //agregar un paciente de ejemplo
-        //Date fechaActual = new Date(2023 - 1900, 1 - 1, 10);
-        //Paciente paciente = new Paciente("Juan Bonete", 45, "Ninguno", 1, fechaActual);
-        //hospital.agregarPaciente(paciente);
+        // agregar un paciente de ejemplo
+        // Date fechaActual = new Date(2023 - 1900, 1 - 1, 10);
+        // Paciente paciente = new Paciente("Juan Bonete", 45, "Ninguno", 1,
+        // fechaActual);
+        // hospital.agregarPaciente(paciente);
 
-        //eliminar un paciente de ejemplo
-        //hospital.eliminarPaciente("Paciente1");
+        // eliminar un paciente de ejemplo
+        // hospital.eliminarPaciente("Paciente1");
 
-        //asignar un doctor de cabecera a un paciente de ejemplo
-        //hospital.asignarDoctorCabecera("Dario", "Pepito");
+        // asignar un doctor de cabecera a un paciente de ejemplo
+        // hospital.asignarDoctorCabecera("Dario", "Pepito");
 
-        //listar todos los pacientes
-        //hospital.listarPacientes();
+        // listar todos los pacientes
+        // hospital.listarPacientes();
 
-        //listar pacientes entre dos fechas
+        // listar pacientes entre dos fechas
         Date fechaDesde = new Date(2023 - 1900, 1 - 1, 1);
         Date fechaHasta = new Date(2023 - 1900, 1 - 1, 10);
         hospital.listarPacientesEntreDosFechas(fechaDesde, fechaHasta);
     }
 }
-
-

@@ -1,3 +1,5 @@
+package Ejercicios;
+
 /**
  * Ejercicio 3:
  * Crear una clase Fracci�n, que cuente con dos atributos: dividendo y divisor,

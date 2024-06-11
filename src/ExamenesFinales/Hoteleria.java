@@ -1,4 +1,5 @@
-package Examenes;
+package ExamenesFinales;
+
 import java.io.*;
 import java.util.*;
 
@@ -6,7 +7,8 @@ import java.util.*;
 public class Hoteleria {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // Método para recuperar el nombre del hotel desde un archivo de texto llamado nombreHotel.txt
+        // Método para recuperar el nombre del hotel desde un archivo de texto llamado
+        // nombreHotel.txt
         String nombreHotel = "";
         try (Scanner entrada = new Scanner(new File("nombreHotel.txt"))) {
             nombreHotel = entrada.nextLine();

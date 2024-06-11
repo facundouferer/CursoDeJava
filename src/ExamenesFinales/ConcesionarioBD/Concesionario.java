@@ -1,4 +1,5 @@
-package Examenes2023.ConcesionarioBD;
+package ExamenesFinales.ConcesionarioBD;
+
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -63,7 +64,8 @@ class Persona {
     private Date fechaNacimiento;
     private Date fechaContratacion;
 
-    public Persona(int personaId, String nombre, String apellido, String dni, Date fechaNacimiento, Date fechaContratacion) {
+    public Persona(int personaId, String nombre, String apellido, String dni, Date fechaNacimiento,
+            Date fechaContratacion) {
         this.personaId = personaId;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -141,14 +143,13 @@ class VentasAutos {
         return vendedores;
     }
 
-
     public static void generarInforme() {
         String consulta = "SELECT * FROM autos";
 
         try (ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta)) {
             if (resultado != null) {
                 System.out.println("Informe de Autos:");
-                System.out.printf("%-10s%-20s%-20s%-5s\n", "AutoID", "Marca", "Modelo", "Año");
+                System.out.printf("%-10s%-20s%-20s%-5s\n", "AutoID", "Marca", "Modelo", "Aï¿½o");
                 System.out.println("---------------------------------------------");
                 while (resultado.next()) {
                     int autoId = resultado.getInt("auto_id");
@@ -207,18 +208,20 @@ class VentasAutos {
 class Concesionario {
     public static void main(String[] args) {
 
-        System.out.println("\n2. Creación de las Clases Auto y Persona");
+        System.out.println("\n2. Creaciï¿½n de las Clases Auto y Persona");
         Auto auto1 = new Auto(1, "Toyota", "Corolla", 2022);
         System.out.println(auto1);
-        Persona persona1 = new Persona(1, "Juan", "Perez", "12345678", Date.valueOf("1990-01-15"), Date.valueOf("2021-03-01"));
+        Persona persona1 = new Persona(1, "Juan", "Perez", "12345678", Date.valueOf("1990-01-15"),
+                Date.valueOf("2021-03-01"));
         System.out.println(persona1);
 
-        System.out.println("\n3. Creación de un Constructor Adicional en la clase Persona");
+        System.out.println("\n3. Creaciï¿½n de un Constructor Adicional en la clase Persona");
         Persona persona2 = new Persona("SELECT * FROM personas WHERE persona_id = 2");
         System.out.println(persona2);
 
         System.out.println("\n4. Obtener una persona por ID:");
-        Persona personaObjeto = new Persona(2, "Maria", "Gomez", "87654321", Date.valueOf("1985-05-22"), Date.valueOf("2022-01-10"));
+        Persona personaObjeto = new Persona(2, "Maria", "Gomez", "87654321", Date.valueOf("1985-05-22"),
+                Date.valueOf("2022-01-10"));
         System.out.println(personaObjeto);
 
         System.out.println("\n5. Generar Informe de Autos:");
@@ -228,11 +231,11 @@ class Concesionario {
         Auto auto = VentasAutos.obtenerAuto(1);
         System.out.println(auto);
 
-        System.out.println("\n7. Obtener el auto más vendido:");
+        System.out.println("\n7. Obtener el auto mï¿½s vendido:");
         Auto autoObjeto = VentasAutos.obtenerAutoMasVendido();
         System.out.println(autoObjeto);
 
-        System.out.println("\n8. Creación de la clase VentaAuto:");
+        System.out.println("\n8. Creaciï¿½n de la clase VentaAuto:");
         VentaAuto ventaAuto = new VentaAuto(1, 1, 1, 1, Date.valueOf("2021-10-01"));
         System.out.println(ventaAuto);
 
