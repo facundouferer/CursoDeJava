@@ -1,11 +1,14 @@
-package CursoJava.Arreglos;
 import java.util.Scanner;
 
 public class Arreglos04 {
-    /**Ejercicio 4:
-     Escriba un programa para realizar otra función que invierta una lista, similar al ejercicio anterior,
-     pero en lugar de devolver una nueva, modifique la lista dada para invertirla, sin usar listas
-     auxiliares.*/
+    /**
+     * Ejercicio 4:
+     * Escriba un programa para realizar otra funciï¿½n que invierta una lista,
+     * similar al ejercicio anterior,
+     * pero en lugar de devolver una nueva, modifique la lista dada para invertirla,
+     * sin usar listas
+     * auxiliares.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n;

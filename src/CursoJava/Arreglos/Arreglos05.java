@@ -1,12 +1,16 @@
-package CursoJava.Arreglos;
 import java.util.Scanner;
+
 public class Arreglos05 {
-    /**Ejercicio 5:
-     Escriba un programa para calcular el promedio de 20 valores almacenados en un arreglo. Los
-     valores deben ser ingresados por teclado. Además, determinar cuántos valores son mayores
-     que el promedio. Imprima:
-     a) El promedio
-     b) La cantidad de valores mayores al promedio y la lista de valores.*/
+    /**
+     * Ejercicio 5:
+     * Escriba un programa para calcular el promedio de 20 valores almacenados en un
+     * arreglo. Los
+     * valores deben ser ingresados por teclado. Ademï¿½s, determinar cuï¿½ntos valores
+     * son mayores
+     * que el promedio. Imprima:
+     * a) El promedio
+     * b) La cantidad de valores mayores al promedio y la lista de valores.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = 20; // Cantidad de elementos en el arreglo
@@ -24,7 +28,7 @@ public class Arreglos05 {
         // Calcular el promedio
         promedio = (double) suma / n;
 
-        // Determinar cuántos valores son mayores que el promedio
+        // Determinar cuï¿½ntos valores son mayores que el promedio
         int cantidadMayores = 0;
         for (int valor : valores) {
             if (valor > promedio) {

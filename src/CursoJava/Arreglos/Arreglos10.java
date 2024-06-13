@@ -1,4 +1,3 @@
-package CursoJava.Arreglos;
 
 import java.util.Scanner;
 

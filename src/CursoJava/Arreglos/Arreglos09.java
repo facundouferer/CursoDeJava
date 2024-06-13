@@ -1,31 +1,35 @@
-package CursoJava.Arreglos;
 
 import java.util.Scanner;
 
 public class Arreglos09 {
-    /**Ejercicio 9:
-     Escriba un algoritmo que efectúe la normalización de una colección de números reales (float).
-     Para llevar a cabo esta normalización, se debe en primer lugar encontrar el número mayor de la
-     colección; luego se divide cada número por dicho valor máximo, de forma que los valores
-     resultantes (normalizados) estén comprendidos en el intervalo del 0 al 1.*/
+    /**
+     * Ejercicio 9:
+     * Escriba un algoritmo que efectï¿½e la normalizaciï¿½n de una colecciï¿½n de nï¿½meros
+     * reales (float).
+     * Para llevar a cabo esta normalizaciï¿½n, se debe en primer lugar encontrar el
+     * nï¿½mero mayor de la
+     * colecciï¿½n; luego se divide cada nï¿½mero por dicho valor mï¿½ximo, de forma que
+     * los valores
+     * resultantes (normalizados) estï¿½n comprendidos en el intervalo del 0 al 1.
+     */
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar al usuario el número de elementos en la colección
-        System.out.println("Ingrese el número de elementos en la colección:");
+        // Solicitar al usuario el nï¿½mero de elementos en la colecciï¿½n
+        System.out.println("Ingrese el nï¿½mero de elementos en la colecciï¿½n:");
         int n = scanner.nextInt();
 
-        // Crear un arreglo de tipo float para almacenar los números reales
+        // Crear un arreglo de tipo float para almacenar los nï¿½meros reales
         float[] numeros = new float[n];
 
-        // Leer los números reales ingresados por el usuario
-        System.out.println("Ingrese los números reales:");
+        // Leer los nï¿½meros reales ingresados por el usuario
+        System.out.println("Ingrese los nï¿½meros reales:");
         for (int i = 0; i < n; i++) {
             numeros[i] = scanner.nextFloat();
         }
 
-        // Encontrar el número mayor en la colección
+        // Encontrar el nï¿½mero mayor en la colecciï¿½n
         float maximo = numeros[0];
         for (int i = 1; i < n; i++) {
             if (numeros[i] > maximo) {
@@ -33,13 +37,14 @@ public class Arreglos09 {
             }
         }
 
-        // Normalizar la colección de números reales dividiendo cada número por el valor máximo
+        // Normalizar la colecciï¿½n de nï¿½meros reales dividiendo cada nï¿½mero por el valor
+        // mï¿½ximo
         for (int i = 0; i < n; i++) {
             numeros[i] = numeros[i] / maximo;
         }
 
-        // Imprimir los números normalizados
-        System.out.println("Números normalizados:");
+        // Imprimir los nï¿½meros normalizados
+        System.out.println("Nï¿½meros normalizados:");
         for (int i = 0; i < n; i++) {
             System.out.printf("%.2f ", numeros[i]); // Imprimir con 2 decimales
         }

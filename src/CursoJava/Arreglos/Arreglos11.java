@@ -1,27 +1,32 @@
-package CursoJava.Arreglos;
 
 import java.util.Scanner;
 
 public class Arreglos11 {
-    /**Ejercicio 11:
-     Un arreglo de números se llama partidario si todo número que está en una casilla par (0,2,4,…)
-     es mayor que cualquiera de los números que están en las casillas impares (1,3,5,…). Escriba
-     un algoritmo que lea un arreglo de números enteros y luego, diga si es partidario o no. Por
-     ejemplo, si el arreglo es el siguiente: 100 5 200 1 1000 0 600 50 300 4 El programa debe
-     escribir: es partidario*/
+    /**
+     * Ejercicio 11:
+     * Un arreglo de nï¿½meros se llama partidario si todo nï¿½mero que estï¿½ en una
+     * casilla par (0,2,4,ï¿½)
+     * es mayor que cualquiera de los nï¿½meros que estï¿½n en las casillas impares
+     * (1,3,5,ï¿½). Escriba
+     * un algoritmo que lea un arreglo de nï¿½meros enteros y luego, diga si es
+     * partidario o no. Por
+     * ejemplo, si el arreglo es el siguiente: 100 5 200 1 1000 0 600 50 300 4 El
+     * programa debe
+     * escribir: es partidario
+     */
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar al usuario el número de elementos en el arreglo
-        System.out.println("Ingrese el número de elementos en el arreglo:");
+        // Solicitar al usuario el nï¿½mero de elementos en el arreglo
+        System.out.println("Ingrese el nï¿½mero de elementos en el arreglo:");
         int n = scanner.nextInt();
 
-        // Crear un arreglo de enteros para almacenar los números
+        // Crear un arreglo de enteros para almacenar los nï¿½meros
         int[] numeros = new int[n];
 
-        // Leer los números enteros ingresados por el usuario
-        System.out.println("Ingrese los números enteros:");
+        // Leer los nï¿½meros enteros ingresados por el usuario
+        System.out.println("Ingrese los nï¿½meros enteros:");
         for (int i = 0; i < n; i++) {
             numeros[i] = scanner.nextInt();
         }

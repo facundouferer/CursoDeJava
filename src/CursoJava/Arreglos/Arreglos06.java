@@ -1,10 +1,14 @@
-package CursoJava.Arreglos;
 import java.util.Scanner;
+
 public class Arreglos06 {
-    /**Ejercicio 6:
-     Escriba un programa que permita cargar 2 arreglos A y B de 10 elementos cada uno, sumar el
-     elemento en la posición 1 del arreglo A con el elemento en la misma posición del arreglo B y
-     así sucesivamente. Almacenar el resultado en un arreglo C e imprima el resultado final.
+    /**
+     * Ejercicio 6:
+     * Escriba un programa que permita cargar 2 arreglos A y B de 10 elementos cada
+     * uno, sumar el
+     * elemento en la posiciï¿½n 1 del arreglo A con el elemento en la misma posiciï¿½n
+     * del arreglo B y
+     * asï¿½ sucesivamente. Almacenar el resultado en un arreglo C e imprima el
+     * resultado final.
      */
 
     public static void main(String[] args) {
@@ -26,7 +30,8 @@ public class Arreglos06 {
             arregloB[i] = scanner.nextInt();
         }
 
-        // Sumar los elementos de los arreglos A y B y almacenar el resultado en el arreglo C
+        // Sumar los elementos de los arreglos A y B y almacenar el resultado en el
+        // arreglo C
         for (int i = 0; i < n; i++) {
             arregloC[i] = arregloA[i] + arregloB[i];
         }

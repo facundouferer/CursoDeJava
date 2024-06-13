@@ -1,11 +1,14 @@
-package CursoJava.Arreglos;
 import java.util.Scanner;
+
 public class Arreglos02 {
-    /**Ejercicio 2:
-     Escribir un programa que dada una lista de n�meros enteros, escribir una funci�n que:
-     a) Devuelva una lista con todos los que sean primos.
-     b) Devuelva la sumatoria de los valores
-     c) Devuelva el promedio de los valores.*/
+    /**
+     * Ejercicio 2:
+     * Escribir un programa que dada una lista de n�meros enteros, escribir una
+     * funci�n que:
+     * a) Devuelva una lista con todos los que sean primos.
+     * b) Devuelva la sumatoria de los valores
+     * c) Devuelva el promedio de los valores.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n;

@@ -1,11 +1,13 @@
-package CursoJava.Arreglos;
 import java.util.Scanner;
+
 public class Arreglos03 {
-    /**Ejercicio 3:
-     Escriba un programa para realizar una función que, dada una lista, devuelva una nueva lista
-     cuyo contenido sea igual a la original pero invertida.
-     Así, dada la lista [“Di”, “buen”, “día”, “a”, “papa”],
-     deberá devolver [“papa”, “a”, “día”, “buen”, “Di”].
+    /**
+     * Ejercicio 3:
+     * Escriba un programa para realizar una funciï¿½n que, dada una lista, devuelva
+     * una nueva lista
+     * cuyo contenido sea igual a la original pero invertida.
+     * Asï¿½, dada la lista [ï¿½Diï¿½, ï¿½buenï¿½, ï¿½dï¿½aï¿½, ï¿½aï¿½, ï¿½papaï¿½],
+     * deberï¿½ devolver [ï¿½papaï¿½, ï¿½aï¿½, ï¿½dï¿½aï¿½, ï¿½buenï¿½, ï¿½Diï¿½].
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -36,7 +38,7 @@ public class Arreglos03 {
         // Imprimir la lista invertida
         System.out.println("Lista invertida:");
         for (String elemento : listaInvertida) {
-            System.out.print(elemento+" ");
+            System.out.print(elemento + " ");
         }
     }
 }

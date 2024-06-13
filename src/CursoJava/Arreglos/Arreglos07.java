@@ -1,11 +1,17 @@
-package CursoJava.Arreglos;
 import java.util.Scanner;
+
 public class Arreglos07 {
-    /**Ejercicio 7:
-     Diseñe un algoritmo que lea dos arreglos A y B de 20 elementos cada uno y multiplique el
-     primer elemento de A con el último elemento de B y luego el segundo elemento de A por el
-     décimo noveno elemento de B y así sucesivamente hasta llegar al veinteavo elemento de A por
-     el primer elemento de B. Almancer el resultado de las multiplicaciones en un arreglo C.*/
+    /**
+     * Ejercicio 7:
+     * Diseï¿½e un algoritmo que lea dos arreglos A y B de 20 elementos cada uno y
+     * multiplique el
+     * primer elemento de A con el ï¿½ltimo elemento de B y luego el segundo elemento
+     * de A por el
+     * dï¿½cimo noveno elemento de B y asï¿½ sucesivamente hasta llegar al veinteavo
+     * elemento de A por
+     * el primer elemento de B. Almancer el resultado de las multiplicaciones en un
+     * arreglo C.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = 20; // Cantidad de elementos en cada arreglo
@@ -25,7 +31,8 @@ public class Arreglos07 {
             arregloB[i] = scanner.nextInt();
         }
 
-        // Multiplicar los elementos de los arreglos A y B de manera inversa y almacenar el resultado en el arreglo C
+        // Multiplicar los elementos de los arreglos A y B de manera inversa y almacenar
+        // el resultado en el arreglo C
         for (int i = 0; i < n; i++) {
             arregloC[i] = arregloA[i] * arregloB[n - 1 - i];
         }
