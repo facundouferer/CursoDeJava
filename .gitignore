@@ -13,3 +13,8 @@ lib/
 # Logs
 /log/
 *.log
+
+# visual studio code
+.vscode/
+.DS_Store
+src/.DS_Store
