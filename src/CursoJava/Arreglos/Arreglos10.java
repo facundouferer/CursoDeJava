@@ -2,6 +2,8 @@
 import java.util.Scanner;
 
 public class Arreglos10 {
+
+    // Rest of the code...
     /**
      * Ejercicio 10:
      * Escriba un algoritmo que lea un arreglo de n�meros enteros, y un n�mero x, y
