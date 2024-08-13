@@ -18,6 +18,7 @@ class Persona {
   public void cumplirAños() {
     this.edad++;
   }
+
 }
 
 public class AbstraccionYEncapsulamiento {
