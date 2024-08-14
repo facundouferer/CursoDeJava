@@ -1,62 +1,71 @@
 
-class Cliente {
-  private String nombre, apellido;
+class Humane {
 
-  public Cliente(String nombre, String apellido) {
+  private String nombre;
+  private String apellido;
+  private int dni;
+
+  public Humane(String nombre, String apellido, int dni) {
     this.nombre = nombre;
     this.apellido = apellido;
-  }
-
-  public void setNombre(String nombre) {
-    this.nombre = nombre;
-  }
-
-  public String getNombre() {
-    return nombre;
-  }
-
-  public void setApellido(String apellido) {
-    this.apellido = apellido;
-  }
-
-  public String getApellido() {
-    return apellido;
-  }
-
-}
-
-class Caja {
-
-  private int nroCaja;
-  private Cliente cliente;
-
-  public Caja(int nroCaja, Cliente cliente) {
-    this.nroCaja = nroCaja;
-    this.cliente = cliente;
-  }
-
-  public void setNroCaja(int nroCaja) {
-    this.nroCaja = nroCaja;
-  }
-
-  public int getNroCaja() {
-    return nroCaja;
+    this.dni = dni;
   }
 
   public String toString() {
-    String datosDeLaCaja = "Caja: " + nroCaja + " - " + this.cliente.getNombre() + " " + this.cliente.getApellido();
-    return datosDeLaCaja;
+    return "Nombre: " + this.nombre + "\nApellido: " + this.apellido + "\nDNI: " + this.dni;
   }
 
 }
 
-public class ConceptosFundamentales {
+class Empleado extends Humane {
+
+  private double sueldo;
+
+  public Empleado(String nombre, String apellido, int dni, double sueldo) {
+    super(nombre, apellido, dni);
+    this.sueldo = sueldo;
+  }
+
+  public String toString() {
+    return "\n" + super.toString() + "\nSueldo: " + this.sueldo;
+  }
+}
+
+class Caja {
+  private Empleado empleado;
+  private int nroCaja;
+
+  public Caja(Empleado empleado, int nroCaja) {
+    this.empleado = empleado;
+    this.nroCaja = nroCaja;
+  }
+
+  public String toString() {
+    return this.empleado.toString() + "\nNro de caja: " + this.nroCaja;
+  }
+
+}
+
+class Cliente extends Humane {
+
+  private boolean mayorista;
+
+  public Cliente(String nombre, String apellido, int dni, boolean mayorista) {
+    super(nombre, apellido, dni);
+    this.mayorista = mayorista;
+  }
+
+  public String toString() {
+    return "\n" + super.toString() + "\nMayorista: " + this.mayorista;
+  }
+
+}
+
+class ConceptosFundamentales {
   public static void main(String[] args) {
 
-    Cliente clienteDePedro = new Cliente("Juan", "Perez");
-    Caja cajaDePedro = new Caja(345, clienteDePedro);
-    cajaDePedro.setNroCaja(12345);
-    System.out.println(cajaDePedro.toString());
+    Cliente cliente = new Cliente("Juan", "Perez", 12345678, true);
+    System.out.println(cliente);
   }
 
 }
