@@ -1,4 +1,4 @@
-package CursoJava.Arreglos;
+package CursoJava.ArreglosEstaticos;
 
 import java.util.Scanner;
 

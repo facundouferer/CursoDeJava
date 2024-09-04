@@ -39,6 +39,8 @@ abstract class Vehiculo {
     this.stock--;
   }
 
+  abstract String verCaracteriscas();
+
   public abstract void mostrarInformacion();
 
 }
@@ -58,6 +60,11 @@ class Terrestre extends Vehiculo {
     System.out.println("Precio: " + super.getPrecio());
     System.out.println("Ruedas: " + ruedas);
   }
+
+  String verCaracteriscas() {
+    return "Ruedas: " + ruedas;
+  }
+
 }
 
 class Acuatico extends Vehiculo {
@@ -75,4 +82,9 @@ class Acuatico extends Vehiculo {
     System.out.println("Precio: " + super.getPrecio());
     System.out.println("Eslora: " + tipoCasco);
   }
+
+  String verCaracteriscas() {
+    return "Tipo de casco: " + tipoCasco;
+  }
+
 }

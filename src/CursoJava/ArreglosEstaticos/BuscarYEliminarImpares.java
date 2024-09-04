@@ -1,4 +1,4 @@
-package CursoJava.Arreglos;
+package CursoJava.ArreglosEstaticos;
 
 public class BuscarYEliminarImpares {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package CursoJava.Arreglos;
+package CursoJava.ArreglosEstaticos;
 
 public class ListarElementos {
   // listar los elementos de un arreglo de enteros

@@ -1,13 +1,15 @@
+package CursoJava.ArreglosEstaticos;
+
 import java.util.Scanner;
 
-public class Arreglos03 {
+public class Arreglos04 {
     /**
-     * Ejercicio 3:
-     * Escriba un programa para realizar una funci�n que, dada una lista, devuelva
-     * una nueva lista
-     * cuyo contenido sea igual a la original pero invertida.
-     * As�, dada la lista [�Di�, �buen�, �d�a�, �a�, �papa�],
-     * deber� devolver [�papa�, �a�, �d�a�, �buen�, �Di�].
+     * Ejercicio 4:
+     * Escriba un programa para realizar otra funci�n que invierta una lista,
+     * similar al ejercicio anterior,
+     * pero en lugar de devolver una nueva, modifique la lista dada para invertirla,
+     * sin usar listas
+     * auxiliares.
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -27,18 +29,18 @@ public class Arreglos03 {
             lista[i] = scanner.nextLine();
         }
 
-        // Crear un arreglo para almacenar la lista invertida
-        String[] listaInvertida = new String[n];
-
-        // Invertir la lista y almacenarla en listaInvertida
-        for (int i = 0; i < n; i++) {
-            listaInvertida[i] = lista[n - 1 - i];
+        // Invertir la lista sin utilizar listas auxiliares
+        for (int i = 0; i < n / 2; i++) {
+            String temp = lista[i];
+            lista[i] = lista[n - 1 - i];
+            lista[n - 1 - i] = temp;
         }
 
         // Imprimir la lista invertida
         System.out.println("Lista invertida:");
-        for (String elemento : listaInvertida) {
-            System.out.print(elemento + " ");
+        for (String elemento : lista) {
+            System.out.println(elemento);
         }
     }
+
 }

@@ -1,3 +1,5 @@
+package CursoJava.ArreglosEstaticos;
+
 import java.util.Scanner;
 
 public class Arreglos02 {
