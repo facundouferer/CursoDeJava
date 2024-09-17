@@ -52,8 +52,10 @@ class Cliente {
 	}
 
 	/*
-	 * m�todo creado con el generador de c�digo el hashCode nos permitir� determinar si el objeto agregado
-	 * a la colecci�n es igual o repetido por ello en este tipo de colecci�n HashSet no se permitir� elementos duplicados.
+	 * m�todo creado con el generador de c�digo el hashCode nos permitir� determinar
+	 * si el objeto agregado
+	 * a la colecci�n es igual o repetido por ello en este tipo de colecci�n HashSet
+	 * no se permitir� elementos duplicados.
 	 */
 	@Override
 	public int hashCode() {
@@ -69,9 +71,15 @@ class Cliente {
 
 	@Override
 	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
+		if (this == o)
+			return true;
+		if (o == null || getClass() != o.getClass())
+			return false;
 		Cliente cliente = (Cliente) o;
-		return dni == cliente.dni;
+		if (dni == cliente.dni && nroCuenta == cliente.nroCuenta) {
+			return true;
+		}
+		return false;
 	}
+
 }
