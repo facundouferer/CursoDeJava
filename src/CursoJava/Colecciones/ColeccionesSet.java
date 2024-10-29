@@ -4,12 +4,12 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-class Empleado {
+class EmpleadoSet {
   private String nombre;
   private int id;
   private String departamento;
 
-  public Empleado(String nombre, int id, String departamento) {
+  public EmpleadoSet(String nombre, int id, String departamento) {
     this.nombre = nombre;
     this.id = id;
     this.departamento = departamento;
@@ -55,13 +55,13 @@ class Empleado {
       return true;
     if (obj == null || getClass() != obj.getClass())
       return false;
-    Empleado empleado = (Empleado) obj;
+    EmpleadoSet empleado = (EmpleadoSet) obj;
     return id == empleado.id;
   }
 }
 
 public class ColeccionesSet {
-  private Set<Empleado> empleados;
+  private Set<EmpleadoSet> empleados;
   private Scanner scanner;
 
   public ColeccionesSet() {
@@ -120,7 +120,7 @@ public class ColeccionesSet {
     scanner.nextLine(); // Limpiar el buffer del scanner
     System.out.print("Ingrese el departamento del empleado: ");
     String departamento = scanner.nextLine();
-    Empleado empleado = new Empleado(nombre, id, departamento);
+    EmpleadoSet empleado = new EmpleadoSet(nombre, id, departamento);
     if (empleados.add(empleado)) {
       System.out.println("Empleado agregado correctamente.");
     } else {
@@ -132,7 +132,7 @@ public class ColeccionesSet {
     System.out.print("Ingrese el ID del empleado a buscar: ");
     int id = scanner.nextInt();
     scanner.nextLine(); // Limpiar el buffer del scanner
-    for (Empleado empleado : empleados) {
+    for (EmpleadoSet empleado : empleados) {
       if (empleado.getId() == id) {
         System.out.println("Empleado encontrado: " + empleado);
         return;
@@ -145,8 +145,8 @@ public class ColeccionesSet {
     System.out.print("Ingrese el ID del empleado a eliminar: ");
     int id = scanner.nextInt();
     scanner.nextLine(); // Limpiar el buffer del scanner
-    Empleado empleadoAEliminar = null;
-    for (Empleado empleado : empleados) {
+    EmpleadoSet empleadoAEliminar = null;
+    for (EmpleadoSet empleado : empleados) {
       if (empleado.getId() == id) {
         empleadoAEliminar = empleado;
         break;
@@ -165,7 +165,7 @@ public class ColeccionesSet {
       System.out.println("No hay empleados en la lista.");
     } else {
       System.out.println("Listado de empleados:");
-      for (Empleado empleado : empleados) {
+      for (EmpleadoSet empleado : empleados) {
         System.out.println(empleado);
       }
     }
@@ -175,7 +175,7 @@ public class ColeccionesSet {
     System.out.print("Ingrese el ID del empleado a editar: ");
     int id = scanner.nextInt();
     scanner.nextLine(); // Limpiar el buffer del scanner
-    for (Empleado empleado : empleados) {
+    for (EmpleadoSet empleado : empleados) {
       if (empleado.getId() == id) {
         System.out.print("Ingrese el nuevo nombre del empleado: ");
         String nuevoNombre = scanner.nextLine();

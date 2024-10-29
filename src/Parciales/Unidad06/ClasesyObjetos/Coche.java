@@ -3,16 +3,16 @@ package Parciales.Unidad06.ClasesyObjetos;
 class Coche {
   String marca;
   String modelo;
-  int año;
+  int anio;
 
-  public Coche(String marca, String modelo, int año) {
+  public Coche(String marca, String modelo, int anio) {
     this.marca = marca;
     this.modelo = modelo;
-    this.año = año;
+    this.anio = anio;
   }
 
   public void verAtributos() {
-    System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Año: " + año);
+    System.out.println("Marca: " + marca + ", Modelo: " + modelo + ", Año: " + anio);
   }
 
   public static void main(String[] args) {

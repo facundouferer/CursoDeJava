@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class CapturarErroresDeTEclado {
   public static void main(String[] args) {
-    // pedir numeros para dividir
+
     System.out.println("ingresa un número");
     Scanner leer = new Scanner(System.in);
+
     try {
       int nroUno = leer.nextInt();
       System.out.println("ingresa otro número");

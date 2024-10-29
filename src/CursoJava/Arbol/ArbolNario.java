@@ -3,12 +3,12 @@ package CursoJava.Arbol;
 import java.util.ArrayList;
 import java.util.List;
 
-class NodoNario {
+class NodoNarioArbol {
   int valor;
   List<NodoNario> hijos;
 
   // Constructor para crear un nodo con un valor.
-  public NodoNario(int valor) {
+  public NodoNarioArbol(int valor) {
     this.valor = valor;
     this.hijos = new ArrayList<>();
   }

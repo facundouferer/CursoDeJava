@@ -1,8 +1,8 @@
-class Persona {
+class PersonaObjeto {
   private String nombre;
   private int edad;
 
-  public Persona(String nombre, int edad) {
+  public PersonaObjeto(String nombre, int edad) {
     this.nombre = nombre;
     this.edad = edad;
   }
@@ -15,7 +15,7 @@ class Persona {
     return edad;
   }
 
-  public void cumplirAños() {
+  public void cumplirAnioos() {
     this.edad++;
   }
 
@@ -23,10 +23,10 @@ class Persona {
 
 public class AbstraccionYEncapsulamiento {
   public static void main(String[] args) {
-    Persona p1 = new Persona("Juan", 30);
+    PersonaObjeto p1 = new PersonaObjeto("Juan", 30);
     System.out.println("Nombre: " + p1.getNombre());
     System.out.println("Edad: " + p1.getEdad());
-    p1.cumplirAños();
+    p1.cumplirAnioos();
     System.out.println("Edad: " + p1.getEdad());
   }
 }

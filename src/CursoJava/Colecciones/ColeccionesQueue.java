@@ -4,12 +4,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-class Empleado {
+class EmpleadoColca {
   private String nombre;
   private int id;
   private String departamento;
 
-  public Empleado(String nombre, int id, String departamento) {
+  public EmpleadoColca(String nombre, int id, String departamento) {
     this.nombre = nombre;
     this.id = id;
     this.departamento = departamento;
@@ -46,7 +46,7 @@ class Empleado {
 }
 
 public class ColeccionesQueue {
-  private Queue<Empleado> empleados;
+  private Queue<EmpleadoColca> empleados;
   private Scanner scanner;
 
   public ColeccionesQueue() {
@@ -105,7 +105,7 @@ public class ColeccionesQueue {
     scanner.nextLine(); // Limpiar el buffer del scanner
     System.out.print("Ingrese el departamento del empleado: ");
     String departamento = scanner.nextLine();
-    Empleado empleado = new Empleado(nombre, id, departamento);
+    EmpleadoColca empleado = new EmpleadoColca(nombre, id, departamento);
     empleados.add(empleado);
     System.out.println("Empleado agregado correctamente.");
   }
@@ -114,7 +114,7 @@ public class ColeccionesQueue {
     System.out.print("Ingrese el ID del empleado a buscar: ");
     int id = scanner.nextInt();
     scanner.nextLine(); // Limpiar el buffer del scanner
-    for (Empleado empleado : empleados) {
+    for (EmpleadoColca empleado : empleados) {
       if (empleado.getId() == id) {
         System.out.println("Empleado encontrado: " + empleado);
         return;
@@ -127,8 +127,8 @@ public class ColeccionesQueue {
     System.out.print("Ingrese el ID del empleado a eliminar: ");
     int id = scanner.nextInt();
     scanner.nextLine(); // Limpiar el buffer del scanner
-    Empleado empleadoAEliminar = null;
-    for (Empleado empleado : empleados) {
+    EmpleadoColca empleadoAEliminar = null;
+    for (EmpleadoColca empleado : empleados) {
       if (empleado.getId() == id) {
         empleadoAEliminar = empleado;
         break;
@@ -147,7 +147,7 @@ public class ColeccionesQueue {
       System.out.println("No hay empleados en la lista.");
     } else {
       System.out.println("Listado de empleados:");
-      for (Empleado empleado : empleados) {
+      for (EmpleadoColca empleado : empleados) {
         System.out.println(empleado);
       }
     }
@@ -157,7 +157,7 @@ public class ColeccionesQueue {
     System.out.print("Ingrese el ID del empleado a editar: ");
     int id = scanner.nextInt();
     scanner.nextLine(); // Limpiar el buffer del scanner
-    for (Empleado empleado : empleados) {
+    for (EmpleadoColca empleado : empleados) {
       if (empleado.getId() == id) {
         System.out.print("Ingrese el nuevo nombre del empleado: ");
         String nuevoNombre = scanner.nextLine();

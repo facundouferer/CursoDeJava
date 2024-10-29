@@ -7,10 +7,8 @@ class AccesoRutas {
 
         File archivo = new File("gatito.png"); /* Usamos el constructor que nos pide el patch */
 
-        System.out.println("Ruta: " + archivo.getAbsoluteFile()); /*
-                                                                   * nos muestra la ruta absoluta del archivo pero seg�n
-                                                                   * el proyecto
-                                                                   */
+        System.out.println("Ruta: " + archivo.getAbsoluteFile()); // nos muestra la ruta absoluta del archivo pero seg�n
+                                                                  // el proyecto
 
         System.out.println("Ruta: " + archivo.exists()); /* ver si un archivo existe y si no existe devuelve false. */
 

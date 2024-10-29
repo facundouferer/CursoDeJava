@@ -59,6 +59,15 @@ class NodoNario {
     }
     return false;
   }
+
+  // Sumar los valores de todos los nodos del árbol
+  public int sumarValores() {
+    int suma = valor;
+    for (NodoNario hijo : hijos) {
+      suma += hijo.sumarValores();
+    }
+    return suma;
+  }
 }
 
 public class ArbolNarioOperaciones {
@@ -89,54 +98,17 @@ public class ArbolNarioOperaciones {
     raiz.imprimirPreorden(); // Salida: 1 2 5 6 3 7 4 8 9 10
     System.out.println();
 
-    // Imprimir el árbol en posorden
-    System.out.print("Recorrido en posorden: ");
-    raiz.imprimirPosorden(); // Salida: 5 6 2 7 3 8 9 10 4 1
-    System.out.println();
-
-    // Calcular e imprimir la altura del árbol
-    System.out.println("Altura del árbol: " + raiz.altura()); // Salida: 3
-
     // Buscar un valor en el árbol
     int valorBuscado = 9;
-    if (raiz.buscar(valorBuscado)) {
-      System.out.println("El valor " + valorBuscado + " está en el árbol."); // Salida: El valor 9 está en el árbol.
+    boolean encontrado = raiz.buscar(valorBuscado);
+    if (encontrado) {
+      System.out.println("El valor " + valorBuscado + " está en el árbol.");
     } else {
       System.out.println("El valor " + valorBuscado + " no está en el árbol.");
     }
+
+    // Sumar los valores de todos los nodos del árbol
+    int sumaValores = raiz.sumarValores();
+    System.out.println("La suma de todos los valores en el árbol es: " + sumaValores);
   }
 }
-
-/**
- * Clase NodoNario:
- * 
- * Contiene un valor entero y una lista de nodos hijos.
- * 
- * agregarHijo(NodoNario hijo): Agrega un hijo a la lista de hijos.
- * 
- * imprimirPreorden(): Recorre el árbol en preorden, es decir, primero imprime
- * el nodo actual y luego recorre recursivamente los hijos.
- * 
- * imprimirPosorden(): Recorre el árbol en posorden, es decir, primero recorre
- * recursivamente los hijos y luego imprime el nodo actual.
- * 
- * altura(): Calcula la altura del árbol de forma recursiva. La altura de un
- * nodo es 1 más la altura del hijo más alto.
- * 
- * buscar(int valorBuscado): Busca un valor en el árbol de forma recursiva.
- * Devuelve true si el valor se encuentra en algún nodo, y false en caso
- * contrario.
- * 
- * Clase ArbolNarioOperaciones:
- * 
- * Se construye un árbol con varios nodos y relaciones entre ellos.
- * 
- * Se realizan tres operaciones principales:
- * 
- * Recorrido en preorden.
- * Recorrido en posorden.
- * Cálculo de la altura del árbol.
- * 
- * Búsqueda de un valor específico en el árbol.
- * 
- */
