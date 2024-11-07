@@ -1,4 +1,4 @@
-package CursoJava.Serializacion;
+package CursoJava.Serializacion.SerializacionSimple;
 
 import java.io.*;
 
@@ -6,7 +6,7 @@ class Escritura {
 
   public static void main(String[] args) {
     // TODO Auto-generated method stub
-    Persona personita = new Persona("Juan", 123);
+    Personita personita = new Personita("Juan", 123);
     try {
       ObjectOutputStream flujoSalida = new ObjectOutputStream(new FileOutputStream("miObjetoSerializado.txt"));
       // Escribe el objeto en un archivo

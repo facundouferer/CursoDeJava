@@ -5,7 +5,6 @@ import java.sql.*;
 public class BaseDeDatos {
     // clase de inicio
     public static void main(String[] args) {
-
         String url = "jdbc:mysql://localhost:3306/empresa";
         String user = "root";
         String password = "qsczse753951";
@@ -13,7 +12,7 @@ public class BaseDeDatos {
         try {
             Connection conn = DriverManager.getConnection(url, user, password);
             Statement stmt = conn.createStatement();
-            String sql = "select * from equipos where gol1 >1 and gol2 = 0;";
+            String sql = "select * from equipos where gol1 ;";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 String equipo1 = rs.getString("equipo1");

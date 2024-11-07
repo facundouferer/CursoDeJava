@@ -1,4 +1,4 @@
-package CursoJava.Serializacion;
+package CursoJava.Serializacion.SerializacionSimple;
 
 import java.io.*;
 
@@ -7,7 +7,7 @@ class Lectura {
 
 		try {
 			ObjectInputStream flujoEntrada = new ObjectInputStream(new FileInputStream("miObjetoSerializado.txt"));
-			Persona personasEntrada = (Persona) flujoEntrada.readObject();
+			Personita personasEntrada = (Personita) flujoEntrada.readObject();
 			System.out.println(personasEntrada.toString());
 		} catch (IOException e) {
 			// catch para capturar los errores al intentar leer el archivo
@@ -20,17 +20,3 @@ class Lectura {
 
 }
 
-class Persona implements Serializable {
-	private String nombre;
-	private int dni;
-
-	public Persona(String nombre, int dni) {
-		this.nombre = nombre;
-		this.dni = dni;
-	}
-
-	public String toString() {
-		return this.nombre + " (" + this.dni + ")";
-	}
-
-}
