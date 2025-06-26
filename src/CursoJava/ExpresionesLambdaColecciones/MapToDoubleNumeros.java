@@ -8,7 +8,7 @@ class MapToDoubleNumeros {
     public static void main(String[] args) {
         List<String> numerosString = new ArrayList<>();
         numerosString.add("1");
-        numerosString.add("2");
+        numerosString.add("7");
         numerosString.add("3");
 
         List<Double> numeros = numerosString.stream()

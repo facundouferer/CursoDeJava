@@ -74,7 +74,6 @@ public class ArbolNarioOperaciones {
   public static void main(String[] args) {
     // Crear un árbol N-ario con la raíz
     NodoNario raiz = new NodoNario(1);
-
     // Crear hijos de la raíz
     NodoNario hijo1 = new NodoNario(2);
     NodoNario hijo2 = new NodoNario(3);
