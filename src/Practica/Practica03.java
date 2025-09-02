@@ -59,11 +59,10 @@ class Garage {
         System.out.println(auto.toString());
       }
     }
-
   }
 }
 
-class Operaciones3 {
+class Practica03 {
 
   public static void main(String[] args) {
 

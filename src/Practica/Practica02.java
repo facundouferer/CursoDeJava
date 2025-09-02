@@ -40,7 +40,7 @@ class Matematica {
 
 }
 
-class Operadores2 {
+class Practica02 {
 
   public static void main(String[] args) { // acá inicia todo
     int nro1 = 5;

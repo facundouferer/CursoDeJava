@@ -56,7 +56,7 @@ class Calculadora {
 
 }
 
-public class Operadores {
+public class Practica01 {
   public static void main(String[] args) {
     int nro1 = 0;
     int nro2 = 0;
