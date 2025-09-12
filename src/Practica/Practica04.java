@@ -10,7 +10,7 @@ class FiguraGeometrica {
   public FiguraGeometrica(int nroLados, int cantAngulos, String nombre) {
     this.nroLados = nroLados;
     this.cantAngulos = cantAngulos;
-    this.nombre = nombre;
+    this.nombre = nombre.toUpperCase();
   }
 
   // constructor sin parámetros
@@ -27,6 +27,35 @@ class FiguraGeometrica {
   // sobreescritura del método de la clase Object
   public String toString() {
     return "-----------------------\nNombre: " + nombre + "\nLados: " + nroLados + "\nAngulos: " + cantAngulos;
+  }
+}
+
+class Cuadrado extends FiguraGeometrica {
+  float largo, ancho;
+
+  public Cuadrado(int largo, int ancho) {
+    super(4, 4, "CUADRADO");
+    this.largo = largo;
+    this.ancho = ancho;
+  }
+}
+
+class Triangulo extends FiguraGeometrica {
+  float base, altura;
+
+  public Triangulo(int base, int altura) {
+    super(3, 3, "TRIANGULO");
+    this.base = base;
+    this.altura = altura;
+  }
+}
+
+class Circulo extends FiguraGeometrica {
+  float radio;
+
+  public Circulo(int radio) {
+    super(0, 0, "CIRCULO");
+    this.radio = radio;
   }
 }
 
@@ -51,12 +80,33 @@ class ColeccionDeFiguras {
 
     System.out.println("Ingrese el nombre de la figura:");
     String nombre = teclado.nextLine();
-    System.out.println("Ingrese la cantidad de lados:");
-    int lados = teclado.nextInt();
-    System.out.println("Ingrese la cantidad de angulos:");
-    int angulos = teclado.nextInt();
-    FiguraGeometrica figura = new FiguraGeometrica(lados, angulos, nombre);
-    figuras[ultimoLuegar] = figura;
+    if (nombre.equalsIgnoreCase("cuadrado")) {
+      System.out.println("Largo:");
+      int largo = teclado.nextInt();
+      System.out.println("Ancho:");
+      int ancho = teclado.nextInt();
+      Cuadrado cuadrado = new Cuadrado(largo, ancho);
+      figuras[ultimoLuegar] = cuadrado;
+    } else if (nombre.equalsIgnoreCase("circulo")) {
+      System.out.println("Radio:");
+      int radio = teclado.nextInt();
+      Circulo circulo = new Circulo(radio);
+      figuras[ultimoLuegar] = circulo;
+    } else if (nombre.equalsIgnoreCase("triangulo")) {
+      System.out.println("Ingrese la base:");
+      int base = teclado.nextInt();
+      System.out.println("Ingrese la altura:");
+      int altura = teclado.nextInt();
+      Triangulo triangulo = new Triangulo(base, altura);
+      figuras[ultimoLuegar] = triangulo;
+    } else {
+      System.out.println("Cantidad de lados:");
+      int lados = teclado.nextInt();
+      System.out.println("Cantidad de angulos:");
+      int angulos = teclado.nextInt();
+      FiguraGeometrica figura = new FiguraGeometrica(lados, angulos, nombre);
+      figuras[ultimoLuegar] = figura;
+    }
     ultimoLuegar++;
     teclado.nextLine(); // Limpiar el buffer para evitar problemas con nextLine()
   }
@@ -143,12 +193,6 @@ public class Practica04 {
 
     ColeccionDeFiguras figurasGuardadas = new ColeccionDeFiguras(teclado);
     figurasGuardadas.agregarFigura();
-    figurasGuardadas.agregarFigura();
-    figurasGuardadas.agregarFigura();
-    figurasGuardadas.listarFiguras();
-    System.out.println("Ingrese el nombre de la figura a eliminar:");
-    String nombreEliminar = teclado.nextLine();
-    figurasGuardadas.eliminarFiguraNombre(nombreEliminar);
     figurasGuardadas.listarFiguras();
 
     teclado.close();
