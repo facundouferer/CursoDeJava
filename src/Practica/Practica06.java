@@ -58,12 +58,17 @@ class Materia {
   }
 }
 
-class Docentes extends Persona {
+class Docentes extends Persona implements InformeDeDatos {
   private Materia[] materias;
 
   public Docentes(String nombre, String apellido, int dni, Materia[] materias) {
     super(nombre, apellido, dni);
     this.materias = materias;
+  }
+
+  @Override
+  public String informe() {
+    return "El docente " + super.toString() + " dicta materias:";
   }
 
   public void mostrarMaterias() {
@@ -77,6 +82,10 @@ class Docentes extends Persona {
     return super.toString();
   }
 
+}
+
+interface InformeDeDatos {
+  public String informe();
 }
 
 public class Practica06 {
