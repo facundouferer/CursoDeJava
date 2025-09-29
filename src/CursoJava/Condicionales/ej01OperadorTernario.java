@@ -1,4 +1,4 @@
-package CursoJava.EstructurasDeDecision;
+package CursoJava.Condicionales;
 
 import javax.swing.*;
 

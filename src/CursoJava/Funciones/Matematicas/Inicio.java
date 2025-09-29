@@ -7,6 +7,7 @@ public class Inicio {
 
     int a = 10;
     int b = 5;
+
     double resultado = OperadorMatematico.dividir(a, b);
     System.out.println("El resultado de la división es: " + resultado);
 

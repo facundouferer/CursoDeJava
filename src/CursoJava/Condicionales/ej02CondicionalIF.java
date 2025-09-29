@@ -1,4 +1,4 @@
-package CursoJava.EstructurasDeDecision;
+package CursoJava.Condicionales;
 
 import java.util.Scanner;
 

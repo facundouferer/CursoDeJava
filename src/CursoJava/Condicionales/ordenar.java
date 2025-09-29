@@ -1,4 +1,4 @@
-package CursoJava.EstructurasDeDecision;
+package CursoJava.Condicionales;
 
 public class ordenar {
   public static void main(String[] args) {
