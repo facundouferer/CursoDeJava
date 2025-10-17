@@ -7,9 +7,30 @@ import java.util.*;
  * lista (ArrayList), un conjunto (HashSet), o un mapa (HashMap).
  */
 
+class Estudiante {
+  String nombre;
+  int edad;
+
+  Estudiante(String nombre, int edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+
+  @Override
+  public String toString() {
+    return "\n" + nombre + " (" + edad + ")";
+  }
+
+}
+
 class EjemploColeccion {
   public static void main(String[] args) {
-    List<String> nombres = Arrays.asList("Ana", "Luis", "María", "Pedro");
-    System.out.println(nombres);
+
+    List<Estudiante> personas = Arrays.asList(
+        new Estudiante("Ana", 15),
+        new Estudiante("Luis", 22),
+        new Estudiante("María", 19),
+        new Estudiante("Pedro", 17));
+    System.out.println(personas);
   }
 }

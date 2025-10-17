@@ -7,11 +7,44 @@ import java.util.*;
  * Equivale a un for, pero más limpio.
  */
 
+class Auto {
+  String marca;
+  int anio;
+
+  Auto(String marca, int anio) {
+    this.marca = marca;
+    this.anio = anio;
+  }
+
+  @Override
+  public String toString() {
+    return marca + " - " + anio;
+  }
+
+  public String verAnio() {
+    return marca + " - " + (2025 - anio);
+  }
+
+}
+
 class EjemploForEach {
   public static void main(String[] args) {
-    List<String> nombres = Arrays.asList("Ana", "Luis", "María", "Pedro");
+    List<Auto> autos = Arrays.asList(
+        new Auto("Ford", 2015),
+        new Auto("Chevrolet", 2018),
+        new Auto("Toyota", 2020));
 
-    // Recorre la lista y muestra cada nombre
-    nombres.forEach(nombre -> System.out.println("Hola " + nombre));
+    // Versión con lambda:
+    System.out.println("\nVersión con lambda:");
+    autos.forEach(auto -> System.out.println(auto.marca + " " + (2025 - auto.anio)));
+
+    // Método de referencia:
+    System.out.println("\nMétodo de referencia:");
+    autos.forEach(System.out::println);
+
+    // Método con lambda:
+    System.out.println("\nMétodo con lambda:");
+    autos.forEach(auto -> System.out.println(auto.verAnio()));
+
   }
 }

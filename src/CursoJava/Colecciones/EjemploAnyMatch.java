@@ -1,7 +1,6 @@
 package CursoJava.Colecciones;
 
 import java.util.*;
-import java.util.stream.*;
 
 /**
  * anyMatch() verifica si algún elemento cumple una condición.
