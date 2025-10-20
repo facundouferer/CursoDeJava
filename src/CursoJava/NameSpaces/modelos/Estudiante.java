@@ -1,4 +1,4 @@
-package Practica.AdminUniversidad.modelos;
+package CursoJava.NameSpaces.modelos;
 
 public class Estudiante extends Persona {
   private String carrera;

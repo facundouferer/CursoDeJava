@@ -1,4 +1,4 @@
-package Practica.AdminUniversidad.modelos;
+package CursoJava.NameSpaces.modelos;
 
 class Persona {
 

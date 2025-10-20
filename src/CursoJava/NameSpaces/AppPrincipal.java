@@ -1,10 +1,10 @@
-package Practica.AdminUniversidad;
+package CursoJava.NameSpaces;
 
 import java.util.Arrays;
 import java.util.List;
 
-import Practica.AdminUniversidad.modelos.Estudiante;
-import Practica.AdminUniversidad.servicios.Registro;
+import CursoJava.NameSpaces.modelos.Estudiante;
+import CursoJava.NameSpaces.servicios.Registro;
 
 class AppPrincipal {
 

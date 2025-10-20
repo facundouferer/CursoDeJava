@@ -1,7 +1,8 @@
-package Practica.AdminUniversidad.servicios;
+package CursoJava.NameSpaces.servicios;
 
-import Practica.AdminUniversidad.modelos.Estudiante;
 import java.util.List;
+
+import CursoJava.NameSpaces.modelos.Estudiante;
 
 public class Registro {
 
