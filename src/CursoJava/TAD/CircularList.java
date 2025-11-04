@@ -18,7 +18,7 @@ class CircularList<T> {
     size = 0;
   }
 
-  public void add(T val) {
+  public void addLast(T val) {
     Node<T> node = new Node<>(val);
     if (tail == null) {
       tail = node;
@@ -27,6 +27,18 @@ class CircularList<T> {
       node.next = tail.next; // head
       tail.next = node;
       tail = node;
+    }
+    size++;
+  }
+
+  public void addFirst(T val) {
+    Node<T> node = new Node<>(val);
+    if (tail == null) {
+      tail = node;
+      tail.next = tail; // apunta a sí mismo
+    } else {
+      node.next = tail.next; // head
+      tail.next = node;
     }
     size++;
   }

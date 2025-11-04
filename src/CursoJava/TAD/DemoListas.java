@@ -15,14 +15,22 @@ class DemoListas {
     sll.addLast(10);
     sll.addLast(20);
     sll.addLast(30);
+    sll.addFirst(5);
+    sll.remove(20);
+    if (sll.contains(30)) {
+      System.out.println("Singly Linked List contiene 30");
+    } else {
+      System.out.println("Singly Linked List no contiene 30");
+    }
     System.out.print("Singly Linked: ");
     sll.printAll();
 
     // Circular
     CircularList<Integer> cl = new CircularList<>();
-    cl.add(10);
-    cl.add(20);
-    cl.add(30);
+    cl.addLast(10);
+    cl.addLast(20);
+    cl.addLast(30);
+    cl.addFirst(5);
     System.out.print("Circular: ");
     cl.printAll();
 

@@ -43,4 +43,14 @@ public class ListaEstatica {
       System.out.print(datos[i] + " ");
     System.out.println();
   }
+
+  public static void main(String[] args) {
+    ListaEstatica le = new ListaEstatica(5);
+    le.add(10);
+    le.add(20);
+    le.add(30);
+    System.out.print("Estática: ");
+    le.printAll();
+  }
+
 }

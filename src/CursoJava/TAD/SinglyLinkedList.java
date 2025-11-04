@@ -62,6 +62,20 @@ public class SinglyLinkedList<T> {
     return true;
   }
 
+  public boolean contains(T val) {
+    Node<T> cur = head;
+    while (cur != null) {
+      if (cur.value.equals(val))
+        return true;
+      cur = cur.next;
+    }
+    return false;
+  }
+
+  public boolean isEmpty() {
+    return size == 0;
+  }
+
   public void printAll() {
     Node<T> cur = head;
     while (cur != null) {
