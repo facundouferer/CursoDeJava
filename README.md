@@ -237,7 +237,7 @@ CursoDeJava/
   - `Practica01.java` - `Practica06.java`: Ejercicios progresivos
   - [`Practica07/`](src/Practica/Practica07/): Ejercicios avanzados
   - [`Universidad/`](src/Practica/Universidad/): Sistema universitario completo
-  - [`ClaseAbstracta/`](src/Practica/ClaseAbstracta/): Práctica de abstracci��n
+  - [`ClaseAbstracta/`](src/Practica/ClaseAbstracta/): Práctica de abstraccin
 
 ### 📊 Evaluaciones
 - **📂 Parciales:** [`src/Parciales/`](src/Parciales/)
