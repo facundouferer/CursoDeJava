@@ -11,7 +11,7 @@ Aquí encontrarás no solo el código de los ejercicios prácticos, sino tambié
 3.  [Sintaxis y Fundamentos](#-sintaxis-y-fundamentos)
 4.  [Paradigma Orientado a Objetos (POO)](#-paradigma-orientado-a-objetos-poo)
 5.  [Temas Avanzados](#-temas-avanzados)
-    *   [Estructuras de Datos (TAD)](#-estructuras-de-datos-tad)
+    *   [Estructuras de Datos (TAD)](#%EF%B8%8F-estructuras-de-datos-y-colecciones-collections-framework)
     *   [Java Collections Framework](#-java-collections-framework)
     *   [Control de Excepciones y Errores](#-control-de-excepciones-y-errores)
     *   [Manejo de Archivos y Persistencia](#-manejo-de-archivos-y-persistencia)
