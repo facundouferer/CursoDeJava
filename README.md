@@ -9,25 +9,20 @@ Aquí encontrarás no solo el código de los ejercicios prácticos, sino tambié
 1.  [Conceptos Básicos de Programación](#-conceptos-básicos-de-programación)
 2.  [Introducción a Java](#-introducción-a-java)
 3.  [Sintaxis y Fundamentos](#-sintaxis-y-fundamentos)
-    *   [Variables y Tipos de Datos](#-variables-y-tipos-de-datos)
-    *   [Operadores](#-operadores)
-    *   [Estructuras de Control de Flujo](#-estructuras-de-control-de-flujo)
-    *   [Arrays y Strings](#-arrays-y-strings)
-    *   [Funciones (Métodos)](#-funciones-métodos)
 4.  [Paradigma Orientado a Objetos (POO)](#-paradigma-orientado-a-objetos-poo)
-    *   [Clases y Objetos](#clases-y-objetos)
-    *   [Pilares de la POO (Encapsulamiento, Herencia, Polimorfismo, Abstracción)](#pilares-de-la-poo)
-    *   [Modificadores de Acceso](#modificadores-de-acceso)
 5.  [Temas Avanzados](#-temas-avanzados)
     *   [Estructuras de Datos (TAD)](#-estructuras-de-datos-tad)
     *   [Java Collections Framework](#-java-collections-framework)
-    *   [Manejo de Excepciones](#-manejo-de-excepciones)
-    *   [Programación Funcional (Interfaces Funcionales y Lambdas)](#-programación-funcional)
-    *   [Patrones de Diseño](#-patrones-de-diseño)
+    *   [Control de Excepciones y Errores](#-control-de-excepciones-y-errores)
+    *   [Manejo de Archivos y Persistencia](#-manejo-de-archivos-y-persistencia)
+    *   [Bases de Datos y Conectividad (JDBC)](#-bases-de-datos-y-conectividad-jdbc)
+    *   [Programación Funcional](#-programación-funcional)
+    *   [Programación Concurrente (Multihilos)](#-programación-concurrente-multihilos)
+    *   [Patrones de Diseño (Revisión)](#-patrones-de-diseño-revisión)
+    *   [Pruebas Unitarias con JUnit](#-pruebas-unitarias-con-junit)
+    *   [Interfaces Gráficas de Usuario (GUI)](#-interfaces-gráficas-de-usuario-gui)
+    *   [Desarrollo Web con Java](#-desarrollo-web-con-java)
 6.  [Guía del Repositorio](#-guía-del-repositorio)
-    *   [Estructura del Proyecto](#-estructura-del-proyecto)
-    *   [Configuración del Entorno](#-configuración-del-entorno)
-    *   [Compilación y Ejecución](#-compilación-y-ejecución)
 7.  [Contacto y Contribuciones](#-contacto-y-contribuciones)
 8.  [Enlaces Útiles](#-enlaces-útiles)
 
@@ -498,25 +493,481 @@ nombres.add("Ana"); // Permite duplicados
 System.out.println(nombres); // Imprime [Ana, Luis, Ana]
 ```
 
-### 🚨 Manejo de Excepciones
+### 🚨 Control de Excepciones y Errores
 
-Una **excepción** es un evento anómalo que ocurre durante la ejecución de un programa (ej: división por cero, archivo no encontrado). Java permite "capturar" y manejar estas excepciones para evitar que el programa se detenga bruscamente.
+En Java, el manejo de situaciones inesperadas es crucial para crear aplicaciones robustas. Esto se gestiona a través de un sistema de errores y excepciones.
 
 **📂 Ubicación:** [`src/CursoJava/Excepciones/`](src/CursoJava/Excepciones/)
 
-Se usa el bloque `try-catch-finally`:
+#### Diferencia entre Errores y Excepciones
 
-*   **`try`**: Contiene el código que podría lanzar una excepción.
-*   **`catch`**: Contiene el código que se ejecuta si se produce una excepción específica.
-*   **`finally`**: Contiene código que se ejecutará siempre, haya o no una excepción (ideal para liberar recursos como cerrar archivos).
+Aunque a menudo se usan indistintamente, en Java tienen significados distintos:
+
+*   **`Error`**: Representa problemas graves y anormales que están fuera del control del programador y de la aplicación. Generalmente, no se deben intentar capturar. Ejemplos:
+    *   `OutOfMemoryError`: La JVM se queda sin memoria.
+    *   `StackOverflowError`: La pila de llamadas a métodos es demasiado profunda (generalmente por una recursión infinita).
+
+*   **`Exception`**: Representa condiciones que una aplicación podría querer capturar y manejar. Son problemas que, aunque inesperados, son recuperables. Ejemplos:
+    *   `IOException`: Falla una operación de entrada/salida (ej: leer un archivo que no existe).
+    *   `NullPointerException`: Se intenta usar un objeto que es `null`.
+
+#### Jerarquía de Excepciones en Java
+
+Toda clase de error o excepción en Java hereda de la clase `Throwable`. La jerarquía es la siguiente:
+
+```
+          Throwable
+          /       \
+       Error     Exception
+                   /       \
+      IOException   RuntimeException
+      (Checked)     (Unchecked)
+                       /         \
+      NullPointerException   ArrayIndexOutOfBoundsException
+```
+
+*   **`Throwable`**: La clase raíz para todo lo que puede ser "lanzado".
+*   **`Exception`**: La clase base para las excepciones recuperables. Se dividen en dos grandes grupos:
+    1.  **Checked Exceptions (Excepciones Verificadas)**: Son subclases de `Exception` pero **no** de `RuntimeException`. El compilador de Java te **obliga** a manejarlas, ya sea con un bloque `try-catch` o declarando que tu método las propaga con `throws`. Son condiciones que el programa debe anticipar (ej: `FileNotFoundException`).
+    2.  **Unchecked Exceptions (Excepciones No Verificadas)**: Son las clases que heredan de `RuntimeException`. El compilador **no** te obliga a manejarlas. Generalmente, indican errores de lógica en la programación (ej: `NullPointerException`, `ArrayIndexOutOfBoundsException`).
+
+#### Uso de `try`, `catch` y `finally`
+
+Esta es la estructura fundamental para manejar excepciones.
+
+*   **`try`**: Envuelve el código que podría generar una excepción.
+*   **`catch`**: Captura y maneja una excepción específica. Puedes tener múltiples bloques `catch` para diferentes tipos de excepciones.
+*   **`finally`**: Contiene código que se ejecutará **siempre**, sin importar si se lanzó una excepción o no. Es el lugar ideal para liberar recursos (como cerrar archivos o conexiones de red).
 
 ```javascript
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+
+public class ManejoExcepciones {
+    public static void main(String[] args) {
+        FileReader fr = null;
+        try {
+            // Código propenso a errores
+            int[] numeros = {1, 2, 3};
+            System.out.println(numeros[5]); // Lanzará ArrayIndexOutOfBoundsException
+
+            File archivo = new File("archivo_inexistente.txt");
+            fr = new FileReader(archivo); // Podría lanzar FileNotFoundException
+
+        } catch (FileNotFoundException e) {
+            // Manejo específico para archivo no encontrado
+            System.out.println("Error: El archivo no fue encontrado.");
+            System.out.println("Detalle: " + e.getMessage());
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            // Manejo específico para índice de array fuera de rango
+            System.out.println("Error: Intentaste acceder a una posición inválida del array.");
+
+        } catch (Exception e) {
+            // Un bloque genérico al final para capturar cualquier otra excepción
+            System.out.println("Ocurrió un error inesperado: " + e.getMessage());
+
+        } finally {
+            // Este bloque se ejecuta siempre
+            System.out.println("El bloque 'finally' siempre se ejecuta.");
+            try {
+                if (fr != null) {
+                    fr.close(); // Cerramos el recurso para evitar fugas de memoria
+                    System.out.println("Recurso cerrado correctamente.");
+                }
+            } catch (Exception e) {
+                System.out.println("Error al cerrar el recurso: " + e.getMessage());
+            }
+        }
+    }
+}
+```
+
+#### Generación de Excepciones con `throw`
+
+A veces, necesitas lanzar una excepción de forma manual en tu código para señalar una condición de error. Para esto se utiliza la palabra clave `throw`.
+
+```javascript
+public static void verificarEdad(int edad) {
+    if (edad < 18) {
+        // Lanzamos una excepción si la condición de error se cumple
+        throw new IllegalArgumentException("El usuario debe ser mayor de 18 años.");
+    }
+    System.out.println("Edad verificada correctamente.");
+}
+
+public static void main(String[] args) {
+    try {
+        verificarEdad(15);
+    } catch (IllegalArgumentException e) {
+        System.out.println("Error de validación: " + e.getMessage());
+    }
+}
+```
+
+#### Propagación de Excepciones con `throws`
+
+Cuando un método puede lanzar una *checked exception* (excepción verificada) pero no la maneja con `try-catch`, debe declararlo en su firma usando la palabra clave `throws`. Esto informa a quien llame al método que debe estar preparado para manejar esa excepción.
+
+```javascript
+import java.io.IOException;
+
+// Este método declara que PUEDE lanzar una IOException
+public static void miMetodoQueLanzaExcepcion() throws IOException {
+    // Imaginemos que aquí hay código que podría fallar, como leer un archivo
+    throw new IOException("Fallo en la operación de E/S");
+}
+
+public static void main(String[] args) {
+    try {
+        // Como el método puede lanzar una excepción, debemos manejarla
+        miMetodoQueLanzaExcepcion();
+    } catch (IOException e) {
+        System.out.println("Se capturó la excepción propagada: " + e.getMessage());
+    }
+}
+```
+
+#### Creación de Excepciones Personalizadas
+
+Puedes crear tus propios tipos de excepción para representar problemas específicos de tu aplicación. Esto hace que tu código sea más legible y fácil de depurar.
+
+Para ello, simplemente crea una clase que herede de `Exception` (para una checked exception) o de `RuntimeException` (para una unchecked exception).
+
+```javascript
+// 1. Crear nuestra clase de excepción personalizada
+class SaldoInsuficienteException extends Exception {
+    public SaldoInsuficienteException(String mensaje) {
+        super(mensaje); // Llama al constructor de la clase padre (Exception)
+    }
+}
+
+// 2. Usar nuestra excepción en la lógica de negocio
+class CuentaBancaria {
+    private double saldo;
+
+    public CuentaBancaria(double saldoInicial) {
+        this.saldo = saldoInicial;
+    }
+
+    public void retirar(double monto) throws SaldoInsuficienteException {
+        if (monto > saldo) {
+            // Lanzamos nuestra excepción personalizada
+            throw new SaldoInsuficienteException("Saldo insuficiente. Tienes " + saldo + " pero intentas retirar " + monto);
+        }
+        saldo -= monto;
+        System.out.println("Retiro exitoso. Saldo restante: " + saldo);
+    }
+}
+
+// 3. Manejar la excepción personalizada
+public static void main(String[] args) {
+    CuentaBancaria miCuenta = new CuentaBancaria(1000);
+    try {
+        miCuenta.retirar(500);  // Funciona
+        miCuenta.retirar(600);  // Lanza la excepción
+    } catch (SaldoInsuficienteException e) {
+        System.out.println("Error en la transacción: " + e.getMessage());
+    }
+}
+```
+
+### 📁 Manejo de Archivos y Persistencia
+
+La persistencia de datos es la capacidad de un programa para guardar su estado o información para que pueda ser recuperada más tarde. La forma más fundamental de persistencia es a través de archivos.
+
+**📂 Ubicación:** [`src/CursoJava/ArchivosYDirectorios/`](src/CursoJava/ArchivosYDirectorios/)
+
+#### Lectura y Escritura con Java I/O
+
+Java I/O (Input/Output) se basa en el concepto de **streams** (flujos), que son secuencias de datos.
+
+*   **Byte Streams** (`InputStream`, `OutputStream`): Leen y escriben datos binarios (bytes). Útiles para archivos de imagen, ejecutables, etc.
+*   **Character Streams** (`Reader`, `Writer`): Leen y escriben datos de texto (caracteres). Automáticamente manejan la conversión entre bytes y caracteres según una codificación (como UTF-8).
+
+#### Uso de `File`, `FileReader`, `BufferedReader`, `PrintWriter`
+
+Estas son algunas de las clases más comunes para trabajar con archivos de texto.
+
+*   `File`: Representa una ruta de archivo o directorio en el sistema de archivos, pero no su contenido.
+*   `FileWriter` / `PrintWriter`: Para escribir texto en un archivo. `PrintWriter` es generalmente más conveniente.
+*   `FileReader` / `BufferedReader`: Para leer texto de un archivo. `BufferedReader` es más eficiente porque lee el archivo en bloques grandes (un buffer), reduciendo el número de accesos al disco.
+
+El siguiente ejemplo utiliza el bloque **`try-with-resources`**, que cierra automáticamente los recursos (`reader`, `writer`) al finalizar, evitando fugas de memoria. Es la forma moderna y recomendada de manejar archivos.
+
+```javascript
+import java.io.*;
+
+public class EjemploArchivos {
+    public static void main(String[] args) {
+        String nombreArchivo = "mi_archivo.txt";
+
+        // --- Escribir en el archivo ---
+        try (PrintWriter writer = new PrintWriter(new FileWriter(nombreArchivo))) {
+            writer.println("Hola, este es mi primer archivo en Java.");
+            writer.println("Esta es la segunda línea.");
+            writer.printf("Podemos escribir con formato, por ejemplo, el número %d.", 123);
+            System.out.println("Archivo escrito correctamente.");
+        } catch (IOException e) {
+            System.err.println("Error al escribir en el archivo: " + e.getMessage());
+        }
+
+        // --- Leer desde el archivo ---
+        System.out.println("\nContenido del archivo:");
+        try (BufferedReader reader = new BufferedReader(new FileReader(nombreArchivo))) {
+            String linea;
+            while ((linea = reader.readLine()) != null) {
+                System.out.println(linea);
+            }
+        } catch (IOException e) {
+            System.err.println("Error al leer el archivo: " + e.getMessage());
+        }
+    }
+}
+```
+
+#### Serialización de Objetos
+
+La **serialización** es el proceso de convertir el estado de un objeto en una secuencia de bytes. La **deserialización** es el proceso inverso. Esto es útil para:
+
+*   Guardar objetos en un archivo.
+*   Enviar objetos a través de una red.
+*   Guardar el estado de una sesión.
+
+**📂 Ubicación:** [`src/CursoJava/Serializacion/`](src/CursoJava/Serializacion/)
+
+Para que un objeto sea serializable, su clase debe implementar la interfaz `Serializable` (que es una interfaz "marcador", no tiene métodos para implementar).
+
+```javascript
+import java.io.*;
+
+// 1. La clase debe implementar Serializable
+class Usuario implements Serializable {
+    private String nombre;
+    private int edad;
+    // Los campos 'transient' no se serializan
+    private transient String password;
+
+    public Usuario(String nombre, int edad, String password) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{nombre='" + nombre + "', edad=" + edad + ", password='" + password + "'}";
+    }
+}
+
+public class EjemploSerializacion {
+    public static void main(String[] args) {
+        Usuario usuarioParaGuardar = new Usuario("Juan", 30, "secreto123");
+
+        // --- Serializar (Guardar objeto en archivo) ---
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("usuario.ser"))) {
+            oos.writeObject(usuarioParaGuardar);
+            System.out.println("Usuario guardado: " + usuarioParaGuardar);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // --- Deserializar (Leer objeto desde archivo) ---
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("usuario.ser"))) {
+            Usuario usuarioLeido = (Usuario) ois.readObject();
+            System.out.println("Usuario leído: " + usuarioLeido);
+            // Notar que el password será null porque era 'transient'
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+#### Empaquetado y Ejecución de `.jar`
+
+Un archivo **`.jar` (Java Archive)** es un paquete que contiene las clases compiladas (`.class`), metadatos y recursos (como imágenes o archivos de texto) de una aplicación. Es la forma estándar de distribuir aplicaciones Java.
+
+Para crear un `.jar` ejecutable, necesitas un **manifiesto**, un archivo especial (`MANIFEST.MF`) que le dice a Java cuál es la clase principal que debe ejecutar.
+
+**Pasos desde la línea de comandos:**
+
+1.  **Compilar tus archivos `.java` a `.class`:**
+    ```bash
+    # Suponiendo que estás en la carpeta 'src'
+    javac com/miempresa/MiApp.java
+    ```
+
+2.  **Crear el archivo de manifiesto (`manifest.txt`):**
+    Crea un archivo de texto con el siguiente contenido. **¡Es crucial que el archivo termine con una línea nueva!**
+    ```
+    Main-Class: com.miempresa.MiApp
+
+    ```
+
+3.  **Crear el archivo `.jar`:**
+    El comando `jar` empaqueta todo.
+    ```bash
+    # c: crear, v: verboso, f: archivo, m: manifiesto
+    # Desde la carpeta raíz del proyecto (fuera de 'src')
+    jar cvfm MiApp.jar manifest.txt -C src .
+    ```
+    *   `-C src .` le dice al comando que cambie al directorio `src` para encontrar los archivos `.class`.
+
+4.  **Ejecutar el `.jar`:**
+    ```bash
+    java -jar MiApp.jar
+    ```
+
+#### Conversión a `.exe` y Otras Opciones de Despliegue
+
+Si bien los `.jar` son portátiles, requieren que el usuario tenga Java instalado. Para una mejor experiencia de usuario, puedes empaquetar tu aplicación como un ejecutable nativo (ej: `.exe` en Windows, `.app` en macOS).
+
+*   **`jpackage`**: Herramienta incluida en el JDK (desde la versión 14) que crea instaladores nativos para Windows, macOS y Linux. Puede incluir un JRE reducido, por lo que el usuario no necesita instalar Java.
+
+*   **GraalVM `native-image`**: Una tecnología más avanzada que compila tu código Java *ahead-of-time* (AOT) a un binario nativo autónomo. El resultado es un ejecutable que arranca casi instantáneamente y consume mucha menos memoria, pero tiene algunas limitaciones.
+
+*   **Launch4j / JWrapper**: Herramientas de terceros que envuelven tu `.jar` en un `.exe`, permitiendo personalizar el ícono, la pantalla de bienvenida y verificar si Java está instalado.
+
+### 🗄️ Bases de Datos y Conectividad (JDBC)
+
+**JDBC (Java Database Connectivity)** es la API estándar de Java que permite a las aplicaciones Java conectarse e interactuar con bases de datos relacionales.
+
+**📂 Ubicación:** [`src/CursoJava/BasesDeDatos/`](src/CursoJava/BasesDeDatos/)
+**Driver Necesario:** [`mysql-connector-j-8.1.0.jar`](./mysql-connector-j-8.1.0.jar)
+
+#### Arquitectura y Componentes Clave
+
+1.  **`Driver`**: Un componente de software (generalmente un archivo `.jar`) que permite a Java comunicarse con una base de datos específica (MySQL, PostgreSQL, etc.).
+2.  **`DriverManager`**: Gestiona los drivers disponibles y establece la conexión con la base de datos.
+3.  **`Connection`**: Representa la sesión de comunicación con la base de datos. Todas las operaciones SQL se realizan en el contexto de una `Connection`.
+4.  **`Statement`**: Objeto utilizado para ejecutar una consulta SQL estática y devolver los resultados que produce. Es vulnerable a inyección SQL.
+5.  **`PreparedStatement`**: Una versión precompilada de un `Statement`. Es más seguro y, a menudo, más rápido, ya que permite el uso de parámetros (`?`) para evitar la inyección SQL.
+6.  **`ResultSet`**: Una tabla de datos que representa el resultado de una consulta. Se puede iterar sobre sus filas para obtener los datos.
+
+#### Conexión a una Base de Datos (MySQL)
+
+Para conectarse, necesitas la URL de la base de datos, un usuario y una contraseña.
+
+```javascript
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class ConexionDB {
+    public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/mi_base_de_datos";
+        String usuario = "root";
+        String contrasena = "tu_contrasena";
+
+        try (Connection conexion = DriverManager.getConnection(url, usuario, contrasena)) {
+            if (conexion != null) {
+                System.out.println("¡Conexión exitosa a la base de datos!");
+            }
+        } catch (SQLException e) {
+            System.err.println("Error al conectar a la base de datos: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+#### Ejecución de Consultas
+
+**Consulta `SELECT` con `Statement`**
+
+```javascript
+try (Statement stmt = conexion.createStatement();
+     ResultSet rs = stmt.executeQuery("SELECT id, nombre, email FROM usuarios")) {
+
+    while (rs.next()) {
+        int id = rs.getInt("id");
+        String nombre = rs.getString("nombre");
+        String email = rs.getString("email");
+        System.out.printf("ID: %d, Nombre: %s, Email: %s\n", id, nombre, email);
+    }
+}
+```
+
+**Consulta `INSERT` con `Statement`**
+
+```javascript
+try (Statement stmt = conexion.createStatement()) {
+    String sql = "INSERT INTO usuarios (nombre, email) VALUES ('Carlos', 'carlos@ejemplo.com')";
+    int filasAfectadas = stmt.executeUpdate(sql);
+    System.out.println(filasAfectadas + " fila(s) insertada(s).");
+}
+```
+
+#### Uso de `PreparedStatement` (Método Recomendado)
+
+`PreparedStatement` es más seguro porque trata los parámetros como datos literales, no como parte del comando SQL, evitando así la **inyección SQL**.
+
+```javascript
+String sql = "UPDATE usuarios SET email = ? WHERE nombre = ?";
+
+try (PreparedStatement pstmt = conexion.prepareStatement(sql)) {
+    // Asignar valores a los parámetros (el primer '?' es el índice 1)
+    pstmt.setString(1, "nuevo_email@ejemplo.com");
+    pstmt.setString(2, "Carlos");
+
+    int filasAfectadas = pstmt.executeUpdate();
+    System.out.println(filasAfectadas + " fila(s) actualizada(s).");
+}
+```
+
+#### Manejo de Transacciones
+
+Una **transacción** es un grupo de operaciones que deben ejecutarse como una sola unidad: o todas tienen éxito, o ninguna lo tiene.
+
+1.  **Desactivar Auto-Commit**: Por defecto, cada instrucción SQL se ejecuta en su propia transacción. Debemos desactivarlo.
+2.  **Ejecutar Operaciones**: Realizar todas las consultas (INSERT, UPDATE, etc.).
+3.  **Commit**: Si todo sale bien, confirmar los cambios con `commit()`.
+4.  **Rollback**: Si algo falla, revertir todos los cambios hechos desde el último commit con `rollback()`.
+
+```javascript
+Connection conexion = null;
 try {
-    int resultado = 10 / 0; // Esto lanzará una ArithmeticException
-} catch (ArithmeticException e) {
-    System.out.println("Error: No se puede dividir por cero.");
+    conexion = DriverManager.getConnection(url, usuario, contrasena);
+    // 1. Desactivar auto-commit
+    conexion.setAutoCommit(false);
+
+    // Operación 1: Insertar un nuevo producto
+    try (PreparedStatement pstmt1 = conexion.prepareStatement("INSERT INTO productos...")) {
+        // ...
+        pstmt1.executeUpdate();
+    }
+
+    // Operación 2: Actualizar el stock
+    try (PreparedStatement pstmt2 = conexion.prepareStatement("UPDATE inventario...")) {
+        // ...
+        pstmt2.executeUpdate();
+    }
+
+    // 3. Si todo fue bien, confirmar la transacción
+    conexion.commit();
+    System.out.println("Transacción completada exitosamente.");
+
+} catch (SQLException e) {
+    System.err.println("Error en la transacción: " + e.getMessage());
+    if (conexion != null) {
+        try {
+            // 4. Si hubo un error, revertir los cambios
+            System.err.println("Revirtiendo cambios (rollback)...");
+            conexion.rollback();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
 } finally {
-    System.out.println("Este bloque se ejecuta siempre.");
+    if (conexion != null) {
+        try {
+            conexion.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
@@ -556,19 +1007,378 @@ System.out.println(resta.ejecutar(10, 4)); // Imprime 6
 
 Las lambdas son muy potentes para trabajar con colecciones (filtrar, mapear, reducir datos).
 
-### 🎨 Patrones de Diseño
+### 🔄 Programación Concurrente (Multihilos)
 
-Son soluciones probadas y reutilizables para problemas comunes en el diseño de software.
+La programación concurrente permite que diferentes partes de un programa se ejecuten de forma simultánea (o aparentemente simultánea), mejorando el rendimiento y la capacidad de respuesta de la aplicación.
+
+**Threads y Runnables**
+
+Un **Thread** (hilo) es la unidad de ejecución más pequeña. Hay dos formas principales de crear un hilo:
+
+1.  **Extendiendo la clase `Thread`**:
+    ```javascript
+    class MiHilo extends Thread {
+        public void run() {
+            System.out.println("El hilo " + Thread.currentThread().getName() + " está corriendo.");
+        }
+    }
+    // Para ejecutarlo: new MiHilo().start();
+    ```
+
+2.  **Implementando la interfaz `Runnable` (preferido)**:
+    ```javascript
+    class MiTarea implements Runnable {
+        public void run() {
+            System.out.println("La tarea está corriendo en el hilo " + Thread.currentThread().getName());
+        }
+    }
+    // Para ejecutarlo: new Thread(new MiTarea()).start();
+    // Con Lambda (más conciso):
+    // new Thread(() -> System.out.println("Tarea con Lambda")).start();
+    ```
+
+**Sincronización (`synchronized`, `locks`)**
+
+Cuando varios hilos acceden a un recurso compartido (como una variable o un objeto), pueden ocurrir inconsistencias de datos. La sincronización previene esto.
+
+*   **`synchronized`**: Es un modificador que se puede aplicar a métodos o bloques de código. Solo un hilo puede ejecutar un bloque `synchronized` sobre el mismo objeto a la vez.
+
+    ```javascript
+    public synchronized void miMetodoSincronizado() {
+        // Código seguro para la concurrencia
+    }
+    ```
+
+*   **`Locks`**: Ofrecen un mecanismo de bloqueo más flexible y potente que `synchronized`.
+
+**Problemas Comunes**
+
+*   **Race Condition (Condición de Carrera)**: Ocurre cuando el resultado de una operación depende del orden impredecible en que los hilos acceden a un recurso compartido.
+*   **Deadlock (Bloqueo Mutuo)**: Dos o más hilos se bloquean entre sí, cada uno esperando un recurso que el otro tiene.
+
+### 🎨 Patrones de Diseño (Revisión)
+
+Los patrones de diseño son soluciones probadas a problemas comunes de diseño de software.
 
 **📂 Ubicación:** [`src/CursoJava/PatronesDeDisenio/`](src/CursoJava/PatronesDeDisenio/)
 
-#### Patrón State
+*   **Singleton**: Asegura que una clase solo tenga una única instancia y proporciona un punto de acceso global a ella. Útil para gestionar recursos compartidos como conexiones a bases de datos o configuraciones.
 
-Permite que un objeto cambie su comportamiento cuando su estado interno cambia. El objeto parece cambiar de clase.
+    ```javascript
+    public class Configuracion {
+        private static final Configuracion instancia = new Configuracion();
+        private Configuracion() {} // Constructor privado para evitar instanciación externa
 
-#### Patrón Template Method
+        public static Configuracion getInstancia() {
+            return instancia;
+        }
+    }
+    ```
 
-Define el esqueleto de un algoritmo en una superclase, pero deja que las subclases anulen pasos específicos del algoritmo sin cambiar su estructura.
+*   **Factory (Fábrica)**: Define una interfaz para crear un objeto, pero deja que las subclases decidan qué clase concreta instanciar. Oculta la lógica de creación de objetos.
+
+    ```javascript
+    // Interfaz del producto
+    interface Vehiculo {}
+    class Coche implements Vehiculo {}
+    class Moto implements Vehiculo {}
+
+    // Fábrica
+    class VehiculoFactory {
+        public Vehiculo crearVehiculo(String tipo) {
+            if (tipo.equalsIgnoreCase("coche")) return new Coche();
+            if (tipo.equalsIgnoreCase("moto")) return new Moto();
+            return null;
+        }
+    }
+    ```
+
+*   **Observer (Observador)**: Define una dependencia uno-a-muchos entre objetos. Cuando un objeto (el "sujeto") cambia de estado, todos sus dependientes (los "observadores") son notificados y actualizados automáticamente. Es la base de la programación reactiva y los sistemas de eventos.
+
+### 🧪 Pruebas Unitarias con JUnit
+
+Las pruebas unitarias son esenciales para garantizar la calidad y el correcto funcionamiento del código. JUnit es el framework de testing más popular en Java.
+
+**Conceptos de Testing**
+
+*   **TDD (Test-Driven Development)**: Desarrollo Guiado por Pruebas. Consiste en escribir primero una prueba que falla, luego escribir el código mínimo para que la prueba pase, y finalmente refactorizar.
+*   **BDD (Behavior-Driven Development)**: Desarrollo Guiado por Comportamiento. Es una evolución de TDD que se enfoca en describir el comportamiento del sistema en un lenguaje natural.
+
+**Anotaciones Básicas de JUnit 5**
+
+*   `@Test`: Marca un método como un caso de prueba.
+*   `@BeforeEach` (antes `@Before`): Se ejecuta antes de cada método `@Test`. Ideal para inicializar objetos.
+*   `@AfterEach` (antes `@After`): Se ejecuta después de cada método `@Test`. Ideal para limpiar recursos.
+*   `@DisplayName("Un nombre descriptivo")`: Da un nombre legible a la prueba.
+
+**Assertions (Afirmaciones)**
+
+Las assertions verifican que una condición sea verdadera. Si no lo es, la prueba falla.
+
+```javascript
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.DisplayName;
+
+class Calculadora {
+    public int sumar(int a, int b) {
+        return a + b;
+    }
+}
+
+@DisplayName("Pruebas para la clase Calculadora")
+class CalculadoraTest {
+
+    @Test
+    @DisplayName("Debería sumar dos números positivos correctamente")
+    void testSumar() {
+        // Preparación
+        Calculadora calc = new Calculadora();
+        int a = 2;
+        int b = 3;
+
+        // Ejecución
+        int resultado = calc.sumar(a, b);
+
+        // Verificación (Assertion)
+        assertEquals(5, resultado, "La suma de 2 y 3 debería ser 5");
+    }
+
+    @Test
+    @DisplayName("Debería lanzar una excepción al dividir por cero")
+    void testDivisionPorCero() {
+        // Verifica que se lance la excepción esperada
+        assertThrows(ArithmeticException.class, () -> {
+            int resultado = 10 / 0;
+        });
+    }
+}
+```
+
+### 🖼️ Interfaces Gráficas de Usuario (GUI)
+
+Java proporciona potentes herramientas para crear aplicaciones de escritorio con interfaces gráficas interactivas.
+
+**📂 Ubicación:** [`src/CursoJava/InterfaceEscritorio/`](src/CursoJava/InterfaceEscritorio/)
+
+#### Introducción a Swing y AWT
+
+*   **AWT (Abstract Window Toolkit)**: Es la librería de GUI original de Java. Depende en gran medida de los componentes nativos del sistema operativo.
+*   **Swing**: Es una mejora sobre AWT que proporciona un conjunto más rico y flexible de componentes "ligeros" (dibujados completamente en Java), lo que garantiza una apariencia y comportamiento consistentes en todas las plataformas.
+
+**Contenedores y Componentes**
+
+*   **Contenedores**: Son componentes que pueden albergar a otros.
+    *   `JFrame`: La ventana principal de una aplicación.
+    *   `JPanel`: Un panel genérico usado para agrupar y organizar otros componentes.
+*   **Componentes**: Son los elementos interactivos de la GUI.
+    *   `JButton`: Un botón que el usuario puede presionar.
+    *   `JLabel`: Una etiqueta para mostrar texto no editable.
+    *   `JTextField`: Un campo para que el usuario ingrese una línea de texto.
+
+**Layout Managers**
+
+Controlan cómo se posicionan y redimensionan los componentes dentro de un contenedor.
+
+*   `FlowLayout`: Coloca los componentes uno tras otro, en filas.
+*   `BorderLayout`: Divide el contenedor en cinco regiones: `NORTH`, `SOUTH`, `EAST`, `WEST` y `CENTER`.
+*   `GridLayout`: Organiza los componentes en una cuadrícula (matriz) de filas y columnas.
+
+**Manejo de Eventos (`ActionListener`)**
+
+La programación GUI es **dirigida por eventos**. Tu código responde a acciones del usuario, como clics de botón. El `ActionListener` es una interfaz que se usa para "escuchar" y reaccionar a estos eventos.
+
+**Ejemplo Básico con Swing:**
+
+```javascript
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class VentanaSimple {
+    public static void main(String[] args) {
+        // 1. Crear la ventana principal (JFrame)
+        JFrame frame = new JFrame("Mi Ventana Swing");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300, 200);
+
+        // 2. Crear un panel para organizar componentes
+        JPanel panel = new JPanel();
+
+        // 3. Crear componentes
+        JLabel etiqueta = new JLabel("Presiona el botón");
+        JButton boton = new JButton("¡Haz clic!");
+
+        // 4. Añadir un ActionListener al botón (usando una lambda)
+        boton.addActionListener(e -> etiqueta.setText("¡Botón presionado!"));
+
+        // 5. Añadir componentes al panel
+        panel.add(etiqueta);
+        panel.add(boton);
+
+        // 6. Añadir el panel a la ventana y hacerla visible
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+}
+```
+
+#### JavaFX como Alternativa Moderna
+
+**JavaFX** es el framework de GUI más moderno para Java, diseñado para reemplazar a Swing. Ofrece un conjunto de herramientas más rico y capacidades avanzadas.
+
+**Breve Comparación con Swing**
+
+*   **Arquitectura**: JavaFX utiliza un "grafo de escena" y es más adecuado para UIs dinámicas y ricas.
+*   **Estilo**: JavaFX se puede estilizar con CSS, de forma similar al desarrollo web.
+*   **Declarativo**: Permite definir UIs con FXML (un lenguaje de marcado basado en XML), separando el diseño de la lógica.
+*   **Multimedia**: Incluye soporte integrado para gráficos 2D/3D, audio y video.
+
+**Estructura de una Aplicación JavaFX**
+
+*   `Stage`: La ventana principal de la aplicación.
+*   `Scene`: El contenedor de todo el contenido dentro de un `Stage`.
+*   `Node`: Cada elemento individual en la escena (un botón, una etiqueta, una forma, etc.).
+
+**Ejemplo Básico con JavaFX:**
+
+```javascript
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+public class HolaJavaFX extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        primaryStage.setTitle("¡Hola JavaFX!");
+
+        Button btn = new Button();
+        btn.setText("Dime 'Hola Mundo'");
+        btn.setOnAction(event -> System.out.println("¡Hola Mundo desde JavaFX!"));
+
+        StackPane root = new StackPane();
+        root.getChildren().add(btn);
+
+        primaryStage.setScene(new Scene(root, 300, 250));
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+```
+
+### 🌐 Desarrollo Web con Java
+
+Java es una de las plataformas más robustas y utilizadas para el desarrollo de aplicaciones web a gran escala, desde servicios RESTful hasta complejas aplicaciones empresariales.
+
+#### Servlets y JSPs: Los Fundamentos
+
+*   **Servlets**: Son clases de Java que se ejecutan en un servidor de aplicaciones (como Apache Tomcat) y procesan peticiones HTTP. Son la base de la programación web en Java.
+*   **JSPs (JavaServer Pages)**: Permiten escribir páginas web dinámicas mezclando HTML con código Java. Internamente, los JSPs se compilan a Servlets.
+
+**Ciclo de Vida de un Servlet**
+
+1.  `init()`: Se llama una sola vez cuando el servlet se carga por primera vez.
+2.  `service()`: Se llama para cada petición del cliente. Delega a `doGet()`, `doPost()`, etc.
+3.  `destroy()`: Se llama una sola vez cuando el servlet se descarga.
+
+**Ejemplo de un Servlet Simple:**
+
+```javascript
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class HolaMundoServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        out.println("<html><body>");
+        out.println("<h1>¡Hola Mundo desde un Servlet!</h1>");
+        out.println("</body></html>");
+    }
+}
+```
+
+**Ejemplo de una Página JSP:**
+
+```html
+<%-- mi_pagina.jsp --%>
+<html>
+<head><title>Página JSP</title></head>
+<body>
+    <h2>¡Hola desde una página JSP!</h2>
+    <p>La fecha y hora actual es: <%= new java.util.Date() %></p>
+</body>
+</html>
+```
+
+#### Frameworks Modernos: Spring Boot
+
+Hoy en día, es raro desarrollar aplicaciones web usando solo Servlets y JSPs. Frameworks como **Spring Boot** simplifican enormemente el proceso.
+
+**Introducción a Spring Boot**
+
+Spring Boot es un framework que facilita la creación de aplicaciones Java autónomas y de grado de producción. Sus ventajas clave son:
+
+*   **Autoconfiguración**: Configura automáticamente la aplicación basándose en las dependencias que añades.
+*   **Servidor Embebido**: Incluye un servidor (como Tomcat) directamente en la aplicación, por lo que no necesitas desplegar un archivo `.war` externo.
+*   **Ecosistema Enorme**: Se integra fácilmente con todo el ecosistema de Spring (Spring Data para bases de datos, Spring Security para seguridad, etc.).
+
+**Creación de un Controlador REST Simple**
+
+Un API REST es una forma común de exponer la funcionalidad de una aplicación a través de HTTP. Con Spring Boot, crear un endpoint REST es trivial.
+
+```javascript
+// Es necesario tener las dependencias de Spring Boot (spring-boot-starter-web)
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+@RestController
+public class MiAplicacionWeb {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MiAplicacionWeb.class, args);
+    }
+
+    // Este método manejará las peticiones GET a la ruta "/"
+    @GetMapping("/")
+    public String hola() {
+        return "¡Hola desde Spring Boot!";
+    }
+
+    // Este método manejará las peticiones GET a la ruta "/api/saludo"
+    @GetMapping("/api/saludo")
+    public Saludo getSaludo() {
+        return new Saludo("¡Bienvenido a la API REST con Spring Boot!");
+    }
+
+    // Una clase simple para representar un objeto JSON
+    static class Saludo {
+        private final String mensaje;
+
+        public Saludo(String mensaje) {
+            this.mensaje = mensaje;
+        }
+
+        public String getMensaje() {
+            return mensaje;
+        }
+    }
+}
+```
+Al ejecutar esta aplicación y acceder a `http://localhost:8080/api/saludo` en un navegador, recibirías una respuesta JSON como: `{"mensaje":"¡Bienvenido a la API REST con Spring Boot!"}`.
 
 ---
 
