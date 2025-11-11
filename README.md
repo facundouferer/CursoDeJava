@@ -442,56 +442,210 @@ Controlan la visibilidad de clases, atributos y métodos.
 
 ## 🚀 Temas Avanzados
 
-### 🔗 Estructuras de Datos (TAD)
+### 🗄️ Estructuras de Datos y Colecciones (Collections Framework)
 
-Un **Tipo Abstracto de Dato (TAD)** define un conjunto de operaciones para una estructura de datos sin especificar cómo se implementan.
+Mientras que los arrays son útiles, tienen una gran limitación: su tamaño es fijo. El **Java Collections Framework** proporciona un conjunto de clases e interfaces de alto rendimiento para almacenar y manipular grupos de objetos de forma dinámica.
 
 **📂 Ubicación:**
-*   **Pilas:** [`src/CursoJava/Pila/`](src/CursoJava/Pila/)
-*   **Colas:** [`src/CursoJava/Cola/`](src/CursoJava/Cola/)
-*   **Árboles:** [`src/CursoJava/Arbol/`](src/CursoJava/Arbol/)
-*   **Listas (TAD):** [`src/CursoJava/TAD/`](src/CursoJava/TAD/)
+*   [`src/CursoJava/TAD/`](src/CursoJava/TAD/)
+*   [`src/CursoJava/Colecciones/`](src/CursoJava/Colecciones/)
+*   [`src/CursoJava/ColeccionesEquals/`](src/CursoJava/ColeccionesEquals/)
+*   [`src/CursoJava/ColeccionesHashCode/`](src/CursoJava/ColeccionesHashCode/)
+*   [`src/CursoJava/ColeccionesIteradores/`](src/CursoJava/ColeccionesIteradores/)
 
-#### Listas Enlazadas
+#### ¿Por qué usar Colecciones?
+*   **Tamaño dinámico**: Crecen y se encogen según lo necesites.
+*   **Alto rendimiento**: Implementaciones optimizadas para diferentes casos de uso.
+*   **Algoritmos incluidos**: Vienen con métodos para ordenar, buscar, etc.
 
-Una estructura de datos donde los elementos (nodos) no están en memoria contigua. Cada nodo contiene un valor y una referencia (un "enlace") al siguiente nodo.
+#### Colecciones Genéricas (`<T>`)
+Siempre debes especificar el tipo de dato que una colección contendrá usando genéricos (`< >`). Esto proporciona **seguridad de tipos** en tiempo de compilación, evitando errores y la necesidad de hacer castings manuales.
+`List<String> nombres = new ArrayList<>();` // Correcto
+`List nombres = new ArrayList();` // Obsoleto y peligroso
 
-*   **Ventajas:** Inserciones y eliminaciones eficientes, tamaño dinámico.
-*   **Desventajas:** Acceso lento a elementos por índice (requiere recorrer la lista).
+---
+
+#### Interfaz `List<E>`: Colecciones Ordenadas
+Una lista es una colección **ordenada** que permite **elementos duplicados**. Los elementos se pueden acceder por su índice (posición).
+
+*   **`ArrayList<E>`**: Usa un array internamente. Es muy rápida para acceder a elementos por su índice (`get(i)`). Las inserciones o eliminaciones en el medio de la lista son más lentas.
+*   **`LinkedList<E>`**: Usa una lista doblemente enlazada. Es muy rápida para añadir o quitar elementos del principio o del final. El acceso por índice es más lento porque debe recorrer la lista.
 
 ```javascript
-// Ejemplo conceptual de un nodo
-class Node<T> {
-  T value;
-  Node<T> next; // Referencia al siguiente nodo
+// Ejemplo con ArrayList
+List<String> frutas = new ArrayList<>();
+frutas.add("Manzana"); // Añade al final
+frutas.add("Banana");
+frutas.add(0, "Fresa"); // Añade en la posición 0
+frutas.add("Manzana"); // Duplicado permitido
+
+System.out.println(frutas); // [Fresa, Manzana, Banana, Manzana]
+System.out.println("Elemento en índice 2: " + frutas.get(2)); // Banana
+frutas.remove("Manzana"); // Elimina la primera ocurrencia
+System.out.println("Después de eliminar: " + frutas); // [Fresa, Banana, Manzana]
+```
+
+---
+
+#### Interfaz `Set<E>`: Colecciones sin Duplicados
+Un conjunto es una colección que **no permite elementos duplicados**.
+
+*   **`HashSet<E>`**: Almacena los elementos en una tabla hash. Es la implementación más rápida, pero **no garantiza ningún orden** en los elementos. Requiere que los objetos tengan implementados `hashCode()` y `equals()`.
+*   **`TreeSet<E>`**: Almacena los elementos en una estructura de árbol. Mantiene los elementos en un **orden natural** (o según un `Comparator`). Es más lento que `HashSet`.
+
+```javascript
+Set<String> unicos = new HashSet<>();
+unicos.add("Rojo");
+unicos.add("Verde");
+unicos.add("Azul");
+boolean anadido = unicos.add("Rojo"); // Devuelve false, "Rojo" ya existe
+
+System.out.println(unicos); // [Azul, Verde, Rojo] (el orden no está garantizado)
+System.out.println("¿Se añadió el duplicado? " + anadido); // false
+```
+
+---
+
+#### Interfaz `Queue<E>`: Colas (FIFO)
+Una cola es una colección diseñada para procesar elementos en un orden **FIFO (First-In, First-Out)**, es decir, el primer elemento que entra es el primero que sale.
+
+*   `offer(e)`: Añade un elemento al final de la cola.
+*   `poll()`: Remueve y devuelve el elemento al frente de la cola (devuelve `null` si está vacía).
+*   `peek()`: Devuelve el elemento al frente de la cola sin removerlo (devuelve `null` si está vacía).
+
+```javascript
+Queue<String> filaSupermercado = new LinkedList<>(); // LinkedList implementa Queue
+filaSupermercado.offer("Cliente 1");
+filaSupermercado.offer("Cliente 2");
+filaSupermercado.offer("Cliente 3");
+
+System.out.println("Siguiente en la fila: " + filaSupermercado.peek()); // Cliente 1
+String atendido = filaSupermercado.poll();
+System.out.println("Atendiendo a: " + atendido); // Cliente 1
+System.out.println("Siguiente en la fila: " + filaSupermercado.peek()); // Cliente 2
+```
+
+**`PriorityQueue<E>`**: Es una cola especial que ordena los elementos según su "prioridad" (orden natural o un `Comparator`), no por orden de llegada. El elemento con mayor prioridad (a menudo el "menor") es el primero en salir.
+
+```javascript
+Queue<Integer> numerosPrioritarios = new PriorityQueue<>();
+numerosPrioritarios.offer(50);
+numerosPrioritarios.offer(10);
+numerosPrioritarios.offer(30);
+
+// Aunque 10 se añadió el segundo, tiene la mayor prioridad (es el menor)
+System.out.println("Elemento con mayor prioridad: " + numerosPrioritarios.peek()); // 10
+```
+
+---
+
+#### Interfaz `Map<K, V>`: Pares Clave-Valor
+Un mapa es una colección que almacena pares **clave-valor**. Cada clave debe ser única. Es como un diccionario.
+
+*   **`HashMap<K, V>`**: Almacena las claves en una tabla hash. Es la implementación más rápida, pero **no garantiza ningún orden**.
+*   **`TreeMap<K, V>`**: Almacena las claves en una estructura de árbol, manteniéndolas **ordenadas**.
+
+```javascript
+Map<String, Integer> edades = new HashMap<>();
+edades.put("Juan", 25);
+edades.put("Ana", 30);
+edades.put("Luis", 28);
+edades.put("Juan", 26); // Sobrescribe el valor anterior para la clave "Juan"
+
+System.out.println("La edad de Ana es: " + edades.get("Ana")); // 30
+System.out.println("Mapa completo: " + edades); // {Ana=30, Juan=26, Luis=28}
+
+// Recorrer un mapa
+for (String clave : edades.keySet()) {
+    System.out.println("Clave: " + clave + ", Valor: " + edades.get(clave));
 }
 ```
 
-### 📦 Java Collections Framework
+---
 
-Es un conjunto de clases e interfaces para almacenar y manipular grupos de objetos de manera eficiente. ¡No necesitas reinventar la rueda!
-
-**📂 Ubicación:** [`src/CursoJava/Colecciones/`](src/CursoJava/Colecciones/)
-
-*   **`List`**: Colección ordenada que permite duplicados.
-    *   `ArrayList`: Rápida para acceso por índice.
-    *   `LinkedList`: Rápida para inserciones y eliminaciones.
-*   **`Set`**: Colección que **no** permite elementos duplicados.
-    *   `HashSet`: No garantiza ningún orden.
-    *   `TreeSet`: Mantiene los elementos ordenados.
-*   **`Map`**: Colección de pares clave-valor. No permite claves duplicadas.
-    *   `HashMap`: No garantiza orden.
-    *   `TreeMap`: Mantiene las claves ordenadas.
+#### Iteradores (`Iterator`)
+Un `Iterator` es un objeto que permite recorrer una colección y eliminar elementos de forma segura.
 
 ```javascript
-// Ejemplo de uso de List con ArrayList
-List<String> nombres = new ArrayList<>();
-nombres.add("Ana");
-nombres.add("Luis");
-nombres.add("Ana"); // Permite duplicados
+List<String> animales = new ArrayList<>();
+animales.add("Perro");
+animales.add("Gato");
+animales.add("Ratón");
 
-System.out.println(nombres); // Imprime [Ana, Luis, Ana]
+Iterator<String> it = animales.iterator();
+while (it.hasNext()) {
+    String animal = it.next();
+    if (animal.equals("Gato")) {
+        it.remove(); // Forma segura de eliminar durante la iteración
+    }
+}
+System.out.println(animales); // [Perro, Ratón]
 ```
+El bucle `for-each` es una forma más simple de recorrer una colección, pero no permite eliminar elementos durante la iteración.
+
+---
+
+#### Comparación y Ordenamiento
+
+**`equals()` y `hashCode()`**
+
+Para que las colecciones basadas en hash (`HashSet`, `HashMap`) funcionen correctamente, los objetos que uses como elementos o claves deben sobrescribir estos dos métodos:
+
+*   `equals(Object o)`: Define la "igualdad lógica". Por defecto, compara referencias de memoria (`==`). Debes sobrescribirlo para comparar los atributos.
+*   `hashCode()`: Devuelve un número entero que representa al objeto.
+
+**Contrato:** Si dos objetos son iguales según `equals()`, entonces sus `hashCode()` **deben** ser iguales.
+
+```javascript
+class Persona {
+    String dni;
+    String nombre;
+    // Constructor...
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Persona persona = (Persona) o;
+        return dni.equals(persona.dni); // Dos personas son iguales si su DNI es igual
+    }
+
+    @Override
+    public int hashCode() {
+        return dni.hashCode(); // El hashCode se basa en el DNI
+    }
+}
+```
+
+**`Comparable` y `Comparator`**
+
+Para ordenar elementos (en `TreeSet`, `TreeMap` o con `Collections.sort()`), Java necesita saber cómo compararlos.
+
+*   **`Comparable<T>`**: Para un **orden natural**. La propia clase del objeto implementa esta interfaz y el método `compareTo()`.
+
+    ```javascript
+    class Producto implements Comparable<Producto> {
+        String nombre;
+        double precio;
+        // ...
+        @Override
+        public int compareTo(Producto otro) {
+            return Double.compare(this.precio, otro.precio); // Ordena por precio
+        }
+    }
+    ```
+
+*   **`Comparator<T>`**: Para un **orden personalizado** o cuando no puedes modificar la clase. Se crea una clase aparte o se usa una lambda.
+
+    ```javascript
+    List<Producto> lista = new ArrayList<>();
+    // ... añadir productos
+    
+    // Ordenar por nombre usando una lambda
+    Comparator<Producto> porNombre = (p1, p2) -> p1.nombre.compareTo(p2.nombre);
+    lista.sort(porNombre);
+    ```
+
 
 ### 🚨 Control de Excepciones y Errores
 
@@ -1470,3 +1624,7 @@ Este proyecto está destinado principalmente para fines educativos.
 ---
 
 *Última actualización: Noviembre 2025*
+
+---
+
+¡Felicitaciones por llegar hasta aquí! Esta guía ha sido diseñada para ser un compañero robusto en tu viaje de aprendizaje con Java. Recuerda que la clave para ser un gran desarrollador es la práctica constante y la curiosidad sin fin. ¡Sigue construyendo, sigue aprendiendo y que el código te acompañe!
