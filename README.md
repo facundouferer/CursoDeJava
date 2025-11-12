@@ -251,21 +251,201 @@ Un **String** es un objeto que representa una secuencia de caracteres. Son **inm
 
 **📂 Ubicación:** [`src/CursoJava/Secuencias/`](src/CursoJava/Secuencias/)
 
-**Métodos Esenciales:**
-
-*   `length()`: Devuelve la longitud de la cadena.
-*   `charAt(index)`: Devuelve el carácter en una posición específica.
-*   `toUpperCase()` / `toLowerCase()`: Convierte a mayúsculas o minúsculas.
-*   `equals(otroString)`: Compara si dos strings son idénticos (sensible a mayúsculas).
-*   `equalsIgnoreCase(otroString)`: Compara ignorando mayúsculas/minúsculas.
-*   `contains(subcadena)`: Verifica si contiene una subcadena.
-*   `startsWith(prefijo)` / `endsWith(sufijo)`: Verifica si empieza o termina con un texto.
-*   `+` (Concatenación): Une dos o más strings.
-
+Un String es una secuencia de caracteres que se utiliza para representar texto. Es una clase predefinida en el lenguaje y, a diferencia de los tipos de datos primitivos como int o double, es un objeto.
+Para crear un String en Java, se utiliza el operador de asignación = y se encierra el texto entre comillas dobles " ". Por ejemplo:
+```javascript
+String saludo = "Hola mundo!";
+```
+En este ejemplo, se ha creado un String llamado saludo con el valor "Hola mundo!".
+Los String en Java son inmutables, lo que significa que no se pueden cambiar una vez que se han creado. Por ejemplo, si se intenta cambiar el valor de un String, se crea un nuevo objeto String con el nuevo valor. 
 ```javascript
 String saludo = "Hola";
-saludo = saludo + " mundo!"; // Crea un NUEVO string "Hola mundo!"
-System.out.println(saludo.toUpperCase()); // Imprime "HOLA MUNDO!"
+saludo = saludo + " mundo!";
+```
+En este caso, se ha creado un nuevo String con el valor "Hola mundo!" y se ha asignado a la variable saludo. El objeto String original con el valor "Hola" ya no es accesible y será eventualmente eliminado por el recolector de basura.
+
+##### Recorrer un String
+Para recorrer un String en Java, se puede utilizar un bucle for que itere a través de cada caracter del String. 
+```javascript
+String saludo = "Hola mundo!";
+for (int i = 0; i < saludo.length(); i++) {
+    char c = saludo.charAt(i);
+    System.out.println(c);
+}
+```
+En este ejemplo, se ha utilizado el método length() del String para obtener el número de caracteres en el String. Luego se utiliza un bucle for para iterar a través de cada índice del String, utilizando el método charAt() para obtener el caracter en ese índice. Por último, se utiliza el método println() para imprimir cada caracter en una línea separada.
+
+##### Concatenación de String
+La concatenación de cadenas de texto (strings) es una operación muy común en la programación en Java. En términos simples, la concatenación se refiere a la unión de dos o más cadenas de texto para formar una sola cadena de texto.
+En Java, puedes concatenar cadenas de texto utilizando el operador "+", que actúa como un operador de concatenación. El operador "+" se utiliza para unir dos o más cadenas de texto en una sola cadena.
+Por ejemplo, si queremos concatenar las cadenas "Hola" y "Mundo" para formar la cadena "Hola Mundo", podemos hacerlo de la siguiente manera:
+```javascript
+String cadena1 = "Hola";
+String cadena2 = "Mundo";
+String concatenada = cadena1 + " " + cadena2;
+System.out.println(concatenada); // imprimirá "Hola Mundo"
+```
+En este ejemplo, hemos creado dos variables de tipo String llamadas "cadena1" y "cadena2" y las hemos inicializado con las cadenas "Hola" y "Mundo", respectivamente. Luego, hemos creado otra variable de tipo String llamada "concatenada" y hemos asignado el resultado de la concatenación de "cadena1", un espacio en blanco y "cadena2" utilizando el operador "+". Finalmente, hemos impreso la cadena concatenada utilizando el método "println()" de la clase System.
+También puedes utilizar el método "concat()" de la clase String para concatenar cadenas de texto en Java. Este método toma una cadena de texto como argumento y la agrega al final de la cadena actual. Por ejemplo:
+```javascript
+String cadena1 = "Hola";
+String cadena2 = "Mundo";
+String concatenada = cadena1.concat(" ").concat(cadena2);
+System.out.println(concatenada); // imprimirá "Hola Mundo"
+```
+En este ejemplo, hemos utilizado el método "concat()" dos veces para concatenar las cadenas "cadena1 y "cadena2" y agregar un espacio en blanco entre ellas.
+Es importante recordar que la concatenación de cadenas de texto en Java puede consumir una cantidad significativa de recursos de memoria y tiempo de ejecución, especialmente cuando se trabaja con grandes cantidades de datos. Por lo tanto, es importante optimizar el uso de la concatenación de cadenas de texto en tus programas.
+
+##### Métodos y operaciones principales de los Strings
+###### Concatenar Strings
+Para concatenar dos Strings en Java, se puede usar el operador +. Aquí hay un ejemplo:
+```javascript
+String s1 = "Hola";
+String s2 = "mundo";
+String s3 = s1 + " " + s2;
+System.out.println(s3);
+```
+Este código imprimirá "Hola mundo". En el ejemplo, s1 y s2 son Strings y se concatenan usando el operador +. Luego, el resultado se asigna a s3.
+Es importante tener en cuenta que cuando se concatena una cadena con otro tipo de datos, Java convierte implícitamente los otros tipos de datos en Strings. 
+```javascript
+int edad = 20;
+String mensaje = "Tengo " + edad + " años";
+System.out.println(mensaje);
+```
+Este código imprimirá "Tengo 20 años". En el ejemplo, edad es un entero y se concatena con la cadena "Tengo " y la cadena " años" usando el operador +. Java convierte automáticamente la variable edad en una cadena antes de concatenarla.
+
+###### Comparar Strings
+Para comparar dos objetos de tipo String se utilizan los métodos equals() y equalsIgnoreCase(). El método equals() compara dos cadenas de caracteres y devuelve un valor booleano que indica si son iguales o no, teniendo en cuenta las mayúsculas y minúsculas. Por otro lado, el método equalsIgnoreCase() compara dos cadenas de caracteres y devuelve un valor booleano que indica si son iguales o no, ignorando las mayúsculas y minúsculas.
+A continuación, se muestran algunos ejemplos de cómo comparar cadenas de caracteres en Java:
+```javascript
+String cadena1 = "Hola";
+String cadena2 = "hola";
+String cadena3 = "Hola";
+
+// Comparar dos cadenas con el método equals()
+if (cadena1.equals(cadena2)) {
+   System.out.println("cadena1 y cadena2 son iguales");
+} else {
+   System.out.println("cadena1 y cadena2 son diferentes");
+}
+
+if (cadena1.equals(cadena3)) {
+   System.out.println("cadena1 y cadena3 son iguales");
+} else {
+   System.out.println("cadena1 y cadena3 son diferentes");
+}
+
+// Comparar dos cadenas con el método equalsIgnoreCase()
+if (cadena1.equalsIgnoreCase(cadena2)) {
+   System.out.println("cadena1 y cadena2 son iguales ignorando mayúsculas y minúsculas");
+} else {
+   System.out.println("cadena1 y cadena2 son diferentes incluso ignorando mayúsculas y minúsculas");
+}
+```
+En el primer ejemplo, la primera cadena es "Hola" y la segunda es "hola". Como son cadenas de caracteres diferentes debido a las mayúsculas y minúsculas, la salida del programa será "cadena1 y cadena2 son diferentes".
+
+En el segundo ejemplo, la primera cadena es "Hola" y la tercera también es "Hola". Como son cadenas de caracteres idénticas, la salida del programa será "cadena1 y cadena3 son iguales".
+En el tercer ejemplo, la primera cadena es "Hola" y la segunda es "hola". Como son cadenas de caracteres diferentes debido a las mayúsculas y minúsculas, pero se utiliza el método equalsIgnoreCase(), que no tiene en cuenta las mayúsculas y minúsculas, la salida del programa será "cadena1 y cadena2 son iguales ignorando mayúsculas y minúsculas".
+
+###### Tamaño de un String
+Para conocer el tamaño de un String en Java se puede utilizar el método length(). Este método devuelve la cantidad de caracteres que tiene el String.
+Aquí hay un ejemplo de cómo utilizarlo:
+```javascript
+String mensaje = "Hola, mundo!";
+int tamaño = mensaje.length();
+System.out.println("El tamaño del mensaje es: " + tamaño);
+```
+En este ejemplo, el método length() se utiliza para obtener el tamaño del String mensaje. Luego, se almacena el resultado en la variable tamaño y se muestra por consola el mensaje "El tamaño del mensaje es: " seguido del valor de tamaño. En este caso, el tamaño del mensaje es 12, ya que hay 12 caracteres en "Hola, mundo!".
+
+###### Pasar un String a mayúscula o minúscula
+En Java, para pasar un String a mayúscula o minúscula, podemos utilizar los métodos toUpperCase() y toLowerCase(), respectivamente.
+```javascript
+String mensaje = "Hola Mundo!";
+String mensajeMayusculas = mensaje.toUpperCase(); // HOLA MUNDO!
+String mensajeMinusculas = mensaje.toLowerCase(); // hola mundo!
+```
+El método toUpperCase() convierte todas las letras del String a mayúsculas, mientras que el método toLowerCase() convierte todas las letras a minúsculas.
+
+También podemos utilizar los métodos toUpperCase(Locale) y toLowerCase(Locale) para especificar una localización específica en la que se aplicará la conversión de mayúsculas y minúsculas.
+```javascript
+String mensaje = "Hola Mundo!";
+String mensajeMayusculas = mensaje.toUpperCase(Locale.ENGLISH); 
+// HOLA MUNDO!
+String mensajeMinusculas = mensaje.toLowerCase(Locale.ENGLISH); 
+// hola mundo!
+```
+En este caso, se utiliza la localización Locale.ENGLISH, lo que significa que se aplicará la conversión de mayúsculas y minúsculas según las reglas de la lengua inglesa.
+
+###### Indicar si contiene otro string
+Puedes utilizar el método contains de la clase String para determinar si un String contiene otro String. Este método devuelve true si el String objetivo contiene el String especificado y false en caso contrario. Aquí hay un ejemplo:
+```javascript
+String frase = "El perro marrón salió corriendo";
+if (frase.contains("perro")) {
+    System.out.println("La frase contiene la palabra 'perro'");
+} else {
+    System.out.println("La frase no contiene la palabra 'perro'");
+}
+```
+En este ejemplo, la salida será: "La frase contiene la palabra 'perro'".
+También puedes utilizar el método indexOf de la clase String para buscar la posición de un String dentro de otro String. Si el String objetivo no contiene el String especificado, el método devuelve -1. Aquí hay un ejemplo:
+```javascript
+String frase = "El perro marrón salió corriendo";
+int posicion = frase.indexOf("marrón");
+if (posicion != -1) {
+    System.out.println("La palabra 'marrón' comienza en la posición " + posicion);
+} else {
+    System.out.println("La palabra 'marrón' no está en la frase");
+}
+```
+En este ejemplo, la salida será: "La palabra 'marrón' comienza en la posición 9".
+
+###### Verificar si comienza o termina con otro String
+Puedes usar los métodos startsWith() y endsWith() en un String para verificar si comienza o termina con otro String, respectivamente. Ambos métodos devuelven un valor booleano (true o false) según si el String cumple o no con la condición especificada.
+Aquí te dejo algunos ejemplos de cómo utilizarlos:
+```javascript
+String miString = "Hola mundo";
+
+// Comprobar si el String comienza con 'Hola'
+System.out.println(miString.startsWith("Hola")); // Devuelve true
+
+// Comprobar si el String termina con 'mundo'
+System.out.println(miString.endsWith("mundo")); // Devuelve true
+```
+Ten en cuenta que ambos métodos son sensibles a mayúsculas y minúsculas, es decir, si especificas una letra en mayúscula cuando en realidad está en minúscula, el método devolverá false. Para evitar esto, puedes convertir todo el String a minúsculas o mayúsculas antes de usar los métodos.
+
+###### Carácter de escape
+El carácter especial \ en un String se utiliza como carácter de escape. Esto significa que se utiliza para indicar que el siguiente carácter en el String debe ser tratado de una manera especial. Algunas de las cosas que se pueden hacer con el carácter \ en un String son:
+
+Incluir comillas dobles dentro de un String que está delimitado por comillas dobles:
+```javascript
+String ejemplo = "Este es un \"ejemplo\" de uso del caracter \\";
+System.out.println(ejemplo);
+// Salida: Este es un "ejemplo" de uso del caracter \
+```
+Incluir comillas simples dentro de un String que está delimitado por comillas simples:
+```javascript
+String ejemplo = "Este es un 'ejemplo' de uso del caracter \\";
+System.out.println(ejemplo);
+// Salida: Este es un 'ejemplo' de uso del caracter \
+```
+Incluir el carácter \ dentro de un String:
+```javascript
+String ejemplo = "Este es un ejemplo de uso del caracter \\";
+System.out.println(ejemplo);
+// Salida: Este es un ejemplo de uso del caracter \
+```
+Incluir caracteres especiales, como tabulaciones y saltos de línea, dentro de un String:
+```javascript
+String ejemplo = "Este es un ejemplo\tde uso del caracter \\n";
+System.out.println(ejemplo);
+// Salida: Este es un ejemplo    de uso del caracter 
+//         (se imprime una tabulación y luego se salta de línea)
+```
+Incluir valores hexadecimales o Unicode dentro de un String utilizando la notación \uXXXX:
+```javascript
+String ejemplo = "\u00BFQu\u00E9 tal est\u00E1s?";
+System.out.println(ejemplo);
+// Salida: ¿Qué tal estás?
 ```
 
 ### ⚙️ Funciones (Métodos)
