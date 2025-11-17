@@ -16,6 +16,8 @@ class excepciones08ExcepcionesPropias {
 		}
 
 		System.out.println("Fin del programa");
+
+		leer.close();
 	}
 
 	static void evaluarNumero(int nroEvaluar) throws LongitudDelNumero {
@@ -24,6 +26,7 @@ class excepciones08ExcepcionesPropias {
 			LongitudDelNumero miPropiaExcepcion = new LongitudDelNumero("número chico");
 			throw miPropiaExcepcion;
 		}
+
 	}
 }
 
