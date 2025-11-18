@@ -47,7 +47,7 @@ class excepciones05Throw {
 		int resultado = nroUno / nroDos;
 		System.out.println("el resultado es " + resultado);
 
-		leer.cl
+		leer.close();
 
 	}
 

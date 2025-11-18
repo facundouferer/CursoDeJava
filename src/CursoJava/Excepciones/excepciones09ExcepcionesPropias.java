@@ -27,6 +27,7 @@ public class excepciones09ExcepcionesPropias {
       int numero = leer.nextInt();
       evaluarNumero(numero);
       System.out.println("El número " + numero + " es válido.");
+
     } catch (NumeroPositivoInferiorA50Exception e) {
       System.err.println("Se ha producido un error personalizado.");
       e.printStackTrace();

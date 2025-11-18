@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import CursoJava.BasesDeDatos.BaseDatos;
+
 public class TiendaAdmin {
 
   public static void main(String[] args) {

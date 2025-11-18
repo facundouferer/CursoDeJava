@@ -21,12 +21,10 @@ class excepciones08ExcepcionesPropias {
 	}
 
 	static void evaluarNumero(int nroEvaluar) throws LongitudDelNumero {
-
-		if (nroEvaluar < 100) {
-			LongitudDelNumero miPropiaExcepcion = new LongitudDelNumero("número chico");
+		if (nroEvaluar < 100 && nroEvaluar > 0) {
+			LongitudDelNumero miPropiaExcepcion = new LongitudDelNumero("Número negativo o inferior a 100");
 			throw miPropiaExcepcion;
 		}
-
 	}
 }
 
