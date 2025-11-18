@@ -16,7 +16,8 @@ public class Empresa {
             while (rs.next()) {
                 String dni = rs.getString("dni");
                 String nombre = rs.getString("nombre");
-                System.out.println(dni + " | " + nombre);
+                String apellido = rs.getString("apellido");
+                System.out.println(dni + " " + nombre + " " + apellido);
             }
             rs.close();
             stmt.close();

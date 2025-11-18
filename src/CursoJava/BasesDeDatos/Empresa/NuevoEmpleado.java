@@ -12,9 +12,9 @@ public class NuevoEmpleado {
             Connection conexion = DriverManager.getConnection(url, user, pass);
 
             // Datos del empleado
-            int dni = 34567890;
-            String nombre = "Roberto";
-            String apellido = "Gómez";
+            int dni = 35897456;
+            String nombre = "Pepe";
+            String apellido = "Grillo";
             int area = 2; // ID del área (por ejemplo: 2 = Sistemas)
 
             // Usar PreparedStatement para evitar SQL Injection
