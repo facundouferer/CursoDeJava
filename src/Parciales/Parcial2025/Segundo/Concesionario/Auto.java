@@ -21,7 +21,27 @@ class Auto extends Vehiculo implements Ventas {
     return cantPuertas;
   }
 
+  // Implementación de la interface Ventas
+  @Override
+  public double calcularPrecioVenta(double precioBase, int anioActual) {
+    // Calcular depreciación por años
+    int aniosDeUso = anioActual - this.modelo;
+    double depreciacion = aniosDeUso * 0.05; // 5% por año
 
+    // Calcular porcentaje adicional según cantidad de puertas
+    double porcentajePuertas;
+    if (cantPuertas == 3) {
+      porcentajePuertas = 0.3;
+    } else if (cantPuertas == 4) {
+      porcentajePuertas = 0.4;
+    } else {
+      porcentajePuertas = 0.35; // Valor por defecto para otros casos
+    }
+
+    // Calcular precio final
+    double precioConDepreciacion = precioBase * (1 - depreciacion);
+    return precioConDepreciacion * (1 + porcentajePuertas);
+  }
 
   // Setter
   public void setCantPuertas(int cantPuertas) throws PuertasInsuficientesException {

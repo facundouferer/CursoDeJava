@@ -14,6 +14,15 @@ public class Inventario {
 
   // ================ MÉTODOS CRUD PARA AUTOS ================
 
+  public boolean agregarAuto(Auto auto) {
+
+    if (!autos.stream().anyMatch(a -> a.getPatente().equals(auto.getPatente()))) {
+      autos.add(auto);
+      return true;
+    }
+    return false; // Ya existe un auto con esa patente
+  }
+
   public boolean actualizarAuto(String patente, Auto autoActualizado) {
     for (int i = 0; i < autos.size(); i++) {
       if (autos.get(i).getPatente().equals(patente)) {

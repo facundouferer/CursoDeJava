@@ -55,6 +55,22 @@ public class InventarioComputadoras {
 
   // ================ MÉTODOS DE CONSULTA GENERAL ================
 
+  public Computadora buscarComputadora(String numeroSerie) {
+    for (Escritorio escritorio : escritorios) {
+      if (escritorio.getNumeroSerie().equals(numeroSerie)) {
+        return escritorio;
+      }
+    }
+
+    for (Laptop laptop : laptops) {
+      if (laptop.getNumeroSerie().equals(numeroSerie)) {
+        return laptop;
+      }
+    }
+
+    return null;
+  }
+
   public boolean eliminarComputadora(String numeroSerie) {
     // Intentar eliminar de escritorios
     boolean eliminadoDeEscritorios = escritorios

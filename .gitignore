@@ -16,6 +16,7 @@ lib/
 # visual studio code
 .vscode/
 .DS_Store
+**/.DS_Store
 src/.DS_Store
-
+*/.DS_Store
 .fake

@@ -55,4 +55,20 @@ abstract class Computadora {
     return marca + "'\\t" + modelo + "\\t" + numeroSerie + "\\t" + horasUso + "hrs";
   }
 
+  // Método equals basado en numero de serie
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null || getClass() != obj.getClass())
+      return false;
+    Computadora computadora = (Computadora) obj;
+    return numeroSerie.equals(computadora.numeroSerie);
+  }
+
+  // Método hashCode basado en numero de serie
+  @Override
+  public int hashCode() {
+    return numeroSerie.hashCode();
+  }
 }

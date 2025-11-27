@@ -13,6 +13,23 @@ class Laptop extends Computadora implements Ventas {
     return "💻";
   }
 
+  // Implementación de la interface Ventas
+  @Override
+  public double calcularPrecioVenta(double precioBase, int anioActual) {
+    // Calcular depreciación por años (las laptops se deprecian más rápido que
+    // escritorio)
+    int aniosDeUso = anioActual - this.modelo;
+    double depreciacion = aniosDeUso * 0.12; // 12% por año para laptops
+
+    // Las laptops tienen un descuento adicional por su portabilidad limitada en el
+    // tiempo
+    double descuentoPortabilidad = 0.15; // 15% de descuento por desgaste de batería/pantalla
+
+    // Calcular precio final
+    double precioConDepreciacion = precioBase * (1 - depreciacion);
+    return precioConDepreciacion * (1 - descuentoPortabilidad);
+  }
+
   // Método toString
   @Override
   public String toString() {

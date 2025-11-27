@@ -55,4 +55,20 @@ abstract class Vehiculo {
     return marca + "'\t" + modelo + "\t" + patente + "\t" + kilometraje + "Km";
   }
 
+  // Método equals basado en patente
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null || getClass() != obj.getClass())
+      return false;
+    Vehiculo vehiculo = (Vehiculo) obj;
+    return patente.equals(vehiculo.patente);
+  }
+
+  // Método hashCode basado en patente
+  @Override
+  public int hashCode() {
+    return patente.hashCode();
+  }
 }
