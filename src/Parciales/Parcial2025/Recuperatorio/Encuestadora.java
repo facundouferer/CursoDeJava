@@ -85,7 +85,7 @@ public class Encuestadora {
           System.out.println("Opción inválida.");
       }
 
-    } while (opcion != 4);
+    } while (opcion != 3);
 
     sc.close();
   }
