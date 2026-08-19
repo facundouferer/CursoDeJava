@@ -3,14 +3,45 @@ package CursoJava.Herencia;
 class Transporte {
     public static void main(String[] args) {
 
-        Auto listaDeAutos[] = new Auto[3];
+        int opcion = 1;
+        System.out.println("¿Cuántos vehículos desea ingresar?");
+        int cantidadVehiculos = Integer.parseInt(System.console().readLine());
+        Vehiculo[] vehiculos = new Vehiculo[cantidadVehiculos];
+        while (opcion != 0 && opcion <= cantidadVehiculos) {
+            System.out.println("Ingrese el tipo de vehículo (1: Auto, 2: Moto, 0: Salir):");
+            opcion = Integer.parseInt(System.console().readLine());
+            if (opcion == 1) {
+                System.out.println("Ingrese la marca del auto:");
+                String marca = System.console().readLine();
+                System.out.println("Ingrese el modelo del auto:");
+                String modelo = System.console().readLine();
+                System.out.println("Ingrese el año del auto:");
+                int anio = Integer.parseInt(System.console().readLine());
+                System.out.println("Ingrese el precio del auto:");
+                double precio = Double.parseDouble(System.console().readLine());
+                System.out.println("Ingrese el impuesto por rueda del auto:");
+                double impuestoPorRueda = Double.parseDouble(System.console().readLine());
+                vehiculos[opcion - 1] = new Auto(marca, modelo, anio, precio, impuestoPorRueda);
+            } else if (opcion == 2) {
+                System.out.println("Ingrese la marca de la moto:");
+                String marca = System.console().readLine();
+                System.out.println("Ingrese el modelo de la moto:");
+                String modelo = System.console().readLine();
+                System.out.println("Ingrese el año de la moto:");
+                int anio = Integer.parseInt(System.console().readLine());
+                System.out.println("Ingrese el precio de la moto:");
+                double precio = Double.parseDouble(System.console().readLine());
+                vehiculos[opcion - 1] = new Moto(marca, modelo, anio, precio);
+            } else if (opcion != 0) {
+                System.out.println("Opción inválida. Intente nuevamente.");
+            }
+        }
 
-        listaDeAutos[0] = new Auto("Ford", "Fiesta", 2020, 20000, 2);
-        listaDeAutos[1] = new Auto("Chevrolet", "Onix", 2021, 25000, 2.5);
-        listaDeAutos[2] = new Auto("Toyota", "Corolla", 2022, 30000, 3);
-
-        for (Auto auto : listaDeAutos) {
-            System.out.println(auto);
+        System.out.println("Vehículos ingresados:");
+        for (int i = 0; i < vehiculos.length; i++) {
+            if (vehiculos[i] != null) {
+                System.out.println(vehiculos[i]);
+            }
         }
 
     }
