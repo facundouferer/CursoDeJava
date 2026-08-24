@@ -5,20 +5,22 @@ package CursoJava.ArreglosDeObjetos;
     public static void main(String[] args) {
         // Crear un arreglo de objetos de tipo Persona
 
-        String [] personas = new String[5];
+        Persona [] personas = new Persona[5];
 
-        personas[0] = "Carlos";
-        personas[1] = "Ana";
-        personas[2] = "Luis";
-        personas[3] = "María";
-        personas[4] = "Pedro";
+        personas[0] = new Persona("Carlos", 12345678);
+        personas[1] = new Persona("Ana", 87654321);
+        personas[2] = new Persona("Luis", 11223344);
+        personas[3] = new Persona("María", 44332211);
+        personas[4] = new Persona("Pedro", 55667788);
 
         System.out.println("\nLista de personas:");
         Agenda listaDePersonas = new Agenda(personas);
         listaDePersonas.listarPersonas();
 
+        listaDePersonas.editarPersona(4,"Carilos Kapo", 123455);
+
         System.out.println("\nDespués de agregar a Lucía:");
-        listaDePersonas.agregarPersona("Lucía");
+        listaDePersonas.agregarPersona(new Persona("Lucía", 99887766));
         listaDePersonas.listarPersonas();
 
         System.out.println("\nDespués de eliminar:");
@@ -27,8 +29,8 @@ package CursoJava.ArreglosDeObjetos;
 
         System.out.println("\nBuscar Elemento:");
 
-        if(listaDePersonas.verIndice("San Sebastian") != -1) {
-            System.out.println("Indice: " + listaDePersonas.verIndice("San Sebastian"));
+        if(listaDePersonas.verIndice(new Persona("San Sebastian", 0)) != -1) {
+            System.out.println("Indice: " + listaDePersonas.verIndice(new Persona("San Sebastian", 0)));
         } else {
             System.out.println("El elemento no se encuentra en la lista.");
         }
@@ -44,25 +46,40 @@ package CursoJava.ArreglosDeObjetos;
 
 }
 
+class Persona {
+    String nombre;
+    int dni;
+
+    public Persona(String nombre, int dni) {
+        this.nombre = nombre;
+        this.dni = dni;
+    }
+
+    @Override
+    public String toString() {
+        return this.nombre + " (" + dni + ")";
+    }
+}
+
 class Agenda{
 
-    String [] personas;
+    Persona [] personas;
     
-    public Agenda(String[] personas){
+    public Agenda(Persona[] personas){
         this.personas = personas;
     }
 
     public void listarPersonas() {
         int indice = 0;
-        for (String persona : personas) {
+        for (Persona persona : personas) {
             System.out.println(indice + ") " + persona);
             indice++;
         }
     }
 
-    public void agregarPersona(String persona) {
+    public void agregarPersona(Persona persona) {
 
-        String[] nuevaLista = new String[personas.length + 1];
+        Persona[] nuevaLista = new Persona[personas.length + 1];
 
         nuevaLista[nuevaLista.length - 1] = persona;
         System.arraycopy(personas, 0, nuevaLista, 0, personas.length);
@@ -72,23 +89,20 @@ class Agenda{
     }
 
  public void eliminarPersona(int indice){
-    String [] nuevaLista = new String[personas.length - 1];
-
-    // se copia los elementos antes del índice
+    Persona [] nuevaLista = new Persona[personas.length - 1];
     System.arraycopy(personas, 0, nuevaLista, 0, indice); 
-    // se copia los elementos después del índice a la nueva lista
     System.arraycopy(personas, indice + 1, nuevaLista, indice, nuevaLista.length - indice);
 
     personas = nuevaLista;
  }
 
- public void editarPersona(int indice, String nuevaPersona){
-    personas[indice] = nuevaPersona;
+ public void editarPersona(int indice, String nuevaPersona, int nuevoDni) {
+    personas[indice] = new Persona(nuevaPersona, nuevoDni);
  }
 
-  public int verIndice(String nombreBuscado) {
+  public int verIndice(Persona nombreBuscado) {
         int indice = 0;
-        for (String persona : personas) {
+        for (Persona persona : personas) {
             if(persona.equals(nombreBuscado)) {
                 return indice;
             }
@@ -98,10 +112,11 @@ class Agenda{
     }
 
     public boolean eliminarPersona(String nombreBuscado) {
-        int indice = verIndice(nombreBuscado);
-        if(indice != -1) {
-            eliminarPersona(indice);
-            return true;
+        for(Persona persona : personas) {
+            if(persona.nombre.equals(nombreBuscado)) {
+                eliminarPersona(verIndice(persona));
+                return true;
+            }
         }
         return false;
     }
