@@ -1,6 +1,6 @@
 package CursoJava.ArreglosDeObjetos;
 
- class ArreglosDeObjetos {
+ class ArreglosDeObjetosPersonas {
 
     public static void main(String[] args) {
         // Crear un arreglo de objetos de tipo Persona
