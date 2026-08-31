@@ -1,20 +1,12 @@
 package CursoJava.ArreglosDeObjetos;
 
- class ArreglosDeObjetosPersonas {
+ class GestorDePersonal {
 
     public static void main(String[] args) {
         // Crear un arreglo de objetos de tipo Persona
 
-        Persona [] personas = new Persona[5];
+        Agenda listaDePersonas = new Agenda();
 
-        personas[0] = new Persona("Carlos", 12345678);
-        personas[1] = new Persona("Ana", 87654321);
-        personas[2] = new Persona("Luis", 11223344);
-        personas[3] = new Persona("María", 44332211);
-        personas[4] = new Persona("Pedro", 55667788);
-
-        System.out.println("\nLista de personas:");
-        Agenda listaDePersonas = new Agenda(personas);
         listaDePersonas.listarPersonas();
 
         listaDePersonas.editarPersona(4,"Carilos Kapo", 123455);
@@ -46,27 +38,25 @@ package CursoJava.ArreglosDeObjetos;
 
 }
 
-class Persona {
-    String nombre;
-    int dni;
+class PenelDeControl{
 
-    public Persona(String nombre, int dni) {
-        this.nombre = nombre;
-        this.dni = dni;
+    public void mostrarMenu(){
+        System.out.println("1) Listar Personas");
+        System.out.println("2) Agregar Persona");
+        System.out.println("3) Eliminar Persona");
+        System.out.println("4) Editar Persona");
+        System.out.println("5) Buscar Persona");
+        System.out.println("6) Salir");
     }
 
-    @Override
-    public String toString() {
-        return this.nombre + " (" + dni + ")";
-    }
 }
 
 class Agenda{
 
     Persona [] personas;
     
-    public Agenda(Persona[] personas){
-        this.personas = personas;
+    public Agenda(){
+        this.personas = new Persona[];
     }
 
     public void listarPersonas() {
@@ -122,5 +112,22 @@ class Agenda{
     }
 
 }
+
+class Persona {
+    String nombre;
+    int dni;
+
+    public Persona(String nombre, int dni) {
+        this.nombre = nombre;
+        this.dni = dni;
+    }
+
+    @Override
+    public String toString() {
+        return this.nombre + " (" + dni + ")";
+    }
+}
+
+
 
 
