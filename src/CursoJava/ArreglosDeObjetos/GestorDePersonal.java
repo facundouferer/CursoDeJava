@@ -8,13 +8,12 @@ package CursoJava.ArreglosDeObjetos;
         Agenda listaDePersonas = new Agenda();
 
         listaDePersonas.agregarPersona(new Persona("Carlitos", 12345678));
-
+        listaDePersonas.agregarPersona(new Persona("Maria", 23456721));
         listaDePersonas.agregarPersona(new Persona("Juana", 23456789));
 
         listaDePersonas.listarPersonas();
-
-       
-
+        listaDePersonas.eliminarPersona("Carlitos");
+        listaDePersonas.listarPersonas();
     }
 
 }
@@ -37,10 +36,11 @@ class Agenda{
     Persona [] personas;
     
     public Agenda(){
-        this.personas = new Persona[];
+        this.personas = new Persona[0];
     }
 
     public void listarPersonas() {
+        System.out.println("Listado de Personas");
         int indice = 1;
         for (Persona persona : personas) {
             System.out.println(indice + ") " + persona);
@@ -108,7 +108,4 @@ class Persona {
         return this.nombre + " (" + dni + ")";
     }
 }
-
-
-
 
