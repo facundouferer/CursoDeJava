@@ -7,33 +7,13 @@ package CursoJava.ArreglosDeObjetos;
 
         Agenda listaDePersonas = new Agenda();
 
+        listaDePersonas.agregarPersona(new Persona("Carlitos", 12345678));
+        listaDePersonas.agregarPersona(new Persona("Maria", 23456721));
+        listaDePersonas.agregarPersona(new Persona("Juana", 23456789));
+
         listaDePersonas.listarPersonas();
-
-        listaDePersonas.editarPersona(4,"Carilos Kapo", 123455);
-
-        System.out.println("\nDespués de agregar a Lucía:");
-        listaDePersonas.agregarPersona(new Persona("Lucía", 99887766));
+        listaDePersonas.eliminarPersona("Carlitos");
         listaDePersonas.listarPersonas();
-
-        System.out.println("\nDespués de eliminar:");
-        listaDePersonas.eliminarPersona(2);
-        listaDePersonas.listarPersonas();
-
-        System.out.println("\nBuscar Elemento:");
-
-        if(listaDePersonas.verIndice(new Persona("San Sebastian", 0)) != -1) {
-            System.out.println("Indice: " + listaDePersonas.verIndice(new Persona("San Sebastian", 0)));
-        } else {
-            System.out.println("El elemento no se encuentra en la lista.");
-        }
-
-        System.out.println("\nEliminar una Persona por nombre:");
-        if(listaDePersonas.eliminarPersona("Ana")) {
-            listaDePersonas.listarPersonas();
-        } else {
-            System.out.println("La persona no se encuentra en la lista.");  
-        }
-
     }
 
 }
@@ -56,11 +36,12 @@ class Agenda{
     Persona [] personas;
     
     public Agenda(){
-        this.personas = new Persona[];
+        this.personas = new Persona[0];
     }
 
     public void listarPersonas() {
-        int indice = 0;
+        System.out.println("Listado de Personas");
+        int indice = 1;
         for (Persona persona : personas) {
             System.out.println(indice + ") " + persona);
             indice++;
@@ -127,7 +108,4 @@ class Persona {
         return this.nombre + " (" + dni + ")";
     }
 }
-
-
-
 
