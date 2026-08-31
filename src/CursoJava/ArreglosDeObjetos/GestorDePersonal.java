@@ -7,32 +7,13 @@ package CursoJava.ArreglosDeObjetos;
 
         Agenda listaDePersonas = new Agenda();
 
+        listaDePersonas.agregarPersona(new Persona("Carlitos", 12345678));
+
+        listaDePersonas.agregarPersona(new Persona("Juana", 23456789));
+
         listaDePersonas.listarPersonas();
 
-        listaDePersonas.editarPersona(4,"Carilos Kapo", 123455);
-
-        System.out.println("\nDespués de agregar a Lucía:");
-        listaDePersonas.agregarPersona(new Persona("Lucía", 99887766));
-        listaDePersonas.listarPersonas();
-
-        System.out.println("\nDespués de eliminar:");
-        listaDePersonas.eliminarPersona(2);
-        listaDePersonas.listarPersonas();
-
-        System.out.println("\nBuscar Elemento:");
-
-        if(listaDePersonas.verIndice(new Persona("San Sebastian", 0)) != -1) {
-            System.out.println("Indice: " + listaDePersonas.verIndice(new Persona("San Sebastian", 0)));
-        } else {
-            System.out.println("El elemento no se encuentra en la lista.");
-        }
-
-        System.out.println("\nEliminar una Persona por nombre:");
-        if(listaDePersonas.eliminarPersona("Ana")) {
-            listaDePersonas.listarPersonas();
-        } else {
-            System.out.println("La persona no se encuentra en la lista.");  
-        }
+       
 
     }
 
@@ -60,7 +41,7 @@ class Agenda{
     }
 
     public void listarPersonas() {
-        int indice = 0;
+        int indice = 1;
         for (Persona persona : personas) {
             System.out.println(indice + ") " + persona);
             indice++;
