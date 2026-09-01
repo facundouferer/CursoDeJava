@@ -1,10 +1,11 @@
 package CursoJava.ArreglosDeObjetos;
-import java.util.Scanner;
 
 class GestorDeProductos {
 
     public static void main(String[] args) {
-        TuiManager
+
+        TuiManager tui = new TuiManager();
+        tui.menu();
 
         ManejoDeStock stock = new ManejoDeStock();
 
