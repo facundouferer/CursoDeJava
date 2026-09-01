@@ -1,4 +1,5 @@
 package CursoJava.ArreglosDeObjetos;
+import java.util.Scanner;
 
 class GestorDeProductos {
 
@@ -37,8 +38,27 @@ class TuiManager {
         System.out.println("1- Agregar productos ");
         System.out.println("2- Eliminar productos ");
         System.out.println("3- Vender productos ");
+        System.out.println("0- Salir");
     }
+        public void agregarProducto(ManejoDeStock stock, Scanner scanner) {
+        System.out.print("Ingrese el nombre del producto: ");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Ingrese el precio: ");
+        double precio = scanner.nextDouble();
+
+        System.out.print("Ingrese el stock inicial: ");
+        int stockInicial = scanner.nextInt();
+        scanner.nextLine(); // Limpiar el buffer de entrada
+
+        Producto nuevoProducto = new Producto(nombre, precio, stockInicial);
+        stock.agregarProducto(nuevoProducto);
+        System.out.println("¡Producto agregado con éxito");
+    }
+
 }
+
+
 
 
 class ManejoDeStock{
