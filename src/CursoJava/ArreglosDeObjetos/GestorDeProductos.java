@@ -1,26 +1,19 @@
 package CursoJava.ArreglosDeObjetos;
+
 import java.util.Scanner;
 
 class GestorDeProductos {
 
     public static void main(String[] args) {
 
-        TuiManager tui = new TuiManager();
-        tui.menu();
-
         ManejoDeStock stock = new ManejoDeStock();
 
-        Producto producto1 = new Producto("tomate", 10.99, 100);
-        Producto producto2 = new Producto("lechuga", 5.49, 50);
-        Producto producto3 = new Producto("cebolla", 15.75, 75);
+        int opcion;
+        Scanner sc = new Scanner(System.in);
 
-        stock.agregarProducto(producto1);
-        stock.agregarProducto(producto2);
-        stock.agregarProducto(producto3);
-        
-
-do {
-            tui.menu();        int opcion;
+        do {
+            
+            TuiManager.menu();
 
             System.out.print("Elegí una opción: ");
             opcion = sc.nextInt();
@@ -28,31 +21,16 @@ do {
 
             switch (opcion) {
                 case 1:
-                    System.out.print("Nombre del producto: ");
-                    String nombre = sc.nextLine();
-                    System.out.print("Precio: ");
-                    double precio = sc.nextDouble();
-                    System.out.print("Stock inicial: ");
-                    int stockInicial = sc.nextInt();
-                    sc.nextLine();
-                    stock.agregarProducto(new Producto(nombre, precio, stockInicial));
-                    System.out.println("Producto agregado correctamente.");
+                    TuiManager.agregarProducto(stock, sc);
                     break;
-
                 case 2:
-                    System.out.print("Nombre del producto a eliminar: ");
-                    String nombreEliminar = sc.nextLine();
-                    stock.eliminarProducto(nombreEliminar);
-                    System.out.println("Producto eliminado.");
+                    TuiManager.eliminarProducto(stock, sc);
                     break;
-
                 case 3:
-                    System.out.print("Nombre del producto a vender: ");
-                    String nombreVender = sc.nextLine();
-                    System.out.print("Cantidad a vender: ");
-                    int cantidad = sc.nextInt();
-                    sc.nextLine();
-                    stock.venderProducto(nombreVender, cantidad);
+                    TuiManager.venderProducto(stock, sc);
+                    break;
+                case 4:
+                    TuiManager.listarProductos(stock);
                     break;
 
                 case 0:
@@ -68,15 +46,19 @@ do {
         sc.close();
     }
 }
-class TuiManager {
-    public void menu (){
+
+abstract class TuiManager {
+
+    public static void menu() {
         System.out.println("-----MENU PRINCIPAL------");
         System.out.println("1- Agregar productos ");
         System.out.println("2- Eliminar productos ");
         System.out.println("3- Vender productos ");
+        System.out.println("4- Listar productos ");
         System.out.println("0- Salir");
     }
-        public void agregarProducto(ManejoDeStock stock, Scanner scanner) {
+
+    public static void agregarProducto(ManejoDeStock stock, Scanner scanner) {
         System.out.print("Ingrese el nombre del producto: ");
         String nombre = scanner.nextLine();
 
@@ -92,22 +74,42 @@ class TuiManager {
         System.out.println("¡Producto agregado con éxito");
     }
 
+    public static void eliminarProducto(ManejoDeStock stock, Scanner scanner) {
+        System.out.print("Ingrese el nombre del producto a eliminar: ");
+        String nombre = scanner.nextLine();
+        stock.eliminarProducto(nombre);
+        System.out.println("¡Producto eliminado con éxito!");
+    }
+
+    public static void venderProducto(ManejoDeStock stock, Scanner scanner) {
+        System.out.print("Ingrese el nombre del producto a vender: ");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Ingrese la cantidad a vender: ");
+        int cantidad = scanner.nextInt();
+        scanner.nextLine(); // Limpiar el buffer de entrada
+
+        stock.venderProducto(nombre, cantidad);
+    }
+
+    public static void listarProductos(ManejoDeStock stock) {
+        System.out.println("Listado de productos:");
+        System.out.println(stock.listarProducto());
+    }
+
 }
 
+class ManejoDeStock {
 
+    private Producto[] productos;
 
-
-class ManejoDeStock{
-
-    private Producto [] productos;
-
-    //constructor
-    public ManejoDeStock(){ 
+    // constructor
+    public ManejoDeStock() {
         this.productos = new Producto[0];
     }
 
-    public void agregarProducto(Producto productoNuevo){
-        Producto [] nuevosProductos = new Producto[productos.length + 1];
+    public void agregarProducto(Producto productoNuevo) {
+        Producto[] nuevosProductos = new Producto[productos.length + 1];
         nuevosProductos[nuevosProductos.length - 1] = productoNuevo;
         for (int i = 0; i < productos.length; i++) {
             nuevosProductos[i] = productos[i];
@@ -115,65 +117,62 @@ class ManejoDeStock{
         this.productos = nuevosProductos;
     }
 
-    public void eliminarProducto(int indice){
-            Producto [] nuevosProductos = new Producto[productos.length - 1];
-            for (int i = 0, j = 0; i < productos.length; i++) {
-                if(i != indice){
-                    nuevosProductos[j++] = productos[i];
-                }
+    public void eliminarProducto(int indice) {
+        Producto[] nuevosProductos = new Producto[productos.length - 1];
+        for (int i = 0, j = 0; i < productos.length; i++) {
+            if (i != indice) {
+                nuevosProductos[j++] = productos[i];
             }
+        }
         this.productos = nuevosProductos;
     }
 
-    public void venderProducto(String nombre, int cantidad){
+    public void venderProducto(String nombre, int cantidad) {
         int indice = this.verID(nombre);
-        if(indice != -1){
-            if(productos[indice].getStock() >= cantidad){
+        if (indice != -1) {
+            if (productos[indice].getStock() >= cantidad) {
                 productos[indice].setStock(cantidad);
-            }else{
+            } else {
                 System.out.println("No hay suficiente stock para vender " + cantidad + " unidades de " + nombre);
             }
-        } else{
+        } else {
             System.out.println("El producto " + nombre + " no se encuentra en el stock.");
         }
     }
 
-    public int verID(String nombre){
+    public int verID(String nombre) {
         for (int i = 0; i < productos.length; i++) {
-            if(productos[i].getNombre().equals(nombre)){
+            if (productos[i].getNombre().equals(nombre)) {
                 return i;
             }
         }
         return -1;
     }
 
-    public void eliminarProducto(String nombre){
+    public void eliminarProducto(String nombre) {
         int indice = this.verID(nombre);
-        this.eliminarProducto(indice); 
+        this.eliminarProducto(indice);
     }
 
-
-
     @Override
-    public String toString(){
+    public String toString() {
         String salida = "";
         for (Producto producto : productos) {
-            if(producto != null){
+            if (producto != null) {
                 salida += producto + "\n";
             }
         }
         return salida;
     }
 
-    public void listarProducto(){
-        for (Producto producto : productos) {
-            System.out.println(producto);
-        }
+    public String listarProducto() {
+        String listadoDeProductos = this.toString();
+        return listadoDeProductos;
     }
 
 }
 
-class Producto{
+class Producto {
     private String nombre;
     private double precio;
     private int stock;
@@ -198,6 +197,6 @@ class Producto{
 
     @Override
     public String toString() {
-        return stock + " " + nombre + " $" + precio;        
+        return stock + " " + nombre + " $" + precio;
     }
 }
