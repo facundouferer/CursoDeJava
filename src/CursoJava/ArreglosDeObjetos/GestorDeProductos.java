@@ -17,21 +17,57 @@ class GestorDeProductos {
         stock.agregarProducto(producto1);
         stock.agregarProducto(producto2);
         stock.agregarProducto(producto3);
+        
 
-        System.out.println("Lista de productos:");
-        stock.listarProducto();
+do {
+            tui.menu();        int opcion;
 
-        stock.eliminarProducto("lechuga");
-        System.out.println("Después de eliminar el producto en el índice 1:");
-        System.out.println(stock);
+            System.out.print("Elegí una opción: ");
+            opcion = sc.nextInt();
+            sc.nextLine();
 
-        stock.venderProducto("cebolla", 80);
-        stock.listarProducto();
+            switch (opcion) {
+                case 1:
+                    System.out.print("Nombre del producto: ");
+                    String nombre = sc.nextLine();
+                    System.out.print("Precio: ");
+                    double precio = sc.nextDouble();
+                    System.out.print("Stock inicial: ");
+                    int stockInicial = sc.nextInt();
+                    sc.nextLine();
+                    stock.agregarProducto(new Producto(nombre, precio, stockInicial));
+                    System.out.println("Producto agregado correctamente.");
+                    break;
 
+                case 2:
+                    System.out.print("Nombre del producto a eliminar: ");
+                    String nombreEliminar = sc.nextLine();
+                    stock.eliminarProducto(nombreEliminar);
+                    System.out.println("Producto eliminado.");
+                    break;
+
+                case 3:
+                    System.out.print("Nombre del producto a vender: ");
+                    String nombreVender = sc.nextLine();
+                    System.out.print("Cantidad a vender: ");
+                    int cantidad = sc.nextInt();
+                    sc.nextLine();
+                    stock.venderProducto(nombreVender, cantidad);
+                    break;
+
+                case 0:
+                    System.out.println("Saliendo del programa...");
+                    break;
+
+                default:
+                    System.out.println("Opción inválida, probá de nuevo.");
+            }
+
+        } while (opcion != 0);
+
+        sc.close();
     }
-    
 }
-
 class TuiManager {
     public void menu (){
         System.out.println("-----MENU PRINCIPAL------");
