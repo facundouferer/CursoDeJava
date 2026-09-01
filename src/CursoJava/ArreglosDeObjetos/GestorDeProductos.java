@@ -1,9 +1,11 @@
 package CursoJava.ArreglosDeObjetos;
+import java.util.Scanner;
 
 class GestorDeProductos {
 
     public static void main(String[] args) {
-        
+        TuiManager
+
         ManejoDeStock stock = new ManejoDeStock();
 
         Producto producto1 = new Producto("tomate", 10.99, 100);
@@ -27,6 +29,16 @@ class GestorDeProductos {
     }
     
 }
+
+class TuiManager {
+    public void menu (){
+        System.out.println("-----MENU PRINCIPAL------");
+        System.out.println("1- Agregar productos ");
+        System.out.println("2- Eliminar productos ");
+        System.out.println("3- Vender productos ");
+    }
+}
+
 
 class ManejoDeStock{
 
