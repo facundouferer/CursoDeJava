@@ -109,6 +109,9 @@ abstract class TuiManager {
         System.out.println("2- Eliminar productos ");
         System.out.println("3- Vender productos ");
         System.out.println("4- Listar productos ");
+        System.out.println("5- Agregar categorías ");
+        System.out.println("6- Eliminar categorías ");
+        System.out.println("7- Listar categorías ");
         System.out.println("0- Salir");
     }
 
@@ -150,6 +153,26 @@ abstract class TuiManager {
         System.out.println("Listado de productos:");
         System.out.println(stock.listarProducto());
     }
+
+    public static void listarCategorias(ManejoDeCategorias categorias, Scanner scanner) {
+        System.out.println("Listado de categorías:");
+        System.out.println(categorias.listarCategorias());
+    }
+
+    public static void agregarCategoria(ManejoDeCategorias categorias, Scanner scanner) {
+        System.out.print("Ingrese el nombre de la nueva categoría: ");
+        String nombreCategoria = scanner.nextLine();
+        categorias.agregarCategoria(nombreCategoria);
+        System.out.println("¡Categoría agregada con éxito!");
+    }
+
+    public static void eliminarCategoria(ManejoDeCategorias categorias, Scanner scanner) {
+        System.out.print("Ingrese el nombre de la categoría a eliminar: ");
+        String nombreCategoria = scanner.nextLine();
+        categorias.eliminarCategoria(nombreCategoria);
+        System.out.println("¡Categoría eliminada con éxito!");
+    }
+
 
 }
 
