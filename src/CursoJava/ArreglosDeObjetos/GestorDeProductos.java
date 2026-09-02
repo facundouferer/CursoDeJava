@@ -225,6 +225,69 @@ class ManejoDeStock {
     }
 
 }
+class ManejoDeCategoria {
+
+    private Categoria[] categorias;
+
+    public ManejoDeCategoria() {
+        this.categorias = new Categoria[0];
+    }
+
+    public void agregarCategoria(Categoria categoriaNueva) {
+        Categoria[] nuevasCategorias = new Categoria[categorias.length + 1];
+        nuevasCategorias[nuevasCategorias.length - 1] = categoriaNueva;
+        for (int i = 0; i < categorias.length; i++) {
+            nuevasCategorias[i] = categorias[i];
+        }
+        this.categorias = nuevasCategorias;
+    }
+
+    public void eliminarCategoria(int indice) {
+        if (indice < 0 || indice >= categorias.length) {
+            return;
+        }
+        Categoria[] nuevasCategorias = new Categoria[categorias.length - 1];
+        for (int i = 0, j = 0; i < categorias.length; i++) {
+            if (i != indice) {
+                nuevasCategorias[j++] = categorias[i];
+            }
+        }
+        this.categorias = nuevasCategorias;
+    }
+
+    public int verID(String nombre) {
+        for (int i = 0; i < categorias.length; i++) {
+            if (categorias[i].getNombre().equalsIgnoreCase(nombre)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void eliminarCategoria(String nombre) {
+        int indice = this.verID(nombre);
+        if (indice != -1) {
+            this.eliminarCategoria(indice);
+        } else {
+            System.out.println("La categoría " + nombre + " no se encuentra.");
+        }
+    }
+
+    @Override
+    public String toString() {
+        String salida = "";
+        for (Categoria categoria : categorias) {
+            if (categoria != null) {
+                salida += categoria + "\n";
+            }
+        }
+        return salida;
+    }
+
+    public String listarCategoria() {
+        return this.toString();
+    }
+}
 
 class Producto {
     private String nombre;
