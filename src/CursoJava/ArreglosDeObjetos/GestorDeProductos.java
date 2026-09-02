@@ -143,7 +143,10 @@ abstract class TuiManager {
         int cantidad = scanner.nextInt();
         scanner.nextLine(); // Limpiar el buffer de entrada
 
-        stock.venderProducto(nombre, cantidad);
+        String mensaje = stock.venderProducto(nombre, cantidad);
+        if (mensaje != null) {
+            System.out.println(mensaje);
+        }
     }
 
     public static void listarProductos(ManejoDeStock stock) {
@@ -181,16 +184,17 @@ class ManejoDeStock {
         this.productos = nuevosProductos;
     }
 
-    public void venderProducto(String nombre, int cantidad) {
+    public String venderProducto(String nombre, int cantidad) {
         int indice = this.verID(nombre);
         if (indice != -1) {
             if (productos[indice].getStock() >= cantidad) {
                 productos[indice].setStock(cantidad);
+                return null;
             } else {
-                System.out.println("No hay suficiente stock para vender " + cantidad + " unidades de " + nombre);
+                return "No hay suficiente stock para vender " + cantidad + " unidades de " + nombre;
             }
         } else {
-            System.out.println("El producto " + nombre + " no se encuentra en el stock.");
+            return "El producto " + nombre + " no se encuentra en el stock.";
         }
     }
 
