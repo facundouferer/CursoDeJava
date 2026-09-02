@@ -2,6 +2,60 @@ package CursoJava.ArreglosDeObjetos;
 
 import java.util.Scanner;
 
+abstract class Persona {
+
+    protected int dni;
+    protected String nombre;
+    // Cuenta corriente vista desde la empresa: positivo = la persona debe, negativo = se le debe
+    protected double saldo;
+
+    protected Persona(int dni, String nombre, double saldo) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.saldo = saldo;
+    }
+
+    public abstract double transaccion(double monto);
+
+}
+
+class Vendedor extends Persona {
+
+    public Vendedor(int dni, String nombre, double saldo) { super(dni, nombre, saldo); }
+
+    @Override
+    public double transaccion(double monto) {
+        this.saldo += monto * 0.10;             // cobra comisión: hace algo propio
+        return this.saldo;
+    }
+}
+
+class Cliente extends Persona {
+
+    public Cliente(int dni, String nombre, double saldo) { super(dni, nombre, saldo); }
+
+    @Override
+    public double transaccion(double monto) {
+        this.saldo += monto;                    // asigna, no solo calcula
+        return this.saldo;
+    }
+
+}
+
+class Proveedor extends Persona {
+
+    public Proveedor(int dni, String nombre, double saldo) { super(dni, nombre, saldo); }
+
+    @Override
+    public double transaccion(double monto) {
+        this.saldo -= monto;
+        return this.saldo;
+    }
+}
+
+
+
+
 class GestorDeProductos {
 
     public static void main(String[] args) {
