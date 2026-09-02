@@ -129,7 +129,7 @@ abstract class TuiManager {
     }
 
     public static void eliminarProducto(ManejoDeStock stock, Scanner scanner) {
-        System.out.print("Ingrese el nombre del producto a eliminar: ");
+        System.out.print("Ingrese el nombre del roducto a eliminar: ");
         String nombre = scanner.nextLine();
         stock.eliminarProducto(nombre);
         System.out.println("¡Producto eliminado con éxito!");
@@ -147,7 +147,7 @@ abstract class TuiManager {
     }
 
     public static void listarProductos(ManejoDeStock stock) {
-        System.out.println("Listado de productos:");
+        System.out.println();
         System.out.println(stock.listarProducto());
     }
 
@@ -210,18 +210,42 @@ class ManejoDeStock {
 
     @Override
     public String toString() {
-        String salida = "";
-        for (Producto producto : productos) {
-            if (producto != null) {
-                salida += producto + "\n";
-            }
-        }
-        return salida;
+        return this.listarProducto();
     }
 
     public String listarProducto() {
-        String listadoDeProductos = this.toString();
-        return listadoDeProductos;
+
+        if (productos.length == 0) {
+            return "No hay productos cargados en el stock.";
+        }
+
+        String formatoFila = "%-25s %12s %10s %15s%n";
+        String separador = "-".repeat(66);
+
+        StringBuilder tabla = new StringBuilder();
+        tabla.append(separador).append("\n");
+        tabla.append(String.format(formatoFila, "PRODUCTO", "PRECIO", "STOCK", "VALOR TOTAL"));
+        tabla.append(separador).append("\n");
+
+        double valorTotalStock = 0;
+
+        for (Producto producto : productos) {
+            if (producto != null) {
+                double subtotal = producto.getPrecio() * producto.getStock();
+                valorTotalStock += subtotal;
+
+                tabla.append(String.format(formatoFila,
+                        producto.getNombre(),
+                        String.format("$%.2f", producto.getPrecio()),
+                        producto.getStock(),
+                        String.format("$%.2f", subtotal)));
+            }
+        }
+
+        tabla.append(separador).append("\n");
+        tabla.append(String.format("%-25s %48s%n", "VALOR TOTAL DEL STOCK:", String.format("$%.2f", valorTotalStock)));
+
+        return tabla.toString();
     }
 
 }
@@ -239,6 +263,10 @@ class Producto {
 
     public String getNombre() {
         return nombre;
+    }
+
+    public double getPrecio() {
+        return precio;
     }
 
     public void setStock(int cantidad) {
