@@ -1,4 +1,4 @@
-package exam.Parcial2025.Recuperatorio;
+package exam.Parcial2025.Recuperatorio.Avanzada;
 
 import java.util.Scanner;
 import java.util.ArrayList;
