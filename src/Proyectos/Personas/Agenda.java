@@ -1,10 +1,10 @@
 package Proyectos.Personas;
 
-class Agenda{
+public class Agenda {
 
-    Persona [] personas;
+    Persona[] personas;
 
-    public Agenda(){
+    public Agenda() {
         this.personas = new Persona[0];
     }
 
@@ -18,32 +18,33 @@ class Agenda{
     }
 
     public void agregarPersona(Persona persona) {
-
         Persona[] nuevaLista = new Persona[personas.length + 1];
-
         nuevaLista[nuevaLista.length - 1] = persona;
         System.arraycopy(personas, 0, nuevaLista, 0, personas.length);
-
         personas = nuevaLista;
-
     }
 
-    public void eliminarPersona(int indice){
-        Persona [] nuevaLista = new Persona[personas.length - 1];
+    public void eliminarPersona(int indice) {
+        Persona[] nuevaLista = new Persona[personas.length - 1];
         System.arraycopy(personas, 0, nuevaLista, 0, indice);
         System.arraycopy(personas, indice + 1, nuevaLista, indice, nuevaLista.length - indice);
-
         personas = nuevaLista;
     }
 
     public void editarPersona(int indice, String nuevaPersona, int nuevoDni) {
-        personas[indice] = new Persona(nuevaPersona, nuevoDni);
+        if (indice < 1 || indice > personas.length) {
+            System.out.println("Índice de persona inválido.");
+            return;
+        }
+
+        String telefono = personas[indice - 1].getTelefono();
+        personas[indice - 1] = new Persona(nuevaPersona, nuevoDni, telefono);
     }
 
     public int verIndice(Persona nombreBuscado) {
         int indice = 0;
         for (Persona persona : personas) {
-            if(persona.equals(nombreBuscado)) {
+            if (persona.equals(nombreBuscado)) {
                 return indice;
             }
             indice++;
@@ -52,8 +53,8 @@ class Agenda{
     }
 
     public boolean eliminarPersona(String nombreBuscado) {
-        for(Persona persona : personas) {
-            if(persona.nombre.equals(nombreBuscado)) {
+        for (Persona persona : personas) {
+            if (persona.nombre.equals(nombreBuscado)) {
                 eliminarPersona(verIndice(persona));
                 return true;
             }
@@ -62,30 +63,24 @@ class Agenda{
     }
 
     public void buscarPersona(String nombre) {
-    boolean encontrada = false;
-
-    for (Persona persona : personas) { // Reemplaza 'lista' por el nombre de tu ArrayList
-        if (persona.getNombre().equalsIgnoreCase(nombre)) {
-            System.out.println("\n--- Persona Encontrada ---");
-            System.out.println("Nombre: " + persona.getNombre());
-            System.out.println("DNI: " + persona.getDni());
-            System.out.println("Teléfono: " + persona.getTelefono());
-            encontrada = true;
-            break; // Salir si solo buscas la primera coincidencia
+        boolean encontrada = false;
+        for (Persona persona : personas) {
+            if (persona.nombre.toLowerCase().contains(nombre.toLowerCase())) {
+                System.out.println(persona);
+                encontrada = true;
+            }
+        }
+        if (!encontrada) {
+            System.out.println("No se encontró ninguna persona con el nombre: " + nombre);
         }
     }
 
-    if (!encontrada) {
-        System.out.println("No se encontró ninguna persona con el nombre: " + nombre);
-    }
-}
     public boolean buscarPorDni(int dni) {
         for (Persona persona : personas) {
             if (persona.dni == dni) {
                 return true;
             }
         }
-        return false; 
-    
+        return false;
     }
 }
