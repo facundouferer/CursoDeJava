@@ -31,6 +31,9 @@ class Inicio {
                     System.out.print("Ingrese el DNI: ");
                     int dni = scanner.nextInt();
 
+                    System.out.print("Ingrese el teléfono: ");
+                    String telefono = scanner.next();
+
                     listaDePersonas.agregarPersona(new Persona(nombre, dni));
 
                     System.out.println("Persona agregada correctamente.");

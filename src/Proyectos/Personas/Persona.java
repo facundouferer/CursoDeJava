@@ -6,9 +6,10 @@ class Persona {
     int dni;
     String telefono;
 
-    public Persona(String nombre, int dni) {
+    public Persona(String nombre, int dni, String telefono) {
         this.nombre = nombre;
         this.dni = dni;
+        this.telefono = telefono;
     }
 
     @Override
