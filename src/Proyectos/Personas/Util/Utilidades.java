@@ -14,5 +14,6 @@ package Proyectos.Personas.Util;
         System.out.println("4) Editar Persona");
         System.out.println("5) Buscar Persona");
         System.out.println("6) Salir");
+        System.out.println("7) Informe de contactos");
     }
 }

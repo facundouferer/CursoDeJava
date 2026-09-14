@@ -62,6 +62,27 @@ class Inicio {
                 case 6:
                     System.out.println("Saliendo del programa...");
                     break;
+                
+                case 7:
+                    
+                    int tTelefono=0;
+                    int sTelefono=0;
+                        
+                    for (Persona persona : personas) {
+
+                        if (persona[].telefono != null){
+                            tTelefono++;
+                        } else {
+                            sTelefono++;
+                        }
+
+                    }
+
+                    System.out.println("El Total de personas es de: ", tTelefono+sTelefono, ".");
+                    System.out.println("El Total de personas con telefono asignado es de: ", tTelefono, ".");
+                    System.out.println("El Total de personas sin telefono asignado es de: ", sTelefono, ".");
+                    
+                    break;
 
                 default:
                     System.out.println("Opción incorrecta. Solo se pueden usar las opciones 1 y 2.");
