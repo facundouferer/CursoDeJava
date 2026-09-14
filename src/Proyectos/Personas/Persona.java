@@ -1,8 +1,8 @@
 package Proyectos.Personas;
-import Proyectos.Personas.Util.Utilidades;
+import Proyectos.Personas.Util.UtilidadesPersona;
 
-class Persona {
-    String nombre;
+public class Persona {
+    public String nombre;
     int dni;
     String telefono;
 
@@ -19,16 +19,12 @@ class Persona {
 
     @Override
     public String toString() {
-       String telefonoCompuesto = Utilidades.caracteristica(telefono);
+    String telefonoCompuesto = UtilidadesPersona.caracteristica(telefono);
         return this.nombre + " (" + dni + ") - Teléfono: " + telefonoCompuesto;
     }
 
     public String getTelefono() {
         return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
     }
 
     public String getNombre() {
@@ -39,11 +35,11 @@ class Persona {
         this.nombre = nombre;
     }
 
-    public int getDni() {
-        return dni;
-    }
-
     public void setDni(int dni) {
         this.dni = dni;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 }

@@ -1,25 +1,28 @@
 package Proyectos.Personas;
+
 import java.util.Scanner;
-import Proyectos.Personas.Util.Utilidades;
+import Proyectos.Personas.Util.UtilidadesPersona;
 
 class Inicio {
 
-    static void main(String[] args) {
-        // Crear un arreglo de objetos de tipo Persona
-
+    public static void main(String[] args) {
         Agenda listaDePersonas = new Agenda();
         Scanner scanner = new Scanner(System.in);
 
         int opcion;
 
         do {
-            Utilidades.mostrarMenu();
+            UtilidadesPersona.mostrarMenu();
 
             opcion = scanner.nextInt();
 
             switch (opcion) {
 
                 case 1:
+                    listaDePersonas.listarPersonas();
+                    break;
+
+                case 2:
                     System.out.print("Ingrese el nombre: ");
                     String nombre = scanner.next();
 
@@ -38,54 +41,33 @@ class Inicio {
 
                     System.out.println("Persona agregada correctamente.");
                     break;
-                case 2:
-                    listaDePersonas.listarPersonas();
-                    break;
+
                 case 3:
                     System.out.print("Ingrese el nombre de la persona a eliminar: ");
                     String nombreEliminar = scanner.next();
                     if (listaDePersonas.eliminarPersona(nombreEliminar))
-                        System.out.println("Persona elimindada correctamente.");
+                        System.out.println("Persona eliminada correctamente.");
                     else
                         System.out.println("Persona no encontrada.");
                     break;
+
                 case 4:
-                    System.out.print("Ingrese el nombre de la persona a editar: ");
+                    UtilidadesPersona.editarPersona(listaDePersonas, scanner);
                     break;
+
                 case 5:
-                    System.out.print("Ingrese el nombre de la persona a buscar: ");
-                    String nombreBuscar = scanner.nextLine();
-                    
-                    listaDePersonas.buscarPersona(nombreBuscar);
                     break;
 
                 case 6:
                     System.out.println("Saliendo del programa...");
                     break;
-                
+
                 case 7:
-                    
-                    int tTelefono=0;
-                    int sTelefono=0;
-                        
-                    for (Persona persona : personas) {
-
-                        if (persona[].telefono != null){
-                            tTelefono++;
-                        } else {
-                            sTelefono++;
-                        }
-
-                    }
-
-                    System.out.println("El Total de personas es de: ", tTelefono+sTelefono, ".");
-                    System.out.println("El Total de personas con telefono asignado es de: ", tTelefono, ".");
-                    System.out.println("El Total de personas sin telefono asignado es de: ", sTelefono, ".");
-                    
+                    UtilidadesPersona.buscarPersona(listaDePersonas, scanner);
                     break;
 
                 default:
-                    System.out.println("Opción incorrecta. Solo se pueden usar las opciones 1 y 2.");
+                    System.out.println("Opción incorrecta.");
             }
 
         } while (opcion != 6);
