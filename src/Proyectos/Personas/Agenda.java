@@ -64,7 +64,7 @@ class Agenda{
     public void buscarPersona(String nombre) {
     boolean encontrada = false;
 
-    for (Persona persona : lista) { // Reemplaza 'lista' por el nombre de tu ArrayList
+    for (Persona persona : personas) { // Reemplaza 'lista' por el nombre de tu ArrayList
         if (persona.getNombre().equalsIgnoreCase(nombre)) {
             System.out.println("\n--- Persona Encontrada ---");
             System.out.println("Nombre: " + persona.getNombre());
