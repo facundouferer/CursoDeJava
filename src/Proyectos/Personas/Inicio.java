@@ -47,6 +47,10 @@ class Inicio {
 
                 case 5:
                     System.out.print("Ingrese el nombre de la persona a buscar: ");
+                    String nombreBuscar = scanner.nextLine();
+                    
+                    listaDePersonas.buscarPersona(nombreBuscar);
+                    break;
 
                 case 6:
                     System.out.println("Saliendo del programa...");
