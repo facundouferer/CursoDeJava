@@ -79,5 +79,13 @@ class Agenda{
         System.out.println("No se encontró ninguna persona con el nombre: " + nombre);
     }
 }
-
+    public boolean buscarPorDni(int dni) {
+        for (Persona persona : personas) {
+            if (persona.dni == dni) {
+                return true;
+            }
+        }
+        return false; 
+    
+    }
 }
