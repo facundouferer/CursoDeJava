@@ -44,6 +44,20 @@ class Inicio {
                 
                     case 4:
                     System.out.print("Ingrese el nombre de la persona a editar: ");
+                    String nombreBuscado = scanner.next();
+
+                    System.out.print("Ingrese el nuevo nombre: ");
+                    String nuevoNombre = scanner.next();
+
+                    System.out.print("Ingrese el nuevo DNI: ");
+                    int nuevoDni = scanner.nextInt();
+
+                    if (listaDePersonas.editarPersona(nombreBuscado, nuevoNombre, nuevoDni)) {
+                        System.out.println("Persona editada correctamente.");
+                    } else {
+                        System.out.println("No se encontró una persona con ese nombre.");
+                    }
+                    break;
 
                 case 5:
                     System.out.print("Ingrese el nombre de la persona a buscar: ");
