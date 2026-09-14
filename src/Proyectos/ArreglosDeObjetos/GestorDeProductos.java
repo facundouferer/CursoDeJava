@@ -1,4 +1,4 @@
-package CursoJava.ArreglosDeObjetos;
+package Proyectos.ArreglosDeObjetos;
 
 import java.util.Scanner;
 
