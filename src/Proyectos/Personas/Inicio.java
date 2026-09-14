@@ -26,6 +26,11 @@ class Inicio {
                     System.out.print("Ingrese el DNI: ");
                     int dni = scanner.nextInt();
 
+                    if (listaDePersonas.buscarPorDni(dni)) {
+                        System.out.println("Error: Ya existe una persona registrada con el DNI " + dni + ".");
+                        break;
+                    }
+
                     System.out.print("Ingrese el teléfono: ");
                     String telefono = scanner.next();
 
