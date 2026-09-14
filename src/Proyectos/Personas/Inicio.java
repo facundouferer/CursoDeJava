@@ -1,6 +1,6 @@
 package Proyectos.Personas;
-
 import java.util.Scanner;
+import Proyectos.Personas.Util.Utilidades;
 
 class Inicio {
 
@@ -14,11 +14,7 @@ class Inicio {
         int opcion;
 
         do {
-            System.out.println("\n===== MENÚ =====");
-            System.out.println("1) Agregar Persona");
-            System.out.println("2) Listar Personas");
-            System.out.println("3) Salir");
-            System.out.print("Seleccione una opción: ");
+            Utilidades.mostrarMenu();
 
             opcion = scanner.nextInt();
 
@@ -44,6 +40,15 @@ class Inicio {
                     break;
 
                 case 3:
+                    System.out.print("Ingrese el nombre de la persona a eliminar: ");
+                
+                    case 4:
+                    System.out.print("Ingrese el nombre de la persona a editar: ");
+
+                case 5:
+                    System.out.print("Ingrese el nombre de la persona a buscar: ");
+
+                case 6:
                     System.out.println("Saliendo del programa...");
                     break;
 
@@ -51,7 +56,7 @@ class Inicio {
                     System.out.println("Opción incorrecta. Solo se pueden usar las opciones 1 y 2.");
             }
 
-        } while (opcion != 3);
+        } while (opcion != 6);
 
         scanner.close();
     }
