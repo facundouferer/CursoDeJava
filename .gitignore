@@ -20,3 +20,5 @@ lib/
 src/.DS_Store
 */.DS_Store
 .fake
+# CI build output
+/build/

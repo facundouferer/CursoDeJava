@@ -71,4 +71,23 @@ class Agenda{
         return false;
     }
 
+    public void buscarPersona(String nombre) {
+    boolean encontrada = false;
+
+    for (Persona persona : lista) { // Reemplaza 'lista' por el nombre de tu ArrayList
+        if (persona.getNombre().equalsIgnoreCase(nombre)) {
+            System.out.println("\n--- Persona Encontrada ---");
+            System.out.println("Nombre: " + persona.getNombre());
+            System.out.println("DNI: " + persona.getDni());
+            System.out.println("Teléfono: " + persona.getTelefono());
+            encontrada = true;
+            break; // Salir si solo buscas la primera coincidencia
+        }
+    }
+
+    if (!encontrada) {
+        System.out.println("No se encontró ninguna persona con el nombre: " + nombre);
+    }
+}
+
 }

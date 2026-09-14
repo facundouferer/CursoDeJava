@@ -4,11 +4,10 @@ import Proyectos.Personas.Util.Utilidades;
 
 class Inicio {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // Crear un arreglo de objetos de tipo Persona
 
         Agenda listaDePersonas = new Agenda();
-
         Scanner scanner = new Scanner(System.in);
 
         int opcion;
@@ -34,34 +33,26 @@ class Inicio {
 
                     System.out.println("Persona agregada correctamente.");
                     break;
-
                 case 2:
                     listaDePersonas.listarPersonas();
                     break;
-
                 case 3:
                     System.out.print("Ingrese el nombre de la persona a eliminar: ");
-                
-                    case 4:
-                    
-                    System.out.print("Ingrese el nombre de la persona a editar: ");
-                    String nombreBuscado = scanner.next();
-
-                    System.out.print("Ingrese el nuevo nombre: ");
-                    String nuevoNombre = scanner.next();
-
-                    System.out.print("Ingrese el nuevo DNI: ");
-                    int nuevoDni = scanner.nextInt();
-
-                    if (listaDePersonas.editarPersona(nombreBuscado, nuevoNombre, nuevoDni)) {
-                        System.out.println("Persona editada correctamente.");
-                    } else {
-                        System.out.println("No se encontró una persona con ese nombre.");
-                    }
+                    String nombreEliminar = scanner.next();
+                    if (listaDePersonas.eliminarPersona(nombreEliminar))
+                        System.out.println("Persona elimindada correctamente.");
+                    else
+                        System.out.println("Persona no encontrada.");
                     break;
-
+                case 4:
+                    System.out.print("Ingrese el nombre de la persona a editar: ");
+                    break;
                 case 5:
                     System.out.print("Ingrese el nombre de la persona a buscar: ");
+                    String nombreBuscar = scanner.nextLine();
+                    
+                    listaDePersonas.buscarPersona(nombreBuscar);
+                    break;
 
                 case 6:
                     System.out.println("Saliendo del programa...");
