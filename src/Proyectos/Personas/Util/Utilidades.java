@@ -15,4 +15,8 @@ package Proyectos.Personas.Util;
         System.out.println("5) Buscar Persona");
         System.out.println("6) Salir");
     }
+    public void editarPersona(int indice, String nuevaPersona, int nuevoDni, string nuevotelefono) {
+        personas[indice] = new Persona(nuevaPersona, nuevoDni, nuevotelefono);
+    }
 }
+
