@@ -40,6 +40,17 @@ class Agenda{
         personas[indice] = new Persona(nuevaPersona, nuevoDni);
     }
 
+    public boolean editarPersona(String nombreBuscado, String nuevoNombre, int nuevoDni) {
+        for (int indice = 0; indice < personas.length; indice++) {
+            if (personas[indice].nombre.equals(nombreBuscado)) {
+                String telefono = personas[indice].getTelefono();
+                personas[indice] = new Persona(nuevoNombre, nuevoDni, telefono);
+                return true;
+            }
+        }
+        return false;
+    }
+
     public int verIndice(Persona nombreBuscado) {
         int indice = 0;
         for (Persona persona : personas) {
