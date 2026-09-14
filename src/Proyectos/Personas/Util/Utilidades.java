@@ -1,6 +1,6 @@
 package Proyectos.Personas.Util;
 
- public final class UtilidadesPersona {
+ public final class Utilidades {
 
     public static String caracteristica(String telefono) {
         String prefijo = "+549";

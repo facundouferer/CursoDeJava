@@ -34,7 +34,7 @@ class Inicio {
                     System.out.print("Ingrese el teléfono: ");
                     String telefono = scanner.next();
 
-                    listaDePersonas.agregarPersona(new Persona(nombre, dni));
+                    listaDePersonas.agregarPersona(new Persona(nombre, dni, telefono));
 
                     System.out.println("Persona agregada correctamente.");
                     break;

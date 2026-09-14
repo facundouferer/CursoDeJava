@@ -1,10 +1,15 @@
 package Proyectos.Personas;
-import Proyectos.Personas.Util.UtilidadesPersona;
+import Proyectos.Personas.Util.Utilidades;
 
 class Persona {
     String nombre;
     int dni;
     String telefono;
+
+    public Persona(String nombre, int dni) {
+        this.nombre = nombre;
+        this.dni = dni;
+    }
 
     public Persona(String nombre, int dni, String telefono) {
         this.nombre = nombre;
@@ -14,7 +19,7 @@ class Persona {
 
     @Override
     public String toString() {
-       String telefonoCompuesto = UtilidadesPersona.caracteristica(telefono);
+       String telefonoCompuesto = Utilidades.caracteristica(telefono);
         return this.nombre + " (" + dni + ") - Teléfono: " + telefonoCompuesto;
     }
 
