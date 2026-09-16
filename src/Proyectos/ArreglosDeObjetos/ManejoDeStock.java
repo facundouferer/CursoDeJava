@@ -1,6 +1,6 @@
 package Proyectos.ArreglosDeObjetos;
 
-class ManejoDeStock {
+public class ManejoDeStock {
 
     private Producto[] productos;
 
