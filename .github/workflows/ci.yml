@@ -24,13 +24,13 @@ jobs:
           java-version: '21'
 
       - name: Compile
-        # Source files use mixed encodings (UTF-8 and ISO-8859-1). ISO-8859-1 maps
-        # every byte, so javac never fails on encoding and only real errors surface.
+        # All sources are UTF-8 (the JDK 18+ default). Compiling with an explicit
+        # UTF-8 encoding fails fast if a Latin-1 file sneaks back in.
         run: |
           mkdir -p build/classes
           find src -name '*.java' -not -path 'src/bin/*' > sources.txt
           echo "Compiling $(wc -l < sources.txt) files"
-          javac -Xlint:-options -encoding ISO-8859-1 \
+          javac -Xlint:-options -encoding UTF-8 \
             -cp mysql-connector-j-8.1.0.jar \
             -d build/classes \
             @sources.txt

@@ -2,8 +2,8 @@ package CursoJava.Funciones;
 
 public class Ejercicio07 {
     /**Ejercicio 7:
-     Escribir una función que reciba tres puntos en el plano (x1, y1, x2, y2 y x3, y3) e imprima el
-     área del triángulo correspondiente.*/
+     Escribir una funciÃ³n que reciba tres puntos en el plano (x1, y1, x2, y2 y x3, y3) e imprima el
+     Ã¡rea del triÃ¡ngulo correspondiente.*/
     public static void main(String[] args) {
         double x1 = 2.0;
         double y1 = 3.0;
@@ -13,7 +13,7 @@ public class Ejercicio07 {
         double y3 = 4.0;
 
         double area = calcularAreaTriangulo(x1, y1, x2, y2, x3, y3);
-        System.out.printf("El área del triángulo es: %.2f", area);
+        System.out.printf("El Ã¡rea del triÃ¡ngulo es: %.2f", area);
     }
 
     public static double calcularAreaTriangulo(double x1, double y1, double x2, double y2, double x3, double y3) {

@@ -1,7 +1,7 @@
 package CursoJava.Funciones;
 /**Ejercicio 10:
- Utilice el programa anterior para generar una tabla de conversión de temperaturas, desde 0 °F
- hasta 120 °F, de 10 en 10*/
+ Utilice el programa anterior para generar una tabla de conversiÃ³n de temperaturas, desde 0 Â°F
+ hasta 120 Â°F, de 10 en 10*/
 public class Ejercicio10 {
     public static void main(String[] args) {
         double fahrenheit, celsius;

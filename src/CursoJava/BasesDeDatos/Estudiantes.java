@@ -3,24 +3,24 @@ import java.sql.*;
 
 public class Estudiantes {
     public static void main(String[] args) {
-        // Datos de conexi髇 a la base de datos (ajusta estos valores seg鷑 tu configuraci髇)
+        // Datos de conexi贸n a la base de datos (ajusta estos valores seg煤n tu configuraci贸n)
         String url = "jdbc:mysql://localhost:3306/universidad";
         String usuario = "root";
         String pass = "";
 
         try {
-            // Establecer la conexi髇 a la base de datos
+            // Establecer la conexi贸n a la base de datos
             Connection conexion = DriverManager.getConnection(url, usuario, pass);
 
-            // Crear una declaraci髇 SQL
+            // Crear una declaraci贸n SQL
             Statement statement = conexion.createStatement();
 
             // Ejecutar una consulta para obtener todos los datos de estudiantes
             String consulta = "SELECT * FROM estudiantes";
             ResultSet resultado = statement.executeQuery(consulta);
 
-            // Iterar a trav閟 de los resultados y mostrarlos con tabulaciones
-            System.out.println("ID\tNombre\tApellido\tLegajo\tDNI\tFecha de nacimiento\tDirecci髇\tTel閒ono\tEmail");
+            // Iterar a trav茅s de los resultados y mostrarlos con tabulaciones
+            System.out.println("ID\tNombre\tApellido\tLegajo\tDNI\tFecha de nacimiento\tDirecci贸n\tTel茅fono\tEmail");
             while (resultado.next()) {
                 int id = resultado.getInt("id");
                 String nombre = resultado.getString("nombre");
@@ -34,7 +34,7 @@ public class Estudiantes {
 
                 System.out.println(id + "\t" + nombre + "\t" + apellido + "\t" + legajo + "\t" + dni + "\t" + fehcaNacimiento + "\t" + direccion + "\t" + telefono + "\t" + email);
             }
-            // Cerrar la conexi髇 y recursos
+            // Cerrar la conexi贸n y recursos
             resultado.close();
             statement.close();
             conexion.close();
