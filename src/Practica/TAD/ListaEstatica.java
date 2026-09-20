@@ -1,4 +1,4 @@
-package Parciales.TAD;
+package Practica.TAD;
 
 public class ListaEstatica {
 

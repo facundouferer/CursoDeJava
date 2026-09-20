@@ -22,3 +22,6 @@ src/.DS_Store
 .fake
 # CI build output
 /build/
+
+# Eclipse build output
+src/bin/

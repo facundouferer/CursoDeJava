@@ -1,3 +1,5 @@
+package CursoJava.POO;
+
 
 class Humane {
 

@@ -1,4 +1,4 @@
-package Parciales.Parcial2025.Primero;
+package exam.Parcial2025.Primero;
 
 import java.util.Scanner;
 

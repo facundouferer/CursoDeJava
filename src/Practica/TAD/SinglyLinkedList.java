@@ -1,4 +1,4 @@
-package Parciales.TAD;
+package Practica.TAD;
 
 import org.w3c.dom.Node;
 

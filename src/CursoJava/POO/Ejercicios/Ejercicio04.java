@@ -1,4 +1,4 @@
-package Ejercicios;
+package CursoJava.POO.Ejercicios;
 
 /**Ejercicio 4:
  Crear una clase Vector, que en su constructor reciba una lista de elementos que ser�n sus

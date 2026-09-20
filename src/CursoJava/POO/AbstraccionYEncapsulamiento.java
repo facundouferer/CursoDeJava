@@ -1,3 +1,5 @@
+package CursoJava.POO;
+
 class PersonaObjeto {
   private String nombre;
   private int edad;

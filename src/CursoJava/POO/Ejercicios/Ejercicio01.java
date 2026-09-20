@@ -1,4 +1,4 @@
-package Ejercicios;
+package CursoJava.POO.Ejercicios;
 
 /**
  * Ejercicio 1:

@@ -1,3 +1,5 @@
+package CursoJava.POO;
+
 class Animal {
   public void hacerSonido() {
     System.out.println("Sonido de animal");
