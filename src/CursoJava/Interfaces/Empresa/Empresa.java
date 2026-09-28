@@ -1,4 +1,4 @@
-package CursoJava.Interfaces;
+package CursoJava.Interfaces.Empresa;
 
 public class Empresa {
     public static void main(String[] args) {
@@ -25,21 +25,19 @@ interface ParaJefes {
 // clase Empleado
 class Empleado extends Persona {
     // implementa el metodo abstracto de la interface ParaJefes
-
     @Override
-    public void hablar() {
-        // TODO Auto-generated method stub
-        System.out.println("hablar'");
+    public void hablar(){
+      System.out.println("Empleado");
     }
 }
 
 // clase Jefe que implemente la interface ParaJefes y hereda de la clase
 // Empleado
 class Jefe extends Empleado implements ParaJefes {
-    // declara un metodo
-    public String tomarDecisiones(String decision) {
-        return "Un miembro de la direccion ha tomado la decision de: " + decision;
-    }
+    
+     public String tomarDecisiones(String decision){
+        return "tomar decisiones jefe: " + decision;
+     }
 
     public static String tomarDecisiones() {
         String decision = "tomar decisiones jefe: ";
