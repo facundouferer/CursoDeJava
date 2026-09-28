@@ -58,23 +58,37 @@ class Plantel {
     }
 
     public boolean eliminarPorDorsal(int dorsal) {
-        Jugador[] jugadoresUnMenos = new Jugador[this.cantidad - 1]; 
-        boolean encontrado = false;
         for (int i = 0; i < this.cantidad; i++) {
-           
-            if (this.jugadores[i].getDorsal() != dorsal) {
-                jugadoresUnMenos[i] = this.jugadores[i];
-            }else{
-                this.jugadores = jugadoresUnMenos;
+            if (this.jugadores[i].getDorsal() == dorsal) {
+                for (int j = i; j < this.cantidad - 1; j++) {
+                    this.jugadores[j] = this.jugadores[j + 1];
+                }
+                this.jugadores[this.cantidad - 1] = null;
                 this.cantidad--;
-                encontrado = true;
+                return true;
             }
         }
-        if(encontrado){
-            this.jugadores = jugadoresUnMenos;
-            return true;
-        }
         return false;
+    }
+
+    public void ordenarPorGolesDescendente(){
+        for (int i = 0; i < this.cantidad - 1; i++) {
+            for (int j = 0; j < this.cantidad - 1 - i; j++) {
+                if (this.jugadores[j].getGoles() < this.jugadores[j + 1].getGoles()) {
+                    Jugador temp = this.jugadores[j];
+                    this.jugadores[j] = this.jugadores[j + 1];
+                    this.jugadores[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    public void listar() {
+        System.out.println("Listado de jugadores:");
+        for (int i = 0; i < this.cantidad; i++) {
+            Jugador jugador = this.jugadores[i];
+            System.out.println("Nombre: " + jugador.getNombre() + ", Dorsal: " + jugador.getDorsal() + ", Goles: " + jugador.getGoles());
+        }
     }
 
 }
