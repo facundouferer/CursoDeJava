@@ -1,6 +1,7 @@
 package CursoJava.ArraydeObjetos.PlantelDeportivo;
 
 class Jugador {
+    
 private final String nombre;
 private final int dorsal;
 private int goles;
@@ -19,19 +20,31 @@ public Jugador(String nombre, int dorsal, int goles){
     } else {
         this.dorsal = dorsal;
     }
-    this.goles = goles;
+    if(goles < 0){
+        this.goles = 0;
+    }else{
+        this.goles = goles;
+    }
 }
 
 public String getNombre(){
-    return this.nombre;
+    return "Nombre: " +this.nombre;
 }
 
 public int getDorsal(){
     return this.dorsal;
 }
 
+public String getDorsalString(){
+    return "Dorsal: " +this.dorsal;
+}
+
 public int getGoles(){
     return this.goles;
+}
+
+public String getGolesString(){
+    return "Goles: " + this.goles;
 }
 
 }

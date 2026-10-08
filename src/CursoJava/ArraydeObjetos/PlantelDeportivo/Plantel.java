@@ -1,5 +1,7 @@
 package CursoJava.ArraydeObjetos.PlantelDeportivo;
 
+import java.util.Arrays;
+
 class Plantel {
 
     private Jugador[] jugadores;
@@ -23,15 +25,19 @@ class Plantel {
         return this.jugadores.length;
     }
 
+    boolean sumarJugador(Jugador nuevoJugador) {
+        this.jugadores[this.cantidad] = nuevoJugador;
+        this.cantidad++;
+        return true;
+    }
+
     public boolean agregar(Jugador nuevoJugador) {
         if (nuevoJugador != null) {
             if (this.cantidad < this.jugadores.length) {
-                this.jugadores[this.cantidad] = nuevoJugador;
-                this.cantidad++;
-                return true;
+                return this.sumarJugador(nuevoJugador);
             } else {
-                System.out.println("No hay lugar para agregar un nuevo jugador");
-                return false;
+                Arrays.copyOf(this.jugadores, this.jugadores.length * 2);
+                return this.sumarJugador(nuevoJugador);
             }
         } else {
             System.out.println("Jugador no valido");
@@ -71,7 +77,7 @@ class Plantel {
         return false;
     }
 
-    public void ordenarPorGolesDescendente(){
+    public void ordenarPorGolesDescendente() {
         for (int i = 0; i < this.cantidad - 1; i++) {
             for (int j = 0; j < this.cantidad - 1 - i; j++) {
                 if (this.jugadores[j].getGoles() < this.jugadores[j + 1].getGoles()) {
@@ -87,7 +93,8 @@ class Plantel {
         System.out.println("Listado de jugadores:");
         for (int i = 0; i < this.cantidad; i++) {
             Jugador jugador = this.jugadores[i];
-            System.out.println("Nombre: " + jugador.getNombre() + ", Dorsal: " + jugador.getDorsal() + ", Goles: " + jugador.getGoles());
+            System.out.println(jugador.getNombre() + jugador.getDorsalString()
+                    + jugador.getGolesString());
         }
     }
 

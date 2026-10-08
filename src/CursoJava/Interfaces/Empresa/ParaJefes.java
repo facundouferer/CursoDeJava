@@ -8,4 +8,5 @@ interface ParaJefes {
     public static String tomarDecisiones() {
         return "tomar decisiones interface: ";
     }
+
 }
