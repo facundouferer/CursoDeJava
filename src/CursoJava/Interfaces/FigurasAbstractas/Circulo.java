@@ -14,6 +14,10 @@ class Circulo extends Figura implements ParaMostrar {
   }
 
   @Override
+  public String mostrarNombre() {
+    return "Círculo";
+  }
+
   String mostrarInformacion() {
     return "Círculo: " + color + " radio: " + radio;
   }

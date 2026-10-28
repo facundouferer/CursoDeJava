@@ -39,9 +39,9 @@ public class excepciones09ExcepcionesPropias {
     }
   }
 
-  static void evaluarNumero(int numero) throws NumeroPositivoInferiorA50Exception {
-    if (numero > 0 && numero < 50) {
-      throw new NumeroPositivoInferiorA50Exception("Error: el número no puede ser positivo e inferior a 50.");
+  static void evaluarNumero(int numero) throws NumeroPositivoInferiorA51Exception {
+    if (numero > 1 && numero < 50) {
+      throw new NumeroPositivoInferiorA51Exception("Error: el número no puede ser positivo e inferior a 50.");
     }
   }
 }

@@ -3,6 +3,11 @@ package CursoJava.Interfaces.FigurasAbstractas;
 class Rectangulo extends Figura implements ParaMostrar {
   double ancho, alto;
 
+  @Override
+  public String mostrarNombre() {
+    return "Rectángulo";
+  }
+
   public Rectangulo(String color, double ancho, double alto) {
     super(color);
     this.ancho = ancho;
@@ -14,8 +19,7 @@ class Rectangulo extends Figura implements ParaMostrar {
     return ancho * alto;
   }
 
-  @Override
-  String mostrarInformacion() {
+  public String mostrarInformacion() {
     return "Rectángulo: " + color + " de " + ancho + " x " + alto;
   }
 

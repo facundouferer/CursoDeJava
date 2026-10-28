@@ -19,6 +19,8 @@ public class DivisionPorCero {
       System.out.println("No se puede dividir letras!!!!");
     } catch (ArithmeticException e) {
       System.out.println("Error: " + e.getMessage());
+    } catch(Exception e){
+      System.out.println("Algo salió mal.");
     }
     sc.close();
   }

@@ -6,7 +6,7 @@ interface ParaJefes {
     public abstract String tomarDecisiones(String decision);
 
     public static String tomarDecisiones() {
-        return "tomar decisiones interface: ";
+        return "Decisión postergada: falta información para resolver.";
     }
 
 }
