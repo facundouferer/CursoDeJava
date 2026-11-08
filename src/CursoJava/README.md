@@ -27,10 +27,12 @@ Cada carpeta `lNN_<tema>` corresponde a la lección `NN` del curso (`src/content
 | 12 Excepciones y manejo de errores | `l12_excepciones_y_manejo_de_errores` | 20 |
 | 13 TAD: listas estáticas y dinámicas | `l13_tad_listas_estaticas_y_dinamicas` | 8 |
 | 14 TAD: pilas y colas | `l14_tad_pilas_y_colas` | 4 |
-| 15 Java Collections Framework y genéricos | `l15_java_collections_framework_y_genericos` | 38 |
+| 15 Java Collections Framework y genéricos | `l15_java_collections_framework_y_genericos` | 46 |
 | 16 Iteradores, ordenamiento, equals y hashCode (incluye lambdas y referencias a métodos) | `l16_iteradores_ordenamiento_equals_hashcode` | 37 |
 | 17 TAD: árboles binarios y búsqueda | `l17_tad_arboles_binarios_y_busqueda` | 5 |
+| 18 Grafos: representación y algoritmos | `l18_grafos_representacion_y_algoritmos` | 8 |
 | 19 Archivos, persistencia y empaquetado JAR (incluye serialización) | `l19_archivos_persistencia_y_empaquetado_jar` | 33 |
+| 20 Programación concurrente: hilos y pools | `l20_programacion_concurrente_hilos_y_pools` | 14 |
 | 21 Acceso a bases de datos con JDBC | `l21_acceso_a_bases_de_datos_jdbc` | 32 |
 | 23 Algoritmia, verificación y complejidad (incluye ordenamiento) | `l23_algoritmia_verificacion_y_complejidad` | 3 |
 | 26 Árboles n-arios y representación con vectores | `l26_arboles_n_arios_y_representacion_con_vectores` | 1 |
@@ -56,4 +58,4 @@ Origen indica de dónde viene: `p1` primer parcial, recuperatorio y examen de Pr
 
 ## Lecciones del curso sin programas
 
-No hay código en el repositorio para las lecciones 18 (grafos), 20 (concurrencia) y 27 (depuración, código limpio y refactorización). Tampoco hay programas para varias secciones puntuales: Map y funcionamiento interno de `HashMap`, genéricos propios y `Queue`/`Deque` en la lección 15.
+La lección 27 (depuración, código limpio y refactorización) ya no forma parte del curso, por lo que no tiene programas. Las lecciones 22, 24 y 25 tampoco tienen programas.
