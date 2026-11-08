@@ -8,7 +8,7 @@ Branch: refactor/src-esquema-curso · Delivery: ask-on-risk · Runner: `javac -e
 - S3: Cada programa se reescribe (opción 2 elegida por el usuario: "reordenar y reescribir") con la terminología, el orden de conceptos y el estilo de ejemplos de su lección. Mantiene su propósito; compila y corre.
 - S4: Artefactos (código, comentarios, mensajes) en español neutro, idioma del proyecto existente.
 - S5: Compilación completa de `src/` (como CI) sin errores nuevos. Baseline: 2 errores preexistentes en `excepciones09ExcepcionesPropias.java` (falta `NumeroPositivoInferiorA51Exception`).
-- S6 (asumido): `exam/`, `ExamenesFinales/`, `Proyectos/` son evaluaciones/proyectos integradores; se clasifican pero NO se reescriben ni se mueven.
+- S6 (cambiado por el usuario en L4): `exam/`, `ExamenesFinales/`, `Proyectos/` (54 archivos) también se mueven y se reescriben. Se ubican como sub-package `integrador_<prefijo>_<tema>` dentro de la carpeta de la lección más cercana por contenido (prefijos: p1_, p2_, fin_, bd_, proy_), conservando el enunciado/propósito del examen o proyecto en el encabezado.
 
 ## Tasks
 - [x] T1 Clasificación de los 389 archivos → `odd/mapping.md` — S2 — delegada (mapeo > 5 lookups, trigger Mapping) — commit a988415
@@ -22,8 +22,15 @@ Branch: refactor/src-esquema-curso · Delivery: ask-on-risk · Runner: `javac -e
 - [x] T9 Escritor H: L15 — idem — commit 62aceba
 - [x] T10 Escritor I: L19,L21,L23,L26 — idem — commit 7255051
 - [x] T11 Integración: compilación completa (391 archivos, 482 clases, 0 errores; baseline tenía 2), limpieza de 68 carpetas vacías, `src/CursoJava/README.md` — S5 — inline — commit: ver abajo
+- [x] T12 Escritor J (p1_): exam/Parcial2025/{Primero,Recuperatorio}, exam/Parcial2ProgII, exam/ExamenFinal — S6 — delegada (writer: unidades paralelas) — commit fb13b8c
+- [x] T13 Escritor K (p2_): exam/Parcial2025/Segundo (Concesionario, Tecnologia, Veterinaria) — S6 — delegada — commit (ver git log: "second-term exam variants")
+- [x] T14 Escritor L (fin_): ExamenesFinales (Hoteleria, Libro, RopaShop, Finales, Hospital) — S6 — delegada — commit 86ad9a2
+- [x] T15 Escritor M (bd_, proy_): ExamenesFinales BD (3 JDBC) + Proyectos — S6 — delegada — commit 48dcd0a
+- [x] T16 Integración 2: compilación completa (439 archivos, 476 clases, 0 errores), carpetas vacías (`src/exam` y `src/ExamenesFinales`, `src/Proyectos` eliminadas), README con integradores — S5 — inline
 Notas de ruta: el mapa es `odd/mapping.md`. Lecciones 18, 20 y 27 no tienen programas en el repo (se reportan, no se inventan). Los escritores no usan git; el padre commitea por tarea.
 
 ## Log
 L1 (2026-11-08): "quiero que estudies el curso cursos/java/ del reposotorio /Users/facundouferer/Devs/facundouferer y con ello analices todos los programas que tengo en src y los reformules y los reordenes para que coincidan con el esquema pedagógico del curso de java."
 L2 (2026-11-08): "La opción 2, reordenar y reescribir"
+L3 (2026-11-08): "dale, seguí con los demás"
+L4 (2026-11-08): "1, si mueve y reescribe." (respuesta a: ¿"los demás" = los 54 archivos exam/ExamenesFinales/Proyectos, o los huecos del curso 18/20/27?) → cambia S6.
