@@ -11,11 +11,11 @@ Branch: feat/lecciones-sin-codigo · Delivery: ask-on-risk · Runner: `javac -Xl
 - S6: Entregable final: un prompt (`odd/prompts/conectar-lecciones-con-programas.md`) para el agente que desarrolla las lecciones, para que enlace/adapte las lecciones 15, 18 y 20 con los nuevos programas.
 
 ## Tasks
-- [ ] T1 Escritor A: l18 grafos (carpeta nueva `l18_grafos_representacion_y_algoritmos`) — S1-S3,S5 — delegada (paralelo)
-- [ ] T2 Escritor B: l20 concurrencia (carpeta nueva `l20_programacion_concurrente_hilos_y_pools`) — S1-S3,S5 — delegada (paralelo)
-- [ ] T3 Escritor C: l15 Map, HashMap por dentro, genéricos propios, Queue/Deque (Ej16+) — S1-S3,S5 — delegada (paralelo)
-- [ ] T4 Integración: compilación completa, README, commits — S5 — inline
-- [ ] T5 Prompt para el agente de lecciones — S6 — inline
+- [x] T1 Escritor A: l18 grafos (carpeta nueva `l18_grafos_representacion_y_algoritmos`) — S1-S3,S5 — delegada (paralelo)
+- [x] T2 Escritor B: l20 concurrencia (carpeta nueva `l20_programacion_concurrente_hilos_y_pools`) — S1-S3,S5 — delegada (paralelo)
+- [x] T3 Escritor C: l15 Map, HashMap por dentro, genéricos propios, Queue/Deque (Ej16+) — S1-S3,S5 — delegada (paralelo)
+- [x] T4 Integración: compilación completa, README, commits — S5 — inline
+- [x] T5 Prompt para el agente de lecciones — S6 — inline
 
 ## Log
 L1 (2026-11-08): "Resuleve esto: Lecciones del curso sin programas — No hay código en el repositorio para las lecciones 18 (grafos), 20 (concurrencia) y 27 (depuración, código limpio y refactorización). Tampoco hay programas para varias secciones puntuales: Map y funcionamiento interno de HashMap, genéricos propios y Queue/Deque en la lección 15. y una vez que hayas creado todos lps programas para esas lecciones, crea un prompt para decirle al agente que desarrolla las lecciones para que adapte las lecciones que no tenían código para que las conecte."

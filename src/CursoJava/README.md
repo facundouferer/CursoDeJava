@@ -58,4 +58,4 @@ Origen indica de dónde viene: `p1` primer parcial, recuperatorio y examen de Pr
 
 ## Lecciones del curso sin programas
 
-La lección 27 (depuración, código limpio y refactorización) ya no forma parte del curso, por lo que no tiene programas. Las lecciones 22, 24 y 25 tampoco tienen programas.
+Las lecciones 22, 24, 25 y 27 no existen en el curso actual (el repositorio del curso eliminó las de testing con Spring Boot y de depuración y código limpio), por lo que no tienen programas.
