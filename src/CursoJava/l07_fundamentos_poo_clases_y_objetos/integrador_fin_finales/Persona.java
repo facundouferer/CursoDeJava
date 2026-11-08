@@ -1,14 +1,12 @@
-package ExamenesFinales.Finales;
+package CursoJava.l07_fundamentos_poo_clases_y_objetos.integrador_fin_finales;
 
-class Persona {
+public class Persona {
     private String nombre;
     private String apellido;
     private int dni;
 
     public Persona(String nombre, String apellido, int dni) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.dni = dni;
+        setDatos(nombre, apellido, dni);
     }
 
     public String getDatos() {
@@ -19,11 +17,5 @@ class Persona {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
-    }
-}
-
-public class Principal {
-    public static void main(String[] args) {
-
     }
 }
