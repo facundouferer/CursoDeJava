@@ -11,17 +11,17 @@ Branch: refactor/src-esquema-curso · Delivery: ask-on-risk · Runner: `javac -e
 - S6 (asumido): `exam/`, `ExamenesFinales/`, `Proyectos/` son evaluaciones/proyectos integradores; se clasifican pero NO se reescriben ni se mueven.
 
 ## Tasks
-- [x] T1 Clasificación de los 389 archivos → `odd/mapping.md` — S2 — delegada (mapeo > 5 lookups, trigger Mapping) — commit: pendiente
-- [ ] T2 Escritor A: L01,L02,L03 — S2,S3,S4 — delegada (writer: unidades paralelas) — commit: -
-- [ ] T3 Escritor B: L04 — idem
-- [ ] T4 Escritor C: L05,L06,L07 — idem
-- [ ] T5 Escritor D: L08,L09,L10 — idem
-- [ ] T6 Escritor E: L11 — idem
-- [ ] T7 Escritor F: L12,L13 — idem
-- [ ] T8 Escritor G: L14,L16,L17 — idem
-- [ ] T9 Escritor H: L15 — idem
-- [ ] T10 Escritor I: L19,L21,L23,L26 — idem
-- [ ] T11 Integración: compilación completa vs baseline, limpieza de carpetas vacías, `src/CursoJava/README.md` (índice por lección) — S5 — inline
+- [x] T1 Clasificación de los 389 archivos → `odd/mapping.md` — S2 — delegada (mapeo > 5 lookups, trigger Mapping) — commit a988415
+- [x] T2 Escritor A: L01,L02,L03 — S2,S3,S4 — delegada (writer: unidades paralelas) — commit 80023bd
+- [x] T3 Escritor B: L04 — idem — commit 46ad88f
+- [x] T4 Escritor C: L05,L06,L07 — idem — commit bac2e79
+- [x] T5 Escritor D: L08,L09,L10 — idem — commit ebdb6cf
+- [x] T6 Escritor E: L11 — idem — commit 113fe85
+- [x] T7 Escritor F: L12,L13 — idem — commit 76720d8
+- [x] T8 Escritor G: L14,L16,L17 — idem — commit cffabd0
+- [x] T9 Escritor H: L15 — idem — commit 62aceba
+- [x] T10 Escritor I: L19,L21,L23,L26 — idem — commit 7255051
+- [x] T11 Integración: compilación completa (391 archivos, 482 clases, 0 errores; baseline tenía 2), limpieza de 68 carpetas vacías, `src/CursoJava/README.md` — S5 — inline — commit: ver abajo
 Notas de ruta: el mapa es `odd/mapping.md`. Lecciones 18, 20 y 27 no tienen programas en el repo (se reportan, no se inventan). Los escritores no usan git; el padre commitea por tarea.
 
 ## Log
