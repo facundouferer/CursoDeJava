@@ -60,7 +60,10 @@ public class Ej03PersonasNoRepetidas {
       int dni = leerDni(leer.nextLine());
 
       Persona persona = new Persona(nombre, apellido, dni);
-      if (personas.add(persona)) {
+      if (existeNombreApellido(personas, persona)) {
+        System.out.println("No se cargó: ya existe una persona llamada "
+            + persona.nombre + " " + persona.apellido + ".");
+      } else if (personas.add(persona)) {
         System.out.println("Persona cargada: " + persona);
       } else {
         System.out.println("No se cargó: ya existe una persona con el DNI " + dni + ".");
@@ -80,6 +83,16 @@ public class Ej03PersonasNoRepetidas {
     } catch (NumberFormatException e) {
       throw new IllegalArgumentException("el DNI debe contener solo números, sin puntos ni letras.");
     }
+  }
+
+  /** Regla de negocio aparte de equals: tampoco se admite repetir nombre y apellido. */
+  private static boolean existeNombreApellido(Set<Persona> personas, Persona nueva) {
+    for (Persona p : personas) {
+      if (p.nombre.equalsIgnoreCase(nueva.nombre) && p.apellido.equalsIgnoreCase(nueva.apellido)) {
+        return true;
+      }
+    }
+    return false;
   }
 
   private static void listarPersonas(Set<Persona> personas) {
@@ -109,12 +122,12 @@ public class Ej03PersonasNoRepetidas {
       if (!(o instanceof Persona otra)) {
         return false;
       }
-      return dni == otra.dni;
+      return this.dni == otra.dni;
     }
 
     @Override
     public int hashCode() {
-      return Integer.hashCode(dni);
+      return 0;
     }
 
     @Override
